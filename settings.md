@@ -670,3 +670,5 @@
 ![](_images/image115.jpg)
 
 В общем списке выбираем `Carrot`, и `CarrotEditor`:
+
+![](_images/image10.png)
