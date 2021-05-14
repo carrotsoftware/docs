@@ -671,7 +671,7 @@ Active  | <span style="color:green">Зеленый</span> | Событие с ш
 1. Запустите **Carrot Server** `ServerWS.exe` (Если **Carrot Server** уже запущен, перейдите на пункт 2).
 2. Убедитесь в том, что в настройках **Carrot Template Preview** в настройках указан адрес необходимого сервера и номер порта для получения трекинг данных.
 3. Установите плагин **Carrot AE Export** для **AE**. Для установки содержимое папки необходимо переместить в папку по следующему пути:
-`C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\AEGP`
+`C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\AEGP`.
 
     ![](_images/image48.png)
 
