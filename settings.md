@@ -685,7 +685,7 @@ Active  | <span style="color:green">Зеленый</span> | Событие с ш
 
     ![](_images/image115.jpg)
 
-2. В общем списке выбираем `Carrot`, и `CarrotEditor`
+2. В общем списке выбрать `Carrot` и `CarrotEditor`
 
     ![](_images/image10.png)
 
