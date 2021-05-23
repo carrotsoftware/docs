@@ -503,7 +503,7 @@ PSD, AI слои внутри композиции необходимо заме
 
     ![](_images/image169.png)
 
-6. В настройках проекта в разделе `Engine` - `Rendering` - `Default Settings` установите параметр `Frame Buffer Pixel Format` равным `8bit RGBA`:
+6. В настройках проекта в разделе `Engine` - `Rendering` - `Default Settings` установите параметр `Frame Buffer Pixel Format` равным `Float RGBA`:
 
     ![](_images/image106.png)
 
@@ -537,7 +537,7 @@ PSD, AI слои внутри композиции необходимо заме
 
     >Примечание: разрешение текстуры должно совпадать с разрешением вьюпорта, на котором она будет проигрываться (см. 4.3 Создание схемы работы Carrot Engine)
 
-14. Скопируйте ассет `PostProcMat.uasset` в папку проекта
+14. Скопируйте ассет `PostProcMat_Frames.uasset`, `PostProcMat_Alpha.uasset` и `CarrotMacroLibrary.uasset` в папку проекта
 
     ![](_images/image179.png)
     ![](_images/image85.png)
