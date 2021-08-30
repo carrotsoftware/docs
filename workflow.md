@@ -629,6 +629,10 @@ PSD, AI слои внутри композиции необходимо заме
 
     ![](_images/image183.png)
 
+26. В разделе `Project` - `Engine` - `General Sttings` в параметре `Game Viewport Client Class`  выберите `CarrotViewportClient`.
+
+    ![](_images/image184.png)
+
 ## Экспорт шаблона из проекта UE4
 
 Для экспорта шаблона из проекта UE4 необходимо выполнить следующее:
