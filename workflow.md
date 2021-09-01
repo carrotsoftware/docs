@@ -479,7 +479,7 @@ PSD, AI слои внутри композиции необходимо заме
 12. Нажмите `Save Template`. По окончании сохранения данное окно закроется.
 13. Закройте **Template Preview**.
 
-## Подготовка UE4 проекта к экспорту шаблона
+## Подготовка UE4 проекта к экспорту шаблона (старый плагин)
 
 Для подготовки проекта к экспорту шаблона необходимо выполнить следующее:
 
@@ -629,15 +629,149 @@ PSD, AI слои внутри композиции необходимо заме
 
     ![](_images/image183.png)
 
-26. В разделе `Project` - `Engine` - `General Sttings` в параметре `Game Viewport Client Class`  выберите `CarrotViewportClient`.
+## Подготовка UE4 проекта к экспорту шаблона (новый плагин)
+
+Для подготовки проекта к экспорту шаблона необходимо выполнить следующее:
+
+1. Запустите проект, который необходимо экспортировать, включите плагины `Carrot` и `CarrotEditor` и перезапустите проект:
+
+    ![](_images/image10.png)
+
+2. В разделе `Project` - `Maps & Modes` - `Default Maps` в параметрах `Editor Startup Map` и `Game Default Map` укажите ту сцену, которую предполагается использовать.
+
+    ![](_images/image143.png)
+
+3. В настройках проекта в разделе `Engine` - `General Settings` - `Framerate` - `Custom TimeStep` укажите `CarrotCustomTimeStep`:
+
+    ![](_images/image79.png)
+
+4. В разделе `Engine` - `Rendering` - `Default Settings` - `Anti-Aliasing Method` выбрать `TemporalAA`.
+
+    ![](_images/image141.png)
+
+5. В настройках проекта в разделе `Engine` - `Rendering` - `Postprocessing` установите параметры, указанные ниже:
+
+    ![](_images/image169.png)
+
+6. В настройках проекта в разделе `Engine` - `Rendering` - `Default Settings` установите параметр `Frame Buffer Pixel Format` равным `8bit RGBA`:
+
+    ![](_images/image186.png)
+
+7. Добавьте в сцену `Empty Actor` - этот объект будет отвечать за смещения координат, получаемых от **Carrot Tracking Server**.
+
+    ![](_images/image126.png)
+
+8. Добавьте в сцену `Cine Camera Actor` - этот объект будет выполнять роль виртуальной камеры
+
+    ![](_images/image53.png)
+
+9. Сделайте `Empty Actor` родительским объектом по отношению к `Cine Camera Actor`
+
+    ![](_images/image32.png)
+
+10. Откройте свойства `Cine Camera Actor` и в разделе `Current Camera Settings` - `Lens Settings` установите параметр `Min Focal Length` равным 0 мм.
+
+    ![](_images/image76.png)
+
+11. Добавьте в сцену `Post Process Volume` - этот объект будет выполнять роль виртуальной камеры
+
+    ![](_images/image189.png)
+
+12. Скопируйте ассет `PostProcMat_Frames.uasset`, `PostProcMat_Alpha.uasset` и `CarrotMacroLibrary.uasset` в папку проекта
+
+    ![](_images/image179.png)
+    ![](_images/image85.png)
+
+13. В `Post Process Volume` - `Rendering Features` добавьте элементы и укажите пути на ассеты `PostProcMat_Alpha` и `PostProcMat_Frames` которые былы скопированы с плагином `Carrot`.
+
+    ![](_images/image187.png)
+
+14. Также активируйте параметр `Infinite Extent (Unbound)`.
+
+    ![](_images/image188.png)
+
+15. Если планируется завести изображение внутрь проекта, то создайте еще одну `Render Target` - эта текстура будет использоваться для ввода изображения. Таких текстур может быть несколько.
+
+    ![](_images/image66.png)
+
+16. Настройки данной текстуры приведите в соответствие с указанными ниже:
+
+    ![](_images/image59.png)
+
+    >Примечание: разрешение текстуры должно квадратным и кратным степени двойки (например, 256х256, 512х512, 2048х2048), а также близким с разрешением вьюпорта, с которого будет забираться изображение (см. 4.3 Создание схемы работы Carrot Engine)
+    >
+    >![](_images/image111.png)
+    >
+    >Если четкости входящей текстуры недостаточно - поставить `NoMipmaps`. В остальных случаях следует выбирать `Sharpen`.
+
+17. Создайте материал, который будет использовать созданную `Render Target`:
+
+    ![](_images/image24.png)
+
+18. Откройте настройки материала и задайте ему созданную текстуру:
+
+    ![](_images/image21.png)
+
+19. Примените созданный материал на объект, на котором планируется отображать входящее изображение:
+
+    ![](_images/image171.png)
+
+20. Откройте `Level Blueprint` и добавьте `Carrot Macro`.
+
+    ![](_images/image52.png)
+
+21. Во входных параметрах `Carrot Macro` укажите:
+
+    ![](_images/image33.png)
+
+    - `Event BeginPlay`
+    - `Event Tick`
+    - Объект `Cine Camera Actor`, используемый в качестве виртуальной камеры.
+    - Объект `Empty Actor`, который является родительским по отношению к `Cine Camera Actor`.
+    - `Input Render Target 2D` - указывается текстура, которая используется для ввода изображения.
+    - `Output Render Target 2D` - указывается текстура, которая используется для вывода изображения.
+    
+    Если используется несколько текстур для входящих изображений, раскройте макрос:
+
+    ![](_images/image149.png)
+
+    Необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
+
+    Причем первая текстура указывается в макросе, а последующие указываются в копиях ноды:
+
+    ![](_images/image101.png)
+
+    Если подобные текстуры вообще не используются, необходимо исключить ноду `Carrot Receiver` из процесса:
+
+    ![](_images/image147.png)
+
+22. Используйте выходные пины `Begin Play Out` и `Event Tick Out`, если ивенты `Begin Play` и `Event Tick` будут использоваться после `Carrot Macro`:
+
+    ![](_images/image33.png)
+
+23. Если проигрывание шаблона проекта подразумевает использование команд, то:
+    - Создайте ноду `Switch on String` и соедините её с Carrot Macro, как показано на рисунке выше.
+    - Каждый выходной пин ноды `Switch on String` будет соответствовать команде, которую можно будет отправлять с `Carrot Playlist`.
+
+Соедините выходные пины ноды `Switch on String` с теми событиями, которые должны выполниться при вызове команды, чьё имя соответствует имени пина.
+
+24. В разделе `Editor` - `General` - `Perfomance` выключите параметр `Use Less CPU when in Background`.
+
+    ![](_images/image183.png)
+
+25. В разделе `Project` - `Engine` - `General Sttings` в параметре `Game Viewport Client Class`  выберите `CarrotViewportClient`.
 
     ![](_images/image184.png)
+
+26. В дополнение к основным настройкам в проекте, в папке Config в файле DefaultEngine и в папке Windows в файле WindowsEngine необходимо добавить строки:
+
+    ![](_images/image185.png)
 
 ## Экспорт шаблона из проекта UE4
 
 Для экспорта шаблона из проекта UE4 необходимо выполнить следующее:
 
-1. Нажите кнопку `Export Carrot` (расположена на верхней панели):
+1. Нажмите кнопку `Export Carrot` (расположена на верхней панели):
 
     ![](_images/image35.png)
 
