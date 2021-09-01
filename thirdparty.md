@@ -7,3 +7,4 @@
 1. Драйвер для карт видеозахвата. Например, для карт Blackmagic необходимо установить [Desktop Video](https://www.blackmagicdesign.com/ru/support/family/capture-and-playback)
 1. [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/ru-RU/download/details.aspx?id=56116)
 1. [Microsoft .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
+1. [.NET Core Hosting Bundle](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)

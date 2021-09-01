@@ -28,7 +28,7 @@
 
 Для настройки **Carrot Playlist** необходимо выполнить следующее:
 
-1. Запустите **Carrot Server** `ServerWS.exe` (Если **Carrot Server** уже запущен, перейдите на пункт 2).
+1. Запустите **Carrot Server** `CarrotServer.exe` (Если **Carrot Server** уже запущен, перейдите на пункт 2).
 2. Чтобы  иметь возможность подключаться к **Carrot Web Playlist**, необходимо выполнить сл. первоначальные настройки:
     1. Запустите `WebPlaylistSettings.exe`.
     
