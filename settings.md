@@ -45,7 +45,7 @@
     6. Запустите `WebPlaylist.exe`, если запуск прошел успешно вы увидите следующее окно:
     
         ![](_images/image37.png)
-
+> Процесс создания самоподписанного сертификата описан в пункте [Создание самоподписаного сертификата](https://carrotsoftware.github.io/docs/#/settings?id=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%8D%D0%BA%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0-Windows).
 3. Запустите браузер (рекомендуется использовать **Google Chrome**) и в адресной строке введите `https://192.168.1.12:8088/` (IP адрес, либо имя машины, на которой запущен **Carrot Web Playlist**, и порт).
 
     ![](_images/image41.png)
@@ -86,6 +86,31 @@ Ready  | <span style="color:blue">Голубой</span> | Событие с ша
 Active  | <span style="color:green">Зеленый</span> | Событие с шаблоном активировано.
 
 > Процесс наполнения и редактирования событий в плейлисте описан в пункте [Создание плейлиста](https://carrotsoftware.github.io/docs/#/workflow?id=%d0%a1%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bf%d0%bb%d0%b5%d0%b9%d0%bb%d0%b8%d1%81%d1%82%d0%b0).
+
+## Создание и экспорт самоподписанного сертификата Windows
+
+Для создания самоподписанного сертификата для **Carrot Playlist** необходимо выполнить следующее:
+
+1. Запустите **PowerShell** с правами **администратора**.
+1. Скопируйте имя компьютера (ПКМ по **Этот компьютер** → **Свойства** → **Имя устройства**).
+1. Введите в консоль **PowerShell** (имя компьютера необходимо ввести без кавычек)  
+`$thumbprint=New-SelfSignedCertificate -DnsName "Имя компьютера" -CertStoreLocation cert:\LocalMachine\My |ForEach-Object{ $_.Thumbprint}`
+1. Создайте папку для хранения сертификатов прим. `C:\Certificates`.
+1. Создайте переменную пути сертификата консольной командой  `$certpath = "Путь файла с кавычками прим. C:\Certificates\pc1.pfx"`.
+1. Создайте переменную пароля консольной командой `$mypwd = ConvertTo-SecureString -String 123 -Force –AsPlainText` где `123` должен быть ваш пароль.
+1. Введите в консоль **PowerShell**  
+`Export-PfxCertificate -FilePath $certpath -Cert cert:\localmachine\My\$thumbprint -Password $mypwd`.
+1. Для импорта сертификата на текущем компьютере введите команду `Import-PfxCertificate -FilePath  $certpath -Password $mypwd -CertStoreLocation cert:\LocalMachine\Root`
+> Процесс импорта самоподписанного сертификата на других компьютерах описан в пункте [Импорт самоподписаного сертификата](https://carrotsoftware.github.io/docs/#/settings?id=%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0).
+
+## Импорт самоподписанного сертификата
+
+Для импорта самоподписанного сертификата для **Carrot Playlist** необходимо выполнить следующее:
+
+1. Запустите **PowerShell** с правами **администратора**.
+1. Создайте переменную пути сертификата консольной командой `$certpath = "Путь файла с кавычками прим. C:\Certificates\pc1.pfx"`.
+1. Создайте переменную пароля консольной командой `$mypwd = ConvertTo-SecureString -String 123 -Force –AsPlainText` где `123` должен быть ваш пароль.
+1. Импортируйте сертификат командой `Import-PfxCertificate -FilePath $certpath -Password $mypwd -CertStoreLocation cert:\LocalMachine\Root`
 
 ## Настройка Carrot RTC Server
 
