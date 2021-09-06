@@ -765,7 +765,12 @@ PSD, AI слои внутри композиции необходимо заме
 
 26. В дополнение к основным настройкам в проекте, в папке Config в файле DefaultEngine и в папке Windows в файле WindowsEngine необходимо добавить строки:
 
-    ![](_images/image185.png)
+```
+[/Script/Engine.Engine]
+GameEngine=/Script/Carrot.CarrotGameEngine
+UnrealEdEngine=/Script/DisplayClusterEditor.DisplayClusterEditorEngine
+GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
+```
 
 ## Экспорт шаблона из проекта UE4
 
