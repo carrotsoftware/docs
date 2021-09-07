@@ -768,7 +768,6 @@ PSD, AI слои внутри композиции необходимо заме
 ```
 [/Script/Engine.Engine]
 GameEngine=/Script/Carrot.CarrotGameEngine
-UnrealEdEngine=/Script/DisplayClusterEditor.DisplayClusterEditorEngine
 GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 ```
 
