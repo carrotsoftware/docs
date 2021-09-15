@@ -671,16 +671,13 @@ PSD, AI слои внутри композиции необходимо заме
 
 10. Откройте свойства `Cine Camera Actor` и в разделе `Current Camera Settings` - `Lens Settings` установите параметр `Min Focal Length` равным 0 мм.
 
-    ![](_images/image76.png)
+    ![](_images/image190.png)
 
 11. Добавьте в сцену `Post Process Volume`
 
     ![](_images/image189.png)
 
 12. Скопируйте ассет `PostProcMat_Frames.uasset`, `PostProcMat_Alpha.uasset` и `CarrotMacroLibrary.uasset` в папку проекта
-
-    ![](_images/image179.png)
-    ![](_images/image85.png)
 
 13. В `Post Process Volume` - `Rendering Features` добавьте элементы и укажите пути на ассеты `PostProcMat_Alpha` и `PostProcMat_Frames` которые былы скопированы с плагином `Carrot`.
 
@@ -728,26 +725,22 @@ PSD, AI слои внутри композиции необходимо заме
     - `Event Tick`
     - Объект `Cine Camera Actor`, используемый в качестве виртуальной камеры.
     - Объект `Empty Actor`, который является родительским по отношению к `Cine Camera Actor`.
-    - `Input Render Target 2D` - указывается текстура, которая используется для ввода изображения.
-    - `Output Render Target 2D` - указывается текстура, которая используется для вывода изображения.
     
-    Если используется несколько текстур для входящих изображений, раскройте макрос:
+    Внутри макроса добавьте ноду `Carrot Receiver` и кажите в ней текстуру:
 
-    ![](_images/image149.png)
+    ![](_images/image192.png)
 
-    Необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
+    Если используется несколько, необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
 
-    Причем первая текстура указывается в макросе, а последующие указываются в копиях ноды:
-
-    ![](_images/image101.png)
+    ![](_images/image193.png)
 
     Если подобные текстуры вообще не используются, необходимо исключить ноду `Carrot Receiver` из процесса:
 
-    ![](_images/image147.png)
+    ![](_images/image191.png)
 
 22. Используйте выходные пины `Begin Play Out` и `Event Tick Out`, если ивенты `Begin Play` и `Event Tick` будут использоваться после `Carrot Macro`:
 
-    ![](_images/image33.png)
+    ![](_images/image194.png)
 
 23. Если проигрывание шаблона проекта подразумевает использование команд, то:
     - Создайте ноду `Switch on String` и соедините её с Carrot Macro, как показано на рисунке выше.
@@ -791,7 +784,7 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 3. Выберите режим сохранения шаблона:
 
-    ![](_images/image94.png)
+    ![](_images/image195.png)
 
     `Unreal Editor` - сохранится только шаблон проекта. Данный режим используется, когда запуск проекта происходит посредством `Unreal Editor`.
     `Already Packed Project` - указывается путь к уже собранному проекту.  Происходит его упаковка и сохранение в **Carrot Server** вместе с шаблоном. Данный режим используется, когда нужен запуск собранного проекта.
