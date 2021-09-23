@@ -798,12 +798,13 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 2. Подготовка проекта UE4 для работы с AR
 
-    Изначальная настройка проекта UE4 описана в пункте 4.7
-Отключите `Ambient Occlusion` и `Auto Exposure` в настройках проекта UE4 как показано на скриншоте
+    Изначальная настройка проекта UE4 описана в пункте `Подготовка UE4 проекта к экспорту шаблона (новый плагин)`
+
+    В `Project settings` - `Rendering` отключите `Ambient Occlusion` , `Auto Exposure` (`Motion Blur` если это необходимо) как показано на скриншоте
 
  ![](_images/ar04.png)
 
-Если Вам необходимы `Ambient Occlusion` в проекте `PostProccesVolume` с отключенной функцией `infiniti extent`.
+Если Вам необходимы `Ambient Occlusion` в проекте используйте локальный `PostProccesVolume` с отключенной функцией `infiniti extent`.
 
 `Carrot Engine` работает с `AR` на основе метода наложения `Screen\Add` по серому цвету. Мы рекомендуем создать все объекты для работы с AR в отдельном sublevel и вложить его в основной level проекта.
 
