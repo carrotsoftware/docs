@@ -121,10 +121,11 @@
 
 > Для наилучшего результатас помощью Light Levels нужно оставлять только те элементы, которые действительно в реальности могут давать засвет на края объекта.
 
-В данном примере мы использовали только `Light Strength` для добавления небольшой засветки по контуру человека.
-
 *Environment Light*
 ![](_images\example_keyer\stage_10.png)
+
+*Environment Overlay*
+![](_images\example_keyer\stage_12.png)
 
 Итоговый результат:
 ![](_images\example_keyer\stage_11.png)
