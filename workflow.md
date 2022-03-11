@@ -413,7 +413,7 @@
 - **Carrot Engine** считывает систему измерений из After Effects в миллиметрах, т.е. 1000px в **After Effects** = 1000mm в **Carrot Engine**.
 - Для вращения слоя следует использовать свойство **Orientation**.
 
-## Экспорт шаблона из проекта AE
+## **Экспорт шаблона из проекта AE**
 
 1. Выберите меню `Composition` - `Export Carrot Template`.
 
