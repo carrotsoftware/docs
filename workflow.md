@@ -689,7 +689,7 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 - поле `Smooth Frame Rate` сделайте активным
 - в поле `Smoothed Frame Rate Range` укажите минимальный и максимальный пороги равными частоте кадров общего тракта. Свойство порогов должно быть `Inclusive`
 - в поле `Min Desired Frame Rate` укажите частоту кадров общего тракта
-- в поле `Custom TimeStep` укажите `CarrotCustomTimeStep`
+- в поле `Custom TimeStep` укажите `CarrotCustomTimeStep` (**Не требуется при использовании нового типа синхронизации**)
 
     ![](_images/image197.png)
 
@@ -776,17 +776,17 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
     - Объект `Cine Camera Actor`, используемый в качестве виртуальной камеры.
     - Объект `Empty Actor`, который является родительским по отношению к `Cine Camera Actor`.
     
-    Внутри макроса добавьте ноду `Carrot Receiver` и кажите в ней текстуру:
+    К выводу макроса `Event Tick Out` (или `Begin Play Out` **при использовании нового типа синхронизации**) добавьте ноду `Carrot Receiver` и укажите в ней текстуру:
 
-    ![](_images/image192.png)
+    ![](_images/image203.png)
 
-    Если используется несколько, необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
+    Если используется несколько текстур, необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
 
-    ![](_images/image193.png)
+    ![](_images/image202.png)
 
     Если подобные текстуры вообще не используются, необходимо исключить ноду `Carrot Receiver` из процесса:
 
-    ![](_images/image191.png)
+    ![](_images/image204.png)
 
 22. Используйте выходные пины `Begin Play Out` и `Event Tick Out`, если ивенты `Begin Play` и `Event Tick` будут использоваться после `Carrot Macro`:
 
