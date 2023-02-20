@@ -686,12 +686,9 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
     ![](_images/image143.png)
 
 3. В настройках проекта в разделе `Engine` - `General Settings` - `Framerate` укажите:
-- поле `Smooth Frame Rate` сделайте активным
-- в поле `Smoothed Frame Rate Range` укажите минимальный и максимальный пороги равными частоте кадров общего тракта. Свойство порогов должно быть `Inclusive`
-- в поле `Min Desired Frame Rate` укажите частоту кадров общего тракта
 - в поле `Custom TimeStep` укажите `CarrotCustomTimeStep` (**Не требуется при использовании нового типа синхронизации**)
 
-    ![](_images/image197.png)
+    ![](_images/image79.png)
 
 4. Если в проекте используются анимации
 
