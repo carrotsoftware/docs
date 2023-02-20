@@ -686,7 +686,7 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
     ![](_images/image143.png)
 
 3. В настройках проекта в разделе `Engine` - `General Settings` - `Framerate` укажите:
-- в поле `Custom TimeStep` укажите `CarrotCustomTimeStep` (**Не требуется при использовании нового типа синхронизации**)
+- в поле `Custom TimeStep` укажите `CarrotCustomTimeStep` (**При использовании нового типа синхронизации в этом поле должно стоять `None`**)
 
     ![](_images/image79.png)
 
