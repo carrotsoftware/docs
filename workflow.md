@@ -1037,6 +1037,77 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 Если Вам необходимо перезалить шаблон с тем же именем файла, шаблон должен находиться в `Status Unloaded` перед загрузкой.
 
+## Добавление специальных событий
+
+Для добавления специальных событий необходимо выполнить следующее:
+
+В меню редактирования плейлиста выберите `Add Special Event`
+
+![](_images/image205.png)
+
+### Типы специальных событий
+
+1. `Reset` - восстановление буферов вызывается у движков, которые задействованы в этом плейлисте.
+1. `StopPlaylist` - убирает с показа все шаблоны плейлиста катом. (аналог кнопки Panic).
+1. `TextCommand` - передача текстовой команды напрямую в движки, задействованные в плейлисте
+
+### Список `TextCommand`:
+
+1. ApplySettingsToContent - применение настроек (на текущий момент только для контента Keyer).
+1. RestartContent - рестарт контента (на текущий момент только для контента Ticker).
+1. TakeOutContainer - вызов TakeOut у шаблонов, показывающихся на конкретном контейнере.
+1. SetGlobalVar - изменение глобальной переменной.
+
+#### 1. `ApplySettingsToContent`
+
+![](_images/image206.png)
+
+`Содержимое команды`:
+
+%Command=[ApplySettingsToContent] %ContentName=[Имя контента в схеме] %SettingsPath=[путь к файлу с настройками] %SaveSettingsToDB=[True или False]
+
+`Пример`:
+
+%Command=[ApplySettingsToContent] %ContentName=[Keyer] %SettingsPath=[D:\KeyerSettings\key test 14-01-22.xml] %SaveSettingsToDB=[False]
+
+Соответственно, на каждом компьютере по этому пути должен быть файл с настройками.
+
+Если %SaveSettingsToDB=[True] (или этого параметра нет вообще), то при выполнении команды настройки применяются и сохраняются в БД, то есть при следующем запуске они восстановятся.
+
+#### 2. `RestartContent`
+
+`Содержимое команды`:
+
+%Command=[RestartContent] %ContentName=[Имя контента в схеме]
+
+`Пример`:
+
+%Command=[RestartContent] %ContentName=[Ticker]
+
+Тикер перенесет все строки в начало.
+
+#### 3. `TakeOutContainer`
+
+`Содержимое команды`:
+
+%Command=[TakeOutContainer] %ContainerName=[Имя контейнера в схеме]
+
+`Пример`:
+
+%Command=[TakeOutContainer] %ContainerName=[AE 2D]
+
+Шаблоны, которые рисуются в контейнере AE 2D уйдут с анимацией выхода
+
+#### 4. `SetGlobalVar`
+
+`Содержимое команды`:
+
+%Command=[SetGlobalVar] %GlobalVarName=[Имя переменной] %GlobalVarValue=[значение переменной]
+
+`Пример`:
+
+%Command=[SetGlobalVar] %GlobalVarName=[title] %GlobalVarValue=[заголовок]
+
 ## Настройка задержек ввода/вывода
 
 Для настройки задержек необходимо выполнить следующее:
