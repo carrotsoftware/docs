@@ -1,0 +1,24 @@
+body {
+    position: relative;
+}
+
+nav.app-nav li ul {
+    min-width: 100px;
+}
+
+#carbonads {
+    box-shadow: none !important;
+    width: auto !important;
+}
+
+#version-change {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+:root {
+    --sidebar-name-background: ;
+    --sidebar-name-color: ;
+}
