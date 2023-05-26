@@ -11,13 +11,6 @@ nav.app-nav li ul {
     width: auto !important;
 }
 
-#version-change {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-}
-
 :root {
     --sidebar-name-background: ;
     --sidebar-name-color: ;
