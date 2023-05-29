@@ -27,44 +27,19 @@
 <body>
     <div id="app">Please wait...</div>
 
-    <script>
-        window.$docsify = {
-            name: 'Carrot',
-            loadSidebar: true,
-            maxLevel: 4,
-            subMaxLevel: 3,
-            loadNavbar: true,
-            mergeNavbar: false,
-            
-            versions: [
-                { folder: '3333', label: 'rev 3333', default: true },
-                { folder: '2222', label: 'rev 2222', default: false },
-                { folder: '1111', label: 'rev 1111', default: false }
-            ],
-            versionSelectorLabel: 'Version',
-
-            search: {
-                noData: {
-                    '/eng/': 'No results!',
-                    '/': 'Никаких результатов!',
-                },
-                paths: 'auto',
-                placeholder: {
-                    '/eng/': 'Search',
-                    '/': 'Поиск',
-                },
-                pathNamespaces: ['/eng']
-            },
-        }
-    </script>
-    <script src="/js/docsify@4.js"></script>
-    <script src="/js/docsify-search.js"></script>
-    <script src="/js/docsify-zoom-image.js"></script>
-    <!-- <script src="js/docsify-edit-on-github.js"></script> -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
-    <script src="/js/docsify-versioned-plugin.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
     <script src="/js/main.js"></script>
+    <!-- https://docsify.js.org/#/quickstart -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- https://docsify.js.org/#/plugins?id=full-text-search -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- https://docsify.js.org/#/plugins?id=zoom-image -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- https://github.com/njleonzhang/docsify-edit-on-github -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <!-- https://github.com/UliGall/docsify-versioned-plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-versioned-plugin@0.0.1/index.js"></script>
+    <!-- https://docsify.js.org/#/plugins?id=external-script -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
 </body>
 
 </html>

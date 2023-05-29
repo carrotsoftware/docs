@@ -1,30 +1,32 @@
 # Работа с ПО Carrot
+
 ## Работа с Carrot Server
+
 ### Изменение пароля администратора на Carrot Server
 
 Для изменения пароля администратора выберите пункт `Tools` - `Change Administrator Password`:
 
-![](_images/image124.png)
+![](images/image124.png)
 
 Откроется окно, в котором необходимо ввести новый пароль и нажать `Apply`:
 
-![](_images/image162.png)
+![](images/image162.png)
 
 ### Обновление списка подключений
 
 Если известно, что подключение существует, но не отображается в списке подключений, то нажмите `Refresh` - программа войдет в цикл непрерывного обновления списка. Когда все подключения будут отображаться, нажмите `Refresh` еще раз.
 
-![](_images/image23.png)
+![](images/image23.png)
 
 ### Удаление подключенных к Carrot Server компонентов
 
 В главной области окна **Carrot Server** отображаются текущие подключения:
 
-![](_images/image90.png)
+![](images/image90.png)
 
 Для удаления подключения выделите его и нажмите `Disconnect Selected`:
 
-![](_images/image4.png)
+![](images/image4.png)
 
 ## Настройка и регистрация рабочей станции
 
@@ -32,85 +34,88 @@
 
 1. Запустите **Carrot Launcher** и выберите пункт `Tools` - `Workstation Registration`:
 
-![](_images/image167.png)
+![](images/image167.png)
 
 2. Откроется окно `Workstation Registration`:
 
-![](_images/image154.png)
+![](images/image154.png)
 
 2. В поле `Name` введите желаемое имя рабочей станции.
 3. В разделе `Inputs` добавьте ноды ввода:
-    - Нажмите `+` и выберите тип ноды:
-    
-        ![](_images/image58.png)
-        
-        - `AjaTrackedInput` - работа с картой AJA при использовании UE4 шаблонов.
-        - `Decklink10Bit` - работа с картой Decklink с глубиной цвета 10Bit.
-        - `Decklink` - работа с картой Decklink с глубиной цвета 8Bit.
-        - `RawRtc` - работа с подключением по WebRtc.
-        - `BmdTrackedInput` - работа с картой Decklink при использовании UE4 шаблонов.
-        - `TextureInput` - нода, использующая файл с изображением на компьютере.
-        - `TrackedInput` - нода использующая только данные трекинга.
-        - `WsStreamInput` - нода, для приёма сигнала с Carrot StreamSender.
 
-    - Настройте параметры созданной ноды:
+   - Нажмите `+` и выберите тип ноды:
 
-        ![](_images/image156.png)
+     ![](images/image58.png)
 
-        ![](_images/image28.png)
+     - `AjaTrackedInput` - работа с картой AJA при использовании UE4 шаблонов.
+     - `Decklink10Bit` - работа с картой Decklink с глубиной цвета 10Bit.
+     - `Decklink` - работа с картой Decklink с глубиной цвета 8Bit.
+     - `RawRtc` - работа с подключением по WebRtc.
+     - `BmdTrackedInput` - работа с картой Decklink при использовании UE4 шаблонов.
+     - `TextureInput` - нода, использующая файл с изображением на компьютере.
+     - `TrackedInput` - нода использующая только данные трекинга.
+     - `WsStreamInput` - нода, для приёма сигнала с Carrot StreamSender.
 
-        ![](_images/image15.png)
+   - Настройте параметры созданной ноды:
 
-        ![](_images/image82.png)
+     ![](images/image156.png)
 
-        ![](_images/image72.png)
+     ![](images/image28.png)
+
+     ![](images/image15.png)
+
+     ![](images/image82.png)
+
+     ![](images/image72.png)
 
 4. В разделе `Outputs` добавьте ноды вывода:
-    - Нажмите `+` и выберите тип ноды:
 
-        ![](_images/image5.png)
+   - Нажмите `+` и выберите тип ноды:
 
-        - `AjaOutput` - вывод изображения на карту AJA.
-        - `Decklink` - вывод изображения на карту Decklink.
-        - `DecklinkFillKey` - вывод изображений Fill и Key на карту Decklink.
-        - `DecklinkSync` -
-        - `Screen` - вывод изображения на экран монитора.
-        - `WebStream` - вывод изображения на стриминговый сервис (например YouTube).
+     ![](images/image5.png)
 
-    - Настройте параметры созданной ноды:
+     - `AjaOutput` - вывод изображения на карту AJA.
+     - `Decklink` - вывод изображения на карту Decklink.
+     - `DecklinkFillKey` - вывод изображений Fill и Key на карту Decklink.
+     - `DecklinkSync` -
+     - `Screen` - вывод изображения на экран монитора.
+     - `WebStream` - вывод изображения на стриминговый сервис (например YouTube).
 
-        ![](_images/image182.png)
-        
-        ![](_images/image96.png)
+   - Настройте параметры созданной ноды:
 
-        ![](_images/image114.png)
+     ![](images/image182.png)
 
-        ![](_images/image73.png)
+     ![](images/image96.png)
 
-        ![](_images/image55.png)
+     ![](images/image114.png)
 
-        ![](_images/image109.png)
+     ![](images/image73.png)
+
+     ![](images/image55.png)
+
+     ![](images/image109.png)
 
 5. Сохраните изменения:
-    - Нажмите `Register/Update`:
 
-        ![](_images/image75.png)
+   - Нажмите `Register/Update`:
 
-    - Выберите нужную директорию сохранения и нажмите `ОК`:
+     ![](images/image75.png)
 
-        ![](_images/image121.png)
+   - Выберите нужную директорию сохранения и нажмите `ОК`:
 
-    - Выберите нужную директорию сохранения и нажмите `ОК`:
+     ![](images/image121.png)
 
-        ![](_images/image155.png)
+   - Выберите нужную директорию сохранения и нажмите `ОК`:
+
+     ![](images/image155.png)
 
 6. При необходимости удалить рабочую станцию из базы данных **Carrot Server** нажмите `UnRegister`:
 
-    ![](_images/image75.png)
+   ![](images/image75.png)
 
-    Появится уведомление об успешном выполнении операции:
+   Появится уведомление об успешном выполнении операции:
 
-    ![](_images/image46.png)
+   ![](images/image46.png)
 
 ## Создание схемы работы Carrot Engine
 
@@ -118,84 +123,88 @@
 
 1. Запустите `System Monitor` и выберите раздел `Engines`:
 
-    ![](_images/image80.png)
+   ![](images/image80.png)
 
 2. Добавьте новую директорию нажав `Add Folder` либо выберите уже существующую.
 3. Нажмите `Add Engine` и введите желаемое имя схемы и нажмите `OK`:
 
-    ![](_images/image137.png)
+   ![](images/image137.png)
 
 4. Выберите созданную схему:
 
-    ![](_images/image112.png)
+   ![](images/image112.png)
 
 5. Добавьте рабочие станции, которые будут работать по настраиваемой схеме:
-    
-    - Нажмите `Add Workstation` - откроется окно `Workstations`:
 
-        ![](_images/image121.png)
+   - Нажмите `Add Workstation` - откроется окно `Workstations`:
 
-    - Выберите рабочую станцию и нажмите `ОК`.
-    - В разделе `Workstations` отобразится добавленная рабочая станция:
+     ![](images/image121.png)
 
-        ![](_images/image176.png)
+   - Выберите рабочую станцию и нажмите `ОК`.
+   - В разделе `Workstations` отобразится добавленная рабочая станция:
+
+     ![](images/image176.png)
 
 6. Настройте созданную схему:
-    - Нажмите `Edit Scheme` - откроется окно `Engine Flowchart`:
 
-        ![](_images/image25.png)
+   - Нажмите `Edit Scheme` - откроется окно `Engine Flowchart`:
 
-    - Добавьте ноды ввода перетаскиванием из раздела `Registered inputs`:
+     ![](images/image25.png)
 
-        ![](_images/image26.png)
+   - Добавьте ноды ввода перетаскиванием из раздела `Registered inputs`:
 
-    - Добавьте одну ноду вывода перетаскиванием из раздела `Registered outputs`:
+     ![](images/image26.png)
 
-        ![](_images/image138.png)
+   - Добавьте одну ноду вывода перетаскиванием из раздела `Registered outputs`:
 
-    - Кликнув правой кнопкой мыши по пустому месту выберите тип добавляемой ноды:
+     ![](images/image138.png)
 
-        ![](_images/image103.png)
+   - Кликнув правой кнопкой мыши по пустому месту выберите тип добавляемой ноды:
 
-        - `Carrot Container` - используется для проигрывания шаблонов, либо для отображения изображения, получаемого от ноды ввода.
+     ![](images/image103.png)
 
-            ![](_images/image43.png)
+     - `Carrot Container` - используется для проигрывания шаблонов, либо для отображения изображения, получаемого от ноды ввода.
 
-            Данная нода может иметь несколько входных пинов. На вход можно подать как ноду ввода, так и другие ноды. Позволяет изменять следующие характеристики:
-            - Положение относительно левого верхнего угла (параметры X, Y).
-            - Размер изображения на выходе (параметры Width, Height).
+       ![](images/image43.png)
 
-        - `Carrot Keyer` - используется для замены заднего фона изображения на другое изображение.
+       Данная нода может иметь несколько входных пинов. На вход можно подать как ноду ввода, так и другие ноды. Позволяет изменять следующие характеристики:
 
-            ![](_images/image81.png)
+       - Положение относительно левого верхнего угла (параметры X, Y).
+       - Размер изображения на выходе (параметры Width, Height).
 
-            Пин `Foreground` принимает изображение, задний фон которого необходимо заменить.
-            
-            Пин `Background` принимает изображение, на которое будет заменен задний фон.
+     - `Carrot Keyer` - используется для замены заднего фона изображения на другое изображение.
 
-            Позволяет изменять следующие характеристики:
-            - Положение относительно левого верхнего угла (параметры X, Y).
-            - Размер изображения на выходе (параметры Width, Height).
+       ![](images/image81.png)
 
-        - `Carrot AR` - Служит для добавление объектов дополненной реальности.
+       Пин `Foreground` принимает изображение, задний фон которого необходимо заменить.
 
-            Пин `Foreground` принимает изображение объекта который необходимо наложить.
+       Пин `Background` принимает изображение, на которое будет заменен задний фон.
 
-            Пин `Background` принимает изображение заднего фона.
+       Позволяет изменять следующие характеристики:
 
-            Позволяет изменять следующие характеристики:
-            - Положение относительно левого верхнего угла (параметры X, Y).
-            - Размер изображения на выходе (параметры Width, Height).
+       - Положение относительно левого верхнего угла (параметры X, Y).
+       - Размер изображения на выходе (параметры Width, Height).
 
-        - `Carrot Viewport` - Случит для прямого наложения нескольких веток друг на друга.
+     - `Carrot AR` - Служит для добавление объектов дополненной реальности.
 
-    - Сохраните составленную схему нажатием кнопки `Save`.
+       Пин `Foreground` принимает изображение объекта который необходимо наложить.
 
-        ![](_images/image139.png)
+       Пин `Background` принимает изображение заднего фона.
 
->Примечание: если рассматривать ноды в качестве слоёв, то на итоговом изображении слои накладываются друг поверх друга начиная от ноды ввода к ноде вывода.
+       Позволяет изменять следующие характеристики:
+
+       - Положение относительно левого верхнего угла (параметры X, Y).
+       - Размер изображения на выходе (параметры Width, Height).
+
+     - `Carrot Viewport` - Случит для прямого наложения нескольких веток друг на друга.
+
+   - Сохраните составленную схему нажатием кнопки `Save`.
+
+     ![](images/image139.png)
+
+> Примечание: если рассматривать ноды в качестве слоёв, то на итоговом изображении слои накладываются друг поверх друга начиная от ноды ввода к ноде вывода.
 >
->![](_images/image97.png)
+> ![](images/image97.png)
 
 ## Настройка Carrot Keyer
 
@@ -203,19 +212,19 @@
 
 Зайдите `Carrot Keyer` -> `Key` -> `Alpha Mask` -> `Key color` -> `Pick` и выберите цвет который необходимо убрать.
 
-![](_images/image166.png)
+![](images/image166.png)
 
 Нам необходимо убрать верхнюю часть кадра с оборудованием:
 
-![](_images/image47.png)
+![](images/image47.png)
 
 - выберете в `Mode` -> `Alpha mask`
 
-    В **Carrot Engine** включиться отображение `Alpha mask`.
+  В **Carrot Engine** включиться отображение `Alpha mask`.
 
 - Перейдите в `Carrot Keyer` -> `Mask` -> `Scene` - > `Filename`
 
-![](_images/image98.png)
+![](images/image98.png)
 
 И выберете модель вашей студии в формате `.fbx`
 
@@ -228,18 +237,18 @@
 
 Они отобразятся в разделе `Objects`.
 
-![](_images/image153.png)
+![](images/image153.png)
 
 Теперь каждому объекту надо указать его назначение.
 Для этого щелкните по объекту `ЛКМ` и в разделе `ObjType` выберите его тип:
 
-![](_images/image135.png)
+![](images/image135.png)
 
 В разделе `Object offsets` можно изменить местоположение угол поворота и размер объектов
 
 Объекты вашей модели должны совпасть по положению с реальными результат должен выглядеть примерно так:
 
-![](_images/image63.png)
+![](images/image63.png)
 
 Так же при статических камерах возможно использовать маски в формате `.png`
 
@@ -247,7 +256,7 @@
 
 И в разделе `Scene` -> `Filename` укажите путь к файлу:
 
-![](_images/image98.png)
+![](images/image98.png)
 
 За тип маски в данном случае будет отвечать канал в пикселе изображения:
 
@@ -257,74 +266,78 @@
 
 Результат работы масок:
 
-![](_images/image74.png)
+![](images/image74.png)
 
-![](_images/image45.png)
+![](images/image45.png)
 
 ## **Подготовка проекта в After Effects для экспорта в Carrot**
+
 ### Настройки композиции
 
 1. Запустите Adobe After Effects.
 2. Откройте проект.
 3. На панели **Project** откройте корневую композицию, которую хотите экспортировать.
-![](_images\workflow_AE\stage_01.png)
+   ![](images\workflow_AE\stage_01.png)
 
 4. Выберите меню **Composition** > **Composition Settings...** или нажмите клавиши **CTRL**+**K**
-![](_images\workflow_AE\stage_02.png)
+   ![](images\workflow_AE\stage_02.png)
 
 5. Проверьте разрешение и частоту кадров композиции.
-![](_images\workflow_AE\stage_03.png)
-> Частота кадров композиции должна совпадать с частотой кадров видеотракта.<br>
-<br>Разрешение композиции должно совпадать с разрешением контейнера в схеме движка Carrot.
-![](_images\workflow_AE\stage_04.png)
+   ![](images\workflow_AE\stage_03.png)
+
+   > Частота кадров композиции должна совпадать с частотой кадров видеотракта.<br> > <br>Разрешение композиции должно совпадать с разрешением контейнера в схеме движка Carrot.
+   > ![](images\workflow_AE\stage_04.png)
 
 6. Удалите из проекта все неиспользуемые элементы. Для этого выберите **File** > **Dependencies** > **Remove Unused Footage**.
-    ![](_images\workflow_AE\stage_07.png)
+   ![](images\workflow_AE\stage_07.png)
 
 ### Указание точек входа и выхода анимации
 
-![](_images/image152.png)
+![](images/image152.png)
 
 Для того, чтобы Carrot распознал отрезки анимации, пользователю требуется выставить маркеры композиции. Композиция должна содержать минимум 3 маркера. Если в других композициях присутствуют какие-либо маркеры, то их следует удалить.
 
 Для того, чтобы добавить маркера:
-1. Переместите ползунок в начало композиции (или анимации) и поставьте первый маркер с помощью клавиши **Numpad «*»** на цифровой клавиатуре или выберите **Layer** > **Markers** > **Add Marker**:
-    ![](_images\workflow_AE\stage_06.png)
 
-2. Щелкните правой кнопкой мыши по добавленному маркеру и выберите **Settings...** 
-    ![](_images\workflow_AE\stage_05.png)
+1. Переместите ползунок в начало композиции (или анимации) и поставьте первый маркер с помощью клавиши **Numpad «\*»** на цифровой клавиатуре или выберите **Layer** > **Markers** > **Add Marker**:
+   ![](images\workflow_AE\stage_06.png)
+
+2. Щелкните правой кнопкой мыши по добавленному маркеру и выберите **Settings...**
+   ![](images\workflow_AE\stage_05.png)
 
 3. В открывшемся окне измените комментарий маркера на `OUT`.
 
-    ![](_images/image9.png)
+   ![](images/image9.png)
 
 4. Переместите ползунок в середину композиции и поставьте следующий маркер.
 
-    ![](_images/image174.png)
+   ![](images/image174.png)
 
 5. Измените комментарий маркера на `IN`
 
-    ![](_images/image7.png)
+   ![](images/image7.png)
 
-    ![](_images/image95.png)
+   ![](images/image95.png)
 
-5. Переместите ползунок в конец композиции и поставьте следующий маркер.
+6. Переместите ползунок в конец композиции и поставьте следующий маркер.
 
-    ![](_images/image177.png)
+   ![](images/image177.png)
 
-6. Измените комментарий маркера на `OUT`.
+7. Измените комментарий маркера на `OUT`.
 
-    ![](_images/image9.png)
+   ![](images/image9.png)
 
 Расположение маркеров будет выглядеть следующим образом:
 
-![](_images/image17.png)
+![](images/image17.png)
 
-Здесь присутствуют два временных промежутка: 
-- `OUT` - `IN` (в движке именуется как `IN`) 
+Здесь присутствуют два временных промежутка:
+
+- `OUT` - `IN` (в движке именуется как `IN`)
 - `IN` - `OUT` (в движке именуется как `OUT`)
 
 Воспроизведение в движке этого шаблона будет выглядеть следующим образом:
+
 - Шаблон не активен, графика не показывается.
 - Шаблон активируется, проигрывается область между маркерами `OUT`-`IN`.
 - Шаблон активен, графика остаётся на позиции маркера `IN` и именуется как `ACTIVE`.
@@ -335,7 +348,7 @@
 ### Указание точек дополнительных анимаций
 
 Композиция также может содержать дополнительные анимации помимо стандартных для входа и выхода. Для них также следует добавить маркеры. Для этого:
-        
+
 1. Переместите ползунок в начало желаемой анимации и добавьте новый маркер.
 2. Измените комментарий маркера.
 3. Переместите ползунок в конец желаемой анимации и добавьте ещё один маркер.
@@ -343,73 +356,84 @@
 
 Пример:
 
-![](_images/image140.png)
+![](images/image140.png)
 
-Здесь присутствуют три временных промежутка: 
-- `OUT` - `IN` (в движке именуется как `IN`) 
-- `IN` - `ANIM` (в движке именуется как `ANIM`) 
-- `ANIM` - `OUT` (в движке именуется как `OUT`) 
+Здесь присутствуют три временных промежутка:
+
+- `OUT` - `IN` (в движке именуется как `IN`)
+- `IN` - `ANIM` (в движке именуется как `ANIM`)
+- `ANIM` - `OUT` (в движке именуется как `OUT`)
 
 Область между маркерами с одинаковыми именами (в примере `ANIM`-`ANIM`) игнорируется в **Carrot Engine** и пропускается при воспроизведении.
 
 ### Дополнительная информация и рекомендации
 
 #### Проект
+
 - Каждый шаблон рекомендуется сохранять в свой отдельный проект **After Effects**.
-    > При экспорте шаблона из **After Effects** информация о всех композициях и контенте в проекте (в том числе неиспользуемых) передаётся и обрабатывается движком Carrot.
+  > При экспорте шаблона из **After Effects** информация о всех композициях и контенте в проекте (в том числе неиспользуемых) передаётся и обрабатывается движком Carrot.
 
 #### Эффекты
+
 Поддерживаемые эффекты из **After Effects** в **Carrot Engine** в режиме реального времени:
-- *Blur & Sharpen* - **Sharpen**
-- *Generate* - **Fill**
-- *Generate* - **Gradient Ramp**
-- *Color Correction* - **Tritone**
-- *Color Correction* - **Tint**
-- *Color Correction* - **Levels**
-- *Color Correction* - **Curves**
-- *Expression Controls* - **3D Point Control**
-- *Expression Controls* - **Angle Control**
-- *Expression Controls* - **Checkbox Control**
-- *Expression Controls* - **Color Control**
-- *Expression Controls* - **Point Control**
-- *Expression Controls* - **Slider Control**
-- *Transition* - *Wipes* - **Linear Wipe**
+
+- _Blur & Sharpen_ - **Sharpen**
+- _Generate_ - **Fill**
+- _Generate_ - **Gradient Ramp**
+- _Color Correction_ - **Tritone**
+- _Color Correction_ - **Tint**
+- _Color Correction_ - **Levels**
+- _Color Correction_ - **Curves**
+- _Expression Controls_ - **3D Point Control**
+- _Expression Controls_ - **Angle Control**
+- _Expression Controls_ - **Checkbox Control**
+- _Expression Controls_ - **Color Control**
+- _Expression Controls_ - **Point Control**
+- _Expression Controls_ - **Slider Control**
+- _Transition_ - _Wipes_ - **Linear Wipe**
 
 #### Композиции и слои
+
 - Ключи анимации должны располагаться по краям кадров.
-    ![](_images\workflow_AE\stage_08.png)
+  ![](images\workflow_AE\stage_08.png)
 - Слои, отмеченные в композиции как `Guide Layer` следует скрыть или удалить перед экспортом.
 - При использовании логики **IF ELSE** внутри выражений, для корректной обработки в **Carrot Engine**, структура должна выглядеть следующим образом:
 
-    ![](_images\workflow_AE\stage_09.png)
+  ![](images\workflow_AE\stage_09.png)
+
 - Все выражения, которые не требуют обработки в реальном времени, рекомендуется конвертировать в ключи анимации перед экспортом.
 
 Поддерживаемые типы слоев в композиции:
+
 - **Null Layer**
 - **Solid Layer**
 - **Shape Layer**, конвертированные в кривые Безье (без операций с контурами)
 - **Text Layer** (без эффектов аниматора)
 - **Media Layer** (MP4, MOV, JPG, PNG, PSD и т.д.)
-    > В целях оптимизации шаблона и проекта PSD/AI слои внутри композиции рекомендуется заменить на Solid Layer, либо на готовое изображение PNG или JPG.
+  > В целях оптимизации шаблона и проекта PSD/AI слои внутри композиции рекомендуется заменить на Solid Layer, либо на готовое изображение PNG или JPG.
 
 Поддерживаемые операции со слоями:
+
 - **Track Matte** (Подложки отслеживания)
 - **Parent Link** к другому слою или его свойствам (Привязка)
 - **Blending Modes** (Режимы наложения)
-- **Masking** (Маски)    
+- **Masking** (Маски)
 - **Expressions** (Выражения)
 
 #### Маски
-- Маска в режиме наложения `None` скрывает отображение слоя в **Carrot Engine**. 
+
+- Маска в режиме наложения `None` скрывает отображение слоя в **Carrot Engine**.
 - Единичную маску в режиме `Intersect` следует поменять на `Add`.
 - Свойство `Mask Feather` по умолчанию в **Carrot Engine** использует бикубический режим сэмплинга.
 
 #### Текст
+
 - **Carrot Engine** считывает свойства текста (шрифта, размер, цвет, интервалы и т.д.) по первому символу и применяет их на все остальные символы.
 - **Carrot Engine** принудительно применяет для кернинга текста тип `Metrics`.
 - Используемые сторонние шрифты рекомендуется устанавливать в систему в формате **OTF**.
 
 #### 3D слои
+
 - **Carrot Engine** считывает систему измерений из After Effects в миллиметрах, т.е. 1000px в **After Effects** = 1000mm в **Carrot Engine**.
 - Для вращения слоя следует использовать свойство **Orientation**.
 
@@ -417,35 +441,37 @@
 
 1. Выберите меню `Composition` - `Export Carrot Template`.
 
-![](_images/image42.png)
+![](images/image42.png)
 
->Примечание: если этот пункт не активен, нажмите на раздел с композициями в нижней части интерфейса **After Effects**.
-2. Появится окно **Template Preview**.
+> Примечание: если этот пункт не активен, нажмите на раздел с композициями в нижней части интерфейса **After Effects**. 2. Появится окно **Template Preview**.
 
-    ![](_images/image30.png)
+    ![](\images/image30.png)
 
 3. Откройте вкладку `Animation` в центральном разделе `Viewport`.
 
-    ![](_images\workflow_AE\stage_10.png)
+   ![](images\workflow_AE\stage_10.png)
 
 4. В поле `Composition` выберите композицию, которая была экспортирована:
-    ![](_images/image151.png)
+   ![](images/image151.png)
 
 Благодаря маркерам здесь появились три стейта:
-- `IN` (соответствует промежутку `OUT`-`IN`) 
-- `ANIM` (соответствует промежутку  `IN`-`ANIM`)
+
+- `IN` (соответствует промежутку `OUT`-`IN`)
+- `ANIM` (соответствует промежутку `IN`-`ANIM`)
 - `OUT` (соответствует промежутку `ANIM`-`OUT`)
 
-    ![](_images/image140.png)
-4. Проверьте правильность воспроизведения анимации:
-    1. Нажмите на название стейта.
-    ![](_images\workflow_AE\stage_11.png)
+  ![](images/image140.png)
 
-    2. Дождитесь завершения проигрывания.
+4. Проверьте правильность воспроизведения анимации:
+
+   1. Нажмите на название стейта.
+      ![](images\workflow_AE\stage_11.png)
+
+   2. Дождитесь завершения проигрывания.
 
 5. Нажмите кнопку `Save Template`.
 
-    ![](_images/image69.png)
+   ![](images/image69.png)
 
 6. В новом окне выберите директорию для сохранения шаблона.
 
@@ -455,56 +481,63 @@
 
 9. В появившемся окне выберите нужную схему движка и укажите соответствующий контейнер.
 
-    ![](_images\workflow_AE\stage_13.png)
+   ![](images\workflow_AE\stage_13.png)
 
 10. Нажмите на кнопку **Save Template**.
 11. Закройте **Template Preview**.
 
 ### Создание переменных
+
 Текстовые или медиа слои могут выступать в качестве оперативно изменяемых параметров шаблона в **Carrot Web Playlist**:
 
-![](_images/image120.png)
-![](_images/image100.png)
+![](images/image120.png)
+![](images/image100.png)
 
 1. Для назначения слоя в качестве переменной выполните следующее:
-    1. Выберите требуемый слой
-    2. Зажмите левую кнопку мыши и перетащите его в раздел **Variables**.
 
-    ![](_images\workflow_AE\stage_14.png)
+   1. Выберите требуемый слой
+   2. Зажмите левую кнопку мыши и перетащите его в раздел **Variables**.
 
-    2. Выберите созданную переменную
-    3. В поле `Name` введите желаемое имя переменной.
+   ![](images\workflow_AE\stage_14.png)
 
-    ![](_images\workflow_AE\stage_12.png)
-    4. В поле `Type` укажите необходимый тип переменной.
+   2. Выберите созданную переменную
+   3. В поле `Name` введите желаемое имя переменной.
+
+   ![](images\workflow_AE\stage_12.png) 4. В поле `Type` укажите необходимый тип переменной.
 
 #### Создание текстовой переменной
-![](_images\workflow_AE\result_01.gif)
+
+![](images\workflow_AE\result_01.gif)
 Для назначения текстового слоя в качестве переменной выполните следующее:
+
 1. Раскройте слой и найдите свойство `Source Text`.
 2. Зажмите левую кнопку мыши и перетащите его в раздел **Variables**.
 
-    ![](_images/image145.png)
-    - В поле `Name` введите желаемое имя переменной.
-    - В поле `Type` укажите тип `Text` или `RichText`.
-    > В случае, если указан тип `RichText`, к содержимому поля `DefaultValue` добавится тег изначального цвета текста:
-    ![](_images/image201.png)
-    ```xml
-     "<font color=\"#000000\">Text Sample</font>"
-    ```
+   ![](images/image145.png)
+
+   - В поле `Name` введите желаемое имя переменной.
+   - В поле `Type` укажите тип `Text` или `RichText`.
+     > В случае, если указан тип `RichText`, к содержимому поля `DefaultValue` добавится тег изначального цвета текста:
+     > ![](images/image201.png)
+
+   ```xml
+    "<font color=\"#000000\">Text Sample</font>"
+   ```
+
 3. Настройте плавность линий, отображающих текст:
-    1. Выберите текстовой слой.
-    ![](_images/image125.png)
-    2. В разделе `Properties` измените параметр `StepCount` на желаемый:
-    ![](_images/image173.png)
+   1. Выберите текстовой слой.
+      ![](images/image125.png)
+   2. В разделе `Properties` измените параметр `StepCount` на желаемый:
+      ![](images/image173.png)
 
 > Примеры значений параметра `StepCount`:<br>
+
     `StepCount` = 1:
-    <br>![](_images/image89.png)<br>
+    <br>![](\images/image89.png)<br>
     `StepCount` = 2:
-    <br>![](_images/image161.png)<br>
+    <br>![](\images/image161.png)<br>
     `StepCount` = 4:
-    <br>![](_images/image107.png)<br>
+    <br>![](\images/image107.png)<br>
     <br>Примечание: чем больше значение параметра `StepCount`, тем больше потребляется ресурсов ГП на отрисовку текста.
 
 ## Подготовка UE4 проекта к экспорту шаблона (старый плагин)
@@ -513,66 +546,66 @@
 
 1. Запустите проект, который необходимо экспортировать, включите плагины `Carrot` и `CarrotEditor` и перезапустите проект:
 
-    ![](_images/image10.png)
+   ![](images/image10.png)
 
 2. В разделе `Project` - `Maps & Modes` - `Default Maps` в параметрах `Editor Startup Map` и `Game Default Map` укажите ту сцену, которую предполагается использовать.
 
-    ![](_images/image143.png)
+   ![](images/image143.png)
 
 3. В настройках проекта в разделе `Engine` - `General Settings` - `Framerate` - `Custom TimeStep` укажите `CarrotCustomTimeStep`:
 
-    ![](_images/image79.png)
+   ![](images/image79.png)
 
 4. В разделе `Engine` - `Rendering` - `Default Settings` - `Anti-Aliasing Method` выбрать `TemporalAA`.
 
-    ![](_images/image141.png)
+   ![](images/image141.png)
 
 5. В настройках проекта в разделе `Engine` - `Rendering` - `Postprocessing` установите параметры, указанные ниже:
 
-    ![](_images/image169.png)
+   ![](images/image169.png)
 
 6. В настройках проекта в разделе `Engine` - `Rendering` - `Default Settings` установите параметр `Frame Buffer Pixel Format` равным `Float RGBA`:
 
-    ![](_images/image106.png)
+   ![](images/image106.png)
 
 7. Добавьте в сцену `Empty Actor` - этот объект будет отвечать за смещения координат, получаемых от **Carrot Tracking Server**.
 
-    ![](_images/image126.png)
+   ![](images/image126.png)
 
 8. Добавьте в сцену `Cine Camera Actor` - этот объект будет выполнять роль виртуальной камеры
 
-    ![](_images/image53.png)
+   ![](images/image53.png)
 
 9. Сделайте `Empty Actor` родительским объектом по отношению к `Cine Camera Actor`
 
-    ![](_images/image32.png)
+   ![](images/image32.png)
 
 10. Откройте свойства `Cine Camera Actor` и в разделе `Current Camera Settings` - `Lens Settings` установите параметр `Min Focal Length` равным 0 мм.
 
-    ![](_images/image76.png)
+    ![](images/image76.png)
 
 11. Выберите компонент `CameraComponent` и добавьте к нему компонент `SceneCaptureComponent2D`.
 
-    ![](_images/image86.png)
+    ![](images/image86.png)
 
 12. Создайте `Render Target` - эта текстура будет использоваться для вывода изображения.
 
-    ![](_images/image66.png)
+    ![](images/image66.png)
 
 13. Настройки данной текстуры приведите в соответствие с указанными ниже:
 
-    ![](_images/image178.png)
+    ![](images/image178.png)
 
-    >Примечание: разрешение текстуры должно совпадать с разрешением вьюпорта, на котором она будет проигрываться (см. 4.3 Создание схемы работы Carrot Engine)
+    > Примечание: разрешение текстуры должно совпадать с разрешением вьюпорта, на котором она будет проигрываться (см. 4.3 Создание схемы работы Carrot Engine)
 
 14. Скопируйте ассет `PostProcMat_Frames.uasset`, `PostProcMat_Alpha.uasset` и `CarrotMacroLibrary.uasset` в папку проекта
 
-    ![](_images/image179.png)
-    ![](_images/image85.png)
+    ![](images/image179.png)
+    ![](images/image85.png)
 
 15. Откройте настройки компонента `SceneCaptureComponent2D` объекта `Cine Camera Actor` и установите параметры:
 
-    ![](_images/image146.png)
+    ![](images/image146.png)
 
     - `Texture Target` - выберите ту `Render Target`, которую Вы создали для вывода изображения.
     - `Primitive Render Mode` - выберите `Render Scene Primitives`.
@@ -582,45 +615,45 @@
     - `Always Persist Rendering State` - включено.
     - `Temporal AA` - включено.
 
-        ![](_images/image148.png)
+      ![](images/image148.png)
 
 16. В разделе `Post Process Volume` - `Rendering Features` добавьте элементы и укажите пути на ассеты `PostProcMat_Alpha` и `PostProcMat_Frames` которые былы скопированы с плагином `Carrot`.
 
-    ![](_images/image60.png)
+    ![](images/image60.png)
 
 17. Если планируется завести изображение внутрь проекта, то создайте еще одну `Render Target` - эта текстура будет использоваться для ввода изображения. Таких текстур может быть несколько.
 
-    ![](_images/image66.png)
+    ![](images/image66.png)
 
 18. Настройки данной текстуры приведите в соответствие с указанными ниже:
 
-    ![](_images/image59.png)
+    ![](images/image59.png)
 
-    >Примечание: разрешение текстуры должно квадратным и кратным степени двойки (например, 256х256, 512х512, 2048х2048), а также близким с разрешением вьюпорта, с которого будет забираться изображение (см. 4.3 Создание схемы работы Carrot Engine)
+    > Примечание: разрешение текстуры должно квадратным и кратным степени двойки (например, 256х256, 512х512, 2048х2048), а также близким с разрешением вьюпорта, с которого будет забираться изображение (см. 4.3 Создание схемы работы Carrot Engine)
     >
-    >![](_images/image111.png)
+    > ![](images/image111.png)
     >
-    >Если четкости входящей текстуры недостаточно - поставить `NoMipmaps`. В остальных случаях следует выбирать `Sharpen`.
+    > Если четкости входящей текстуры недостаточно - поставить `NoMipmaps`. В остальных случаях следует выбирать `Sharpen`.
 
 19. Создайте материал, который будет использовать созданную `Render Target`:
 
-    ![](_images/image24.png)
+    ![](images/image24.png)
 
 20. Откройте настройки материала и задайте ему созданную текстуру:
 
-    ![](_images/image21.png)
+    ![](images/image21.png)
 
 21. Примените созданный материал на объект, на котором планируется отображать входящее изображение:
 
-    ![](_images/image171.png)
+    ![](images/image171.png)
 
 22. Откройте `Level Blueprint` и добавьте `Carrot Macro`.
 
-    ![](_images/image52.png)
+    ![](images/image52.png)
 
 23. Во входных параметрах `Carrot Macro` укажите:
 
-    ![](_images/image33.png)
+    ![](images/image33.png)
 
     - `Event BeginPlay`
     - `Event Tick`
@@ -628,24 +661,24 @@
     - Объект `Empty Actor`, который является родительским по отношению к `Cine Camera Actor`.
     - `Input Render Target 2D` - указывается текстура, которая используется для ввода изображения.
     - `Output Render Target 2D` - указывается текстура, которая используется для вывода изображения.
-    
+
     Если используется несколько текстур для входящих изображений, раскройте макрос:
 
-    ![](_images/image149.png)
+    ![](images/image149.png)
 
     Необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
 
     Причем первая текстура указывается в макросе, а последующие указываются в копиях ноды:
 
-    ![](_images/image101.png)
+    ![](images/image101.png)
 
     Если подобные текстуры вообще не используются, необходимо исключить ноду `Carrot Receiver` из процесса:
 
-    ![](_images/image147.png)
+    ![](images/image147.png)
 
 24. Используйте выходные пины `Begin Play Out` и `Event Tick Out`, если ивенты `Begin Play` и `Event Tick` будут использоваться после `Carrot Macro`:
 
-    ![](_images/image33.png)
+    ![](images/image33.png)
 
 25. Если проигрывание шаблона проекта подразумевает использование команд, то:
     - Создайте ноду `Switch on String` и соедините её с Carrot Macro, как показано на рисунке выше.
@@ -655,7 +688,7 @@
 
 26. В разделе `Editor` - `General` - `Performance` выключите параметр `Use Less CPU when in Background`.
 
-    ![](_images/image183.png)
+    ![](images/image183.png)
 
 ## Подготовка UE4 проекта к экспорту шаблона (новый плагин)
 
@@ -671,238 +704,238 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 2. В разделе `Editor` - `General` - `Performance` выключите параметр `Use Less CPU when in Background`.
 
-    ![](_images/image183.png)
+   ![](images/image183.png)
 
-3. В разделе `Project` - `Engine` - `General Settings` в параметре `Game Viewport Client Class`  выберите `CarrotViewportClient`.
+3. В разделе `Project` - `Engine` - `General Settings` в параметре `Game Viewport Client Class` выберите `CarrotViewportClient`.
 
-    ![](_images/image184.png)
+   ![](images/image184.png)
 
 4. Запустите проект, который необходимо экспортировать, включите плагины `Carrot` и `CarrotEditor` и перезапустите проект:
 
-    ![](_images/image10.png)
+   ![](images/image10.png)
 
-2. В разделе `Project` - `Maps & Modes` - `Default Maps` в параметрах `Editor Startup Map` и `Game Default Map` укажите ту сцену, которую предполагается использовать.
+5. В разделе `Project` - `Maps & Modes` - `Default Maps` в параметрах `Editor Startup Map` и `Game Default Map` укажите ту сцену, которую предполагается использовать.
 
-    ![](_images/image143.png)
+   ![](images/image143.png)
 
-3. В настройках проекта в разделе `Engine` - `General Settings` - `Framerate` укажите:
+6. В настройках проекта в разделе `Engine` - `General Settings` - `Framerate` укажите:
+
 - в поле `Custom TimeStep` укажите `CarrotCustomTimeStep`
 
-    ![](_images/image79.png)
+  ![](images/image79.png)
 
 4. Если в проекте используются анимации
 
-4. В разделе `Engine` - `Rendering` - `Default Settings` - `Anti-Aliasing Method` выбрать `TemporalAA`.
+5. В разделе `Engine` - `Rendering` - `Default Settings` - `Anti-Aliasing Method` выбрать `TemporalAA`.
 
-    ![](_images/image141.png)
+   ![](images/image141.png)
 
-5. В настройках проекта в разделе `Engine` - `Rendering` - `Postprocessing` установите параметры, указанные ниже:
+6. В настройках проекта в разделе `Engine` - `Rendering` - `Postprocessing` установите параметры, указанные ниже:
 
-    ![](_images/image169.png)
+   ![](images/image169.png)
 
-6. В настройках проекта в разделе `Engine` - `Rendering` - `Default Settings` установите параметр `Frame Buffer Pixel Format` равным `8bit RGBA`:
+7. В настройках проекта в разделе `Engine` - `Rendering` - `Default Settings` установите параметр `Frame Buffer Pixel Format` равным `8bit RGBA`:
 
-    ![](_images/image186.png)
+   ![](images/image186.png)
 
-7. Добавьте в сцену `Empty Actor` - этот объект будет отвечать за смещения координат, получаемых от **Carrot Tracking Server**.
+8. Добавьте в сцену `Empty Actor` - этот объект будет отвечать за смещения координат, получаемых от **Carrot Tracking Server**.
 
-    ![](_images/image126.png)
+   ![](images/image126.png)
 
-8. Добавьте в сцену `Cine Camera Actor` - этот объект будет выполнять роль виртуальной камеры
+9. Добавьте в сцену `Cine Camera Actor` - этот объект будет выполнять роль виртуальной камеры
 
-    ![](_images/image53.png)
+   ![](images/image53.png)
 
-9. Сделайте `Empty Actor` родительским объектом по отношению к `Cine Camera Actor`
+10. Сделайте `Empty Actor` родительским объектом по отношению к `Cine Camera Actor`
 
-    ![](_images/image32.png)
+    ![](images/image32.png)
 
-10. Откройте свойства `Cine Camera Actor` и в разделе `Current Camera Settings` - `Lens Settings` установите параметр `Min Focal Length` равным 0 мм.
+11. Откройте свойства `Cine Camera Actor` и в разделе `Current Camera Settings` - `Lens Settings` установите параметр `Min Focal Length` равным 0 мм.
 
-    ![](_images/image190.png)
+    ![](images/image190.png)
 
-11. Добавьте в сцену `Post Process Volume`
+12. Добавьте в сцену `Post Process Volume`
 
-    ![](_images/image189.png)
+    ![](images/image189.png)
 
-12. Скопируйте ассет `PostProcMat_Frames.uasset`, `PostProcMat_Alpha.uasset` и `CarrotMacroLibrary.uasset` в папку проекта
+13. Скопируйте ассет `PostProcMat_Frames.uasset`, `PostProcMat_Alpha.uasset` и `CarrotMacroLibrary.uasset` в папку проекта
 
-13. В `Post Process Volume` - `Rendering Features` добавьте элементы и укажите пути на ассеты `PostProcMat_Alpha` и `PostProcMat_Frames` которые былы скопированы с плагином `Carrot`.
+14. В `Post Process Volume` - `Rendering Features` добавьте элементы и укажите пути на ассеты `PostProcMat_Alpha` и `PostProcMat_Frames` которые былы скопированы с плагином `Carrot`.
 
-    ![](_images/image187.png)
+    ![](images/image187.png)
 
-14. Также активируйте параметр `Infinite Extent (Unbound)`.
+15. Также активируйте параметр `Infinite Extent (Unbound)`.
 
-    ![](_images/image188.png)
+    ![](images/image188.png)
 
-15. Если планируется завести изображение внутрь проекта, то создайте еще одну `Render Target` - эта текстура будет использоваться для ввода изображения. Таких текстур может быть несколько.
+16. Если планируется завести изображение внутрь проекта, то создайте еще одну `Render Target` - эта текстура будет использоваться для ввода изображения. Таких текстур может быть несколько.
 
-    ![](_images/image66.png)
+    ![](images/image66.png)
 
-16. Настройки данной текстуры приведите в соответствие с указанными ниже:
+17. Настройки данной текстуры приведите в соответствие с указанными ниже:
 
-    ![](_images/image59.png)
+    ![](images/image59.png)
 
-    >Примечание: разрешение текстуры должно быть квадратным и кратным степени двойки (например, 256х256, 512х512, 2048х2048), а также близким с разрешением вьюпорта, с которого будет забираться изображение (см. 4.3 Создание схемы работы Carrot Engine)
+    > Примечание: разрешение текстуры должно быть квадратным и кратным степени двойки (например, 256х256, 512х512, 2048х2048), а также близким с разрешением вьюпорта, с которого будет забираться изображение (см. 4.3 Создание схемы работы Carrot Engine)
     >
-    >![](_images/image111.png)
+    > ![](images/image111.png)
     >
-    >Если четкости входящей текстуры недостаточно - поставить `NoMipmaps`. В остальных случаях следует выбирать `Sharpen`.
+    > Если четкости входящей текстуры недостаточно - поставить `NoMipmaps`. В остальных случаях следует выбирать `Sharpen`.
 
-17. Создайте материал, который будет использовать созданную `Render Target`:
+18. Создайте материал, который будет использовать созданную `Render Target`:
 
-    ![](_images/image24.png)
+    ![](images/image24.png)
 
-18. Откройте настройки материала и задайте ему созданную текстуру:
+19. Откройте настройки материала и задайте ему созданную текстуру:
 
-    ![](_images/image21.png)
+    ![](images/image21.png)
 
-19. Примените созданный материал на объект, на котором планируется отображать входящее изображение:
+20. Примените созданный материал на объект, на котором планируется отображать входящее изображение:
 
-    ![](_images/image171.png)
+    ![](images/image171.png)
 
-20. Откройте `Level Blueprint` и добавьте `Carrot Macro`.
+21. Откройте `Level Blueprint` и добавьте `Carrot Macro`.
 
-    ![](_images/image52.png)
+    ![](images/image52.png)
 
-21. Во входных параметрах `Carrot Macro` укажите:
+22. Во входных параметрах `Carrot Macro` укажите:
 
-    ![](_images/image194.png)
+    ![](images/image194.png)
 
     - `Event BeginPlay`
     - `Event Tick`
     - Объект `Cine Camera Actor`, используемый в качестве виртуальной камеры.
     - Объект `Empty Actor`, который является родительским по отношению к `Cine Camera Actor`.
-    
+
     К выводу макроса `Event Tick Out` (или `Begin Play Out` **при использовании нового типа синхронизации**) добавьте ноду `Carrot Receiver` и укажите в ней текстуру:
 
-    ![](_images/image203.png)
+    ![](images/image203.png)
 
     Если используется несколько текстур, необходимо скопировать ноду `Carrot Receiver` столько раз, сколько будет использоваться таких текстур.
 
-    ![](_images/image202.png)
+    ![](images/image202.png)
 
     Если подобные текстуры вообще не используются, необходимо исключить ноду `Carrot Receiver` из процесса:
 
-    ![](_images/image204.png)
+    ![](images/image204.png)
 
-22. Используйте выходные пины `Begin Play Out` и `Event Tick Out`, если ивенты `Begin Play` и `Event Tick` будут использоваться после `Carrot Macro`:
+23. Используйте выходные пины `Begin Play Out` и `Event Tick Out`, если ивенты `Begin Play` и `Event Tick` будут использоваться после `Carrot Macro`:
 
-    ![](_images/image194.png)
+    ![](images/image194.png)
 
-23. Если проигрывание шаблона проекта подразумевает использование команд, то:
+24. Если проигрывание шаблона проекта подразумевает использование команд, то:
+
     - Создайте ноду `Switch on String` и соедините её с Carrot Macro.
     - Каждый выходной пин ноды `Switch on String` будет соответствовать команде, которую можно будет отправлять с `Carrot Playlist`.
 
-    ![](_images/image196.png)
+    ![](images/image196.png)
 
 Соедините выходные пины ноды `Switch on String` с теми событиями, которые должны выполниться при вызове команды, чьё имя соответствует имени пина.
 
-
-
-## AR с использованием UE4 
+## AR с использованием UE4
 
 Отобразить в реальной студии объекты дополненной реальности
 
-1. Подготовка схемы для работы с AR:
+1.  Подготовка схемы для работы с AR:
 
-    `System monitor` - `Engine` - `Add Engine` - `Введите имя схемы` - `Ok`
+        `System monitor` - `Engine` - `Add Engine` - `Введите имя схемы` - `Ok`
 
-    ![](_images/ar01.png)
+        ![](\images/ar01.png)
 
-    Выберите схему и нажмите `Add Workstation` и добавьте сервер на котором будет запущена схема
+        Выберите схему и нажмите `Add Workstation` и добавьте сервер на котором будет запущена схема
 
-    ![](_images/ar02.png)
+        ![](\images/ar02.png)
 
-    После этого нажмите `Edit Scheme` откроется окно `Flowchart`
+        После этого нажмите `Edit Scheme` откроется окно `Flowchart`
 
-    ![](_images/ar03.png)
+        ![](\images/ar03.png)
 
-    Перетащите используемые вами ноды входного и выходного сигнал.
-Добавьте контейнер для шаблона UE4 правой клавишей мыши.
-Добавьте ПКМ ноду `AR` и подсоедините контейнер UE4 в `Foreground`, ноду с входящим видеосигналом в `Background`. Коннектор video подсоедините к ноде выходного видео сигнала, схема должна выглядеть как показано на скриншоте.
+        Перетащите используемые вами ноды входного и выходного сигнал.
 
-2. Подготовка проекта UE4 для работы с AR
+    Добавьте контейнер для шаблона UE4 правой клавишей мыши.
+    Добавьте ПКМ ноду `AR` и подсоедините контейнер UE4 в `Foreground`, ноду с входящим видеосигналом в `Background`. Коннектор video подсоедините к ноде выходного видео сигнала, схема должна выглядеть как показано на скриншоте.
+
+2.  Подготовка проекта UE4 для работы с AR
 
     Изначальная настройка проекта UE4 описана в пункте `Подготовка UE4 проекта к экспорту шаблона (новый плагин)`
 
     В `Project settings` - `Rendering` отключите `Ambient Occlusion` , `Auto Exposure` (`Motion Blur` если это необходимо) как показано на скриншоте
 
- ![](_images/ar04.png)
+![](images/ar04.png)
 
 Если Вам необходимы `Ambient Occlusion` в проекте используйте локальный `PostProccesVolume` с отключенной функцией `infiniti extent`.
 
 `Carrot Engine` работает с `AR` на основе метода наложения `Screen\Add` по серому цвету. Мы рекомендуем создать все объекты для работы с AR в отдельном sublevel и вложить его в основной level проекта.
 
 Нам необходимо создать следующие типы объектов:
+
 - Серая циклорама
 - Захватчик отражений и теней
 
 `Серая циклорама` представляет из себя объект заполняющий весь видимый объем сцены это может быть куб, сфера либо заранее подготовленная модель с наложенным МАТЕРИАЛОМ(Пример настроек материала приведен на скриншоте).
 
-![](_images/ar05.png)
+![](images/ar05.png)
 
 Пример объекта дополненной реальности в созданной циклораме
-    
-![](_images/ar06.png)
+
+![](images/ar06.png)
 
 3. Настройка Carrot Engine при работе с AR
 
-    Экспорт шаблона происходит так же как описано в пункте `Экспорт шаблона из проекта UE4`
+   Экспорт шаблона происходит так же как описано в пункте `Экспорт шаблона из проекта UE4`
 
-    Чтобы открыть панель настроек `Carrot AR`: 
-    `Carrot Engine` - `Tools` - `Show Content Settings`
+   Чтобы открыть панель настроек `Carrot AR`:
+   `Carrot Engine` - `Tools` - `Show Content Settings`
 
-    ![](_images/ar07.png)
+   ![](images/ar07.png)
 
-    Откроется окно настроек AR
+   Откроется окно настроек AR
 
-    ![](_images/ar08.png)
+   ![](images/ar08.png)
 
-    В разделе `Gamma Correction` - `AR bg Color` нажмите на кнопку `Pick`, если серый цвет циклорамы выбран правильно значения `RGB Gamma` должны быть максимально близки к `1.000` как показано на скриншоте выше.
+   В разделе `Gamma Correction` - `AR bg Color` нажмите на кнопку `Pick`, если серый цвет циклорамы выбран правильно значения `RGB Gamma` должны быть максимально близки к `1.000` как показано на скриншоте выше.
 
 4. Получение отражений и теней с объектов дополненной реальности
 
-    В UE4 необходимо необходимо создать `захватчик отражений и теней` представляет из себя 3D объект c наложенным МАТЕРИАЛОМ(Пример настроек материала приведен на скриншоте).
+   В UE4 необходимо необходимо создать `захватчик отражений и теней` представляет из себя 3D объект c наложенным МАТЕРИАЛОМ(Пример настроек материала приведен на скриншоте).
 
-    ![](_images/ar09.png)
+   ![](images/ar09.png)
 
-    Параметрами `Metallic` и `Roughness` подбираем степень отражения объекта и видимость тени.
+   Параметрами `Metallic` и `Roughness` подбираем степень отражения объекта и видимость тени.
 
-    В параметре `Base Color` подбираем серый цвет чтобы он соответствовал цвету циклорамы в зависимости от освещения в сцене результат должен выглядеть как на скриншоте
+   В параметре `Base Color` подбираем серый цвет чтобы он соответствовал цвету циклорамы в зависимости от освещения в сцене результат должен выглядеть как на скриншоте
 
-    ![](_images/ar10.jpeg)
+   ![](images/ar10.jpeg)
 
-    Возможно использование всех видов отражений `SSR`, `Planar Reflections`, `RayTracing Reflections`.
+   Возможно использование всех видов отражений `SSR`, `Planar Reflections`, `RayTracing Reflections`.
 
-    ![](_images/ar11.png)
+   ![](images/ar11.png)
 
-    В настройках `Carrot Engine` поставьте галочки `Enable` в разделах `Shadows` и `Highlights`.
+   В настройках `Carrot Engine` поставьте галочки `Enable` в разделах `Shadows` и `Highlights`.
 
-    Для получения наилучших результатов используйте ползунки `levels` а также параметрами `Metallic` и `Roughness` в материале захватчика.
+   Для получения наилучших результатов используйте ползунки `levels` а также параметрами `Metallic` и `Roughness` в материале захватчика.
 
 5. Дополнительная информация по настройкам сцен AR
 
-    - Используйте `skylight` c `серой cubemap` как показано на скриншоте, чтобы избежать артефактов связанных с освещением
+   - Используйте `skylight` c `серой cubemap` как показано на скриншоте, чтобы избежать артефактов связанных с освещением
 
-    ![](_images/ar12.jpeg)
+   ![](images/ar12.jpeg)
 
-    - Используйте `Sphere Reflection Capture` работающей на всю сцену c `серой cubemap` как показано на скриншоте, чтобы избежать артефактов связанных отражениями. И локальные `Reflection Capture` которые работают локально на AR объекты.
+   - Используйте `Sphere Reflection Capture` работающей на всю сцену c `серой cubemap` как показано на скриншоте, чтобы избежать артефактов связанных отражениями. И локальные `Reflection Capture` которые работают локально на AR объекты.
 
-    ![](_images/ar13.jpeg)
+   ![](images/ar13.jpeg)
 
-    - Убедитесь что у Вас отключен эффект `Vignette` в камере которую использует Carrot и в `PostProcessVolume` он приводит к артефактам по краям кадра как показано на скриншоте.
+   - Убедитесь что у Вас отключен эффект `Vignette` в камере которую использует Carrot и в `PostProcessVolume` он приводит к артефактам по краям кадра как показано на скриншоте.
 
-    ![](_images/ar14.jpeg)
+   ![](images/ar14.jpeg)
 
-    - На всех объектах находящиеся на сцене должен быть включен `Render CustomDepth Pass` c параметром `CustomDepth Stencil Value` `255` как показано на скриншоте, иначе объекты будут полупрозрачными.
+   - На всех объектах находящиеся на сцене должен быть включен `Render CustomDepth Pass` c параметром `CustomDepth Stencil Value` `255` как показано на скриншоте, иначе объекты будут полупрозрачными.
 
-    ![](_images/ar15.jpeg)
+   ![](images/ar15.jpeg)
 
-    - Для работа с полупрозрачными объектами (стеклянными) мы советуем не использовать сложные шейдеры в материалах, а использовать `CustomDepth Stencil Value` для получения нужной прозрачности объекта.
+   - Для работа с полупрозрачными объектами (стеклянными) мы советуем не использовать сложные шейдеры в материалах, а использовать `CustomDepth Stencil Value` для получения нужной прозрачности объекта.
 
-    - Нельзя использовать цветокор в `PostProcessVolume` это приводит к возникновению цветовых артефактов. Цветокора ue4 сцены осуществляется через `Carrot Engine` вкладка `BG`
-
-
+   - Нельзя использовать цветокор в `PostProcessVolume` это приводит к возникновению цветовых артефактов. Цветокора ue4 сцены осуществляется через `Carrot Engine` вкладка `BG`
 
 ## Экспорт шаблона из проекта UE4
 
@@ -910,100 +943,103 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 1. Нажмите кнопку `Export Carrot` (расположена на верхней панели):
 
-    ![](_images/image35.png)
+   ![](images/image35.png)
 
 2. Откроется окно `Carrot Objects`:
 
-    ![](_images/image160.png)
+   ![](images/image160.png)
 
-    В данном окне будут отображаться только те объекты проекта, которые будут использоваться для интеграции с **ПО Carrot**:
+   В данном окне будут отображаться только те объекты проекта, которые будут использоваться для интеграции с **ПО Carrot**:
 
-    - Текстуры для входных изображений;
-    - Текстура выходного изображения;
-    - Список команд.
+   - Текстуры для входных изображений;
+   - Текстура выходного изображения;
+   - Список команд.
 
 3. Выберите режим сохранения шаблона:
 
-    ![](_images/image195.png)
+   ![](images/image195.png)
 
-    `Unreal Editor` - сохранится только шаблон проекта. Данный режим используется, когда запуск проекта происходит посредством `Unreal Editor`.
-    `Already Packed Project` - указывается путь к уже собранному проекту.  Происходит его упаковка и сохранение в **Carrot Server** вместе с шаблоном. Данный режим используется, когда нужен запуск собранного проекта.
+   `Unreal Editor` - сохранится только шаблон проекта. Данный режим используется, когда запуск проекта происходит посредством `Unreal Editor`.
+   `Already Packed Project` - указывается путь к уже собранному проекту. Происходит его упаковка и сохранение в **Carrot Server** вместе с шаблоном. Данный режим используется, когда нужен запуск собранного проекта.
 
 4. Нажмите кнопку сохранения и выберите директорию сохранения:
 
-    ![](_images/image77.png)
+   ![](images/image77.png)
 
 5. В поле `Name` введите желаемое имя шаблона и нажмите `Save Template`.
 
 6. Закройте окно `Carrot Objects`:
 
-    ![](_images/image88.png)
+   ![](images/image88.png)
 
-    > Примечание:
-    >
-    > - при запуске собранного проекта его окно должно быть развернуто;
-    > - при запуске сцены из-под `UE Editor` окно сцены должно быть развернуто, а окно `UE Editor` должно быть свернуто.
+   > Примечание:
+   >
+   > - при запуске собранного проекта его окно должно быть развернуто;
+   > - при запуске сцены из-под `UE Editor` окно сцены должно быть развернуто, а окно `UE Editor` должно быть свернуто.
 
 ## Создание плейлиста
 
 Для проигрывания экспортированных шаблонов необходимо создать плейлист, с которого будут отправляться команды на их проигрывание.
 
 Для этого:
+
 1. Запустите `Carrot Web Playlist` зайдите через браузер на страницу управления плейлистами.
 2. Выберите пункт `Editor`
 
-    ![](_images/image44.png)
+   ![](images/image44.png)
 
 3. Нажмите кнопку `NEW`.
-    Откроется вкладка создания нового плейлиста.
+   Откроется вкладка создания нового плейлиста.
 
-    В разделе `Enter Playlist Name` введите имя будущего плейлиста.
+   В разделе `Enter Playlist Name` введите имя будущего плейлиста.
 
-    Нажмите `OK`.
+   Нажмите `OK`.
 
-    ![](_images/image84.png)
+   ![](images/image84.png)
 
 4. Окно `Editor` состоит из трех областей
-    - Область настройки плейлиста (выделена красным) служит для настройки очередности событий в плейлисте
-    - Область `Templates` (выделена зеленым) тут хранятся загруженные на сервер шаблоны
-    - Область `Properties` (выделена синим) служит для настройки поведения конкретного шаблона в плейлисте.
 
-    ![](_images/image20.png)
+   - Область настройки плейлиста (выделена красным) служит для настройки очередности событий в плейлисте
+   - Область `Templates` (выделена зеленым) тут хранятся загруженные на сервер шаблоны
+   - Область `Properties` (выделена синим) служит для настройки поведения конкретного шаблона в плейлисте.
+
+   ![](images/image20.png)
 
 5. Заполнение плейлиста:
-    - Плейлист заполняет перетягиваем мышки (Drug and Drop) шаблона из области `Templates` в область плейлиста.
+
+   - Плейлист заполняет перетягиваем мышки (Drug and Drop) шаблона из области `Templates` в область плейлиста.
 
 6. Меню редактирования плейлиста
 
-    ![](_images/image56.png)
+   ![](images/image56.png)
 
-    - `Add store` - добавляет новую пустую историю в плейлист
-    - `Group` - группирует шаблоны в плейлисте
-    - `Rename story` - переименовывает выбранную историю
-    - `Remove item` - удаляет выбранный шаблон из истории
-    - `Remove story` - удаляет историю с находящимися внутри шаблонами
+   - `Add store` - добавляет новую пустую историю в плейлист
+   - `Group` - группирует шаблоны в плейлисте
+   - `Rename story` - переименовывает выбранную историю
+   - `Remove item` - удаляет выбранный шаблон из истории
+   - `Remove story` - удаляет историю с находящимися внутри шаблонами
 
 7. Раздел `Properties`
 
-    ![](_images/image83.png)
+   ![](images/image83.png)
 
-    `Name` - имя шаблона которое будет отображаться в плейлисте.
-    `Template name` - имя шаблона задается при сохранении на сервер.
-    `State` - стейт с которого будет воспроизводиться шаблон.
-    `Новость\Улица` - Текстовое параметрическое поле задается при создании шаблона.
-    `Back\Face` - `Media input` для отображения в шаблоне медиаданных (фото, видео файлов а так же захват изображения с карты захвата)
-    поля задаются при создании шаблона.
+   `Name` - имя шаблона которое будет отображаться в плейлисте.
+   `Template name` - имя шаблона задается при сохранении на сервер.
+   `State` - стейт с которого будет воспроизводиться шаблон.
+   `Новость\Улица` - Текстовое параметрическое поле задается при создании шаблона.
+   `Back\Face` - `Media input` для отображения в шаблоне медиаданных (фото, видео файлов а так же захват изображения с карты захвата)
+   поля задаются при создании шаблона.
 
-    Окно для указания `media inputs` в шаблоне:
+   Окно для указания `media inputs` в шаблоне:
 
-    ![](_images/image50.png)
+   ![](images/image50.png)
 
-    - `Media Assets Library` - библиотека загруженных медиа файлов
-    - `Inputs` - Вход для видео потока (Карта захвата, WebRTC, другие шаблоны)
+   - `Media Assets Library` - библиотека загруженных медиа файлов
+   - `Inputs` - Вход для видео потока (Карта захвата, WebRTC, другие шаблоны)
 
 ## Проигрывание плейлиста
 
-![](_images/image133.png)
+![](images/image133.png)
 
 - `Load` - загружает выбранное события в плейлисте.
 - `Load all` - загружает все события в плейлисте.
@@ -1015,21 +1051,21 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 Выберите интересующий вас шаблон ЛКМ его фон станет серым, как показано на скриншоте:
 
-![](_images/image64.png)
+![](images/image64.png)
 
 Перед воспроизведение его надо загрузить в оперативную память это можно сделать кнопкой `Load` либо `ПРОБЕЛ` с клавиатуры (если вам нужно загрузить весь `playlist` можно воспользоваться кнопкой `load all`).
 
 После того как шаблон был загружен цвет его теста станет черным, а `Status` измениться на `Ready`, как показано на скриншоте:
 
-![](_images/image29.png)
+![](images/image29.png)
 
 Теперь данный шаблон можно воспроизвести с помощью кнопки `IN` либо `ПРОБЕЛ` с клавиатуры, цвет строки станет зеленым, а `Status` измениться на `Active`, как показано на скриншоте:
 
-![](_images/image122.png)
+![](images/image122.png)
 
 Чтобы завершить воспроизведение (либо проиграть выходной стейт)
 
-нажмите клавишу `OUT`, как только воспроизведение закончиться  `Status` измениться на `Ready` и зеленая подсветка отключиться.
+нажмите клавишу `OUT`, как только воспроизведение закончиться `Status` измениться на `Ready` и зеленая подсветка отключиться.
 
 Шаблоны находящиеся в `Status Active` не подлежат редактированию!!!
 
@@ -1043,7 +1079,7 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 В меню редактирования плейлиста выберите `Add Special Event`
 
-![](_images/image205.png)
+![](images/image205.png)
 
 ### Типы специальных событий
 
@@ -1060,7 +1096,7 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 #### 1. `ApplySettingsToContent`
 
-![](_images/image206.png)
+![](images/image206.png)
 
 `Содержимое команды`:
 
@@ -1114,11 +1150,11 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
 Откройте меню `Carrot Engine` - `Delays` - `Show Delays Form`
 
-![](_images/image16.png)
+![](images/image16.png)
 
 Откроется форма настройки задержек
 
-![](_images/image108.png)
+![](images/image108.png)
 
 - `Input Delay Offset` - покадровая задержка входящего видео потока
 - `Tracking Delay` - покадровая задержка данных из трекинг системы

@@ -15,3 +15,10 @@ nav.app-nav li ul {
     --sidebar-name-background: ;
     --sidebar-name-color: ;
 }
+
+/* Overriding default library styles */
+
+.search .clear-button.show {
+    display: flex !important;
+    align-items: center;
+}
