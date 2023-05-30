@@ -25,7 +25,7 @@ nav.app-nav li ul {
     --theme-saturation: 100%;
     --theme-lightness : 44%;
 
-    --cover-background-image: radial-gradient(ellipse at center center, rgba(255, 255, 255, 0.4), transparent);
+    --cover-background-image: radial-gradient(50% ellipse at center center, rgba(255, 255, 255, 0.4), transparent);
     --base-background-color: #2c2c2c;
     --base-color: #A3A3A3;
     --mark-background: #FFFFFF;
@@ -38,4 +38,8 @@ nav.app-nav li ul {
 .search .clear-button.show {
     display: flex !important;
     align-items: center;
+}
+
+body .sidebar {
+    font-size: 14px;
 }
