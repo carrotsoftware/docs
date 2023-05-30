@@ -20,7 +20,7 @@ function versionedDocsPlugin(hook, vm) {
     //getting repo name
     var repoName = vm.compiler.contentBase.split("/")[1]; // part 1 is "carrot-documentation", part 2 is version folder name
 
-    window.location.href = "/" + repoName + version + newPath;
+    window.location.href = "/" + repoName + "/" + version + newPath;
     vm.basePath = "/" + version + newPath;
   }
 
