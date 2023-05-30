@@ -123,8 +123,8 @@ window.$docsify.plugins = [].concat(
 
 (function () {
   if (
-    window.location.pathname === "/" ||
-    window.location.pathname === "/index.html"
+    window.location.pathname.split("/")[1] === "/" ||
+    window.location.pathname[1] === "/index.html"
   ) {
     var defaultVersion = window.$docsify.versions.find((v) => v.default).folder;
     window.location.replace("/" + defaultVersion + "/");
