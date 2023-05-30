@@ -40,7 +40,7 @@ function versionedDocsPlugin(hook, vm) {
 
     // Adding event listener
     var versionPath =
-      (window.location.pathname && window.location.pathname.split("/")[1]) ||
+      (window.location.pathname && window.location.pathname.split("/")[2]) || // part 1 is "carrot-documentation", part 2 is version folder name
       defaultVersion;
     selector.querySelector("select").value = versionPath;
     selector.querySelector("select").addEventListener("change", function () {
