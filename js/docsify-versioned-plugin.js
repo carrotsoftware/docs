@@ -128,7 +128,7 @@ window.$docsify.plugins = [].concat(
     window.location.pathname.split("/")[2] === "#"
   ) {
     var defaultVersion = window.$docsify.versions.find((v) => v.default).folder;
-    var repoName = vm.compiler.contentBase.split("/")[1]; // part 1 is "carrot-documentation", part 2 is version folder name
+    var repoName = window.location.pathname.split("/")[1]; // part 1 is "carrot-documentation", part 2 is version folder name
 
     window.location.replace("/" + repoName + "/" + defaultVersion + "/");
   }
