@@ -1,17 +1,12 @@
 // List of Carrot Carrot versions
 const docsifyVersions = [
-  { folder: "3333", label: "rev 3333", default: true },
-  { folder: "1111", label: "rev 1111", default: false },
+  { folder: "3333", label: "rev 3333", default: false },
+  { folder: "3334", label: "rev 3334", default: true },
 ];
 
 // init docsify object
 window.$docsify = {
   name: "Carrot",
-
-  coverpage: true,
-  coverpage: "_coverpage.md",
-  onlyCover: false,
-
   loadSidebar: true,
   relativePath: true,
   maxLevel: 4,
@@ -23,15 +18,9 @@ window.$docsify = {
   versionSelectorLabel: "Version",
 
   search: {
-    noData: {
-      "/eng/": "No results!",
-      "/": "Никаких результатов!",
-    },
+    noData: "Нет результатов!",
     paths: "auto",
-    placeholder: {
-      "/eng/": "Search",
-      "/": "Поиск",
-    },
+    placeholder: "Поиск",
     hideOtherSidebarContent: true,
   },
 
@@ -43,8 +32,8 @@ window.$docsify = {
   },
 
   themeable: {
-    readyTransition: true, // default
-    responsiveTables: true, // default
+    readyTransition: true,
+    responsiveTables: true,
   },
 };
 
