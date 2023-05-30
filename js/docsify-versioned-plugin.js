@@ -17,7 +17,10 @@ function versionedDocsPlugin(hook, vm) {
     if (newPath === "" || newPath === "README.md") {
       newPath = "/";
     }
-    window.location.href = "/" + version + newPath;
+    //getting repo name
+    var repoName = vm.compiler.contentBase.split("/")[1]; // part 1 is "carrot-documentation", part 2 is version folder name
+
+    window.location.href = "/" + repoName + version + newPath;
     vm.basePath = "/" + version + newPath;
   }
 
