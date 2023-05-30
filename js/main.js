@@ -1,16 +1,25 @@
+// List of Carrot Carrot versions
+const docsifyVersions = [
+  { folder: "3333", label: "rev 3333", default: true },
+  { folder: "1111", label: "rev 1111", default: false },
+];
+
+// init docsify object
 window.$docsify = {
   name: "Carrot",
+
+  coverpage: true,
+  coverpage: "_coverpage.md",
+  onlyCover: false,
+
   loadSidebar: true,
+  relativePath: true,
   maxLevel: 4,
-  subMaxLevel: 3,
+  subMaxLevel: 2,
   loadNavbar: true,
   mergeNavbar: false,
 
-  versions: [
-    { folder: "3333", label: "rev 3333", default: true },
-    { folder: "2222", label: "rev 2222", default: false },
-    { folder: "1111", label: "rev 1111", default: false },
-  ],
+  versions: docsifyVersions,
   versionSelectorLabel: "Version",
 
   search: {
@@ -23,11 +32,29 @@ window.$docsify = {
       "/eng/": "Search",
       "/": "Поиск",
     },
-    hideOtherSidebarContent: false,
+    hideOtherSidebarContent: true,
   },
-  plugins: [
-    EditOnGithubPlugin.create(
-      "https://github.com/dmkrupin/carrot-documentation/blob/main/"
-    ),
-  ],
+
+  pagination: {
+    previousText: "Previous",
+    nextText: "Next",
+    crossChapter: true,
+    crossChapterText: true,
+  },
+
+  themeable: {
+    readyTransition: true, // default
+    responsiveTables: true, // default
+  },
 };
+
+// limit search by version
+(function () {
+  // Get the current version from the URL
+  const versionFolder = window.location.pathname.split("/")[1];
+
+  // Set the search configuration based on the current version
+  window.$docsify.search = {
+    namespace: "docs-" + versionFolder, // Set a unique namespace for each version
+  };
+})();
