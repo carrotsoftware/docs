@@ -7,19 +7,19 @@
 > Для наилучшего результата рекомендуется использовать \***\* , при работе в режиме Interlace могут возникнуть проблемы при работе с **DeNoise\*\*.
 
 _Входной сигнал_:
-![](images\example_keyer\original.png)
+![](..\images\example_keyer\original.png)
 _Изначальный вид_
-![](images\example_keyer\default.png)
+![](..\images\example_keyer\default.png)
 _Итоговый вид_
-![](images\example_keyer\stage_11.png)
+![](..\images\example_keyer\stage_11.png)
 
 1. Откройте Carrot Engine.
 2. Выберите **Tools > Contents Settings > Keyer Settings** или нажмите клавишу **F7**, чтобы открыть все доступные окна настроек.
-   <br>![](images\example_keyer\screen_01.png)
+   <br>![](..\images\example_keyer\screen_01.png)
 
 > Для удобства настройки рекомендуется перейти в режим отображения **Mode > MultiView**, чтобы наблюдать за изменениями на всех этапах кеинга.
 
-![](images\example_keyer\stage_01.png)
+![](..\images\example_keyer\stage_01.png)
 
 - Foreground - отображение переднего плана.
 - DeNoise - отображение Foreground с шумоподавлением.
@@ -34,7 +34,7 @@ _Итоговый вид_
 - Environment Light -
 
 В правом нижнем углу для удобства расположены вектороскоп и гистограмма.
-![](images\example_keyer\stage_02.png)
+![](..\images\example_keyer\stage_02.png)
 
 > Для наилучшего результата значения вектороскопа должны доходить до середины линии **_G_** или **_B_** в зависимости от цвета хромакея.<br> > <br>Для наилучшего качества гистограмма должна быть максимально ровной, растянутой по всей границе и без пиков по краям.<br> > <br>Нажатием **ЛКМ** или **ПКМ** по гистограмме можно посмотреть отдельно информацию по каждому цветовому каналу.
 
@@ -54,12 +54,12 @@ _Итоговый вид_
 Выставите значение `Threshold` в `0` и понемногу увеличивайте до требуемого результата. По необходимости скорректируйте параметр `Radius`.
 
 Результат:
-![](images\example_keyer\stage_03.png)
+![](..\images\example_keyer\stage_03.png)
 
 > Чтобы вернуть настройки по умолчанию, нажмите **ПКМ** по области стрелок нужного счетчика.
 
 Режим _Final Result_:
-![](images\example_keyer\stage_04.png)
+![](..\images\example_keyer\stage_04.png)
 
 ### **DeSpill**
 
@@ -79,7 +79,7 @@ _Итоговый вид_
   > Для наилучшего результата _DeSpill_ должен соответствовать по оттенкам и яркости изображению на _Background_.
 
 Результат:
-![](images\example_keyer\stage_05.png)
+![](..\images\example_keyer\stage_05.png)
 
 ### **Screen Restoration**
 
@@ -92,11 +92,11 @@ _Итоговый вид_
 
 Результат:<br>
 _Inner Mask_
-![](images\example_keyer\stage_06.png)
+![](..\images\example_keyer\stage_06.png)
 _Alpha Mask_
-![](images\example_keyer\stage_07.png)
+![](..\images\example_keyer\stage_07.png)
 _Screen Restoration_
-![](images\example_keyer\stage_08.png)
+![](..\images\example_keyer\stage_08.png)
 
 ### **Alpha Mask**
 
@@ -114,7 +114,7 @@ _Screen Restoration_
 > Если видно мерцание кея, то его можно уменьшить через правки `Threshold` и `Radius` вкладки **Denoise.**
 
 _Final Result_
-![](images\example_keyer\stage_09.png)
+![](..\images\example_keyer\stage_09.png)
 
 ### **Shadows** & **Highlights**
 
@@ -133,10 +133,10 @@ _Final Result_
 > Для наилучшего результатас помощью Light Levels нужно оставлять только те элементы, которые действительно в реальности могут давать засвет на края объекта.
 
 _Environment Light_
-![](images\example_keyer\stage_10.png)
+![](..\images\example_keyer\stage_10.png)
 
 _Environment Overlay_
-![](images\example_keyer\stage_12.png)
+![](..\images\example_keyer\stage_12.png)
 
 Итоговый результат:
-![](images\example_keyer\stage_11.png)
+![](..\images\example_keyer\stage_11.png)

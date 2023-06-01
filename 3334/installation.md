@@ -22,9 +22,9 @@
 Для установки **Carrot AE Plugin** необходимо выполнить следующее:
 
 1. Скопируйте папку `AEGP` в директорию `C:/Program Files/Adobe/Common/Plug-ins/7.0/MediaCore`;
-   <br/> ![AEGP path](images/image129.png)
+   <br/> ![AEGP path](../images/image129.png)
 1. Запустите **InitSettings** в папке `Carrot/Bin` от имени администратора.
-   <br/> ![run admin](images/image54.png)
+   <br/> ![run admin](../images/image54.png)
 
 ## Установка Carrot UE4 Plugin
 
@@ -33,7 +33,7 @@
 Для установки **Carrot UE4 Plugin** необходимо выполнить следующее:
 
 - Скопируйте папку **CarrotEditor** в директорию `C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\VirtualProduction`
-  <br/> ![UE Plugin](images/image78.png)
+  <br/> ![UE Plugin](../images/image78.png)
 
 ### Установка Carrot UE4 Plugin в проект
 
@@ -43,4 +43,4 @@
 
 - Создайте в корне проекта папку `Plugins` и скопируйте в неё папку `Carrot`
   В директорию с проектом `Unreal Projects\UE_car_NTV\plugins\Carrot`
-  <br/> ![UE Plugin](images/image150.png)
+  <br/> ![UE Plugin](../images/image150.png)
