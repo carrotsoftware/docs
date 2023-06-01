@@ -2,7 +2,8 @@
 const docsifyVersions = [
   { folder: "3333", label: "rev 3333", default: false },
   { folder: "3334", label: "rev 3334", default: false },
-  { folder: "3335", label: "rev 3335", default: true },
+  { folder: "3335", label: "rev 3335", default: false },
+  { folder: "3336", label: "rev 3336", default: true },
 ];
 
 // init docsify object
