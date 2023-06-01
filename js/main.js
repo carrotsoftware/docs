@@ -11,8 +11,6 @@ window.$docsify = {
   relativePath: true,
   maxLevel: 4,
   subMaxLevel: 2,
-  loadNavbar: true,
-  mergeNavbar: false,
 
   versions: docsifyVersions,
   versionSelectorLabel: "Version",
@@ -25,8 +23,8 @@ window.$docsify = {
   },
 
   pagination: {
-    previousText: "Previous",
-    nextText: "Next",
+    previousText: "Предыдущий раздел",
+    nextText: "Следующий раздел",
     crossChapter: true,
     crossChapterText: true,
   },
