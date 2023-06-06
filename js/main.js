@@ -1,10 +1,5 @@
 // List of Carrot Carrot versions
-const docsifyVersions = [
-  { folder: "3333", label: "rev 3333", default: false },
-  { folder: "3334", label: "rev 3334", default: false },
-  { folder: "3335", label: "rev 3335", default: false },
-  { folder: "3336", label: "rev 3336", default: true },
-];
+const docsifyVersions = [{ folder: "3336", label: "rev 4062", default: true }];
 
 // init docsify object
 window.$docsify = {

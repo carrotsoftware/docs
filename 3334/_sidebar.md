@@ -1,6 +1,0 @@
-﻿- [Перечень необходимого ПО](thirdparty.md)
-- [Установка компонентов](installation.md)
-- [Первоначальная настройка](settings.md)
-- [Работа с Carrot](workflow.md)
-- [Примеры работы](examples.md)
-- [Устранение неполадок](troubleshooting.md)
