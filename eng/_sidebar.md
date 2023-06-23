@@ -1,6 +1,0 @@
-﻿- [Prerequisites](thirdparty.md)
-- [Components installation](installation.md)
-- [Initial setup](settings.md)
-- [Workflow](workflow.md)
-- [Examples](examples.md)
-- [Troubleshooting](troubleshooting.md)
