@@ -8,3 +8,4 @@
 1. [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/ru-RU/download/details.aspx?id=56116)
 1. [Microsoft .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 1. [.NET Core Hosting Bundle](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)
+1. Драйвер для видеокарт NVIDIA должен быть в редакции `Studio`.
