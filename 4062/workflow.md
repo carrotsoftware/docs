@@ -270,7 +270,7 @@
 
 ![](..\images\image45.png)
 
-## **Подготовка проекта в After Effects для экспорта в Carrot**
+## Настройка AE проекта для Carrot
 
 ### Настройки композиции
 
@@ -905,7 +905,7 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
    В параметре `Base Color` подбираем серый цвет чтобы он соответствовал цвету циклорамы в зависимости от освещения в сцене результат должен выглядеть как на скриншоте
 
-   ![ar10](../images/ar10.png)
+   ![ar10](../images/ar10.jpeg)
 
    Возможно использование всех видов отражений `SSR`, `Planar Reflections`, `RayTracing Reflections`.
 
@@ -919,19 +919,19 @@ GameViewportClientClassName=/Script/Carrot.CarrotViewportClient
 
    - Используйте `skylight` c `серой cubemap` как показано на скриншоте, чтобы избежать артефактов связанных с освещением
 
-   ![ar12](../images/ar12.png)
+   ![ar12](../images/ar12.jpeg)
 
    - Используйте `Sphere Reflection Capture` работающей на всю сцену c `серой cubemap` как показано на скриншоте, чтобы избежать артефактов связанных отражениями. И локальные `Reflection Capture` которые работают локально на AR объекты.
 
-   ![ar13](../images/ar13.png)
+   ![ar13](../images/ar13.jpeg)
 
    - Убедитесь что у Вас отключен эффект `Vignette` в камере которую использует Carrot и в `PostProcessVolume` он приводит к артефактам по краям кадра как показано на скриншоте.
 
-   ![ar14](../images/ar14.png)
+   ![ar14](../images/ar14.jpeg)
 
    - На всех объектах находящиеся на сцене должен быть включен `Render CustomDepth Pass` c параметром `CustomDepth Stencil Value` `255` как показано на скриншоте, иначе объекты будут полупрозрачными.
 
-   ![ar15](../images/ar15.png)
+   ![ar15](../images/ar15.jpeg)
 
    - Для работа с полупрозрачными объектами (стеклянными) мы советуем не использовать сложные шейдеры в материалах, а использовать `CustomDepth Stencil Value` для получения нужной прозрачности объекта.
 
