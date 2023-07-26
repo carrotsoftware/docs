@@ -87,7 +87,7 @@
 | Ready    | <span style="color:blue">Голубой</span>     | Событие с шаблоном загружено и готово к работе.   |
 | Active   | <span style="color:green">Зеленый</span>    | Событие с шаблоном активировано.                  |
 
-> Процесс наполнения и редактирования событий в плейлисте описан в пункте [Создание плейлиста](https://carrotsoftware.github.io/docs/#/workflow?id=%d0%a1%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bf%d0%bb%d0%b5%d0%b9%d0%bb%d0%b8%d1%81%d1%82%d0%b0).
+> Процесс наполнения и редактирования событий в плейлисте описан в пункте [Создание плейлиста](https://carrotsoftware.github.io/docs/4062/#/workflow?id=%d0%a1%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bf%d0%bb%d0%b5%d0%b9%d0%bb%d0%b8%d1%81%d1%82%d0%b0).
 
 ## Создание и экспорт самоподписанного сертификата Windows
 
@@ -103,7 +103,7 @@
 1. Введите в консоль **PowerShell**  
    `Export-PfxCertificate -FilePath $certpath -Cert cert:\localmachine\My\$thumbprint -Password $mypwd`.
 1. Для импорта сертификата на текущем компьютере введите команду `Import-PfxCertificate -FilePath  $certpath -Password $mypwd -CertStoreLocation cert:\LocalMachine\Root`
-   > Процесс импорта самоподписанного сертификата на других компьютерах описан в пункте [Импорт самоподписаного сертификата](https://carrotsoftware.github.io/docs/#/settings?id=%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0).
+   > Процесс импорта самоподписанного сертификата на других компьютерах описан в пункте [Импорт самоподписаного сертификата](https://carrotsoftware.github.io/docs/4062/#/settings?id=%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0).
 
 ## Импорт самоподписанного сертификата
 
@@ -512,7 +512,7 @@
 
   - `Workstation Registration` - регистрация рабочей станции.
 
-  > Вид и описание окна с его настройками изложены в разделе [Настройка и регистрация рабочей станции](https://carrotsoftware.github.io/docs/#/workflow?id=%d0%9d%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b9-%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d0%b8).
+  > Вид и описание окна с его настройками изложены в разделе [Настройка и регистрация рабочей станции](https://carrotsoftware.github.io/docs/4062/#/workflow?id=%d0%9d%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b9-%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d0%b8).
 
 - Меню `Help`
 
@@ -603,7 +603,7 @@
   - `Properties` - Свойства выбранной ноды.
   - `Save` - Сохранение изменений в схеме.
 
-  > Подробное описание и настройка схемы описаны в разделе [Создание схемы работы Carrot Engine](https://carrotsoftware.github.io/docs/#/workflow?id=%d0%a1%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d1%85%d0%b5%d0%bc%d1%8b-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-carrot-engine).
+  > Подробное описание и настройка схемы описаны в разделе [Создание схемы работы Carrot Engine](https://carrotsoftware.github.io/docs/4062/#/workflow?id=%d0%a1%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d1%85%d0%b5%d0%bc%d1%8b-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-carrot-engine).
 
 При выборе любой схемы в правой половине окна отображаются свойства выбранного плейлиста:
 
@@ -724,7 +724,7 @@
 
         ![](..\images\image48.png)
 
-4.  Плагин готов к работе. Процесс экспорта шаблона из **AE** подробно описан в пункте [Экспорт шаблона из проекта АЕ](https://carrotsoftware.github.io/docs/#/workflow?id=%d0%ad%d0%ba%d1%81%d0%bf%d0%be%d1%80%d1%82-%d1%88%d0%b0%d0%b1%d0%bb%d0%be%d0%bd%d0%b0-%d0%b8%d0%b7-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%b0-ae).
+4.  Плагин готов к работе. Процесс экспорта шаблона из **AE** подробно описан в пункте [Экспорт шаблона из проекта АЕ](https://carrotsoftware.github.io/docs/4062/#/workflow?id=%d0%ad%d0%ba%d1%81%d0%bf%d0%be%d1%80%d1%82-%d1%88%d0%b0%d0%b1%d0%bb%d0%be%d0%bd%d0%b0-%d0%b8%d0%b7-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%b0-ae).
 
 ## Настройка Carrot UE4 Plugin
 
