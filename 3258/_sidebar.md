@@ -4,3 +4,4 @@
 - [Работа с After Effects](ae_templates.md)
 - [Работа с Unreal Engine](ue_templates.md)
 - [Устранение неполадок](troubleshooting.md)
+- [Список изменений rev.3198 => rev.3258](updates.md)
