@@ -10,8 +10,9 @@
 
 ## Оглавление
 
-1. [Перечень необходимого стороннего программного обеспечения](thirdparty.md)
-1. [Первоначальная настройка компонентов ПО Carrot](settings.md)
-1. [Работа с ПО Carrot](workflow.md)
-1. [Устранение неполадок](troubleshooting.md)
-
+- [Перечень необходимого ПО](thirdparty.md)
+- [Первоначальная настройка](settings.md)
+- [Работа с Carrot](workflow.md)
+- [Работа с After Effects](ae_templates.md)
+- [Работа с Unreal Engine](ue_templates.md)
+- [Устранение неполадок](troubleshooting.md)
