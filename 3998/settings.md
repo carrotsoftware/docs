@@ -111,15 +111,12 @@
   - `Original Assets` - путь к директории, в которой хранятся медиа файлы. 
 - Вкладка `Delays`
   - `Input Delay` - задержка видео на входе по умолчанию.
-  - `Secondary Delay` - 
+  - `Secondary Delay` - задержка для изображения `Secondary Video` в `BmdTrackedInput`.
   - `Tracking Delay` - задержка данных с трекинг системы.
   - `AE Delay` - задержка АЕ шаблонов.
   - `Keyer Delay` - задержка трекинг данных от Keyer.
   - `Audio Delay, ms` - задержка по звуку в милисекундах.
   - `XR Delay` - задержка XR шаблонов.
-  - `UE Draw Delay` - 
-  - `Max UE Draw Delay Buffer` - 
-  - `Lock UE Draw Delay To Input Delay` - 
 - Вкладка `Input`
   - `GPIO Enabled` - включить GPIO.
   - `MIDI Enabled` - включить MIDI.
@@ -141,10 +138,9 @@
   - `Use Video GPU Decoder` - декодирование видео через видеокарту.
   - `Foreground` - возвращает фокус на Carrot Engine каждые 10 секунд.
   - `Keyer` - тип Keyer'а: `JabKeyer` или `GreenKeyer`.
-  - `Print Debug Info` - 
   - `Use GPU Memory` - использовать видеопамять для работы с PNG-секвенциями.
-  - `UE Senders In Resource Thread` - 
-  - `Enable Scripts Thread` - 
+  - `UE Senders In Resource Thread` - обработка в ресурсном потоке изображений, отправляемых в UE (изначально они обрабатываются в рендер потоке, что сказывается на ЦП, но гарантирует показ нового кадра видео в текущем кадре рендера).
+  - `Enable Scripts Thread` - обработка скриптов и выражений АЕ в параллельном потоке (изначально они обрабатываются в рендер потоке, что сказывается на ЦП, но гарантирует выполнение скрипта в текущем кадре рендера).
 - Вкладка `Recording`
   - `Allow Recording` - включить / выключить возможность записывать изображение в Carrot Engine.
   - `Recording Directory` - путь к директории, где будут храниться записанные файлы.
@@ -152,8 +148,9 @@
   - `Recording Bitrate` - битрейт записи, кбит/с.
   - `MaxBitrate` - максимальный битрейт записи, кбит/с.
 - Вкладка `Tracking`
-  - `Use Tracking Interpolation` - 
-  - `Restore Buffer Count` - 
+  - `Use Tracking Interpolation` - аналог Use Delta MS, но здесь сохраняется выставление задержек в кадрах.
+  - `Restore Buffer Count` - автоматически сбрасывает буфер трекинга (Reset) когда трекинг статичен.
+  >*Если используется `Use Delta MS`, то настройка `Use Tracking Interpolation` и `Restore Buffer Count` не нужна*.
 - Вкладка `Videowall`
   - `Override` - разворачивает окно Carrot Engine не на полный экран, а на определенные координаты.
   - `X` - позиция X окна.
@@ -193,7 +190,7 @@
 
 3. В графе `App Config`
 - `Hosts` укажите порт для подключения. Например, *:8088 - где 8088 указывает на порт подключения.
-- `Session Timeout` 
+- `Session Timeout` время бездействия пользователя, после которого происходит дисконнект (секунды).
 
 4. В графе `Assets`
 - `Resend Assests` повторно отправляет ассеты с сервера веб-плейлиста на сервер Carrot DB (может иметь значение False только для локального хоста).
