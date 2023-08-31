@@ -237,7 +237,7 @@
 ---
 ---
 
-## Работа с UE Export Template
+## Работа с Template Preview
 
 ### Полезная информация
 
