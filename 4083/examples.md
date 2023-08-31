@@ -216,3 +216,15 @@
 4. Экспортируем шаблон.
 
 ![DataStream_Call Back](..\images\DataStream\image_022.gif "Call Back")
+
+## Работа с Template Preview
+
+### Полезная информация
+
+#### OverlapIndex в UE Template
+
+Если у двух стейтов одного шаблона `Overlap Index` > 0 и они одинаковые, то первое событие при включении второго перейдет из состояния `Active` в состояние `Ready`.
+
+Если у стейтов `Overlap Index` > 0 и они разные - включение второго события оставит первое не тронутым.
+
+![TemplatePreview_OverlapIndex](..\images\4062\image_061.jpg "Template Preview - OverlapIndex")
