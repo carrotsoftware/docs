@@ -15,6 +15,6 @@
 - [Работа с Carrot](workflow.md)
 - [Работа с After Effects](ae_templates.md)
 - [Работа с Unreal Engine](ue_templates.md)
-- [Примеры работ](examples.md)
+- [Дополнительные возможности Carrot](examples.md)
 - [Устранение неполадок](troubleshooting.md)
 - [Список изменений rev.4083 => rev.4147](updates.md)
