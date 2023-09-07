@@ -165,6 +165,9 @@
   - `Recording FPS` - количество кадров в секунду при записи.
   - `Recording Bitrate` - битрейт записи, кбит/с.
   - `MaxBitrate` - максимальный битрейт записи, кбит/с.
+- Вкладка `Render`
+  - `Initial Render Target Width` - инициализация ширины рендер таргета.
+  - `Initial Render Target Height` - инициализация высоты рендер таргета.
 - Вкладка `Tracking`
   - `Use Tracking Interpolation` - аналог Use Delta MS, но здесь сохраняется выставление задержек в кадрах.
   - `Restore Buffer Count` - автоматически сбрасывает буфер трекинга (Reset) когда трекинг статичен.
