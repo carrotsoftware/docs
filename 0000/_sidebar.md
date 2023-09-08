@@ -5,4 +5,4 @@
 - [Работа с Unreal Engine](ue_templates.md)
 - [Дополнительные возможности Carrot](examples.md)
 - [Устранение неполадок](troubleshooting.md)
-- [Список изменений rev.4170 => rev.4226](updates.md)
+- [Список изменений rev.0000 => rev.0000](updates.md)
