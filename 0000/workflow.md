@@ -261,10 +261,28 @@
 
 ![Settings_Carrot Dashboard_Playlist](..\images\3189\image_031.jpg "Carrot Dashboard - Playlist")
 
+#### 5.4.1. Force Load
+
+В настройках **WebPlaylist Server** есть возможность включить отображение дополнительной кнопки `Force Load` (*по правому клику на выбранный эвент*).
+
+![Carrot WebPlaylist_Force Load](..\images\4062\image_062.jpg "Carrot WebPlaylist - Force Load")
+
+При нажатии на кнопку происходит принудительное повторное скачивание ассетов шаблона и эвента с сервера, даже если ассеты уже были загружены локально.
+
+![Carrot WebPlaylist_Force Load](..\images\4062\image_063.jpg "Carrot WebPlaylist - Force Load")
+
+Данная функция необходима для случаев, когда локальный файл оказался испорчен.
+
+Если же файл испорчен уже на сервере, то его перезапись происходит при пересохранении шаблона в **TemplatePreview**, либо при перезаливе ассетов во вкладке `Browser`-`Media` в вэбе.
+
+---
+
 Раздел `Editor`.
 
 - Кнопка `New` - создать новый плейлист.
 - Кнопка `Open` - открыть существующий плейлист.
+
+---
 
 Раздел `Browser`.
 
@@ -277,6 +295,41 @@
   - `Active Playlists` - показать все активные плейлисты на сервере.
 
 > Отображение списка важная функция позволяющая отслеживать рабочие плейлисты, тем самым отключая их для снижения нагрузки на рабочую станцию.
+
+---
+
+Раздел `System Monitor`.
+
+В настройках **WebPlaylist Server** необходимо поставить параметр `Enable System Monitor Page` в положение `True`.
+
+Для отображения имени CarrotServer его также необходимо указать в настройках CarrotServer (поле Server Name)
+
+![Carrot WebPlaylist_System Monitor](..\images\4062\image_064.jpg "Carrot WebPlaylist - System Monitor")
+
+Сама страница содержит две вкладки:
+- Media Servers - информация о машинах, где запущены Carrot Server
+- Render Stations - информация о машинах, где запущены Carrot Engine
+
+![Carrot WebPlaylist_System Monitor](..\images\4062\image_065.jpg "Carrot WebPlaylist - System Monitor")
+
+- Регион `Hardware` - наличие/отсутсвие рейда, общяя заполненность дисков, оперативной памяти и загрузка ЦП.
+- Регион `Network` - инфомация о сетевых картах.
+- Регион `Storage` - более детальная информация о дисках в отдельности.
+- Регион `Connected Applications` - информация о подключенных приложениях к **CarrotServer**, где в поле `Name` указан объект взаимодействия (*для **Carrot Engine** - имя схемы, для **Web Playlist** - имя открытого плейлиста, для **Template Preview** - имя открытого шаблона*)
+- Регион `Connected Users` - отображение авторизованных подключений с указанием времени и адреса.
+
+![Carrot WebPlaylist_System Monitor](..\images\4062\image_066.jpg "Carrot WebPlaylist - System Monitor")
+
+Регион GPU - отображение информации о состянии видеокарты
+
+Регион Carrot Engine - отображение информации о каждом запущенном на машине Carrot Engine. 
+В регионе Carrot Engine указана версия ПО, тип лицензии, имя запущенной схемы, частота кадров, тип синхронизации, загрузка ЦП общая и по потокам (рендера, обработки ресурсов и скриптов) и составляющие времени кадра (сейчас указан только ProcessTime)
+
+Также в Carrot Engine есть информация об устройствах ввода и вывода, используемых в схемах (имя, тип и размеры буферов (реальный/выставленный в настройках))
+
+Если серверы находятся в режиме репликации, это тоже будет отображено.
+
+![Carrot WebPlaylist_System Monitor](..\images\4062\image_067.jpg "Carrot WebPlaylist - System Monitor")
 
 ---
 
