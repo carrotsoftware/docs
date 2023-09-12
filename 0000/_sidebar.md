@@ -1,6 +1,7 @@
 ﻿- [Перечень необходимого ПО](thirdparty.md)
 - [Первоначальная настройка](settings.md)
 - [Работа с Carrot](workflow.md)
+- [Работа с Carrot Engine](engine.md)
 - [Работа с After Effects](ae_templates.md)
 - [Работа с Unreal Engine](ue_templates.md)
 - [Дополнительные возможности Carrot](examples.md)
