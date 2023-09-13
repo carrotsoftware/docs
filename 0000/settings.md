@@ -49,12 +49,16 @@
 
 3. Настройки **Carrot Server** имеют 8 разделов: 
 
-- Раздел `Common`:
+Раздел `Common`:
+
 >`Server Name` - отображаемое имя сервера в **WebPlaylist System Monitor**.
 
 ![Settings_Carrot Server_Common](..\images\4062\image_071.jpg "Carrot Server - Settings - Common")
 
-- Раздел `Data Base`:
+---
+
+Раздел `Data Base`:
+
 >`Directory` - директория, в которой хранится база данных **Carrot Server**. (*Примечание: данное поле лучше не редактировать*)
 >
 >`Unique Template names` - использовать уникальные имена шаблонов в базе данных.
@@ -67,29 +71,40 @@
 
 ![Settings_Carrot Server_Data Base](..\images\4062\image_072.jpg "Carrot Server - Settings - Data Base")
 
-- Раздел `Digital Assets`:
+---
+
+Раздел `Digital Assets`:
+
 >`Directory` - директория в которой хранятся медиа файлы, экспортируемые вместе с шаблонами, а также задаваемые через **Carrot Playlist**. (*Примечание: данное поле лучше не редактировать*)
 >
 >`Copy Assets` - если `True`, ассеты будут скопированы в каталог сервера. Если `False`, он будет использовать только путь с ассетами.
 
 ![Settings_Carrot Server_Digital Assets](..\images\4062\image_073.jpg "Carrot Server - Settings - Digital Assets")
 
-- Раздел `GPIO`:
+---
+
+Раздел `GPIO`:
 >`Keep UE Event Active Status` - при `True` нажатие на событие из плейлиста вызывает один и тот же стейт.
 
 ![Settings_Carrot Server_GPIO](..\images\4062\image_074.jpg "Carrot Server - Settings - GPIO")
 
-- Раздел `III Protocol Commands`:
+---
+
+Раздел `III Protocol Commands`:
 >`Use STOP` - если используется интеграция по протоколу `III`, то мы можем игнорить команду `STOP`, воспринимая только команду `PLAY`. Это нужно для разного поведения проигрывания плейлиста извне.
 
 ![Settings_Carrot Server_III Protocol Commands](..\images\4062\image_075.jpg "Carrot Server - Settings - III Protocol Commands")
 
-- Раздел `Licence`:
+---
+
+Раздел `Licence`:
 >`Licence Key` - поле для внесения лицензионного ключа **Carrot**. Подробнее о поле можно узнать в `Шаг 1. Подключение лицензионного ключа Carrot`.
 
 ![Settings_Carrot Server_Licence](..\images\4062\image_076.jpg "Carrot Server - Settings - Licence")
 
-- Раздел `Replication`:
+---
+
+Раздел `Replication`:
 >`Replication Hosts` - IP-адреса резервных серверов на которые реплицируется база данных **Carrot Server**.
 >- 192.168.1.1 (единичный сервер); 
 >- 192.168.1.1`,`192.168.1.2`,`192.168.1.3 (множество серверов записываются через запятую).
@@ -100,7 +115,9 @@
 
 ![Settings_Carrot Server_Replication](..\images\4062\image_077.jpg "Carrot Server - Settings - Replication")
 
-- Раздел `WebSocket`:
+---
+
+Раздел `WebSocket`:
 >`Certificate` - путь к файлу сертификата **.pfx**, если предполагается использование шифрованного соединения.
 >
 >`Certificate Password` - пароль к файлу сертификата **.pfx**.
@@ -108,6 +125,8 @@
 >`Secure Connection` - установите `True`, если предполагается использование шифрованного соединения.
 
 ![Settings_Carrot Server_Replication](..\images\4062\image_078.jpg "Carrot Server - Settings - Replication")
+
+---
 
 4. Нажмите кнопку `Save` и закройте окно настроек.
 
@@ -161,7 +180,8 @@
 2. Запустите **Carrot Launcher**.
 
 >Если **Carrot Server** не был запущен, либо **Carrot Launcher** не смог установить с ним соединение, то на рабочем столе появится окно с ошибкой.
-![Settings_Carrot Launcher_Settings](..\images\3189\image_002.png "Carrot Launcher - Settings")
+>
+>![Settings_Carrot Launcher_Settings](..\images\3189\image_002.png "Carrot Launcher - Settings")
 >
 >При нажатии на кнопку `Отмена` **Carrot Launcher** завершит работу.
 >
@@ -169,71 +189,162 @@
 
 ![Settings_Carrot Launcher_Settings](..\images\3998\image_003.jpg "Carrot Launcher - Settings")
 
-- Вкладка `Assets`
-  - `Additional Assets` - путь к директории, в которой хранятся медиа файлы.
-  - `Original Assets` - путь к директории, в которой хранятся медиа файлы. 
-- Вкладка `Delays`
-  - `Input Delay` - задержка видео на входе по умолчанию.
-  - `Secondary Delay` - задержка для изображения `Secondary Video` в `BmdTrackedInput`.
-  - `Tracking Delay` - задержка данных с трекинг системы.
-  - `AE Delay` - задержка АЕ шаблонов.
-  - `Keyer Delay` - задержка трекинг данных от Keyer.
-  - `Audio Delay, ms` - задержка по звуку в милисекундах.
-  - `XR Delay` - задержка XR шаблонов.
-- Вкладка `Events`
-  - `Unloading Event Type` - характер выгрузки событий из оперативной памяти.
-    - Если `Unloading Event Type` равен `Manual` - событие будет выгружаться только по команде из плейлиста.
-    - Если `Unloading Event Type` равен `Immediately` - событие будет выгружаться сразу после того как оно проигралось.
-  - `Unload Timer` - интервал времени, через который будет запущена проверка на наличие ассетов, которые можно выгрузить (*если `Unloading Event Type` равен `AfterTimer`*).
-  - `Unload After N Events` - количество позиций после текущего проигрываемого события, при достижении которого произойдёт выгрузка события. Например, при выставленном значении 3, событие в прейлисте на 7-й позиции будет выгружено, когда начнёт играться событие на 10-й позиции. (*если `Unloading Event Type` равен `EventsPlayedAfter`*).
-- Вкладка `Input`
-  - `GPIO Enabled` - включить GPIO.
-  - `MIDI Enabled` - включить MIDI.
-  - `Macro Enabled` - включить Macro (StreamDeck).
-- Вкладка `Launch`
-  - `Folder Path` - `Registry` - использование файлов из папки инициализированной через **Init Settings**.
-  - `Folder Path` - `Local` - использование файлов из папки в которой был запущен **Carrot Launcher**.
-- Вкладка `Licence`
-  - `Licence Key` - лицензионный ключ Carrot. Для работы в демо-версии введите значение `0`.
-- Вкладка `Network`
-  - `Silent` - режим подключения без отображения сообщений об ошибках.
-  - `Server Host` - имя или IP адрес хоста сервера.
-  - `Secure` - режим защищенного подключения.
-  - `Reserve Server Host` - имя или IP адрес резервного сервера.
-- Вкладка `Processing`
-  - `Watermark Filepath` - путь к файлу для водяного знака.
-  - `Video threads count` - количество логических процессоров для обработки видеофайлов, `по умолчанию = 6`.
-  - `Dedicated Processing` - обработка видео в выделенных логических процессорах.
-  - `Use Video Buffer` - если это поле включено (`True`) то в режиме `Dedicated Processing` будут использоваться заранее подготовленные буферы кадров, позволяющие проигрывать видео с нулевого кадра без задержек и проседания производительности.
-  - `Use Video GPU Decoder` - декодирование видео через видеокарту.
-  - `Foreground` - возвращает фокус на Carrot Engine каждые 10 секунд.
-  - `Keyer` - тип Keyer'а: `JabKeyer` или `GreenKeyer`.
-  - `Use GPU Memory` - использовать видеопамять для работы с PNG-секвенциями.
-  - `UE Senders In Resource Thread` - обработка в ресурсном потоке изображений, отправляемых в UE (изначально они обрабатываются в рендер потоке, что сказывается на ЦП, но гарантирует показ нового кадра видео в текущем кадре рендера).
-  - `Enable Scripts Thread` - обработка скриптов и выражений АЕ в параллельном потоке (изначально они обрабатываются в рендер потоке, что сказывается на ЦП, но гарантирует выполнение скрипта в текущем кадре рендера).
-  - `Upload Contexts Count` - указывает количество входов и выходов.
-  - `Frames Ahead Play Count` - количество кадров, которое необходимо учитывать заранее, чтобы воспроизвести событие. Задержка на выходе суммируется отдельно.
-- Вкладка `Recording`
-  - `Allow Recording` - включить / выключить возможность записывать изображение в Carrot Engine.
-  - `Recording Directory` - путь к директории, где будут храниться записанные файлы.
-  - `Recording FPS` - количество кадров в секунду при записи.
-  - `Recording Bitrate` - битрейт записи, кбит/с.
-  - `MaxBitrate` - максимальный битрейт записи, кбит/с.
-- Вкладка `Render`
-  - `Initial Render Target Width` - инициализация ширины рендер таргета.
-  - `Initial Render Target Height` - инициализация высоты рендер таргета.
-- Вкладка `Tracking`
-  - `Use Tracking Interpolation` - аналог Use Delta MS, но здесь сохраняется выставление задержек в кадрах.
-  - `Restore Buffer Count` - автоматически сбрасывает буфер трекинга (Reset) когда трекинг статичен.
-  >*Если используется `Use Delta MS`, то настройка `Use Tracking Interpolation` и `Restore Buffer Count` не нужна*.
-- Вкладка `UI`
-  - `Show Connection Info` - показать в заголовке информацию о подключённом сервере.
-- Вкладка `Videowall`
-  - `Override` - разворачивает окно Carrot Engine не на полный экран, а на определенные координаты.
-  - `X` - позиция X окна.
-  - `Y` - позиция Y окна.
-  - `Width` - ширина окна.
-  - `Height` - высота окна.
+---
+
+Вкладка `Assets`
+>`Additional Assets` - путь к директории, в которой хранятся медиа файлы.
+>
+>`Original Assets` - путь к директории, в которой хранятся медиа файлы. 
+
+![Settings_Carrot Launcher_Settings](..\images\4062\image_080.jpg "Carrot Launcher - Settings")
+
+---
+
+Вкладка `Delays` (подробнее о задержках можно узнать в разделе `Работа с Carrot Engine`)
+
+Рабочие настройки задержки:
+>`Input Delay` - задержка видео на входе по умолчанию.
+>
+>`Secondary Delay` - задержка для изображения `Secondary Video` в `BmdTrackedInput`.
+>
+>`AE Delay` - задержка АЕ шаблонов.
+>
+>`Keyer Delay` - задержка трекинг данных от Keyer.
+
+Настройки задержки временно отключены при работе с Carrot:
+>`Audio Delay, ms`
+>
+>`XR Delay`
+>
+>`UE Draw Delay`
+>
+>`Max UE Draw Delay Buffer`
+>
+>`Lock UE Delay To Input Delay`
+
+Переключатель:
+>`Show all Delays` - если `True`, то в **Carrot Engine** будут отображены рабочие настройки задержки, указаные выше в разделе.
+
+---
+
+Вкладка `Events`
+
+>`Unloading Event Type` - характер выгрузки событий из оперативной памяти.
+>   - Если `Unloading Event Type` равен `Manual` - событие будет выгружаться только по команде из плейлиста.
+>   - Если `Unloading Event Type` равен `Immediately` - событие будет выгружаться сразу после того как оно проигралось.
+>
+>`Unload Timer` - интервал времени, через который будет запущена проверка на наличие ассетов, которые можно выгрузить (*если `Unloading Event Type` равен `AfterTimer`*).
+>
+>`Unload After N Events` - количество позиций после текущего проигрываемого события, при достижении которого произойдёт выгрузка события. Например, при выставленном значении 3, событие в прейлисте на 7-й позиции будет выгружено, когда начнёт играться событие на 10-й позиции. (*если `Unloading Event Type` равен `EventsPlayedAfter`*).
+
+---
+
+Вкладка `Input`
+
+>`GPIO Enabled` - включить GPIO.
+>
+>`MIDI Enabled` - включить MIDI.
+>
+>`Macro Enabled` - включить Macro (StreamDeck).
+
+---
+
+Вкладка `Launch`
+
+>`Folder Path` - `Registry` - использование файлов из папки инициализированной через **Init Settings**.
+>
+>`Folder Path` - `Local` - использование файлов из папки в которой был запущен **Carrot Launcher**.
+
+---
+
+Вкладка `Licence`
+
+>`Licence Key` - поле для внесения лицензионного ключа **Carrot**. Подробнее о поле можно узнать в `Шаг 1. Подключение лицензионного ключа Carrot`.
+
+---
+
+Вкладка `Network`
+>`Silent` - режим подключения без отображения сообщений об ошибках.
+>
+>`Server Host` - имя или IP адрес хоста сервера.
+>
+>`Secure` - режим защищенного подключения.
+>
+>`Reserve Server Host` - имя или IP адрес резервного сервера.
+
+---
+
+Вкладка `Processing`
+>`Watermark Filepath` - путь к файлу для водяного знака.
+>
+>`Video threads count` - количество логических процессоров для обработки видеофайлов, `по умолчанию = 6`.
+>
+>`Dedicated Processing` - обработка видео в выделенных логических процессорах.
+>
+>`Use Video Buffer` - если это поле включено (`True`) то в режиме `Dedicated Processing` будут использоваться заранее подготовленные буферы кадров, позволяющие проигрывать видео с нулевого кадра без задержек и проседания производительности.
+>
+>`Use Video GPU Decoder` - декодирование видео через видеокарту.
+>
+>`Foreground` - возвращает фокус на Carrot Engine каждые 10 секунд.
+>
+>`Keyer` - тип Keyer'а: `JabKeyer` или `GreenKeyer`. Подробнее о работе Keyer'ом можно узнать в разделе [Работа с Carrot Engine](engine.md).
+>
+>`Use GPU Memory` - использовать видеопамять для работы с PNG-секвенциями.
+>
+>`Enable Scripts Thread` - обработка скриптов и выражений АЕ в параллельном потоке (изначально они обрабатываются в рендер потоке, что сказывается на ЦП, но гарантирует выполнение скрипта в текущем кадре рендера).
+>
+>`Upload Contexts Count` - указывает количество входов и выходов.
+>
+>`Frames Ahead Play Count` - количество кадров, которое необходимо учитывать заранее, чтобы воспроизвести событие. Задержка на выходе суммируется отдельно.
+
+---
+
+Вкладка `Recording`
+>`Allow Recording` - включить / выключить возможность записывать изображение в **Carrot Engine**, добавляет кнопку в разделе `Tools`.
+>
+>`Recording Directory` - путь к директории, где будут храниться записанные файлы.
+>
+>`Recording FPS` - количество кадров в секунду при записи.
+>
+>`Recording Bitrate` - битрейт записи, кбит/с.
+>
+>`MaxBitrate` - максимальный битрейт записи, кбит/с.
+
+---
+
+Вкладка `Render`
+>`Initial Render Target Width` - инициализация ширины рендер таргета.
+>
+>`Initial Render Target Height` - инициализация высоты рендер таргета.
+
+---
+
+Вкладка `Tracking`
+>`Use Tracking Interpolation` - аналог Use Delta MS, но здесь сохраняется выставление задержек в кадрах.
+>
+>`Restore Buffer Count` - автоматически сбрасывает буфер трекинга (Reset) когда трекинг статичен.
+>
+>*Если используется `Use Delta MS`, то настройка `Use Tracking Interpolation` и `Restore Buffer Count` не нужна*.
+
+---
+
+Вкладка `UI`
+>`Show Connection Info` - показать в заголовке информацию о подключённом сервере.
+
+---
+
+Вкладка `Videowall`
+>`Override` - разворачивает окно Carrot Engine не на полный экран, а на определенные координаты.
+>
+>`X` - позиция X окна.
+>
+>`Y` - позиция Y окна.
+>
+>`Width` - ширина окна.
+>
+>`Height` - высота окна.
+
+---
 
 3. После ввода всех необходимых настроек нажмите кнопку `Save` в верхнем правом углу окна и закройте окно `Settings`. **Carrot Launcher** произведет попытку подключения.
 
@@ -248,7 +359,9 @@
   - `Exit` (Комбинация клавиш `Alt + F4`) - выход из **Carrot Launcher**.
 - Меню `Tools`
   - `Workstation Registration` - регистрация рабочей станции.
-  > Вид и описание окна с его настройками изложены в разделе [Настройка и регистрация рабочей станции](https://carrotsoftware.github.io/docs/#/workflow?id=%d0%9d%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%86%d0%b8%d1%8f-%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b9-%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d0%b8).
+
+> Вид и описание окна с его настройками изложены в разделе [Настройка и регистрация рабочей станции](workflow.md).
+
 - Меню `Help`
   - `About` - информация о версии **ПО Carrot**.
 
