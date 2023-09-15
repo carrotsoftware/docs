@@ -1,5 +1,23 @@
 # Работа с Carrot Engine
 
+### 6.2. Carrot Engine. Settings.
+
+Рассмотрим подробнее меню навигации **Carrot Engine**.
+
+- `File` - `Settings` - открывает настройки Launcher. Подробнее о данном пункте можно прочитать [здесь](https://carrotsoftware.github.io/docs/3189/#/settings?id=settings-1).
+- `View` - `Full Screen` - открывает **viewport** на полный экран.
+- `View` - `Scale To Fit` - растягивает **viewport** под размер окна.
+- `Delays` - `Show Delays Form` - окно для настройки задержек. Где `Input Delay` - задержка входного сигнала, а `Tracking Delay` - задержка по трекингу. Правильная настройка задержек убирает "плавучий" эффект при работе с графикой.
+- `Tools` - `Workstation Registration` - открывает окно Workstation Registration, подробнее о его настройке можно прочитать [здесь](https://carrotsoftware.github.io/docs/3189/#/workflow?id=_22-workstation-registration).
+- `Tools` - `Dummy Output` - заглушка выставляемая вместого изображения выдаваемого **Carrot Engine**.
+
+---
+---
+
+### 6.3. Carrot Engine. BMD Tracking Input.
+
+
+
 ## 1. Tools. Keyer Settings.
 
 > Carrot Keyer - программный модуль позволяющий размещать нужный объект с зелёного фона на виртуальный (или любой другой) фон при помощи технологии рир-проекции.
