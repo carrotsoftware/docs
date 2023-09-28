@@ -1,6 +1,6 @@
 # Работа с Carrot Engine
 
-### 6.2. Carrot Engine. Settings.
+## 1. Settings.
 
 Рассмотрим подробнее меню навигации **Carrot Engine**.
 

@@ -16,7 +16,7 @@ window.$docsify = {
   loadSidebar: true,
   relativePath: true,
   maxLevel: 4,
-  subMaxLevel: 2,
+  subMaxLevel: 3,
 
   versions: docsifyVersions,
   versionSelectorLabel: "Version",
