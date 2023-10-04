@@ -672,10 +672,30 @@
 - `Remove item` - удаляет выбранный шаблон из истории
 - `Remove story` - удаляет историю с находящимися внутри шаблонами
 - `Dublicate Item` - дублировать выбранный шаблон.
-- `Add Special Event` - добавить специальное событие в плейлист:
-  - `Reset` - перезапустить движок (сброс задержек).
-  - `Stop Playlist` - остановить события в плейлисте.
-  - `Text Commands` - данное событие работает только с настройками кеера, экспортируйте настройки кеера в **XML** и внесите данные из файла в поле `Text Command`.
+- `Add Special Event` - описание функционала ниже:
+
+#### Типы специальных событий
+
+- `Reset` - восстановление буферов вызывается у движков, которые задействованы в этом плейлисте.
+- `StopPlaylist` - убирает с показа все шаблоны плейлиста катом (аналог кнопки Panic).
+- `TextCommand` - передача текстовой команды напрямую в движки задействованные в плейлисте.
+
+Список `TextCommand`:
+
+- `ApplySettingsToContent` - применение настроек (на текущий момент только для контента **Keyer**).
+- `RestartContent` - рестарт контента (на текущий момент только для контента **Ticker**).
+- `TakeOutContainer` - вызов `TakeOut` у шаблонов, показывающихся на конкретном контейнере.
+- `SetGlobalVar` - изменение глобальной переменной.
+
+|Специальное событие|Содержимое команды|Пример|
+|:------------------|:-----------------|:-----|
+|**ApplySettingsToContent**|%Command=[ApplySettingsToContent] %ContentName=[Имя контента в схеме] %SettingsPath=[путь к файлу с настройками] %SaveSettingsToDB=[True или False]|%Command=[ApplySettingsToContent] %ContentName=[Keyer] %SettingsPath=[D:\KeyerSettings\key test 14-01-22.xml] %SaveSettingsToDB=[False]|
+|||Соответственно, на каждом компьютере по этому пути должен быть файл с настройками. Если %SaveSettingsToDB=[True] (или этого параметра нет вообще), то при выполнении команды настройки применяются и сохраняются в БД, то есть при следующем запуске они восстановятся.|
+|**RestartContent**|%Command=[RestartContent] %ContentName=[Имя контента в схеме]|%Command=[RestartContent] %ContentName=[Ticker]|
+|||Тикер перенесет все строки в начало.|
+|**TakeOutContainer**|%Command=[TakeOutContainer] %ContainerName=[Имя контейнера в схеме]|%Command=[TakeOutContainer] %ContainerName=[AE 2D]|
+|||Шаблоны, которые рисуются в контейнере AE 2D уйдут с анимацией выхода|
+|**SetGlobalVar**|%Command=[SetGlobalVar] %GlobalVarName=[Имя переменной] %GlobalVarValue=[значение переменной]|%Command=[SetGlobalVar] %GlobalVarName=[title] %GlobalVarValue=[заголовок]|
 
 ![Settings_Carrot Dashboard_Content](..\images\3189\image_034.jpg "Carrot Dashboard - Content")
 
