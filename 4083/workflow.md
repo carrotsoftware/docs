@@ -449,10 +449,10 @@
 _Входной сигнал_:
 ![](..\images\example_keyer\original.png)
 
-_Изначальный вид_
+*Результат без настроек кеера*:
 ![](..\images\example_keyer\default.png)
 
-_Итоговый вид_
+*После настройки кеера*:
 ![](..\images\example_keyer\stage_11.png)
 
 1. Откройте **Carrot Engine**.
