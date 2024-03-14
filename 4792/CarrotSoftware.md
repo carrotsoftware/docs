@@ -19,18 +19,18 @@
 [comment]: # (Указывается перечень программного обеспечения, необходимый для функционирования ПО Carrot)
 
 Структурно, ПО Carrot состоит из следующих программных модулей:
-* Carrot Server;
-* DataStream Server;
-* Freed Sender;
-* Carrot Engine;
-* Launcher
-* Preview Engine;
-* System Monitor;
-* Template Preview;
-* Web Playlist Server;
-* Web Playlist Settings;
-* XmlRpc Adapter Console Skylark;
-* XmlRpc Adapter Settings Skylark.
+* *[Carrot Server](CarrotServer.md);*
+* *[DataStream Server](DataStreamServer.md);*
+* *[Freed Sender](FreedSender.md);*
+* *[Carrot Engine](CarrotEngine.md);*
+* *[Launcher](Launcher.md);*
+* *[Preview Engine](PreviewEngine.md);*
+* *[System Monitor](SystemMonitor.md);*
+* *[Template Preview](TemplatePreview.md);*
+* *[Web Playlist Server](WebPlaylistServer.md);*
+* *[Web Playlist Settings](WebPlaylistSettings.md);*
+* *[XmlRpc Adapter Console Skylark](XmlRpcAdapterConsoleSkylark.md);*
+* *[XmlRpc Adapter Settings Skylark](XmlRpcAdapterSettingsSkylark.md).*
 
 Описание и первоначальная настройка программных модулей представлена в соответствующем *[разделе]()*.
 
@@ -53,4 +53,4 @@
 >* *[Средство создания 3-ёх мерных объектов "Unreal Engine версии № 5.2"]().*
 
 
-
+## Руководство оператора
