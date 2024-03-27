@@ -181,6 +181,10 @@
 * `Replication Hosts` - предназначен для указания IP-адреса(ов) резервного(ых) сервера(ов) с которым синхронизируется база данных Carrot Server.;
 * `Local IP for Replication` - предназначен для указания локального IP-адреса вычислительной машины, с целью репликации (синхронизации) данных.
 
+Внешний вид расположения раздела `Replication`:
+
+![Replication_Carrot_server](https://github.com/carrotsoftware/docs/blob/main/images/Replication/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20Settings%20%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%20Replication.png)
+
 В разделе `Replication` для вычислительной машины с IP-адресом `192.168.1.1` ввести:
 
 * в параметр `Replication Hosts` - `192.168.1.2, 192.168.1.1`;
@@ -197,10 +201,18 @@
 >
 >В случае если пользователь укажет некорректный IP-адрес локальной вычислительной машины (сервера), например для вычислительной машины с локальным IP-адресом `192.168.1.1` будет указан `192.168.1.2`, то произойдёт ошибка в определении сервера как "Мастера" при нештатной ситуации, таким образом сервер не возьмёт на себя *резервную* роль.
 
+В результате введённых данных для вычислительной машины (сервера) с IP-адресом `192.168.1.1` получим:
+
+![ReplicationServer1](https://github.com/carrotsoftware/docs/blob/main/images/Replication/Replication%20Server%201.png)
+
 В разделе `Replication` для вычислительной машины с IP-адресом `192.168.1.2` ввести:
 
 * в параметр `Replication Hosts` - `192.168.1.2, 192.168.1.1`;
 * в параметр `Local IP for Replication` - `192.168.1.2`.
+
+В результате введённых данных для вычислительной машины (сервера) с IP-адресом `192.168.1.2` получим:
+
+![ReplicationServer2](https://github.com/carrotsoftware/docs/blob/main/images/Replication/Replication%20Server%202.png)
 
 >***Важно!***
 >
@@ -244,6 +256,8 @@
 * определить вычислительную машину (сервер), которая будет выполнять функцию "Мастера";
 * в Carrot Server, нажать кнопку по следующему пути `Tools`/`Check Other Servers`.
 
+![Button_Check_Other_Servers](https://github.com/carrotsoftware/docs/blob/main/images/Replication/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20Check%20Other%20Servers.png)
+
 После указанных действий, вычислительная машина (сервер) произведёт поиск других северов по указанным IP-адресам в параметре `Replication Hosts`. В случае установления успешного соединения, она примет статус "Резервная".
 
 >***Важно!***
@@ -256,6 +270,8 @@
 
 * определить вычислительную машину (сервер) со статусом "Резервный", которая будет выполнять функцию "Мастера";
 * в Carrot Server, нажать кнопку по следующему пути `Tools`/`Set Server As Master`.
+
+![Button_Set_Server_As_Master](https://github.com/carrotsoftware/docs/blob/main/images/Replication/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20Set%20Server%20As%20Master.png)
 
 >***Важно!***
 >
