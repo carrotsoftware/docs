@@ -203,8 +203,6 @@
 
 В результате введённых данных для вычислительной машины (сервера) с IP-адресом `192.168.1.1` получим:
 
-![ReplicationServer1](https://github.com/carrotsoftware/docs/blob/main/images/Replication/Replication_Server_1.jpg)
-
 ![ReplicationServer1](..\images\Replication\Replication_Server_1.jpg)
 
 В разделе `Replication` для вычислительной машины с IP-адресом `192.168.1.2` ввести:
@@ -214,7 +212,7 @@
 
 В результате введённых данных для вычислительной машины (сервера) с IP-адресом `192.168.1.2` получим:
 
-![ReplicationServer2](https://github.com/carrotsoftware/docs/blob/main/images/Replication/Replication%20Server%202.png)
+![ReplicationServer2](..\images\Replication\Replication%20Server%202.png)
 
 >***Важно!***
 >
