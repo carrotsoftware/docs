@@ -183,7 +183,7 @@
 
 Внешний вид расположения раздела `Replication`:
 
-![Replication_Carrot_server](https://github.com/carrotsoftware/docs/blob/main/images/Replication/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20Settings%20%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%20Replication.png)
+![Replication_Carrot_server](https://github.com/carrotsoftware/docs/blob/main/images/Replication/Элемент%20Settings%20Раздел%20Replication.png)
 
 В разделе `Replication` для вычислительной машины с IP-адресом `192.168.1.1` ввести:
 
