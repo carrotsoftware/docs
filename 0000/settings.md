@@ -256,7 +256,7 @@
 * определить вычислительную машину (сервер), которая будет выполнять функцию "Мастера";
 * в Carrot Server, нажать кнопку по следующему пути `Tools`/`Check Other Servers`.
 
-![Button_Check_Other_Servers](https://github.com/carrotsoftware/docs/blob/main/images/Replication/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20Check%20Other%20Servers.png)
+![Button_Check_Other_Servers](..\images\Replication\Кнопка%20Check%20Other%20Servers.png)
 
 После указанных действий, вычислительная машина (сервер) произведёт поиск других северов по указанным IP-адресам в параметре `Replication Hosts`. В случае установления успешного соединения, она примет статус "Резервная".
 
@@ -271,7 +271,7 @@
 * определить вычислительную машину (сервер) со статусом "Резервный", которая будет выполнять функцию "Мастера";
 * в Carrot Server, нажать кнопку по следующему пути `Tools`/`Set Server As Master`.
 
-![Button_Set_Server_As_Master](https://github.com/carrotsoftware/docs/blob/main/images/Replication/%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%20Set%20Server%20As%20Master.png)
+![Button_Set_Server_As_Master](..\images\Replication\Кнопка%20Set%20Server%20As%20Master.png)
 
 >***Важно!***
 >
