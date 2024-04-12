@@ -1,4 +1,5 @@
-﻿- [Перечень необходимого ПО](thirdparty.md)
+- [Общие сведения]()
+- [Перечень необходимого ПО](thirdparty.md)
 - [Первоначальная настройка](settings.md)
 - [Работа с Carrot](workflow.md)
 - [Работа с Carrot Engine](engine.md)
