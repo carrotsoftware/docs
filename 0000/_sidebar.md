@@ -1,4 +1,4 @@
-- [Общие сведения]()
+- [Общие сведения](GeneralInformation.md)
 - [Перечень необходимого ПО](thirdparty.md)
 - [Первоначальная настройка](settings.md)
 - [Работа с Carrot](workflow.md)
