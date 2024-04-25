@@ -1,11 +1,9 @@
-﻿# Перечень необходимого стороннего программного обеспечения
+# Перечень необходимого стороннего программного обеспечения
 
-!> Для правильного функционирования программного обеспечения (далее ПО) Carrot необходимо установить следующие компоненты:
+Для корректного функционирования ПО Carrot, необходимо загрузить и установить:
 
-1. Распространяемые пакеты [Microsoft Visual C++ для Visual Studio 2013 (файл vcredist_x64.exe)](https://www.microsoft.com/ru-RU/download/details.aspx?id=40784)
-1. Распространяемые пакеты [Microsoft Visual C++ для Visual Studio 2015, 2017, 2019, 2022](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-1. Драйвер для карт видеозахвата. Например, для карт Blackmagic необходимо установить [Desktop Video](https://www.blackmagicdesign.com/ru/support/family/capture-and-playback)
-1. [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/ru-RU/download/details.aspx?id=56116)
-1. [Microsoft .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
-1. [.NET Core Hosting Bundle](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)
-1. Драйвер для видеокарт NVIDIA должен быть в редакции `Studio`.
+>1. *[Компоненты среды выполнения библиотек "Visual C++ для Visual Studio 2013"](https://aka.ms/highdpimfc2013x64enu);*
+>2. *[Компоненты среды выполнения библиотек "Visual C++ для Visual Studio 2015, 2017, 2019 и 2022"](https://aka.ms/vs/17/release/vc_redist.x64.exe);*
+>3. *[Программная платформа "Microsoft .NET версии № 4.7.1"](http://go.microsoft.com/fwlink/?linkid=852107);*
+>4. *[Драйвер для устройства видеозахвата Blackmagic](https://www.blackmagicdesign.com/support/download/2de27a45d5454a0aa37353b4a742c179/Windows);*
+>5. *[Драйвер для видеокарты NVIDIA Studio](https://ru.download.nvidia.com/Windows/442.92/442.92-desktop-win10-64bit-international-nsd-dch-whql.exe).*
