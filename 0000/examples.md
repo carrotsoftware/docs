@@ -176,7 +176,10 @@
 
 ![DataStream_Plugins_XML File](..\images\DataStream\image_013.jpg "XML Flie")
 
-5. Чтобы активировать правило, необходимо выставить `Rule: Enabled` - `True`. В `PluginSettings` в `Path` указываем путь к в XML-файлу. В `Update Interval` частоту проверки файла. 
+5. Чтобы активировать правило, необходимо:
+- в `PluginSettings` в `Path` указать путь к XML-файлу;
+- в `Update Interval` частоту проверки файла;
+- выставить `Rule: Enabled` - `True`. 
 
 ![DataStream_Plugins_Activate Rule](..\images\DataStream\image_014.jpg "Activate Rule")
 
