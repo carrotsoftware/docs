@@ -137,25 +137,26 @@ DefaultGraphicsRHI=DefaultGraphicsRHI_DX12
 
 4. В разделе `Edit` перейти в настройки `Editor Preferences`, в строку поиска ввести наименование параметра **"Use Less CPU when in Background"** и отключить его.
 
-5. В разделе `Edit` перейти в настройки `Project Settings` и настроить используя поисковую строку следующие параметры представленные в таблице:
+5. В разделе `Edit` перейти в настройки `Project Settings` и проверить (в случае необходимости настроить) используя поисковую строку следующие параметры в соответствии с таблицей ниже:
 
 |Наименование параметра|Значение параметра|
 |-------------------|----------|
 |Custom TimeStep|`CarrotCustomTimeStep`|
 
->Параметр **Custom TimeStep** с характеристикой `CarrotCustomTimeStep` предназначен для синхронизации кадров, в случае, если ему присвоена характеристика `None`, то повысится производительность (количество кадров) в **Unreal Editor**, но существенно уменьшится в **Carrot Engine**.
+>Для корректной работы **Carrot** и обеспечения синхронизации его кадров с **Unreal Engine**, параметру **Custom TimeStep** необходимо присвоить характеристику `CarrotCustomTimeStep`. В случае, если необходимо обеспечить высокую производительность (повысить количество FPS) **Unreal Engine** на **время** создания проекта, следует указывать характеристику `None`.
 
 |||
 |-------------------|----------|
 |Game Viewport Client Class|`CarrotViewportClient`|
 |Editor Startup Map|`MainScene (Наименование сохранённого уровня)`|
 |Game Default Map |`MainScene (Наименование сохранённого уровня)`|
-|Transition Map|`MainScene (Наименование сохранённого уровня)`|
-|Server Default Map|`MainScene (Наименование сохранённого уровня)`|
-|Smoothed Frame Rate Range|`Min: 50 / Max: 200`|
-|Min Desired Frame Rate|`200`|
 |Frame Buffer Pixel Format|`8bit RGBA`|
 |Anti-Aliasing Method|`Temporal Anti-Aliasing (TAA)`|
+
+>В случае присвоения параметру **Anti-Aliasing Method** другого значения, возможна некорректная обработка отдельных графических элементов при взаимодействии с **Carrot**. 
+
+|||
+|-------------------|----------|
 |Custom Depth-Stencil Pass|`Enabled with Stencil`|
 |Enable alpha channel support in post processing (experimental)|`Allow through tonemapper`|
 
@@ -231,7 +232,7 @@ DefaultGraphicsRHI=DefaultGraphicsRHI_DX12
 
 - **Характеристика № 2**: нажать `Choose`, выбрать `Asset reference` и присвоить используя поисковую строку значение `PostProcMat_Frames`.
 
->Данная характеристика необходима для определения разрешения изображения для передачи её в **Carrot Engine**.
+>Данная характеристика необходима для синхронизации кадров между проектом **Unreal Engine** и **Carrot Engine**.
 
 ![6.9.](..\images\UnrealEngine\Подготовка%20Проекта%20UE\6.9.jpg)
 
@@ -325,6 +326,17 @@ DefaultGraphicsRHI=DefaultGraphicsRHI_DX12
 |Min Gen Settings|`NoMipmaps`|
 |Size X|`2048`|
 |Size Y|`2048`|
+
+>Значение параметров **Size X** и **Size Y** необходимо присваивать в соответствии с принимаемым разрешением сигнала.
+>
+>Пример: 
+>- если планируется приём SDI сигнала с разрешением **1920х1080**, значение параметров **Size X** и **Size Y** необходимо выставить `1920` и `1080` соответственно;
+>- если планируется приём шаблона After Effects c разрешением **2547х782**, значение параметров **Size X** и **Size Y** необходимо выставить `2547` и `782` соответственно.
+>
+>В случае присвоения некорректных значений параметрам **Size X** и **Size Y** возможен сбой отображения принимаемого сигнала. 
+
+|||
+|-------------------|----------|
 |Address X|`Clamp`|
 |Address Y|`Clamp`|
 |Render Target Format|`RTF RGBA8`|
