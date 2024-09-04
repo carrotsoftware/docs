@@ -1,6 +1,6 @@
 // List of Carrot Carrot versions
 const docsifyVersions = [
-  { folder: "0000", label: "1.1.5.1.", default: true },
+  { folder: "0000", label: "1.1.5", default: true },
 ];
 
 // init docsify object
