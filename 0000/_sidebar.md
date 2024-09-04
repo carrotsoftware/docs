@@ -7,4 +7,3 @@
 - [Работа с Unreal Engine](ue_templates.md)
 - [Дополнительные возможности Carrot](examples.md)
 - [Устранение неполадок](troubleshooting.md)
-- [Список изменений rev.0000 => rev.0000](updates.md)
