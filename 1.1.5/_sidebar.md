@@ -2,6 +2,6 @@
 - [Первоначальная настройка Carrot](Initial%20Setup.md)
 - [Общие сведения](General%20Information.md)
 - [Основы Carrot](Carrot%20Basics.md)
-- [Работа со сторонним программным обеспечением](Working%20with%20Third-party%20Software.md)
+- [Работа Carrot со сторонним программным обеспечением](Working%20with%20Third-party%20Software.md)
 - [Устранение неполадок](Troubleshooting.md)
 - [Обучающие и вспомогательные материалы](Educational%20and%20Auxiliary%20Materials.md)
