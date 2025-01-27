@@ -1686,7 +1686,7 @@
 
 Область **"Рабочие станции (Workstations)"** предназначена для запуска связанных рабочих станций со схемой **Carrot Engine**.
 
-![SM FW L Workstation Elements](..\images\1.1.5\System%20Monitor\SM%20FW%20L%20Workstation%20Elements.png)
+![SM FW L Workstations Elements](..\images\1.1.5\System%20Monitor\SM%20FW%20L%20Workstations%20Elements.png)
 
 Область **"Рабочие станции (Workstations)"** состоит из следующих элементов, представленных в таблице ниже.
 
