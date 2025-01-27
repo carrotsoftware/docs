@@ -1319,9 +1319,7 @@
 
 ##### Функциональное окно "Engines"
 
-![SM FW Engine](..\images\1.1.5\System%20Monitor\SM%20FW%20Engine.png)
-
-![[SM FW Engines.png]]
+![SM FW Engine](..\images\1.1.5\System%20Monitor\SM%20FW%20Engines.png)
 
 Функциональное окно **"Engines"** состоит из следующих областей:
 - **"Cхемы Carrot Engine"** (1);
