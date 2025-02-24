@@ -2478,11 +2478,11 @@
 
 Последовательность действий по запуску рабочей станции представлена на рисунке ниже.
 
-![TP_WwSL_Open_SL_Window.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Open_SL_Window.png)
+![TP_WwSL_Open_SL_Window.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Open_SL_Window.png)
 
 В результате проделанных действий откроется окно **"State Logic Flowchart"**, внешний вид которого, представлен на рисунке ниже.
 
-![TP_State_Logic_Flowchart_Window.png](..\images\1.1.6\Carrot%20Basics\TP_State_Logic_Flowchart_Window.png)
+![TP_State_Logic_Flowchart_Window.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_State_Logic_Flowchart_Window.png)
 
 >В качестве экспортируемого шаблона, используется проект **After Effects** с заготовленными состояниями (точками анимации) **"BC"**, **"СA"**, **"AB"**, **"ТEXT"** и **"OUT"**.
 
@@ -2494,7 +2494,7 @@
 
 Внешний вид окна добавления **дочернего шаблона** и **логических операторов** представлено на рисунке ниже.
 
-![TP_SL_Logic_Buttons.png](..\images\1.1.6\Carrot%20Basics\TP_SL_Logic_Buttons.png)
+![TP_SL_Logic_Buttons.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_SL_Logic_Buttons.png)
 
 Назначение элементов окна добавления **дочернего шаблона** и **логических операторов** представлено в таблице ниже
 
@@ -2513,14 +2513,14 @@
 
 Последовательность действий по добавлению дочернего шаблона в область **"Flowchart"** представлена на рисунке ниже.
 
-![TP_WwSL_Adding_Child_Templates 1.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Adding_Child_Templates%201.png)
+![TP_WwSL_Adding_Child_Templates 1.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Adding_Child_Templates%201.png)
 
 
 >В качестве **дочерних шаблонов** будут использоваться сформированные шаблоны **After Effects** с наименованием **"Child Template № 1"** и **"Child Template № 2"** включающих в себя состояния (точки анимаций) .
 
 Внешний вид добавленных дочерних шаблонов в область **"Flowchart"** окна **"State Logic Flowchart"** представлен на рисунке ниже.
 
-![TP_WwSL_Adding_Child_Templates 2.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Adding_Child_Templates%202.png)
+![TP_WwSL_Adding_Child_Templates 2.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Adding_Child_Templates%202.png)
 
 Таким образом, нода добавленного **дочернего шаблона "Child Template № 1"** содержит состояния (точки анимации) **"State 1"**, **"State 2"**, **"State 3"** и **"OUT"**, а нода  **"Child Template № 2"** -  **"State 1"**, **"State 2"** и **"OUT"**.
 
@@ -2528,7 +2528,7 @@
 
 Результат проделанных действий по добавлению состояния (точки анимации) **"BC"** мастер шаблона в область **"Flowchart"** представлен на рисунке ниже.
 
-![TP_WwSL_Adding_Child_Templates 3.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Adding_Child_Templates%203.png)
+![TP_WwSL_Adding_Child_Templates 3.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Adding_Child_Templates%203.png)
 
 #### Работа с логическими операторами
 
@@ -2536,7 +2536,7 @@
 
 В первую очередь, следует рассмотреть логику состояний **без использования логических операторов**, для этого соединим состояние **"State 1"** дочернего шаблона **"Child Template № 1"** с состоянием **"BC"** мастер шаблона в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_Child_Templates.png)
+![TP_WwSL_Connecting_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_Child_Templates.png)
 
 >**Соединение** состояний дочерних и мастер шаблонов осуществляется путём нажатия `левой кнопкой мыши (ЛКМ)` по одному из состояний шаблона и перемещения формируемой линии связи к другому.
 
@@ -2546,7 +2546,7 @@
 
 Результат тестирования сформированной логики состояний без использования логических операторов представлена на рисунке ниже.
 
-![TP_WwSL_Test_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_State_MT.png)
+![TP_WwSL_Test_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_State_MT.png)
 
 >Для тестирования созданной логики состояний, необходимо воспользоваться кнопкой `Test` располагаемой в левом нижнем углу окна **"State Logic Flowchart"**.
 >
@@ -2554,7 +2554,7 @@
 
 Далее рассмотрим пример формирования логики состояний с использованием логического оператора **"OR"**, для этого соединим состояния **"State 1"** дочерних шаблонов **"Child Template № 1"** и **"Child Template № 2"** с состоянием **"BC"** мастер шаблона через логический оператор в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_OR_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_OR_Child_Templates.png)
+![TP_WwSL_Connecting_OR_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_OR_Child_Templates.png)
 
 >Для **удаления** ноды или линии связи между ними, необходимо выделить `левой кнопкой мыши (ЛКМ)` интересующий объект и нажать кнопку `Delete` на клавиатуре.
 
@@ -2562,33 +2562,33 @@
 
 Результат тестирования сформированной логики состояний с использованием логического оператора **"OR"** представлен на рисунке ниже.
 
-![TP_WwSL_Test_OR_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_OR_State_MT.png)
+![TP_WwSL_Test_OR_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_OR_State_MT.png)
 
 Затем сформируем логику состояний с использованием логического оператора **"AND"**, для этого соединим состояния **"State 1"** дочерних шаблонов **"Child Template № 1"** и **"Child Template № 2"** с состоянием **"BC"** мастер шаблона через логический оператор в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_AND_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_AND_Child_Templates.png)
+![TP_WwSL_Connecting_AND_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_AND_Child_Templates.png)
 
 Сформированная логика состояний с использованием логического оператора **"AND"** реализована таким образом, что при инициализации состояний **"State 1"** дочерних шаблонов  **"Child Template № 1"** и **"Child Template № 2"**, происходит генерация логическим оператором сигнала, воспроизводящего состояние **"BC"** мастер шаблона. 
 
 Результат тестирования сформированной логики состояний с использованием логического оператора **"AND"** представлен на рисунке ниже.
 
-![TP_WwSL_Test_AND_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_AND_State_MT.png)
+![TP_WwSL_Test_AND_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_AND_State_MT.png)
 
 Рассмотрим пример формирования логики состояний с использованием логического оператора **"NOT"**. Для более наглядной демонстрации его работы, в схему следует добавить два логических оператора, затем соединить через них состояния **"State 1"** дочерних шаблонов **"Child Template № 1"** и **"Child Template № 2"** с состоянием **"BC"** мастер шаблона в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_NOT_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_NOT_Child_Templates.png)
+![TP_WwSL_Connecting_NOT_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_NOT_Child_Templates.png)
 
 В результате сформированного функционала логики состояний с использованием логических операторов **"NOT"** получим, что при инициализации состояний  **"State 1"** дочерних шаблонов **«Child Template № 1»** и **«Child Template № 2»** первый в очереди (слева направо) логический оператор **"NOT"** передаёт инвертированный сигнал на следующий за ним логический оператор **"NOT"**, а он в свою очередь повторно инвертирует полученный сигнал и передаёт его для воспроизведения состояния **"BC"** мастер шаблона. 
 
 Результат тестирования сформированной логики состояний с использованием логических операторов **"NOT"** представлен на рисунке.
 
-![TP_WwSL_Test_NOT_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_NOT_State_MT.png)
+![TP_WwSL_Test_NOT_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_NOT_State_MT.png)
 
 #### Пример работы логики состояний с использованием логических операторов "AND", "OR" и "NOT"
 
 Рассмотрим работу сформированной логики состояний с использованием логических операторов **"AND"**, **"OR"** и **"NOT"**, внешний вид которой представлен на рисунке ниже.
 
-![TP_WwSL_OR_AND_NOT_Example.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_OR_AND_NOT_Example.png)
+![TP_WwSL_OR_AND_NOT_Example.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_OR_AND_NOT_Example.png)
 
 Перечень реализованных взаимосвязей сформированной логики состояний с использованием логических операторов **"AND"**, **"OR"** и **"NOT"**, а также состояний дочерних и мастер шаблонов представлен в таблице ниже.
 
