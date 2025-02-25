@@ -855,6 +855,14 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 >|UEPlugin4.27_3.1.0_172|Unreal Engine 4.27|Отсутствует поддержка **Carrot Variables**. Строго указаны параметры камеры в ноде `Carrot Macro`.|
 >|UEPlugin5.1_5.0_172.zip|Unreal Engine 5.1|Отсутствует поддержка **Carrot Variables**. Строго указаны параметры камеры в ноде `Carrot Macro`.|
 >|UEPlugin5.2_5.0_172|Unreal Engine 5.2|Отсутствует поддержка **Carrot Variables**. Строго указаны параметры камеры в ноде `Carrot Macro`.|
+>
+>В случае использования специализированных версий **Unreal Engine**, включающих в себя экспериментальные функции, необходимо осуществить первоначальную настройку и установить соответствующий **Carrot Unreal Engine Plugin**.
+>
+>Настройку специализированной версии **Carrot Unreal Engine Plugin** для **Unreal Engine 5.2 RTXDI** необходимо осуществить в следующей последовательности:
+>- найти и открыть файл **"UnrealEditor.modules"** с помощью текстового редактора в директории с установленным **Unreal Engine 5.2 RTXDI**, располагаемого по следующему пути `…\UnrealEngine-nvrtx-5.2.0-1\Engine\Binaries\Win64\UnrealEditor.modules`;
+>- в открывшемся файле **"UnrealEditor.modules"** скопировать уникальный идентификационный номер **"BuildId"**;
+>- осуществить замену уникального идентификационного номера **"BuildId"** файла **"UnrealEditor.modules"** в папке **"Carrot"** специализированной версии **Carrot Unreal Engine Plugin**, располагаемой по следующему пути  `…\Carrot\Binaries\Win64\UnrealEditor.modules`;
+>- аналогичные действия произвести в папке **"CarrotEditor"** специализированной версии **Carrot Unreal Engine Plugin**, располагаемой по следующему пути  `…\CarrotEditor\Binaries\Win64\UnrealEditor.modules`.
 
 Для установки **Carrot Unreal Engine Plugin** необходимо:
 
