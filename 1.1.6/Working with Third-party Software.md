@@ -163,7 +163,8 @@
 | Expression Controls - Color Control    | 
 | Expression Controls - Point Control    | 
 | Expression Controls - Slider Control   | 
-| Transition - Wipes - Linear Wipe       | 
+| Transition - Wipes - Linear Wipe       |
+| Каналы (Channels) - Настроить подложку (Set Matte) |
 
 ---
 
@@ -172,6 +173,7 @@
 - `Fill` – `Fill Mask` не поддерживается.
 - Для работы с `Track Matte` со слоями на которых применены `Fast Box Blur` или `Displacement Map`, необходимо переместить слой с этими эффектами в `Precomposition`.
 - `Linear Wipe` - применение эффекта на **"фигурные"** (**"Shape"**) и **"текстовые"** (**"Text"**) слои ограничено. В случае необходимости, применение данного эффекта возможно осуществить на прекомпозицию с данными слоями.
+- `Настроить подложку (Set Matte)` - параметр `Растянуть подложку по размеру (Stretch Matte to Fit)` осуществляет свою работу исключительно в режиме **"Включён (True)"**. В случае, если параметр `Растянуть подложку по размеру (Stretch Matte to Fit)` используется как переменная и установлен в режим **"Выключен (False)"**, изменения к изображению применены не будут. 
 
 ---
 ---
