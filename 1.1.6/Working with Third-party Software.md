@@ -874,12 +874,23 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 
 2. ![4.1.](..\images\UnrealEngine\Установка%20Carrot%20UEP\4.1.jpg)
 
-Скопировать папки **"Carrot"** и **"CarrotEditor"** в папку **Plugins** созданного проекта **Unreal Engine**.
+Скопировать папки **"Carrot"** и **"CarrotEditor"** в папку **"VirtualProduction"** установленного **Unreal Engine**.
 
->По умолчанию созданный проект **Unreal Engine** располагается в следующей директории: 
->`C:\Users\Имя_Пользователя\Documents\Unreal Projects\Наименование_Проекта\plugins`
+>По умолчанию установленный **Unreal Engine** располагается в следующей директории:
 >
->В случае, если папка с наименованием **"plugins"** отсутствует в директории с проектом, необходимо её **создать**.
+>`C:\Program Files\Epic Games\Версия_Unreal_Engine\Engine\Plugins\VirualProduction`
+>
+>В случае использования **Unreal Engine 5.2** имеется возможность осуществить установку **Carrot Unreal Engine Plugin** непосредственно в созданный проект, для установки которого необходимо:
+>- в запущенном проекте **Unreal Engine 5.2**, параметру `Full Rebuild` (располагается в разделе **"Packaging"** настроек `Project Settings`) присвоить значение **"Включён (True)"**;
+>- закрыть проект **Unreal Engine 5.2**, и удалить временные папки **"Binaries"**, **"Build"**, **"DerivedDataCache"** и **"Intermediate"** из созданного проекта **Unreal Engine 5.2**;
+>
+>>По умолчанию созданный проект **Unreal Engine 5.2** располагается в следующей директории: 
+>>
+>>`C:\Users\Имя_Пользователя\Documents\Unreal Projects\Наименование_Проекта\Plugins`
+>
+>- cкопировать папки **"Carrot"** и **"CarrotEditor"** из **Carrot Unreal Engine Plugin** в папку **"Plugins"** проекта **Unreal Engine 5.2**.
+>
+>В случае, если папка с наименованием **"Plugins"** отсутствует в директории с проектом, необходимо её **создать**.
 >
 >Информацию об используемой версии плагина можно узнать в файле **"Rev.txt"** из папок **"Carrot"** и **"CarrotEditor"**.
 
