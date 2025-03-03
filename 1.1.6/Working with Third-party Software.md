@@ -637,6 +637,204 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 - **Media Layer** (MP4, MOV, JPG, PNG, PSD и т.д.)
   > В целях оптимизации шаблона и проекта PSD/AI слои внутри композиции рекомендуется заменить на Solid Layer, либо на готовое изображение PNG или JPG.
 
+
+Поддерживаемые экспортируемые свойства слоя представлены в таблице ниже:
+
+<table>
+  <thead>
+    <tr>
+      <th>Наименование экспортируемого свойства</th>
+      <th>Наименование параметра</th>
+      <th>Примечание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="12">Текст (Text)</td>
+      <td>Исходный текст (Source Text)</td>
+      <td rowspan="12">---</td>
+    </tr>
+    <tr>
+      <td>Контур (Path)</td>
+    </tr>
+    <tr>
+      <td>Обратная траектория (Reverse Path)</td>
+    </tr>
+    <tr>
+      <td>Перпендикулярно пути (Perpendicular To Path)</td>
+    </tr>
+    <tr>
+      <td>Принудительное выравнивание (Force Alignment)</td>
+    </tr>
+    <tr>
+      <td>Первое поле (First Margin)</td>
+    </tr>
+    <tr>
+      <td>Последнее поле (Last Margin)</td>
+    </tr>
+    <tr>
+      <td>Группирование опорной точки (Anchor Point Grouping)</td>
+    </tr>
+    <tr>
+      <td>Выравнивание при группировании (Grouping Alignment)</td>
+    </tr>
+    <tr>
+      <td>Залив./обвод. (Fill/Stroke)</td>
+    </tr>
+    <tr>
+      <td>Наложение между символами (Inter-Character Blending)</td>
+    </tr>
+    <tr>
+      <td>Аниматоры (Animators)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Маски (Masks)</td>
+      <td>Контур маски (Mask Path)</td>
+      <td rowspan="4">---</td>
+    </tr>
+    <tr>
+      <td>Растушёвка маски (Mask Feather)</td>
+    </tr>
+    <tr>
+      <td>Непрозрачность маски (Mask Opacity)</td>
+    </tr>
+    <tr>
+      <td>Расширение маски (Mask Expansion)</td>
+    </tr>
+    <tr>
+      <td>Эффекты (Effects)</td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Преобразовать (Transform)</td>
+      <td>Опорная точка (Anchor Point)</td>
+      <td rowspan="12">---</td>
+    </tr>
+    <tr>
+      <td>Положение (Position)</td>
+    </tr>
+    <tr>
+      <td>X Положение (X Position)</td>
+    </tr>
+    <tr>
+      <td>Y Положение (Y Position)</td>
+    </tr>
+    <tr>
+      <td>Z Положение (Z Position)</td>
+    </tr>
+    <tr>
+      <td>Масштаб (Scale)</td>
+    </tr>
+    <tr>
+      <td>Ориентация (Orientation)</td>
+    </tr>
+    <tr>
+      <td>Поворот X (X Rotation)</td>
+    </tr>
+    <tr>
+      <td>Поворот Y (Y Rotation)</td>
+    </tr>
+    <tr>
+      <td>Поворот (Rotation) / Поворот Z (Z Rotation)</td>
+    </tr>
+    <tr>
+      <td>Непрозрачность (Opacity)</td>
+    </tr>
+    <tr>
+      <td>Отображается в отражениях (Appears in Reflections)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Геометрические параметры (Geometry Options)</td>
+      <td>Кривизна (Curvature)</td>
+      <td rowspan="2">---</td>
+    </tr>
+    <tr>
+      <td>Сегменты (Segments)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Геометрические параметры (Geometry Options)</td>
+      <td>Тип фаски  (Bevel Style)</td>
+      <td rowspan="5">---</td>
+    </tr>
+    <tr>
+      <td>Направление фаски (Bevel Direction)</td>
+    </tr>
+    <tr>
+      <td>Глубина фаски (Bevel Depth)</td>
+    </tr>
+    <tr>
+      <td>Глубина фаски отверстия (Hole Bevel Depth)</td>
+    </tr>
+    <tr>
+      <td>Глубина экструзии (Extrusion Depth)</td>
+    </tr>
+    <tr>
+      <td rowspan="16">Параметры материала (Material Options)</td>
+      <td>Отбрасывает тени (Casts Shadows)</td>
+      <td rowspan="16">---</td>
+    </tr>
+    <tr>
+      <td>Передача света (Light Transmission)</td>
+    </tr>
+    <tr>
+      <td>Принимает тени (Accepts Shadows)</td>
+    </tr>
+    <tr>
+      <td>Принимает свет (Accepts Lights)</td>
+    </tr>
+    <tr>
+      <td>Отображается в отражениях (Appears in Reflections)</td>
+    </tr>
+    <tr>
+      <td>Освещение (Ambient)</td>
+    </tr>
+    <tr>
+      <td>Диффузия (Diffuse)</td>
+    </tr>
+    <tr>
+      <td>Интенсивность зеркального отражения (Specular Intensity)</td>
+    </tr>
+    <tr>
+      <td>Зеркальный блеск (Specular Shininess)</td>
+    </tr>
+    <tr>
+      <td>Металл (Metal)</td>
+    </tr>
+    <tr>
+      <td>Интенсивность отражения (Reflection Intensity)</td>
+    </tr>
+    <tr>
+      <td>Резкость отражения (Reflection Sharpness)</td>
+    </tr>
+    <tr>
+      <td>Уменьшение отражения (Reflection Rolloff)</td>
+    </tr>
+    <tr>
+      <td>Прозрачность (Transparency)</td>
+    </tr>
+    <tr>
+      <td>Уменьшение прозрачности (Transparency Rolloff)</td>
+    </tr>
+    <tr>
+      <td>Индекс преломления (Index of Refraction)</td>
+    </tr>
+    <tr>
+      <td>Наборы (Sets)</td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>Запись кэша элемента (Item Cache Entry)</td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+  </tbody>
+</table>
+
+>При настройке параметров экспортируемых свойств слоя следует учитывать особенности взаимодействия **Carrot After Effects Plugin** с **After Effects**, при которых поддержка свойств рендер-движка **Cinema 4D** ограничена.
+
+
 Поддерживаемые операции со слоями:
 
 - **Track Matte** (Подложки отслеживания)
