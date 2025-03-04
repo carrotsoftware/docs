@@ -3460,6 +3460,159 @@ AR композитинг работает по схеме, когда изоб�
 ![DataStream_Call Back](..\images\DataStream\image_022.gif "Call Back")
 
 
+## Mos Adapter Settings Bram
+
+### Описание пользовательского интерфейса
+
+![MASB_Main_Window](..\images\1.1.6\Carrot%20Basics\Mos%20Adapter%20Settings%20Bram\MASB_Main_Window.png)
+
+Пользовательский интерфейс **Mos Adapter Settings Bram** представляет собой окно редактируемых параметров, перечень которых представлен в таблице ниже.
+
+<table>
+  <thead>
+    <tr>
+      <th>Наименование параметра</th>
+      <th>Назначение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" align="center">Advanced</td>
+    </tr>
+    <tr>
+      <td>Enable Message Log</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Enable roReq Response Log</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>roReq Response Timeout</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">DB</td>
+    </tr>
+    <tr>
+      <td>DB file</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">Licence</td>
+    </tr>
+    <tr>
+      <td>Licence Key</td>
+      <td>Ввод лицензионного ключа Carrot.</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">MOS Adapter</td>
+    </tr>
+    <tr>
+      <td>MOS MOM Port</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MOS RO Port</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MOS Auxiliary Port</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MOS ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MOS Send TimeOut</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Try Send Count</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>heartbeat interval</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">MOS Common</td>
+    </tr>
+    <tr>
+      <td>MOS Version</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">NCS</td>
+    </tr>
+    <tr>
+      <td>NCS Host</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reserve NCS Host</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCS MOM Port</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCS RO Port</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCS ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">Network</td>
+    </tr>
+    <tr>
+      <td>Server Host List</td>
+      <td>Ввод IP-адреса рабочей станции для подключения к её базе данных.</td>
+    </tr>
+    <tr>
+      <td>Secure</td>
+      <td>Включение (True)/отключение (False) режима защищённого информационного обмена.</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">Playback</td>
+    </tr>
+    <tr>
+      <td>FPS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Use duration</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">Playlist Operations</td>
+    </tr>
+    <tr>
+      <td>List Of roID Keep From Delete</td>
+      <td>Ввод перечня уникальных идентификаторов плейлистов исключённых из удаления. При попытке удаления плейлиста, осуществляется процедура очистки его содержимого.<br>
+      <br>
+      Примечание: ввод уникальных идентификаторов плейлиста осуществляется в следующей форме "LIST 1", "LIST 2", ..., "LIST n" 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">User</td>
+    </tr>
+    <tr>
+      <td>User Name</td>
+      <td>Изменение идентификатора (логина) пользователя</td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td>Изменение пароля пользователя.</td>
+    </tr>
+   <tbody>
+</table>
+
+
 
 
 
