@@ -2512,7 +2512,7 @@
 
 >Кнопка `Import FBX` доступна при взаимодействии `правой кнопкой мыши (ПКМ)` по 3D-слою "нулевого объекта". Внешний вид кнопки `Import FBX` представлен на рисунке ниже.
 >
->![TP_FBX_ImportFBX_Button.png](..\images\1.1.6\Carrot%20Basics\TP_FBX_ImportFBX_Button.png)
+>![TP_FBX_ImportFBX_Button.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_FBX_ImportFBX_Button.png)
 
 В результате импорта трёхмерного объекта формата **".fbx"** в 3D-слой "нулевого объекта", становится доступно взаимодействие со следующими кнопками, перечень и назначение которых представлено в таблице ниже.
 
@@ -2524,7 +2524,7 @@
 
 >Кнопки `Edit FBX` и `Remove FBX` доступны при взаимодействии `правой кнопкой мыши (ПКМ)` по 3D-слою, внешний вид которых представлен на рисунке ниже.
 >
->![TP_FBX_EditFBX_Button.png](..\images\1.1.6\Carrot%20Basics\TP_FBX_EditFBX_Button.png)
+>![TP_FBX_EditFBX_Button.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_FBX_EditFBX_Button.png)
 
 
 
@@ -2532,9 +2532,9 @@
 
 Внешний вид окна окна **"FBX Editor"** представлен на рисунке ниже.
 
-![TP_FBX_FBXEditor_Window.png](..\images\1.1.6\Carrot%20Basics\TP_FBX_FBXEditor_Window.png)
+![TP_FBX_FBXEditor_Window.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_FBX_FBXEditor_Window.png)
 
-![TP_FBX_FBXEditor_Areas.png](..\images\1.1.6\Carrot%20Basics\TP_FBX_FBXEditor_Areas.png)
+![TP_FBX_FBXEditor_Areas.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_FBX_FBXEditor_Areas.png)
 
 Окно **"FBX Editor"** состоит из следующих областей:
 - **"Элементы трёхмерного объекта"** (1);
@@ -2542,7 +2542,7 @@
 
 ###### Область "Элементы трёхмерного объекта"
 
-![TP_FBX_FBXEditor_Scene_Area.png](..\images\1.1.6\Carrot%20Basics\TP_FBX_FBXEditor_Scene_Area.png)
+![TP_FBX_FBXEditor_Scene_Area.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_FBX_FBXEditor_Scene_Area.png)
 
 Область **"Элементы трёхмерного объекта"** предназначена для отображения перечня элементов трёхмерного объекта и включает в себя разделы, представленные в таблице ниже.
 
@@ -2560,7 +2560,7 @@
 
 ###### Область "Свойства элемента"
 
-![TP_FBX_FBXEditor_Material_Area.png](..\images\1.1.6\Carrot%20Basics\TP_FBX_FBXEditor_Material_Area.png)
+![TP_FBX_FBXEditor_Material_Area.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_FBX_FBXEditor_Material_Area.png)
 
 Область **"Свойства элемента"** предназначена для настройки параметров выбранного компонента элемента трёхмерного объекта.
 
