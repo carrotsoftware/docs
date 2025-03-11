@@ -956,19 +956,6 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
     "<font color=\"#000000\">Text Sample</font>"
    ```
 
-3. Настройте плавность линий, отображающих текст:
-   1. Выберите текстовой слой.
-      ![](..\images\image125.png)
-   2. В разделе `Properties` измените параметр `StepCount` на желаемый:
-      ![](..\images\image173.png)
-
-   Примеры значений параметра `StepCount`:<br>
-   `StepCount` = 1:<br>![](..\images\image89.png)<br>
-   `StepCount` = 2:<br>![](..\images\image161.png)<br>
-   `StepCount` = 4:<br>![](..\images\image107.png)<br>
->Примечание: чем больше значение параметра `StepCount`, тем больше потребляется ресурсов ГП на отрисовку текста.
-
-
 
 
 
