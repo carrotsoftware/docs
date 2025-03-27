@@ -1040,11 +1040,12 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 
 >Актуальные версии плагинов для **Unreal Engine**.
 >
->|Наименование плагина|Поддерживаемая версия Unreal Engine|Примечание|
->|-------------------|----------|----------|
->|UEPlugin4.27_3.1.0_172|Unreal Engine 4.27|Отсутствует поддержка **Carrot Variables**. Строго указаны параметры камеры в ноде `Carrot Macro`.|
->|UEPlugin5.1_5.0_172.zip|Unreal Engine 5.1|Отсутствует поддержка **Carrot Variables**. Строго указаны параметры камеры в ноде `Carrot Macro`.|
->|UEPlugin5.2_5.0_172|Unreal Engine 5.2|Отсутствует поддержка **Carrot Variables**. Строго указаны параметры камеры в ноде `Carrot Macro`.|
+>|Наименование плагина|Поддерживаемая версия Unreal Engine|
+>|-------------------|----------|
+>|UEPlugin_4.27_206|Unreal Engine 4.27|
+>|UEPlugin_5.1_206|Unreal Engine 5.1|
+>|UEPlugin_5.2_206|Unreal Engine 5.2|
+>|UEPlugin_5.3_206|Unreal Engine 5.3|
 >
 >В случае использования специализированных версий **Unreal Engine**, включающих в себя экспериментальные функции, необходимо осуществить первоначальную настройку и установить соответствующий **Carrot Unreal Engine Plugin**.
 >
@@ -1085,6 +1086,10 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 4. ![4.2.](..\images\UnrealEngine\Установка%20Carrot%20UEP\4.2.jpg)
 
 Найти установленные плагины **"Carrot"** и **"CarrotEditor"** путём ввода в поисковую строку **"сarrot"**, и убедиться в том, что они включены.
+
+>Для корректной работы плагина **"UEPlugin_5.3_206"** с **"Unreal Engine 5.3"**, необходимо дополнительно осуществить настройку проекта (`Project Settings...`) в части следующих параметров:
+>- параметру `Screen Percentage Mode for Desktop renderer` раздела `Default Screen Percentage` присвоить значение `Manual`;
+>- параметру `Default screen percentage mode for realtime editor viewports using desktop renderer` раздела `Viewport Resolution` присвоить значение `Manual`.
 
 ---
 
