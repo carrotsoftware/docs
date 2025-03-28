@@ -144,26 +144,47 @@
 
 ##### Поддерживаемые эффекты и правила работы с ними
 
-|**Поддерживаемые эффекты**              |
-|:---------------------------------------|
-| Blur & Sharpen - Sharpen               |
-| Blur & Sharpen - Fast Box Blur         |
-| Distort - Displacement Map             |
-| Distort - Corner Pin                   |
-| Time - Posterize Time                  | 
-| Generate - Fill                        | 
-| Generate - Gradient Ramp               | 
-| Color Correction - Tritone             | 
-| Color Correction - Tint                | 
-| Color Correction - Levels              | 
-| Color Correction - Curves              | 
-| Expression Controls - 3D Point Control | 
-| Expression Controls - Angle Control    | 
-| Expression Controls - Checkbox Control | 
-| Expression Controls - Color Control    | 
-| Expression Controls - Point Control    | 
-| Expression Controls - Slider Control   | 
-| Transition - Wipes - Linear Wipe       |
+| **Поддерживаемые эффекты**                         |
+| :------------------------------------------------- |
+| Blur & Sharpen - Sharpen                           |
+| Blur & Sharpen - Fast Box Blur                     |
+| Distort - Displacement Map                         |
+
+>Поддержка эффекта **"Displacement Map"** осуществляется методом индексации его свойств. Перечень индексов присвоенным свойствам эффекта **"Displacement Map"** представлена в таблице ниже.
+>
+>|Наименование свойства эффекта "Displacement Map"|Присвоенный индекс|
+>|-------------------|----------|
+>|Red|`1`|
+>|Green|`2`|
+>|Blue|`3`|
+>|Alpha|`4`|
+>|Luminance|`5`|
+>|Hue|`6`|
+>|Lightness|`7`|
+>|Saturation|`8`|
+>|Full|`9`|
+>|Half|`10`|
+>|Off|`11`|
+>
+>В случае ввода в веб-интерфейсе **Web Playlist (Carrot Dashboard)** некорректного индекса - эффект **"Displacement Map"** применятся не будет
+
+|                        |
+| :------------------------------------------------- |
+| Distort - Corner Pin                               |
+| Time - Posterize Time                              |
+| Generate - Fill                                    |
+| Generate - Gradient Ramp                           |
+| Color Correction - Tritone                         |
+| Color Correction - Tint                            |
+| Color Correction - Levels                          |
+| Color Correction - Curves                          |
+| Expression Controls - 3D Point Control             |
+| Expression Controls - Angle Control                |
+| Expression Controls - Checkbox Control             |
+| Expression Controls - Color Control                |
+| Expression Controls - Point Control                |
+| Expression Controls - Slider Control               |
+| Transition - Wipes - Linear Wipe                   |
 | Каналы (Channels) - Настроить подложку (Set Matte) |
 
 ---
