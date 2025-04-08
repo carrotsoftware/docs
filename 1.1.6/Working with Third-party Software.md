@@ -181,6 +181,11 @@
 | Color Correction - Tritone                         |
 | Color Correction - Tint                            |
 | Color Correction - Levels                          |
+
+>Отображение значений параметра **"Histogram"** эффекта **"Levels"** не поддерживается при экспорте шаблона проекта After Effects в рамках текущей версии **Carrot**.
+
+|                                                    |
+| :------------------------------------------------- |
 | Color Correction - Curves                          |
 | Expression Controls - 3D Point Control             |
 | Expression Controls - Angle Control                |
