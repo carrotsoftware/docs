@@ -2733,7 +2733,7 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">1.3.</td>
         <td style="vertical-align: middle"><code>Enable force Load</code></td>
-        <td style="vertical-align: middle">Включение режима принудетельной загрузки ассетов ивента с Carrot Server на Carrot Engine пока подгружается ивент.</td>
+        <td style="vertical-align: middle">Включение режима принудительной загрузки ассетов ивента с Carrot Server на Carrot Engine пока подгружается ивент.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
@@ -2813,7 +2813,7 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">3.2.</td>
         <td style="vertical-align: middle"><code>Load All Events</code></td>
-        <td style="vertical-align: middle">Закрузка всех ивента. По умолчанию сочитание клавиш <b>"Shift + L"</b>.</td>
+        <td style="vertical-align: middle">Загрузка всех ивентов. По умолчанию сочетание клавиш <b>"Shift + L"</b>.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
@@ -2825,19 +2825,19 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">3.4.</td>
         <td style="vertical-align: middle"><code>Unload All Events</code></td>
-        <td style="vertical-align: middle">Выгрузка всех ивентов. По умолчанию сочитание клавиш <b>"Shift + U"</b>.</td>
+        <td style="vertical-align: middle">Выгрузка всех ивентов. По умолчанию сочетание клавиш <b>"Shift + U"</b>.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.5.</td>
         <td style="vertical-align: middle"><code>Take In Current Event</code></td>
-        <td style="vertical-align: middle">Запуск текущего ивента. По умолчанию сочитание клавиш <b>"Ctrl + Space"</b>.</td>
+        <td style="vertical-align: middle">Запуск текущего ивента. По умолчанию сочетание клавиш <b>"Ctrl + Space"</b>.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.6.</td>
         <td style="vertical-align: middle"><code>Take Out Current Event</code></td>
-        <td style="vertical-align: middle">Оставновка текущего ивента. По умолчанию сочитание клавиш <b>"Shift + Space"</b>.</td>
+        <td style="vertical-align: middle">Остановка текущего ивента. По умолчанию сочетание клавиш <b>"Shift + Space"</b>.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
@@ -2854,6 +2854,94 @@
     </tr>
     </tbody>
 </table>
+
+
+
+### Назначение комбинаций клавиш
+
+#### Общие сведения
+
+Одним из основных способов взаимодействия с ивентами в веб-интерфейсе **Web Playlist (Carrot Dashboard)** является использование **комбинаций клавиш**. **Комбинации клавиш** оптимизируют процесс работы, что позволяет оперативно принимать решения в рамках использования различных команд взаимодействия с ивентами. Перечень основных команд взаимодействия с ивентами и их комбинаций клавиш представлен в таблице ниже.
+
+<table>
+    <thead>
+    <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование команды</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Комбинация клавиш</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Load</code></td>
+        <td style="vertical-align: middle">Загрузка ивента.</td>
+        <td style="text-align: center; vertical-align: middle"><code>L</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>Load All</code></td>
+        <td style="vertical-align: middle">Загрузка всех ивентов.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Shift + L</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><code>Unload</code></td>
+        <td style="vertical-align: middle">Выгрузка ивента.</td>
+        <td style="text-align: center; vertical-align: middle"><code>U</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><code>Unload All</code></td>
+        <td style="vertical-align: middle">Выгрузка всех ивентов.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Shift + U</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><code>Take In</code></td>
+        <td style="vertical-align: middle">Запуск текущего ивента.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Ctrl + Space</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle"><code>Take Out</code></td>
+        <td style="vertical-align: middle">Остановка текущего ивента.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Shift + Space</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle"><code>Take In Take Out</code></td>
+        <td style="vertical-align: middle">Запуск/остановка текущего ивента.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Space</code>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle"><code>Take In Next</code></td>
+        <td style="vertical-align: middle">Запуск следующего ивента.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Enter</code>
+    </tr>
+    </tbody>
+</table>
+
+
+#### Назначение комбинаций клавиш
+
+В веб-интерфейсе **Web Playlist (Carrot Dashboard)** имеется возможность назначить новые комбинации клавиш для команд взаимодействия с ивентами. Для назначения новых комбинаций клавиш, необходимо:
+- **Шаг № 1**. Открыть функциональное окно **"Settings"** в веб-интерфейсе **Web Playlist (Carrot Dashboard)**;
+- **Шаг № 2**. Перейти в раздел **"Hotkeys"**;
+- **Шаг № 3**. Провзаимодействовать с полем одной из команд, путём нажатия на него `левой кнопки мыши (ЛКМ)` и ввести предпочитаемую к использованию клавишу (комбинацию клавиш) с клавиатуры;
+- **Шаг № 4**. Убедиться в успешном назначении клавиши (комбинации клавиш).
+
+>В случае успешного назначения новой клавиши (комбинации клавиш) для команды взаимодействия с ивентами, отобразится сообщение **"Hotkey saved"**. При назначении уже существующей клавиши (комбинации клавиш) отобразится сообщение **"Combination [наименование клавиши] is already assigned"**.
+
+Процесс назначения **комбинаций клавиш** для команд взаимодействия с ивентами представлена на рисунке ниже.
+
+![WP_Rechange_Hotkeys](..\images\1.1.6\Carrot%20Basics\Web%20Playlist\WP_Rechange_Hotkeys.png)
+
+На данном этапе, процесс назначения **комбинаций клавиш** для команд взаимодействия с ивентами считается завершённым.
+
+
 
 ### Работа с самоподписанным сертификат Windows
 
