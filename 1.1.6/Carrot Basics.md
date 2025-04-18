@@ -3095,6 +3095,12 @@
 
 ![TP_Scene_Area.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_Scene_Area.png)
 
+В разделе **"Footages"** реализована возможность замены использующихся в **шаблоне After Effects** мультимедийных компонентов (футажей), путём взаимодействия с кнопкой `Replace Source`.
+
+>Кнопка `Replace Source` доступна при взаимодействии `правой кнопкой мыши (ПКМ)` по мультимедийному компоненту (футажу). Внешний вид кнопки `Replace Source` представлен на рисунке ниже.
+>
+>![TP_ReplaceSource_Button](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_ReplaceSource_Button.png)
+
 
 В область **"Scene"** возможно импортирование трёхмерных объектов формата **".fbx"** из файловой системы рабочей станции, при наличии 3D-слоя "нулевого объекта" в проекте After Effects.
 
