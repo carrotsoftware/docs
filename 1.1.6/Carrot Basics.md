@@ -271,32 +271,115 @@
 
 ##### Кнопка `Tools`
 
-![CS Tools Button](..\images\1.1.5\Carrot%20Server\CS%20Tools%20Button.png)
+![CS_Tools_Button](..\images\1.1.6\Carrot%20Basics\Carrot%20Server\CS_Tools_Button.png)
 
 При взаимодействии с кнопкой `Tools` отображается перечень функциональных элементов, назначение которых представлено в таблице ниже.
 
-| Наименование функциональной кнопки | Назначение                                                                   |
-| ---------------------------------- | ---------------------------------------------------------------------------- |
-| `Change Administrator Password`    | Смена пароля администратора.                                                 |
-| `Reset Event Status`               | Обновление поля компонентов для корректного отображения активных приложений. |
-| `Set Server As Master`             | Определение текущего **Carrot Server** в качестве "Мастера" (основного).     |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle">№ п/п</th>
+      <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+      <th style="text-align: center; vertical-align: middle">Назначение</th>
+      <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+      <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">1.</td>
+      <td style="vertical-align: middle"><code>Change Administrator Password</code></td>
+      <td style="vertical-align: middle">Смена пароля администратора.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.</td>
+      <td style="vertical-align: middle"><code>Reset Event Status</code></td>
+      <td style="vertical-align: middle">Обновление поля компонентов для корректного отображения активных приложений <b>Carrot</b>.</td>
+      <td style="vertical-align: middle"><code>Ctrl+Shift+R</code></td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">3.</td>
+      <td style="vertical-align: middle"><code>Set Server As Master</code></td>
+      <td style="vertical-align: middle">Определение текущего <b>Carrot Server</b> в качестве основного.</td>
+      <td style="vertical-align: middle"><code>Ctrl+Shift+S</code></td>
+      <td style="vertical-align: middle"><p>1. <b>Основной</b> сервер отображается в области <b>"Данные процесса репликации"</b> как <code>Replication Master = True</code>, а резервный (запасной) как <code>Replication Master = False</code></p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">4.</td>
+      <td style="vertical-align: middle"><code>Check Other Servers</code></td>
+      <td style="vertical-align: middle">Проверка определения сервера в качестве <b>основного</b> или <b>резервного</b>.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">5.</td>
+      <td style="vertical-align: middle"><code>Export DB file</code></td>
+      <td style="vertical-align: middle">Экспорт базы данных <b>Carrot Server</b>.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">6.</td>
+      <td style="vertical-align: middle"><code>Export DB objects</code></td>
+      <td style="vertical-align: middle">Экспорт объектов базы данных <b>Carrot Server</b>.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">7.</td>
+      <td style="vertical-align: middle"><code>Import DB file</code></td>
+      <td style="vertical-align: middle">Импорт базы данных <b>Carrot Server</b>.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">8.</td>
+      <td style="vertical-align: middle"><code>Import DB objects</code></td>
+      <td style="vertical-align: middle">Импорт объектов базы данных <b>Carrot Server</b>.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">9.</td>
+      <td style="vertical-align: middle"><code>Web</code></td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">10.</td>
+      <td style="vertical-align: middle"><code>DataStream</code></td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">11.</td>
+      <td style="vertical-align: middle"><code>Update DB to current Version</code></td>
+      <td style="vertical-align: middle">Обновление базы данных до текущей версии <b>Carrot</b>.</td>
+      <td style="text-align: center; vertical-align: middle"><code>Ctrl+U</code></td>
+      <td style="vertical-align: middle"><p>1. При взаимодействии с кнопкой <code>Update DB to current Version</code>, отобразится окно <b>"Warning"</b> c содержанием о необходимости завершения запущенных сессий приложений <b>Carrot</b>.</p> <p>2. В рамках обновления базы данных создаётся резервная копия текущей базы данных, располагаемой в следующей директории <code>C:\Users\"ИМЯ_КОМПЬЮТЕРА"\AppData\Local\Carrot\backups</code> с наименованием вида <code>carrotDB_backup_дд_мм_гггг_чч-мм-сс-ффф</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">12.</td>
+      <td style="vertical-align: middle"><code>Remove Inaccessible DB Objects</code></td>
+      <td style="vertical-align: middle">Удаление недоступных объектов в базе данных <b>Carrot Server</b>.</td>
+      <td style="text-align: center; vertical-align: middle"><code>Ctrl+R</code></td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">13.</td>
+      <td style="vertical-align: middle"><code>Remove Unused Assets</code></td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+   <tbody>
+</table>
 
->**Основной (мастер)** сервер отображается в области **"Данные процесса репликации"** как `Replication Master = True`, а резервный (запасной) как `Replication Master = False`
->
->Сервера, которые не участвуют в процессе репликации (синхронизации) отображаются как `Replication Master = True`. 
-
-| | |
-|-------------------|----------|
-|`Check Other Servers`|Проверка определения сервера в качестве **основного (мастера)** или **резервного**.|
-|`Replicate Database`|Запуск процесса репликации (синхронизации) базы данных **Carrot Server**.|
-|`Export DB file`|Экспорт базы данных **Carrot Server**.|
-|`Export DB objects`|Экспорт объектов базы данных **Carrot Server**.|
-|`Import DB file`|Импорт базы данных **Carrot Server**.|
-|`Import DB objects`|Импорт объектов базы данных **Carrot Server**.|
-|`Web`||
-|`DataStream`||
-|`Update DB to current Version`|Обновление базы данных до текущей версии **Carrot**.|
-|`Remove Inaccessible DB Objects`|Удаление недоступных объектов в базе данных **Carrot Server**.|
 
 ##### Кнопка `Help`
 
