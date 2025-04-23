@@ -5475,6 +5475,432 @@ AR композитинг работает по схеме, когда изоб�
 
 
 
+## Preview Engine
+
+### Назначение
+
+**Preview Engine** представляет собой специализированное программное обеспечение, предназначенное для предварительного просмотра **2D шаблонов Adobe After Effects** в веб-интерфейсе **Web Playlist** (**Carrot Dashboard**).
+
+**Preview Engine** осуществляет свою работу независимо от приложения **Carrot Engine**, что позволяет его использовать в различных сценариях разработки и тестирования различной мультимедийной информации, предварительной оценки качества шаблонов, их совместимости с заданными параметрами отображения и корректностью воспроизведения в веб-интерфейсе.
+
+### Функциональные возможности
+
+К основным функциональным возможностям **Preview Engine** относится:
+- визуализация **2D шаблонов Adobe After Effects**;
+- работоспособность приложения в качестве независимости (отсутствует необходимость запуска приложения **Carrot Engine**);
+- настройка параметров предварительного просмотра мультимедийной информации;
+- оценка (мониторинг) производительности системы.
+
+### Пользовательский интерфейс
+
+![PE_Main_Window](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_Main_Window.png)
+
+
+Пользовательский интерфейс приложения **Preview Engine** состоит из следующих областей:
+- **"Вспомогательные кнопки взаимодействия с Preview Engine"**;
+- **"Данные производительности системы"**
+
+
+#### Область "Вспомогательные кнопки взаимодействия с Preview Engine"
+
+![PE_Buttons](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_Buttons.png)
+
+
+Область **"Вспомогательные кнопки взаимодействия с Preview Engine"** включает в себя:
+- `File` (1);
+- `Help` (2).
+
+##### Кнопка `File`
+
+![PE_File_Button](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_File_Button.png)
+
+
+При взаимодействии с кнопкой `File` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Settings</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Settings"</b> для настройки параметров <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F4</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>Exit</code></td>
+        <td style="vertical-align: middle">Завершение работы <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Alt+F4</code></td>
+      </tr>
+      </tbody>
+</table>
+
+
+
+
+###### Функциональный элемент `Settings`
+
+![PE_Settings](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_Settings.png)
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td colspan="3" align="center"><code>Assets</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.1.</td>
+        <td style="vertical-align: middle"><code>Original Assets</code></td>
+        <td style="vertical-align: middle">Указание директории (пути) к основным объектам.</td>
+        <td style="vertical-align: middle">К основным объектам относятся экспортированные из <b>Unreal Engine</b> и <b>Adobe After Effects</b> в базу данных <b>Carrot</b> шаблоны.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.2.</td>
+        <td style="vertical-align: middle"><code>Additional Assets</code></td>
+        <td style="vertical-align: middle">Указание директории (пути) к вспомогательной мультимедийной информации.</td>
+        <td style="vertical-align: middle">К вспомогательной мультимедийной информации относятся объекты, которые используются в <b>Web Playlist (Carrot Dashboard)</b> (изображения, аудио и видео материалы).</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td colspan="3" align="center"><code>Background</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.1.</td>
+        <td style="vertical-align: middle"><code>Background image</code></td>
+        <td style="vertical-align: middle">Указание директории до фонового изображения, отображаемого в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td colspan="3" align="center"><code>File</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.1.</td>
+        <td style="vertical-align: middle"><code>TempFolder</code></td>
+        <td style="vertical-align: middle">Указание директории к временной папке "Temp".</td>
+        <td style="vertical-align: middle">Папка "Temp" используется для загрузки с базы данных мультимедийной информации с целью их отображения при предварительном просмотре шаблонов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td colspan="3" align="center"><code>Licence</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.1.</td>
+        <td style="vertical-align: middle"><code>License Key</code></td>
+        <td style="vertical-align: middle">Ввод лицензионного ключа Carrot</td>
+        <td style="vertical-align: middle"><p>1. Лицензионный ключ необходим для получения доступа к функционалу работы <b>Carrot</b>. В случае отсутствия лицензионного ключа, функционал работы будет ограничен.</p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td colspan="3" align="center"><code>Network</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.1.</td>
+        <td style="vertical-align: middle"><code>Silent</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима подключения к серверу без отображения сообщений об ошибках.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.2.</td>
+        <td style="vertical-align: middle"><code>Server Host</code></td>
+        <td style="vertical-align: middle">Ввод наименования или IP-адреса рабочей станции, на котором планируется запуск схем <b>Carrot Engine</b>.</td>
+        <td style="vertical-align: middle">В случае использования локальной рабочей станции, в поле параметра <code>Server Host</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.3.</td>
+        <td style="vertical-align: middle"><code>Secure</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима защищённого сетевого обмена.</td>
+        <td style="vertical-align: middle">Дополнительную настройку параметра <code>Secure</code> необходимо осуществлять в параметрах приложения <b>Carrot Server</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td colspan="3" align="center"><code>Processing</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">6.1.</td>
+        <td style="vertical-align: middle"><code>License Key</code></td>
+        <td style="vertical-align: middle">Ввод лицензионного ключа Carrot</td>
+        <td style="vertical-align: middle"><p>1. Лицензионный ключ необходим для получения доступа к функционалу работы <b>Carrot</b>. В случае отсутствия лицензионного ключа, функционал работы будет ограничен.</p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td colspan="3" align="center"><code>Network</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.1.</td>
+        <td style="vertical-align: middle"><code>Silent</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима подключения к серверу без отображения сообщений об ошибках.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.2.</td>
+        <td style="vertical-align: middle"><code>Server Host</code></td>
+        <td style="vertical-align: middle">Ввод наименования или IP-адреса рабочей станции, на котором планируется запуск схем <b>Carrot Engine</b>.</td>
+        <td style="vertical-align: middle">В случае использования локальной рабочей станции, в поле параметра <code>Server Host</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.3.</td>
+        <td style="vertical-align: middle"><code>Secure</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима защищённого сетевого обмена.</td>
+        <td style="vertical-align: middle">Дополнительную настройку параметра <code>Secure</code> необходимо осуществлять в параметрах приложения <b>Carrot Server</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td colspan="3" align="center"><code>Processing</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.1.</td>
+        <td style="vertical-align: middle"><code>Watermark Filepath</code></td>
+        <td style="vertical-align: middle"> Указание директории (пути) к "водяному знаку".</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.2.</td>
+        <td style="vertical-align: middle"><code>Video Threads Count</code></td>
+        <td style="vertical-align: middle"> Указание количества логических процессов (параллельных потоков) для декодировки видео.</td>
+        <td style="vertical-align: middle">По умолчанию в поле Video Threads Count указывается значение <b>"6"</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.3.</td>
+        <td style="vertical-align: middle"><code>Dedicated Processing</code></td>
+        <td style="vertical-align: middle"> Включение (True) / Отключение (False) режима использования потока для декодировки видео.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.4.</td>
+        <td style="vertical-align: middle"><code>Foreground</code></td>
+        <td style="vertical-align: middle"> Включение (True) / Отключение (False) режима при котором окно <b>Preview Engine</b> открывается каждые 10 секунд. Открытие окна рендер-движка происходит поверх других окон.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.5.</td>
+        <td style="vertical-align: middle"><code>UnloadTemplates</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима выгрузки шаблонов из оперативной и графической памяти рабочей станции.</td>
+        <td style="vertical-align: middle"><p>При указании значения <code>False</code>, загружаемые шаблоны (шаблоны загружаются в том случае, когда открываются соответствующий элемент плейлиста) не выгружаются из оперативной и графической памяти рабочей станции.</p> <p>При указании значения <code>True</code> ранее загруженные шаблоны выгружаются из оперативной и графической памяти, рабочей станции.</p> <p>Следует избегать переполнения графической и оперативной памяти рабочей станции, в противном случае увеличивается вероятность непредвиденного завершения работы приложения <b>Preview Engine</b>.</p> </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">9.</td>
+        <td colspan="3" align="center"><code>Render</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">9.1.</td>
+        <td style="vertical-align: middle"><code>ShowLastFrame</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения начального кадра точки анимации ивента (шаблона) в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b> при его предварительном просмотре.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.</td>
+        <td colspan="3" align="center"><code>Stream</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.1.</td>
+        <td style="vertical-align: middle"><code>Width</code></td>
+        <td style="vertical-align: middle">Указание ширины для окна предварительного просмотра шаблонов.</td>
+        <td style="vertical-align: middle">Значение не обходимо указывать в "пиксель".</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.2.</td>
+        <td style="vertical-align: middle"><code>Height</code></td>
+        <td style="vertical-align: middle">Указание высоты для окна предварительного просмотра шаблонов.</td>
+        <td style="vertical-align: middle">Значение не обходимо указывать в "пиксель".</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.3.</td>
+        <td style="vertical-align: middle"><code>FPS</code></td>
+        <td style="vertical-align: middle">Указание частоты отображения кадров в секунду для воспроизводимого ивента в веб-интерфейсе <b>Web Playlist</b> (<b>Carrot Dashboard</b>). </td>
+        <td style="vertical-align: middle">Указываемая частота отображения кадров должна соответствовать частоте кадров воспроизводимого ивента (шаблона).</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.4.</td>
+        <td style="vertical-align: middle"><code>Bitrate</code></td>
+        <td style="vertical-align: middle">Указание среднего значения битрейта при воспроизведении шаблонов в окне предварительного просмотра.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.5.</td>
+        <td style="vertical-align: middle"><code>MaxBitrate</code></td>
+        <td style="vertical-align: middle">Указание максимального значения битрейта при воспроизведении шаблонов в окне предварительного просмотра.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.6.</td>
+        <td style="vertical-align: middle"><code>Stream Port</code></td>
+        <td style="vertical-align: middle">Указание порта пользователя веб-интерфейса <b>Web Playlist (Carrot Dashboard)</b> для приёма потоковой передачи мультимедийных данных с Preview Engine</td>
+        <td style="vertical-align: middle"><p>Для каждого пользователя веб-интерфейса <b>Web Playlist (Carrot Dashboard)</b> необходимо указывать уникальный порт. В случае, если используется несколько пользователей, то значение порта инкрементируется на единицу относительно базового значения (например, базовый порт - 24900, следующий 24901).</p> <p>Данный параметр, требует предварительной настройки соответствующих портов при сетевом конфигурировании рабочей станции.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.7.</td>
+        <td style="vertical-align: middle"><code>Stream Host</code></td>
+        <td style="vertical-align: middle">Указание локального IP-адреса рабочей стации с запущенным приложением Preview Engine для организации потоковой передачи мультимедийных данных.</td>
+        <td style="vertical-align: middle">При указании значения <code>localhost</code>, доступ к окну предварительного просмотра шаблонов возможен исключительно на локальной рабочей стации.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.8.</td>
+        <td style="vertical-align: middle"><code>Certificate</code></td>
+        <td style="vertical-align: middle">Указание директории (пути) к сертификату шифрования</td>
+        <td style="vertical-align: middle">Сертификат необходим для установления зашифрованного защищённого соединения. Сертификат представляет из себя файл формата <b>".pfx".</b></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.9.</td>
+        <td style="vertical-align: middle"><code>Certificate Password</code></td>
+        <td style="vertical-align: middle">Ввод пароля сертификата шифрования.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.10.</td>
+        <td style="vertical-align: middle"><code>Secure</code></td>
+        <td style="vertical-align: middle">Включение (True) / отключение (False) режима зашифрованного соединения <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">10.11.</td>
+        <td style="vertical-align: middle"><code>Picture Fit Mode</code></td>
+        <td style="vertical-align: middle">Управление режимом масштабирования шаблона в окне предварительного просмотра веб интерфейса <b>Web Playlist (Carrot Dashboard)</b>.</td>
+        <td style="vertical-align: middle"><p>Параметру <code>Picture Fit Mode</code> возможно присвоить следующие значения:</p><p>- значение <code>Fill</code> масштабирует ивент (шаблон) под размеры окна предварительного просмотра;</p> <p>- значение <code>AsIs</code> отображает ивент (шаблон) в соответствии с его изначальными размерами;</p> <p>- значение <code>FitWidth</code> масштабирует ивент (шаблон) по ширине окна предварительного просмотра;</p> <p>- значение <code>FitHeight</code> масштабирует ивент (шаблон) по высоте окна предварительного просмотра.</p></td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">11.</td>
+        <td colspan="3" align="center"><code>UI</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">11.1.</td>
+        <td style="vertical-align: middle"><code>Show Connection Info</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения в главном окне информации о подключенном IP-адресе.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tbody>
+  </table>
+
+
+###### Функциональный элемент `Exit`
+
+После взаимодействия с функциональным элементом `Exit` завершается работа и закрывается окно приложения **Preview Engine**.
+
+##### Кнопка `Help`
+
+![PE_Help_Button](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_Help_Button.png)
+
+
+При взаимодействии с кнопкой `Tools` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Documentation</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Documentation"</b> содержащего сведения о документации.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>About...</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"About Carrot Preview Engine"</b>, содержащего сведения о приложении <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F7</code></td>
+      </tr>
+      </tbody>
+</table>
+
+
+###### Функциональный элемент `Documentation`
+
+![PE_Documentation](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_Documentation.png)
+
+При взаимодействии с функциональным элементом `Documentation` открывается окно **"Documentation"** содержащее двухмерный штрихкод и кнопку `Open In Browser` с URL гиперссылками на официальную документацию **Carrot Broadcast**.
+
+
+
+###### Функциональный элемент `About...`
+
+![PE_About_Window](..\images\1.1.6\Carrot%20Basics\Preview%20Engine\PE_About_Window.png)
+
+При взаимодействии с функциональным элементом `About...` открывается окно **"About Carrot Preview Engine"** содержащее сведения о наименовании приложения, его версии и правообладателе с периодом действия авторских прав.
+
+
+#### Область "Данные производительности системы"
+
+Область **"Данные производительности системы"** отображает сведения, перечень и назначение которых представлены в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>FPS</code></td>
+        <td style="vertical-align: middle">Отображение частоты кадров воспроизведения мультимедийной информации в единицу времени.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>Physical memory usage</code></td>
+        <td style="vertical-align: middle">Отображение сведений об используемом объёме оперативной памяти приложением <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><code>Render Thread CPU usage</code></td>
+        <td style="vertical-align: middle">Отображение сведений об загрузке центрального процессорного устройства.</td>
+        <td style="vertical-align: middle">Измеряется в процентном соотношении</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><code>Total GPU Memory Usage</code></td>
+        <td style="vertical-align: middle">Отображение сведений об используемом объёме графической памяти приложением <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+        <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><code>Output Delay</code></td>
+        <td style="vertical-align: middle">Отображение сведений о кадровой задержке Preview Engine.</td>
+        <td style="vertical-align: middle">Во избежание накопления задержек, необходимо учитывать значение параметра <code>processFPS</code>. Таким образом, в случае, если значение данного параметра будет меньше кадровой частоты ивента (шаблона), то кадровая задержка увеличивается.</td>
+      </tr>
+        <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle"><code>Overall Users</code></td>
+        <td style="vertical-align: middle">Отображение сведений об общем количеством пользователей, использующих приложение <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+        <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle"><code>processFPS</code></td>
+        <td style="vertical-align: middle">Отображение сведений о кадровой скорости обработки ивентов (шаблонов) <b>Preview Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      </tbody>
+</table>
+
 
 
 
