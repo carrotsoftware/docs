@@ -5902,6 +5902,1073 @@ AR композитинг работает по схеме, когда изоб�
 </table>
 
 
+## Input Devices
+
+### Назначение
+
+**Input Devices** предназначено для обеспечения интеграции и управления устройствами ввода-вывода информации с целью изменения состояния ивентов в веб-интерфейсе **Web Playlist (Carrot Dashboard)**.
+
+**Input Devices** ориентировано на применение в профессиональных мультимедийных средах, где требуется высокая степень интерактивности и точности управления, включая студийные постановки и прямые трансляции.
+
+### Функциональные возможности
+
+К основным функциональным возможностям **Input Devices** относится:
+- обеспечение приёма и интерпретации сигналов от устройств ввода-вывода информации;
+- поддержка устройств с внешними интерфейсами типа **USB** (клавиатуры, Stream Deck), **GPIO** (режиссёрские пульты) и **MIDI**;
+- конфигурирование и настройка команд управления ивентами плейлиста веб-интерфейса **Web Playlist (Carrot Dashboard)**.
+
+### Пользовательский интерфейс
+
+>Для получения доступа к пользовательскому интерфейсу приложения **Input Devices** необходимо провзаимодействовать `правой кнопкой мыши (ПКМ)` с его иконкой, располагаемой в области уведомлений операционной системы Windows.
+
+![ID_Main_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Main_Window.png)
+
+
+Пользовательский интерфейс приложения **Input Devices** включает в себя перечень функциональных элементов, назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>GPIO</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"GPIO Settings"</b> для настройки устройств ввода-вывода с внешним интерфейсом GPIO.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>MIDI</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"MIDI Settings"</b> для настройки устройств ввода-вывода с внешним интерфейсом MIDI.</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><code>Macro</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Macro Keyboard Settings"</b> для настройки устройства ввода-вывода Stream Deck.</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><code>Keyboard</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Keyboard Settings"</b> для настройки устройства ввода-вывода типа "клавиатура".</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><code>Playlist</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Playlist"</b> для контроля состояний ивентов.</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle"><code>NCmds</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Network Commands"</b> для настройки процесса запуска ивентов на удалённой рабочей станции.</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle"><code>Settings</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Settings"</b> с настройками приложения "Input Devices".</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle"><code>Close</code></td>
+        <td style="vertical-align: middle">Завершение работы приложения <b>"Input Devices"</b>.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+#### Функциональный элемент GPIO
+
+После взаимодействия с функциональным элементом `GPIO` откроется окно **"GPIO Settings"** предназначенное для настройки устройств ввода-вывода информации с внешним интерфейсом **GPIO** типа **"режиссёрский пульт"**.
+
+![ID_GPIO_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_GPIO_Window.png)
+
+Окно **"GPIO Settings"** состоит из следующих областей, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Управление параметрами GPIO</b></td>
+        <td style="vertical-align: middle">Взаимодействие с элементами управления по настройке параметров GPIO.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Выбор плейлиста</b></td>
+        <td style="vertical-align: middle">Выбор плейлиста для настройки ивентов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><b>Ивенты плейлиста</b></td>
+        <td style="vertical-align: middle">Отображения сведений о содержащихся ивентах в плейлисте.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><b>Используемые ивенты</b></td>
+        <td style="vertical-align: middle">Отображение сведений о выбранных для конфигурирования ивентах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><b>Управление командами и ивентами</b></td>
+        <td style="vertical-align: middle">Настройка и конфигурирование ивентов.</td>
+      </tr>
+    </tbody>
+</table>
+
+##### Область "Управления параметрами GPIO"
+
+![ID_GPIO_Parameters_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_GPIO_Parameters_Area.png)
+
+Область **"Управление параметрами GPIO"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Сmd</td>
+        <td style="vertical-align: middle">Отображение сведений о входящем сообщении (команды).</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Log</code></td>
+        <td style="vertical-align: middle">Включение / отключение режима учёта (логирования) входящих сообщений (команд).</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Isolated Channels</code></td>
+        <td style="vertical-align: middle">Включение / отключение режима изолированных каналов интерфейса GPIO.</td>
+        <td style="vertical-align: middle"><p>1. В отключенном состоянии, каждый канал интерфейса GPIO принимает значения в диапазоне от 0 до 255, что позволяет передавать до 256 различных команд.</p><p>2. Во включённом состоянии, каналы интерфейса GPIO работают в "бинарном" режиме, где каждый из восьми каналов интерфейса способен принимать две команды - "обычная" и "инвертированная", что обеспечивает возможность воспроизведения до 16 уникальных действий.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Invert Input</code></td>
+        <td style="vertical-align: middle">Включение / отключение режима реверсирования порядка входящей последовательности битов.</td>
+        <td style="vertical-align: middle"><p>1. Пример: входящая последовательность битов представлена в следующем виде <code>00001000</code>, при включении параметра <code>Invert Input</code> она будет преобразована в сообщение вида <code>00010000</code>.</p><p>2. Данный параметр необходим для преобразования входящих сигналов интерфейса GPIO в том случае, если конструктивной особенностью интерфейса является передача реверсивной последовательности.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Delay</td>
+        <td style="vertical-align: middle">Указание задержки (временного окна), в течение которой канал интерфейса GPIO остаётся активным для обработки сигнала.</td>
+        <td style="vertical-align: middle"><p>Измеряется в "миллисекунды".</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Enable Input</code></td>
+        <td style="vertical-align: middle">Включение / отключение режима передачи изменений состояний ивентов, выполненных в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Invert Output</code></td>
+        <td style="vertical-align: middle">Включение / отключение режима реверсирования порядка исходящей последовательности битов.</td>
+        <td style="vertical-align: middle"><p>1. Пример: исходящая последовательность битов представлена в следующем виде <code>00001000</code>, при включении параметра <code>Invert Output</code> она будет преобразована в сообщение вида <code>00010000</code>.</p><p>2. Данный параметр необходим для преобразования исходящих сигналов для корректной передачи сообщений по интерфейсу GPIO в случае, если его конструктивной особенностью является приём реверсивной последовательности.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save</code></td>
+        <td style="vertical-align: middle">Сохранение конфигурационных параметров.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    </tbody>
+</table>
+
+
+##### Область "Выбор плейлиста"
+
+![ID_GPIO_Playlist_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_GPIO_Playlist_Area.png)
+
+Область **"Выбор плейлиста"** включает в себя поле **"Playlist"** при взаимодействии с которым отображается перечень созданных в веб-интерфейсе **Web Playlist (Carrot Dashboard)** плейлистах.
+
+##### Область "Ивенты плейлиста"
+
+![ID_GPIO_Playlist_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_GPIO_Playlist_Events_Area.png)
+
+Область **"Ивенты плейлиста"** отображает перечень доступных ивентов плейлиста, выбранного в области **"Выбор плейлиста"**.
+
+##### Область "Используемые ивенты"
+
+![ID_GPIO_Assigned_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_GPIO_Assigned_Events_Area.png)
+
+Область **"Используемые ивенты"** отображает перечень используемых для конфигурирования ивентов плейлиста.
+
+>Для добавления ивентов в область **"Используемые ивенты"**, необходимо переместить их из области **"Ивенты плейлиста"** путём взаимодействия с помощью `левой кнопки мыши (ЛКМ)`.
+
+##### Область "Управление командами и ивентами"
+
+![ID_GPIO_Commands_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_GPIO_Commands_Area.png)
+
+Область **"Управление командами и ивентами"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Сmd</td>
+        <td style="vertical-align: middle">Указание индекса команды для ивента.</td>
+        <td style="vertical-align: middle"><p>1. При назначении команд ивентам, необходимо избегать случаев присваивания индексов аналогичных друг другу.</p> <p>2. При назначении одной команды для двух ивентов, необходимо убедиться, что их статус аналогичен друг другу.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Input Delay</td>
+        <td style="vertical-align: middle">Указание входящей задержки на обработку команд (изменения состояний ивентов) от интерфейса GPIO.</td>
+        <td style="vertical-align: middle">Измеряется в "миллисекунды"</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Output Delay</td>
+        <td style="vertical-align: middle">Указание исходящей задержки на обработку команд (изменения состояний ивентов) интерфейсом GPIO.</td>
+        <td style="vertical-align: middle">Измеряется в "миллисекунды"</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+#### Функциональный элемент MIDI
+
+После взаимодействия с функциональным элементом `MIDI` откроется окно **"MIDI Settings"** предназначенное для настройки устройств ввода-вывода информации с внешним интерфейсом **MIDI**.
+
+![ID_MIDI_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_MIDI_Window.png)
+
+Окно **"MIDI Settings"** состоит из следующих областей, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Взаимодействие с параметрами MIDI</b></td>
+        <td style="vertical-align: middle">Отображение сведений и сохранения конфигурационных параметров MIDI.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Выбор плейлиста</b></td>
+        <td style="vertical-align: middle">Выбор плейлиста для настройки ивентов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><b>Ивенты плейлиста</b></td>
+        <td style="vertical-align: middle">Отображения сведений о содержащихся ивентах в плейлисте.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><b>Используемые ивенты</b></td>
+        <td style="vertical-align: middle">Отображение сведений о выбранных для конфигурирования ивентах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><b>Управление командами и ивентами</b></td>
+        <td style="vertical-align: middle">Конфигурирование ивентов.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+##### Область "Взаимодействие с параметрами MIDI"
+
+![ID_MIDI_Parameters_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_MIDI_Parameters_Area.png)
+
+
+Область **"Управление параметрами MIDI"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Сmd</td>
+        <td style="vertical-align: middle">Отображение сведений о входящем сообщении (команды).</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save</code></td>
+        <td style="vertical-align: middle">Сохранение конфигурационных параметров.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    </tbody>
+</table>
+
+
+##### Область "Выбор плейлиста"
+
+![ID_MIDI_Playlist_Area.png](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_MIDI_Playlist_Area.png)
+
+Область **"Выбор плейлиста"** включает в себя поле **"Playlist"** при взаимодействии с которым отображается перечень созданных в веб-интерфейсе **Web Playlist (Carrot Dashboard)** плейлистах.
+
+
+##### Область "Ивенты плейлиста"
+
+![ID_MIDI_Playlist_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_MIDI_Playlist_Events_Area.png)
+
+Область **"Ивенты плейлиста"** отображает перечень доступных ивентов плейлиста, выбранного в области **"Выбор плейлиста"**.
+
+##### Область "Используемые ивенты"
+
+![ID_MIDI_Assigned_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_MIDI_Assigned_Events_Area.png)
+
+Область **"Используемые ивенты"** отображает перечень используемых для конфигурирования ивентов плейлиста.
+
+>Для добавления ивентов в область **"Используемые ивенты"**, необходимо переместить их из области **"Ивенты плейлиста"** путём взаимодействия с помощью `левой кнопки мыши (ЛКМ)`.
+
+##### Область "Управление командами и ивентами"
+
+![ID_MIDI_Commands_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_MIDI_Commands_Area.png)
+
+Область **"Управление командами и ивентами"** содержит поле **"Cmd"** предназначенное для указания ивентам конфигурационного индекса (команды).
+
+>При назначении команд ивентам, необходимо избегать случаев присваивания индексов аналогичных друг другу.
+>
+>При назначении одной команды для двух ивентов, необходимо убедиться, что их статус аналогичен друг другу.
+
+#### Функциональный элемент Macro
+
+
+После взаимодействия с функциональным элементом `Macro` откроется окно **"Macro Keyboard Settings"** предназначенное для настройки устройства ввода-вывода информации **"Stream Deck"**.
+
+![ID_Macro_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Macro_Window.png)
+
+Окно **"Macro Keyboard Settings"** состоит из следующих областей, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Управление параметрами "Stream Deck"</b></td>
+        <td style="vertical-align: middle">Взаимодействие с элементами управления по настройке параметров "Stream Deck".</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Выбор плейлиста</b></td>
+        <td style="vertical-align: middle">Выбор плейлиста для настройки ивентов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><b>Ивенты плейлиста</b></td>
+        <td style="vertical-align: middle">Отображения сведений о содержащихся ивентах в плейлисте.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><b>Используемые ивенты</b></td>
+        <td style="vertical-align: middle">Отображение сведений о выбранных для конфигурирования ивентах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><b>Управление командами и ивентами</b></td>
+        <td style="vertical-align: middle">Конфигурирование ивентов.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+##### Область "Управление параметрами "Stream Deck"
+
+![ID_Macro_Parameters_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Macro_Parameters_Area.png)
+
+Область **"Управление параметрами "Stream Deck"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Сmd</td>
+        <td style="vertical-align: middle">Отображение сведений о входящем сообщении (команды).</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Icons Path</td>
+        <td style="vertical-align: middle">Отображение сведений о расположении директории с конфигурационным файлом.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>...</code></td>
+        <td style="vertical-align: middle">Выбор конфигурационного файла в файловой системе.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟳</code></td>
+        <td style="vertical-align: middle">Обновление содержимого директории с конфигурационным файлом.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save</code></td>
+        <td style="vertical-align: middle">Сохранение конфигурационных параметров.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+##### Область "Выбор плейлиста"
+
+![ID_Macro_Playlist_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Macro_Playlist_Area.png)
+
+Область **"Выбор плейлиста"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Playlist</td>
+        <td style="vertical-align: middle">Отображение сведений о созданных в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b> плейлистах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟳</code></td>
+        <td style="vertical-align: middle">Обновление содержимого директории с конфигурационным файлом.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+##### Область "Ивенты плейлиста"
+
+![ID_Macro_Playlist_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Macro_Playlist_Events_Area.png)
+
+Область **"Ивенты плейлиста"** отображает перечень доступных ивентов плейлиста, выбранного в области **"Выбор плейлиста"**.
+
+
+##### Область "Используемые ивенты"
+
+![ID_Macro_Assigned_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Macro_Assigned_Events_Area.png)
+
+Область **"Используемые ивенты"** отображает перечень используемых для конфигурирования ивентов плейлиста.
+
+
+>В области **"Используемые ивенты"** реализована возможность сортировки добавленных ивентов с помощью поля **"Sort by"**.
+>
+>Для добавления ивентов в область **"Используемые ивенты"**, необходимо переместить их из области **"Ивенты плейлиста"** путём взаимодействия с помощью `левой кнопки мыши (ЛКМ)`.
+
+
+
+
+##### Область "Управление командами и ивентами"
+
+![ID_Macro_Commands_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Macro_Commands_Area.png)
+
+Область **"Управление командами и ивентами"** содержит поле **"Cmd"** предназначенное для указания ивентам конфигурационного индекса (команды).
+
+>При назначении команд ивентам, необходимо избегать случаев присваивания индексов аналогичных друг другу.
+>
+>При назначении одной команды для двух ивентов, необходимо убедиться, что их статус аналогичен друг другу.
+
+
+#### Функциональный элемент Keyboard
+
+После взаимодействия с функциональным элементом `Keyboard` откроется окно **"Keyboard Settings"** предназначенное для настройки устройств ввода-вывода информации с внешним интерфейсом **USB** типа **"клавиатура"**.
+
+![ID_Keyboard_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Keyboard_Window.png)
+
+Окно **"Keyboard Settings"** состоит из следующих областей, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Управление параметрами "Keyboard".</b></td>
+        <td style="vertical-align: middle">Взаимодействие с элементами управления по настройке параметров "Keyboard"</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Выбор плейлиста</b></td>
+        <td style="vertical-align: middle">Выбор плейлиста для настройки ивентов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><b>Ивенты плейлиста</b></td>
+        <td style="vertical-align: middle">Отображения сведений о содержащихся ивентах в плейлисте.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><b>Используемые ивенты</b></td>
+        <td style="vertical-align: middle">Отображение сведений о выбранных для конфигурирования ивентах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><b>Управление командами и ивентами</b></td>
+        <td style="vertical-align: middle">Конфигурирование ивентов.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+##### Область "Управление параметрами "Keyboard"
+
+![ID_Keyboard_Parameters_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Keyboard_Parameters_Area.png)
+
+Область **"Управление параметрами "Keyboard"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Сmd</td>
+        <td style="vertical-align: middle">Отображение сведений о входящем сообщении (команды).</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save</code></td>
+        <td style="vertical-align: middle">Сохранение конфигурационных параметров.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    </tbody>
+</table>
+
+##### Область "Выбор плейлиста"
+
+![ID_Keyboard_Playlist_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Keyboard_Playlist_Area.png)
+
+Область **"Выбор плейлиста"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Playlist</td>
+        <td style="vertical-align: middle">Отображение сведений о созданных в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b> плейлистах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟳</code></td>
+        <td style="vertical-align: middle">Обновление содержимого директории с конфигурационным файлом.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+##### Область "Ивенты плейлиста"
+
+![ID_Keyboard_Playlist_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Keyboard_Playlist_Events_Area.png)
+
+Область **"Ивенты плейлиста"** отображает перечень доступных ивентов плейлиста, выбранного в области **"Выбор плейлиста"**.
+
+
+##### Область "Используемые ивенты"
+
+![ID_Keyboard_Assigned_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Keyboard_Assigned_Events_Area.png)
+
+Область **"Используемые ивенты"** отображает перечень используемых для конфигурирования ивентов плейлиста.
+
+
+>В области **"Используемые ивенты"** реализована возможность сортировки добавленных ивентов с помощью поля **"Sort by"**.
+>
+>Для добавления ивентов в область **"Используемые ивенты"**, необходимо переместить их из области **"Ивенты плейлиста"** путём взаимодействия с помощью `левой кнопки мыши (ЛКМ)`.
+
+
+##### Область "Управление командами и ивентами"
+
+![ID_Keyboard_Commands_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Keyboard_Commands_Area.png)
+
+Область **"Управление командами и ивентами"** содержит поле **"Cmd"** предназначенное для указания ивентам конфигурационного индекса (команды).
+
+>При назначении команд ивентам, необходимо избегать случаев присваивания индексов аналогичных друг другу.
+>
+>При назначении одной команды для двух ивентов, необходимо убедиться, что их статус аналогичен друг другу.
+
+
+
+
+#### Функциональный элемент Playlist
+
+После взаимодействия с функциональным элементом `Playlist` откроется окно **"Playlist"** предназначенное для взаимодействия с ивентами плейлистов с помощью специализированного пользовательского интерфейса.
+
+![ID_Playlist_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Playlist_Window.png)
+
+Окно **"Keyboard Settings"** состоит из следующих областей, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Обновление плейлистов</b></td>
+        <td style="vertical-align: middle">Обновление перечня плейлистов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Перечень плейлистов</b></td>
+        <td style="vertical-align: middle">Отображение сведений о доступных для взаимодействия плейлистов.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+##### Область "Обновление плейлистов"
+
+![ID_Playlist_Update_Playlist_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Playlist_Update_Playlist_Area.png)
+
+Область **"Обновление плейлистов"** содержит кнопку `⟳` предназначенную для обновления в области **"Перечень плейлистов"** списка плейлистов доступных для взаимодействия.
+
+
+
+##### Область "Перечень плейлистов"
+
+![ID_Playlist_List_of_Playlists_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Playlist_List_of_Playlists_Area.png)
+
+Область **"Перечень плейлистов"** содержит список кнопок с наименованием доступных для взаимодействия плейлистов.
+
+>В случае, если список плейлистов превышает размеры доступной области отображения, оставшаяся его часть формируется в рамках новой страницы.
+>
+>Для переключения между страницами необходимо воспользоваться кнопкой `›`.
+
+Для получения доступа к ивентам плейлиста, необходимо провзаимодействовать с соответствующей кнопкой плейлиста. Внешний вид открывшегося окна с перечнем ивентов плейлиста представлен на рисунке ниже.
+
+![ID_Playlist_Events_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Playlist_Events_Window.png)
+
+Открывшееся окно ивентов плейлиста состоит из элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Плейлист</b></td>
+        <td style="vertical-align: middle">Отображение сведений о наименовании плейлиста.</td>
+        <td style="vertical-align: middle">Для возвращения к области "Перечень плейлистов" необходимо провзаимодействовать с кнопкой <code>⮌</code>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Перечень ивентов</b></td>
+        <td style="vertical-align: middle">Отображение сведений о доступных для взаимодействия ивентов.</td>
+        <td style="vertical-align: middle"><p>1. В случае, если список плейлистов превышает размеры доступной области отображения, оставшаяся его часть формируется в рамках новой страницы.</p> <p>2. Для переключения между страницами необходимо воспользоваться кнопкой <code>›</code>.</p></td>
+      </tr>
+    </tbody>
+</table>
+
+
+#### Функциональный элемент NCmds
+
+
+После взаимодействия с функциональным элементом `NCmds` откроется окно **"Network Commands"** предназначенное для настройки процедуры удалённого запуска ивентов.
+
+![ID_NCmds_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_NCmds_Window.png)
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Управление параметрами "Network Commands".</b></td>
+        <td style="vertical-align: middle">Настройка сетевых параметров для формирования сетевого взаимодействия.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Выбор плейлиста</b></td>
+        <td style="vertical-align: middle">Выбор плейлиста для настройки ивентов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><b>Ивенты плейлиста</b></td>
+        <td style="vertical-align: middle">Отображения сведений о содержащихся ивентах в плейлисте.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><b>Используемые ивенты</b></td>
+        <td style="vertical-align: middle">Отображение сведений о выбранных для конфигурирования ивентах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><b>Управление командами и ивентами</b></td>
+        <td style="vertical-align: middle">Конфигурирование ивентов.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+##### Область "Управление параметрами "Keyboard"
+
+![ID_NCmds_Parameters_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_NCmds_Parameters_Area.png)
+
+Область **"Управление параметрами GPIO"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Host</td>
+        <td style="vertical-align: middle">Ввод IP-адреса и порта удалённой рабочей станции.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟳</code></td>
+        <td style="vertical-align: middle">Обновление сетевого подключения.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save</code></td>
+        <td style="vertical-align: middle">Сохранение конфигурационных параметров.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+##### Область "Выбор плейлиста"
+
+![ID_NCmds_Playlist_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_NCmds_Playlist_Area.png)
+
+Область **"Выбор плейлиста"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Playlist</td>
+        <td style="vertical-align: middle">Отображение сведений о созданных в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b> плейлистах.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟳</code></td>
+        <td style="vertical-align: middle">Обновление содержимого директории с конфигурационным файлом.</td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+##### Область "Ивенты плейлиста"
+
+![ID_NCmds_Playlist_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_NCmds_Playlist_Events_Area.png)
+
+Область **"Ивенты плейлиста"** отображает перечень доступных ивентов плейлиста, выбранного в области **"Выбор плейлиста"**.
+
+
+##### Область "Используемые ивенты"
+
+![ID_NCmds_Assigned_Events_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_NCmds_Assigned_Events_Area.png)
+
+Область **"Используемые ивенты"** отображает перечень используемых для конфигурирования ивентов плейлиста.
+
+>Для добавления ивентов в область **"Используемые ивенты"**, необходимо переместить их из области **"Ивенты плейлиста"** путём взаимодействия с помощью `левой кнопки мыши (ЛКМ)`.
+
+
+##### Область "Управление командами и ивентами"
+
+![ID_NCmds_Commands_Area](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_NCmds_Commands_Area.png)
+
+Область **"Управление командами и ивентами"** состоит из следующих элементов, перечень и назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Сmd</td>
+        <td style="vertical-align: middle">Указание индекса команды для ивента.</td>
+        <td style="vertical-align: middle"><p>1. При назначении команд ивентам, необходимо избегать случаев присваивания индексов аналогичных друг другу.</p> <p>2. При назначении одной команды для двух ивентов, необходимо убедиться, что их статус аналогичен друг другу.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle">Delay (ms)</td>
+        <td style="vertical-align: middle">Указание задержки на обработку команд.</td>
+        <td style="vertical-align: middle">Измеряется в "миллисекундах"</td>
+      </tr>
+    </tbody>
+</table>
+
+
+#### Функциональный элемент Settings
+
+После взаимодействия с функциональным элементом `Settings` открывается окно **"Settings"**, предназначенное для настройки параметров приложения **"Input Devices"**. Внешний вид окна **"Settings"** представлен на рисунке ниже.
+
+![ID_Settings_Window](..\images\1.1.6\Carrot%20Basics\Input%20Devices\ID_Settings_Window.png)
+
+Настраиваемые параметры приложения **"Input Devices"** распределены по разделам, перечень и назначение которых изложено в таблице ниже.
+
+>При изменении параметров приложения **"Input Devices"** необходимо произвести его перезапуск.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center; vertical-align: middle">№ п/п</th>
+      <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+      <th style="text-align: center; vertical-align: middle">Назначение</th>
+      <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">1.</td>
+      <td colspan="3" align="center"><code>Data Base</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">1.1.</td>
+      <td style="vertical-align: middle"><code>Use unique event statuses</code></td>
+      <td style="vertical-align: middle">Включение (True) / отключение (False) режима отображения уникального статуса ивента в плейлистах.</td>
+      <td style="vertical-align: middle"><p>1. Для работы параметра <code>Use unique event statuses</code>, необходимо произвести его дополнительную настройку в веб-интерфейсе <b>Web Playlist</b>, и приложениях <b>Carrot Engine</b>, <b>Carrot Server</b> и <b>Launcher</b>.</p> <p>2. При изменении значения параметра <code>Use unique event statuses</code> необходимо повторно осуществить конфигурацию ивентов.</p></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.</td>
+      <td colspan="3" align="center"><code>Input</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.1.</td>
+      <td style="vertical-align: middle"><code>GPIO Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи GPIO.</td>
+      <td style="vertical-align: middle">При запуске приложения "Input Devices" и включённом параметре <code>GPIO Enabled</code> дополнительно открывается окно "GPIO Commands".</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.2.</td>
+      <td style="vertical-align: middle"><code>MIDI Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи MIDI.</td>
+      <td style="vertical-align: middle">При запуске приложения "Input Devices" и включённом параметре <code>MIDI Enabled</code> дополнительно открывается окно "MIDI Commands".</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.3.</td>
+      <td style="vertical-align: middle"><code>Macro Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи со Stream Deck.</td>
+      <td style="vertical-align: middle">При запуске приложения "Input Devices" и включённом параметре <code>Macro Enabled</code> дополнительно открывается окно "Macro Commands".</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.4.</td>
+      <td style="vertical-align: middle"><code>Keyboard Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи с USB устройством типа "клавиатура".</td>
+      <td style="vertical-align: middle">При запуске приложения "Input Devices" и включённом параметре <code>Keyboard Enabled</code> дополнительно открывается окно "Keyboard Commands".</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">3.</td>
+      <td colspan="3" align="center"><code>Licence</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">3.1.</td>
+      <td style="vertical-align: middle"><code>Licence Key</code></td>
+      <td style="vertical-align: middle">Ввод лицензионного ключа Carrot.</td>
+      <td style="vertical-align: middle"><p>1. Лицензионный ключ необходим для получения доступа к функционалу работы <b>Carrot</b>. В случае отсутствия лицензионного ключа, функционал работы будет ограничен.</p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">4.</td>
+      <td colspan="3" align="center"><code>Network</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">4.1.</td>
+      <td style="vertical-align: middle"><code>Server Host List</code></td>
+      <td style="vertical-align: middle">Ввод IP-адреса рабочих станций.</td>
+      <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</p></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">4.2.</td>
+      <td style="vertical-align: middle"><code>Secure</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) режима защищённого сетевого обмена.</td>
+      <td style="vertical-align: middle">Дополнительную настройку параметра <code>Secure</code> необходимо осуществлять в параметрах приложения <b>Carrot Server</b>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">5.</td>
+      <td colspan="3" align="center"><code>Network Commands</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">5.1.</td>
+      <td style="vertical-align: middle"><code>NCmds Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи для работы с удалёнными рабочими станциями.</td>
+      <td style="vertical-align: middle">При запуске приложения "Input Devices" и включённом параметре <code>NCmds Enabled</code> дополнительно открывается окно "Network Commands".</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">6.</td>
+      <td colspan="3" align="center"><code>Playlist</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">6.1.</td>
+      <td style="vertical-align: middle"><code>Playlist Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи для работы с ивентами плейлистов.</td>
+      <td style="vertical-align: middle">При запуске приложения "Input Devices" и включённом параметре <code>Playlist Enabled</code> дополнительно открывается окно "Playlist".</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">6.2.</td>
+      <td style="vertical-align: middle"><code>Stories Enabled</code></td>
+      <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения в окне "Playlist" созданных историй плейлиста.</td>
+      <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+   <tbody>
+</table>
+
+
+#### Функциональный элемент Close
+
+
+После взаимодействия с функциональным элементом `Close` завершается работа приложения **"Input Devices"**.
 
 
 
