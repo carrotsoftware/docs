@@ -4057,7 +4057,86 @@
 
 ## Carrot Engine
 
-### Settings.
+
+### Назначение
+
+**Carrot Engine** представляет собой специализированное программное обеспечение, предназначенное для **генерации видеосигнала** и обеспечения его непрерывного вывода в режиме реального времени в различных мультимедийных системах (вещательные платформы, виртуальные студии, интерактивные инсталляции и т.п.).
+
+В рамках термина **"генерация видеосигнала"** подразумевается процесс создания мультимедийной информации (титры, графические объекты, анимации и пр.) на основе заранее подготовленных шаблонов **After Effects** и **Unreal Engine**.
+
+**Carrot Engine** осуществляет своё функционирование на основе предварительно заданной структуры данных, включающую в себя схемы **Carrot Engine** и соответствующие шаблоны **After Effects** и **Unreal Engine**, что в свою очередь, обеспечивает автоматизированный процесс генерации видеосигнала.
+
+### Функциональные возможности
+
+Основными функциональными возможностями **Carrot Engine** являются:
+- генерация видеосигнала в режиме реального времени;
+- интеграция со сторонним программным обеспечением **Adobe After Effects** и **Unreal Engine**;
+- интеграция с **NRCS** и **playout** системами;
+- поддержка стандартов кодировки **MPEG-1 & MPEG 2**, **VC-1 & MPEG-4**, **H.264/AVCHD**, **H.265/HEVC**, **VP9**;
+- поддержка процесса отделения переднего плана (актёров, объектов) от выбранного цвета аддитивной цветовой подсветки (кеинга);
+- поддержка технологии **XR (Extended Reality)** и **AR (Augmented Reality)** виртуальных студий.
+
+### Пользовательский интерфейс
+
+![CE_Main_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Main_Window.png)
+
+Пользовательский интерфейс приложения **Carrot Engine** состоит из следующих областей:
+- **"Вспомогательные кнопки взаимодействия с Carrot Engine"**;
+- **"Область отображения видеосигнала"**;
+- **"Данные производительности системы"**.
+
+#### Область "Вспомогательные кнопки взаимодействия с Carrot Engine"
+
+![CE_Buttons](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Buttons.png)
+
+Область **"Вспомогательные кнопки взаимодействия с Carrot Engine"** включает в себя следующие кнопки:
+- `File` (1);
+- `View` (2);
+- `Delays` (3);
+- `Tools` (4);
+- `Help` (5);
+
+
+##### Кнопка `File`
+
+![CE_File_Button](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_File_Button.png)
+
+При взаимодействии с кнопкой `File` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Settings</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Settings"</b> для настройки параметров <b>Carrot Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F4</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>Exit</code></td>
+        <td style="vertical-align: middle">Завершение работы <b>Carrot Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Alt+F4</code></td>
+      </tr>
+      </tbody>
+</table>
+
+
+
+###### Функциональный элемент `Settings`
+
+При взаимодействии с функциональным элементом `Settings` открывается окно **"Settings"**, предназначенное для настроек параметров **Carrot Engine**, внешний вид которого представлен на рисунке ниже.
+
+![CE_Settings](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Settings.png)
+
+Настраиваемые параметры **Carrot Engine** распределены по разделам, перечень и назначение которых изложен в таблице ниже.
 
 <table>
     <thead>
@@ -4102,8 +4181,8 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">3.1.</td>
         <td style="vertical-align: middle"><code>Input Delay</code></td>
-        <td style="vertical-align: middle">Установка входной задержки для видео. В зависимости от использования, применимо к <b>BmdTrackedInput</b> и <b>AJATrackedInput</b>.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Установка входной задержки для видео.</td>
+        <td style="vertical-align: middle">Используется при работе с <b>BmdTrackedInput</b> и <b>AJATrackedInput</b>.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.2.</td>
@@ -4132,29 +4211,29 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">3.6.</td>
         <td style="vertical-align: middle"><code>XR Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки для выдачи изображения на XR-выходе.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Установка задержки отображения изображения на LED панели при работе с XR.</td>
+        <td style="vertical-align: middle">Задержка применяется к ноде <code>LED Panel</code> схемы Carrot Engine.</td>
     </tr>
         <td style="text-align: center; vertical-align: middle">3.7.</td>
         <td style="vertical-align: middle"><code>AR Texture Delay</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="vertical-align: middle">Установка задержки отображения графического окружения при работе с XR.</td>
+        <td style="text-align: center; vertical-align: middle">Задержка применяется к ноде <code>AR</code> схемы Carrot Engine.</td>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.8.</td>
         <td style="vertical-align: middle"><code>UE Draw Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки отрисовки UE проектов на XR-выходе.</td>
+        <td style="vertical-align: middle">Установка задержки обработки проекта Unreal Engine при работе с XR.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.9.</td>
         <td style="vertical-align: middle"><code>Max UE draw Delay Buffer</code></td>
-        <td style="vertical-align: middle">Установка максимального значения задержки UE проектов на XR-выходе.</td>
+        <td style="vertical-align: middle">Установка максимальной задержки обработки проекта Unreal Engine при работе с XR.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.10.</td>
         <td style="vertical-align: middle"><code>DistortionDelay</code></td>
-        <td style="vertical-align: middle"></td>
+        <td style="vertical-align: middle">Установка задержки на передачу коэффициента дисторсии от видеокамеры при работе с XR.</td>
         <td style="text-align: center; vertical-align: middle"></td>
     </tr>
     <tr>
@@ -4258,8 +4337,8 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">8.5.</td>
         <td style="vertical-align: middle"><code>GPU decoder Dedicated Processing</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="vertical-align: middle"></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима выделенной обработки декодирования графическим устройством (видеокартой).</td>
+        <td style="vertical-align: middle"><p>При указании значения <code>False</code>, декодирование видеокадров выполняется в потоке рендера графики. В данном случае, обеспечивается высокая кадровая точность воспроизведения, однако данный режим работы может привести к снижению производительности рабочей стации, особенно при обработке излишне нагруженных шаблонов Unreal Engine и After Effects.</p> <p>При указании значения <code>True</code>, декодирование видеокадров выполняется в отдельном буфере графического устройства (видеокарты), что снижает нагрузку на рендер-поток, но приводит  к их асинхронному воспроизведению (воспроизведение видеосигнала может начинаться с задержкой), приводящее к потере кадровой точности. Также при воспроизведении различных шаблонов возможно отображение артефактов в виде остаточных кадров предыдущего видеопотока.</p></td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">8.6.</td>
@@ -4271,7 +4350,7 @@
         <td style="text-align: center; vertical-align: middle">8.7.</td>
         <td style="vertical-align: middle"><code>Use Video GPU Decoder</code></td>
         <td style="vertical-align: middle">Включение (True) / Отключение (False) режима декодировки видео с помощью видеокарты.</td>
-        <td style="vertical-align: middle">Использование вычислительных мощностей видеокарты возможно при обработке кодеков H.265 в шаблонах Adobe After Effects.</td>
+        <td style="vertical-align: middle">Использование вычислительных мощностей видеокарты возможно исключительно при обработке кодеков H.265 в шаблонах Adobe After Effects.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">8.8.</td>
@@ -4281,18 +4360,12 @@
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">8.9.</td>
-        <td style="vertical-align: middle"><code>Print Debug Info</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
-    </tr>
-    <tr>
-        <td style="text-align: center; vertical-align: middle">8.10.</td>
         <td style="vertical-align: middle"><code>Use GPU Memory</code></td>
         <td style="vertical-align: middle">Включение (True) / Отключение (False) режима использования видеопамяти (памяти видеокарты) для работы с PNG-секвенциями. Данный режим положительно сказывается на производительности (ускорение загрузки и уменьшение нагрузки на систему), но при этом задействует больший объём видеопамяти.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
-        <td style="text-align: center; vertical-align: middle">8.11.</td>
+        <td style="text-align: center; vertical-align: middle">8.10.</td>
         <td style="vertical-align: middle"><code>Upload Contexts Count</code></td>
         <td style="vertical-align: middle">Определение количества параллельных потоков, обрабатывающих входящие видеосигналы в случае, если в настройках input <code>BmdInput</code> используется параметр <code>Use Resource Thread</code>.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
@@ -4305,7 +4378,7 @@
         <td style="text-align: center; vertical-align: middle">9.1.</td>
         <td style="vertical-align: middle"><code>Allow Recording</code></td>
         <td style="vertical-align: middle">Включение (True) / Отключение (False) режима записи видеосигнала в <b>Carrot Engine</b>.</td>
-        <td style="vertical-align: middle">Для записи видеосигнала в **Carrot Engine** реализована с помощью кнопки <b>F9</b>.</td>
+        <td style="vertical-align: middle">Для записи видеосигнала в <b>Carrot Engine</b> реализована с помощью кнопки <b>F9</b>.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">9.2.</td>
@@ -4350,7 +4423,7 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">10.3.</td>
         <td style="vertical-align: middle"><code>Propagation of Invisibility</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима, при котором неиспользуемые слои, в том числе с выключенной видимостью не обрабатываются (применимо для улучшения производительности).</td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима, при котором неиспользуемые слои, в том числе с выключенной видимостью не обрабатываются (применимо для улучшения производительности).</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
@@ -4387,7 +4460,7 @@
         <td style="text-align: center; vertical-align: middle">12.1.</td>
         <td style="vertical-align: middle"><code>Skip Graphic After</code></td>
         <td style="vertical-align: middle">Указание временного интервала, после которого команда на показ графики будет игнорироваться. Измеряется в "мс" (миллисекундах). Применяется при взаимодействии с playout-системами.</td>
-        <td style="vertical-align: middle">Например, если указать в параметре значение `500`, тогда в случае, если пришла команда показать графику в 13:49:23:120, а текущее время 13:49:23:740, то графика показываться не будет.</td>
+        <td style="vertical-align: middle">Например, если указать в параметре значение <code>500</code>, тогда в случае, если пришла команда показать графику в 13:49:23:120, а текущее время 13:49:23:740, то графика показываться не будет.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">13.</td>
@@ -4428,14 +4501,14 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">15.2.</td>
         <td style="vertical-align: middle"><code>Tracking Interpolation Type</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="vertical-align: middle">Выбор режима <code>Линейный</code> или <code>Фильтр Калмана</code> при интерполяции данных позиционирования.</td>
+        <td style="vertical-align: middle">При отсутствии необходимого количества данных позиционирования, рекомендуется использовать режим <code>KalmanFilter</code>.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">15.3.</td>
         <td style="vertical-align: middle"><code>Use Adaptive Tracking Interpolation</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима адаптивной интерполяции данных позиционирования.</td>
+        <td style="vertical-align: middle"><p>При указании значения <code>False</code>, интерполяция данных применяется в постоянном режиме, однако, при её использовании возможно наблюдение визуального артефакта,  при котором изображение будет принимать вид искажённого или "дрожащего" (эффект "желе").</p> <p>При указании значения <code>True</code>, интерполяция данных применяется в адаптивном режиме, позволяющее задавать диапазон допустимых колебаний, таким образом, при выходе из него, интерполяция данных позиционирования автоматически отключается.  </p></td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">15.4.</td>
@@ -4466,55 +4539,180 @@
     <tr>
         <td style="text-align: center; vertical-align: middle">17.1.</td>
         <td style="vertical-align: middle"><code>Override</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима отображения собственных параметров при режиме FullScreen (функциональная клавиша F2). Изменение параметров отображения происходит с помощью настроек параметров <code>X</code>, <code>Y</code>, <code>Width</code> и <code>Height</code>.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима отображения собственных параметров при режиме FullScreen (функциональная клавиша F2).</td>
+        <td style="vertical-align: middle"> Изменение параметров отображения происходит с помощью настроек параметров <code>X</code>, <code>Y</code>, <code>Width</code> и <code>Height</code>.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">17.2.</td>
         <td style="vertical-align: middle"><code>X</code></td>
-        <td style="vertical-align: middle">Указание отступа от левого края. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Указание отступа от левого края.</td>
+        <td style="vertical-align: middle">Измеряется в "пиксель".</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">17.3.</td>
         <td style="vertical-align: middle"><code>Y</code></td>
-        <td style="vertical-align: middle">Указание отсупа от верхнего края. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Указание отсупа от верхнего края.</td>
+        <td style="vertical-align: middle">Измеряется в "пиксель".</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">17.4.</td>
         <td style="vertical-align: middle"><code>Width</code></td>
-        <td style="vertical-align: middle">Указание ширины изображения. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Указание ширины изображения.</td>
+        <td style="vertical-align: middle">Измеряется в "пиксель".</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">17.5.</td>
         <td style="vertical-align: middle"><code>Height</code></td>
-        <td style="vertical-align: middle">Указание высоты изображения. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Указание высоты изображения.</td>
+        <td style="vertical-align: middle">Измеряется в "пиксель".</td>
     </tr>
     </tbody>
 </table>
 
-Рассмотрим подробнее меню навигации **Carrot Engine**.
 
-- `File` - `Settings` - открывает настройки Launcher. Подробнее о данном пункте можно прочитать [здесь](https://carrotsoftware.github.io/docs/3189/#/settings?id=settings-1).
-- `View` - `Full Screen` - открывает **viewport** на полный экран.
-- `View` - `Scale To Fit` - растягивает **viewport** под размер окна.
-- `Delays` - `Show Delays Form` - окно для настройки задержек. Где `Input Delay` - задержка входного сигнала, а `Tracking Delay` - задержка по трекингу. Правильная настройка задержек убирает "плавучий" эффект при работе с графикой.
-- `Tools` - `Workstation Registration` - открывает окно Workstation Registration, подробнее о его настройке можно прочитать [здесь](https://carrotsoftware.github.io/docs/3189/#/workflow?id=_22-workstation-registration).
-- `Tools` - `Dummy Output` - включение режима отображения изображения, заменяющего основной выход генерируемого сигнала.
+###### Функциональный элемент `Exit`
 
->Для активации кнопки `Dummy Output` возможно использовании клавиши `F8` на клавиатуре.
->
->Отображаемое изображение с помощью кнопки `Dummy Output` дополнительно настраивается в параметре `Dummy Filepath` приложения **Launcher**.
+После взаимодействия с функциональным элементом `Exit` завершается работа и закрывается окно приложения **Carrot Engine**.
 
----
----
 
-### Carrot Engine. BMD Tracking Input.
+##### Кнопка `View`
 
-#### Tools. Keyer Settings.
+![CE_View_Button](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_View_Button.png)
+
+При взаимодействии с кнопкой `View` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Full Screen</code></td>
+        <td style="vertical-align: middle">Отображение видеосигнала в режиме <b>"на весь экран"</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F2</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>Scale To Fit</code></td>
+        <td style="vertical-align: middle">Включение режима маcштабирования видеосигнала под размеры окна приложения <b>Carrot Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F3</code></td>
+      </tr>
+      </tbody>
+</table>
+
+
+###### Функциональный элемент `Full Screen`
+
+![CE_FullScreen_Gif](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_FullScreen_Gif.gif)
+
+При взаимодействии с функциональным элементом `Full Screen` отображение видеосигнала осуществляется в режиме **"на весь экран"**, при этом пользовательский интерфейс приложения **Carrot Engine** скрывается.
+
+Для выхода из режима **"на весь экран"**, необходимо провзаимодействовать с клавишей `F2` на клавиатуре.
+
+
+###### Функциональный элемент `Scale To Fit`
+
+![CE_ScaletoFit_Gif](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_ScaletoFit_Gif.gif)
+
+При взаимодействии с функциональным элементом `Scale To Fit` отображение видеосигнала масштабируется под размеры окна приложения **Carrot Engine**.
+
+
+##### Кнопка `Tools`
+
+При взаимодействии с кнопкой `Tools` отображаются девять функциональных элементов, назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Workstation Registration</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Workstation Registration"</b> для регистрации рабочих станций и настройки их <b>input'ов</b> и <b>output'ов</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>Contents Settings</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><code>Dummy Output</code></td>
+        <td style="vertical-align: middle">Отображение <b>"изображения заглушки"</b> поверх генерируемого сигнала.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F8</code></td>
+        <td style="vertical-align: middle">Отображение <b>"изображения заглушки"</b> возможно в случае использования рабочей станцией в качестве <b>output'a</b> - <b>"BMD Output"</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><code>LUT Utils</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><code>GPIO</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"GPIO Settings"</b> для настройки устройств ввода-вывода с внешним интерфейсом GPIO.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Окно <b>"GPIO Settings"</b> является составной частью приложения <b>"Input Devices"</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle"><code>MIDI</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"MIDI Settings"</b> для настройки устройств ввода-вывода с внешним интерфейсом MIDI.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Окно <b>"MIDI Settings"</b> является составной частью приложения <b>"Input Devices"</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle"><code>Macro</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Macro Keyboard Settings"</b> для настройки устройства ввода-вывода Stream Deck.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Окно <b>"Macro Keyboard Settings"</b> является составной частью приложения <b>"Input Devices"</b>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle"><code>LED Utils</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Led Utils"</b> позиционирования LED-экранов.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Применяется для настройки XR.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">9.</td>
+        <td style="vertical-align: middle"><code>Reset</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle"><code>Ctrl+R</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      </tbody>
+</table>
+
+
+###### Функциональный элемент `Workstation Registration`
+
+При взаимодействии с функциональным элементом `Workstation Registration` откроется окно **"Workstation Registration"**, предназначенное для регистрации рабочих станций и настройки их **input'ов** и **output'ов**. Описание элементов окна **"Workstation Registration"**, представлено в соответствующем разделе с описанием приложения **Launcher**.
+
+###### Функциональный элемент `Contents Settings`
+
+
+`Keyer Settings`
 
 > Carrot Keyer - программный модуль позволяющий размещать нужный объект с зелёного фона на виртуальный (или любой другой) фон при помощи технологии рир-проекции.
 
@@ -4566,7 +4764,7 @@
 1. Во вкладке **Alpha Mask** нажмите на кнопку `Pick` и с помощью **ЛКМ** щёлкните по любому участку хромакея на экране.
 2. Оцените результат в окне режима _Alpha Mask._
 
-##### DeNoise
+**DeNoise**
 
 Наблюдаем, что изображение в _Alpha Mask_ имеет много шума, избавиться от него можно при помощи инструмента **DeNoise**:<br>
 Во вкладке **DeNoise** имеются два параметра:
@@ -4584,7 +4782,7 @@
 Режим _Final Result_:
 ![](..\images\example_keyer\stage_04.png)
 
-##### DeSpill
+**DeSpill**
 
 Картинка избавилась от лишнего шума, теперь необходимо убрать голубые границы с человека. Они возникли в результате того, что _DeSpill_ не соответствует заднему фону по тону и яркости.
 
@@ -4604,7 +4802,7 @@
 Результат:
 ![](..\images\example_keyer\stage_05.png)
 
-##### Screen Restoration
+**Screen Restoration**
 
 Сравните окно _Screen Restoration_ с _Foreground_, в итоге должен получиться зеленый цвет без лишних объектов. Для настройки этого окна используется вкладка **Inner Mask**:
 
@@ -4621,7 +4819,7 @@ _Alpha Mask_
 _Screen Restoration_
 ![](..\images\example_keyer\stage_08.png)
 
-##### Alpha Mask
+**Alpha Mask**
 
 Теперь необходимо скорректировать саму маску. Для этого:
 
@@ -4639,11 +4837,11 @@ _Screen Restoration_
 _Final Result_
 ![](..\images\example_keyer\stage_09.png)
 
-##### Shadows & Highlights
+**Shadows & Highlights**
 
 Для усиления отображения теней и отражений можно использовать вкладки **Shadows** и **Highlights**, однако в данном примере эти настройки не требуются и остаются выключенными.
 
-##### Environment
+**Environment**
 
 Для улучшения эффекта "вживления" объекта с окружением можно воспользоваться вкладкой **Environment** и режимами отображения _Environment Overlay_ и _Environment Light_:
 
@@ -4664,7 +4862,7 @@ _Environment Overlay_
 Итоговый результат:
 ![](..\images\example_keyer\stage_11.png)
 
-##### Save / Save As
+**Save / Save As**
 
 Завершив настройку кеера не забудьте сохранить данные изменения. Для этого можно воспользоваться функцией `Save` / `Save As`, данные пресеты будут сохранены на сервере и могут быть использованы в любое удобное время.
 
@@ -4683,11 +4881,12 @@ _Environment Overlay_
 В левой части список всех настроек **Keyer**, **AR**, **Luma**. Справа список контейнеров, где применены эти настройки. Настройки можно удалять (возможно удаление сразу нескольких настроек). В случае удаления, настройки на устройствах сбросятся к дефолтным.
 
 
-#### Tools. AR.
+
+`AR`
 
 > Дополненная реальность (AR) позволяет внедрить виртуальные 3D объекты и сцены в реальное окружение в реальном времени.
 
-##### Подготовка Engine Scheme для работы с AR:
+**Подготовка Engine Scheme для работы с AR:**
 
 > Подробнее читайте в разделе [Создание схемы работы Carrot Engine](https://carrotsoftware.github.io/docs/4062/#/workflow?id=%d0%a1%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d1%85%d0%b5%d0%bc%d1%8b-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-carrot-engine).
 
@@ -4706,7 +4905,8 @@ _Environment Overlay_
 4. Подсоедините контейнер UE_AR в `Foreground`, ноду с входящим видеосигналом в `Background`.
 5. Пин `video` из ноды AR подключите к пину `video` выходного изображения, простейшая схема будет выглядеть как показано на скриншоте.<br>![ar03](../images/example_ar/ar03.png)
 
-##### Подготовка проекта Unreal Engine для работы с AR
+**Подготовка проекта Unreal Engine для работы с AR**
+
 Изначальная настройка проекта UE4 описана в пункте [Подготовка UE4 проекта к экспорту шаблона (новый плагин)](https://carrotsoftware.github.io/docs/4062/#/unrealengine?id=%d0%9d%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-ue-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%b0-%d0%bd%d0%be%d0%b2%d1%8b%d0%b9-%d0%bf%d0%bb%d0%b0%d0%b3%d0%b8%d0%bd-%d1%86%d0%b2%d0%b5%d1%82%d0%bd%d0%b0%d1%8f-%d0%bf%d0%be%d0%bb%d0%be%d1%81%d0%ba%d0%b0).
 
 `Carrot Engine` работает в режиме `AR` на основе метода наложения `Screen\Add` по серому цвету и масками через `Custom Stencil Buffer`. Для удобства работу рекомендуем все созданные сцены и объекты создавать в своих отдельных уровнях и потом подгружать их в основной уровень проекта, настроенный под вывод Carrot.
@@ -4716,14 +4916,15 @@ _Environment Overlay_
 - Геометрия циклорамы с серым эмиссивным материалом.
 - Захватчик отражений и теней.
 
-###### Циклорама и материал
+**Циклорама и материал**
+
 `Циклорама` представляет из себя объект заполняющий весь видимый объем сцены. Это может быть куб, сфера либо заранее подготовленная модель с наложенным `Unlit` материалом.
 
 Пример геометрии:<br>![ar05_2](../images/example_ar/ar05_2.png)
 
 Пример материала с вводом цвета через [Material Parameter Collection](https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/Materials/ParameterCollections/):<br>![ar05](../images/example_ar/ar05.png).
 
-###### Захватчик отражений и теней.
+**Захватчик отражений и теней**
 
 `Захватчик отражений и теней` представляет из себя плоскость с настраиваемым материалом по Metallic и Roughness. Подбирая эти 2 значения, можно отображать только отражения, только тени или всё вместе. Вторая плоскость накладывается сверху с Unlit материалом серого цвета с плавным градиентом, чтобы избавиться от четких краев первой плоскости и смешаться с окружением.
 
@@ -4735,7 +4936,8 @@ _Environment Overlay_
 
 >Для получения зеркальных отражений без RayTracing можно использовать `PlanarReflection`.
 
-###### Настройка объектов
+**Настройка объектов**
+
 Добавив объекты в сцену, нам нужно указать непрозрачным объектам `Custom Depth Pass`. В противном случае Carrot будет совмещать слои на основе метода наложения `Screen\Add`. Для этого:
 
 1. Выделите нужные объекты на уровне/блупринте.
@@ -4745,7 +4947,8 @@ _Environment Overlay_
 
 Результат работы в Carrot Engine с CustomStencil 255 и без:<br>![ar06_2](../images/example_ar/ar06_2.png)
 
-###### Использование масок
+**Использование масок**
+
 AR композитинг работает по схеме, когда изображение с графикой накладывается поверх изображения настоящего. Иногда появляется возможность виртуальные объекты "обрезать" по форме реальных декораций. Для этой задачи мы можем использовать маски.
 
 1. Добавьте необходимую геометрию на уровень.
@@ -4755,7 +4958,7 @@ AR композитинг работает по схеме, когда изоб�
 
 Результат работы масок:<br>![ar06_4](../images/example_ar/ar06_4.png)
 
-##### Настройка AR в Carrot Engine
+**Настройка AR в Carrot Engine**
 
 Экспорт шаблона происходит так же, как описано в пункте [Экспорт шаблона из проекта UE4](https://carrotsoftware.github.io/docs/4062/#/workflow?id=Экспорт-шаблона-из-проекта-ue4).
 
@@ -4790,7 +4993,7 @@ AR композитинг работает по схеме, когда изоб�
 
    - Обратите внимание, что используя цветокоррекцию в `PostProcessVolume`, также затрагивается и цвет серой циклорамы. Альтернативно, цветокоррекцию можно проводить в окне `AR` внутри `Carrot Engine` во вкладка `BG`.
 
-#### Tools. Luma.
+`Luma`
 
 `Luma` - это кеер, который формирует альфа маску из внешнего сигнала.
 
@@ -4822,7 +5025,7 @@ AR композитинг работает по схеме, когда изоб�
 
 ![Settings_Carrot Engine_Luma](..\images\3189\image_052.jpg "Carrot Engine - Luma")
 
-#### Tools. LUT.
+`LUT`
 
 >**Carrot Engine** имеет возможность создавать `LUT файлы` для дальнейшего использования их на посте или в движке на `Foreground` / `Background`.
 
@@ -4843,9 +5046,10 @@ AR композитинг работает по схеме, когда изоб�
 
 ![Settings_Carrot Engine_LUT](..\images\3189\image_046.jpg "Carrot Engine - LUT")
 
-#### Tools. GPIO, MIDI, Macro.
 
-#### Назначение команд с локального плейлиста.
+`GPIO, MIDI, Macro`
+
+**Назначение команд с локального плейлиста**
 
 Управление плейлистом Carrot возможно через контроллеры GPIO, MIDI, Macro. Для этого:
 
@@ -4873,7 +5077,7 @@ AR композитинг работает по схеме, когда изоб�
 
 ---
 
-#### Назначение команд с внешнего плейлиста
+**Назначение команд с внешнего плейлиста**
 
 >**В случае если плейлист находится на другом сервере, вы можете достучаться до него используя модуль `InputDevices`. Для этого нужно:**
 
@@ -4888,7 +5092,7 @@ AR композитинг работает по схеме, когда изоб�
 
 ---
 
-#### Описание кнопок
+**Описание кнопок**
 
 `Isolated Channels` - данный параметр позволяет каждому из 8-ми каналов обрабатываться отдельно. В этом случае при приходе сигнала будет отображаться не его значение, а номер канала, по которому он пришел.
 
@@ -4909,6 +5113,77 @@ AR композитинг работает по схеме, когда изоб�
 `Invert Output` вывод инвертированного значения (в битовом значении), которое привязано на событие. Например, если галка активна, то отправляемое значение (**0-0-0-0-0-1-0-1**) будет передано как как (**1-0-1-0-0-0-0-0**).
 
 Если галки `Invert Input` и `Invert Output` выключены, то, например, значение (**0-0-0-0-0-1-1-1**), привязанное к событию, будет передано на вывод без изменений при активации события.
+
+###### Функциональный элемент `GPIO`
+
+При взаимодействии с функциональным элементом `GPIO` откроется окно  **"GPIO Settings"**, предназначенное для настройки устройств ввода-вывода с внешним интерфейсом GPIO. Описание элементов окна **"GPIO Settings"**, представлено в соответствующем разделе с описанием приложения **Input Devices**.
+
+###### Функциональный элемент `MIDI`
+
+При взаимодействии с функциональным элементом `MIDI` откроется окно  **"MIDI Settings"**, предназначенное для настройки устройств ввода-вывода с внешним интерфейсом MIDI. Описание элементов окна **"MIDI Settings"**, представлено в соответствующем разделе с описанием приложения **Input Devices**.
+
+###### Функциональный элемент `Macro`
+
+При взаимодействии с функциональным элементом `Macro` откроется окно  **"Macro Keyboard Settings"**, предназначенное для настройки устройств ввода-вывода Stream Deck. Описание элементов окна **"Macro Keyboard Settings"**, представлено в соответствующем разделе с описанием приложения **Input Devices**.
+
+
+##### Кнопка `Help`
+
+![CE_Help_Button](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Help_Button.png)
+
+При взаимодействии с кнопкой `Help` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>Documentation</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Documentation"</b> содержащего сведения о документации.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>About...</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"About Carrot Engine"</b>, содержащего сведения о приложении <b>Carrot Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F7</code></td>
+      </tr>
+      </tbody>
+</table>
+
+
+###### Функциональный элемент `Documentation`
+
+![CE_Documentation_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Documentation_Window.png)
+
+При взаимодействии с функциональным элементом `Documentation` открывается окно **"Documentation"** содержащее двухмерный штрихкод и кнопку `Open In Browser` с URL гиперссылками на официальную документацию **Carrot Broadcast**.
+
+
+###### Функциональный элемент `About...`
+
+![CE_About_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_About_Window.png)
+
+
+При взаимодействии с функциональным элементом `About...` открывается окно **"About Carrot Engine"** содержащее сведения о наименовании приложения, его версии и правообладателе с периодом действия авторских прав.
+
+
+
+
+
+
+
+
+
+
+
 
 ## DataStream Server
 
