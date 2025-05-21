@@ -20,7 +20,7 @@
 - отображение списка запущенных приложений **Carrot** в формируемой локальной сети.
 
 
-### Описание пользовательского интерфейса
+### Пользовательский интерфейс
 
 ![CS Main Window](..\images\1.1.5\Carrot%20Server\CS%20Main%20Window.png)
 
@@ -57,6 +57,7 @@
 ![CS Settings](..\images\1.1.5\Carrot%20Server\CS%20Settings.png)
 
 Настраиваемые параметры **Carrot Server** распределены по разделы, перечень и назначение которых изложены в таблице ниже.
+
 
 <table>
   <thead>
@@ -264,7 +265,8 @@
     </tr>
    <tbody>
 </table>
- 
+
+
 ###### Функциональный элемент `Exit`
 
 После взаимодействия с функциональным элементом `Exit` завершается работа и закрывается окно приложения **Carrot Server**.
@@ -557,7 +559,7 @@
 ### Назначение
 
 **Launcher** предназначен для регистрации рабочих станций и обеспечения запуска на них схем **Carrot Engine**.
-### Описание пользовательского интерфейса
+### Пользовательский интерфейс
 
 ![L Main Window](..\images\1.1.5\Launcher\L%20Main%20Window.png)
 
@@ -572,456 +574,37 @@
 
 При взаимодействии с кнопкой `File` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
 
-| Наименование функционального элемента | Назначение                                                          |
-| ------------------------------------- | ------------------------------------------------------------------- |
-| `Settings`                            | Открытие окна **"Settings"** для настройки параметров **Launcher**. |
-| `Exit`                                | Завершение работы **Launcher**.                                     |
-
-##### Функциональный элемент `Settings`
-
-После взаимодействия с функциональным элементом `Settings` откроется окно **"Settings"**, предназначенное для настроек параметров **Launcher**.
-
-![L Settings](..\images\1.1.5\Launcher\L%20Settings.png)
-
-Настраиваемые параметры **Launcher** распределены по разделам, перечень и назначение которых изложены в таблице ниже.
-
-
 <table>
     <thead>
       <tr>
         <th style="text-align: center; vertical-align: middle">№ п/п</th>
-        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Наименование функционального элемента</th>
         <th style="text-align: center; vertical-align: middle">Назначение</th>
-        <th style="text-align: center; vertical-align: middle">Примечание</th>
+        <th style="text-align: center; vertical-align: middle">Сочетание клавиш</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.</td>
-        <td colspan="3" align="center"><code>Assets</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.1.</td>
-        <td style="vertical-align: middle"><code>Additional Assets</code></td>
-        <td style="vertical-align: middle">Указание директории (пути) к вспомогательной мультимедийной информации.</td>
-        <td style="vertical-align: middle">К вспомогательной мультимедийной информации относятся объекты, которые используются в <b>Web Playlist (Carrot Dashboard)</b> (изображения, аудио и видео материалы).</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.2.</td>
-        <td style="vertical-align: middle"><code>Original Assets</code></td>
-        <td style="vertical-align: middle">Указание директории (пути) к основным объекта.</td>
-        <td style="vertical-align: middle">К основным объектам относятся экспортированные из <b>Unreal Engine</b> и <b>Adobe After Effects</b> в базу данных <b>Carrot</b> шаблоны.</td>
+        <td style="vertical-align: middle"><code>Settings</code></td>
+        <td style="vertical-align: middle">Открытие окна <b>"Settings"</b> для настройки параметров приложения <b>Carrot Engine</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>F4</code></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">2.</td>
-        <td colspan="3" align="center"><code>Data Base</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.1.</td>
-        <td style="vertical-align: middle"><code>Use unique event statuses</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения уникального статуса ивента в плейлистах.</td>
-        <td style="vertical-align: middle">Для работы параметра <code>Use unique event statuses</code>, необходимо произвести его дополнительную настройку в веб-интерфейсе <b>Web Playlist</b>, и приложениях <b>Carrot Engine</b> и <b>Carrot Server</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.</td>
-        <td colspan="3" align="center"><code>Delays</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.1.</td>
-        <td style="vertical-align: middle"><code>Input Delay</code></td>
-        <td style="vertical-align: middle">Установка входной задержки для видео. В зависимости от использования, применимо к <b>BmdTrackedInput</b> и <b>AJATrackedInput</b>.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.2.</td>
-        <td style="vertical-align: middle"><code>Secondary Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки для изображения. В зависимости от использования, применимо к <b>BmdTrackedInput</b> и <b>AJATrackedInput</b></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.3.</td>
-        <td style="vertical-align: middle"><code>AE Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки трекинга для AE шаблонов.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.4.</td>
-        <td style="vertical-align: middle"><code>Keyer Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки трекинга от Keyer.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.5.</td>
-        <td style="vertical-align: middle"><code>Audio Delay, ms</code></td>
-        <td style="vertical-align: middle">Установка задержки для звука при использовании <b>AJA</b> (измеряется в "мс" (миллисекунды)).</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.6.</td>
-        <td style="vertical-align: middle"><code>XR Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки для выдачи изображения на XR-выходе.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-        <td style="text-align: center; vertical-align: middle">3.7.</td>
-        <td style="vertical-align: middle"><code>AR Texture Delay</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.8.</td>
-        <td style="vertical-align: middle"><code>UE Draw Delay</code></td>
-        <td style="vertical-align: middle">Установка задержки отрисовки UE проектов на XR-выходе.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.9.</td>
-        <td style="vertical-align: middle"><code>Max UE draw Delay Buffer</code></td>
-        <td style="vertical-align: middle">Установка максимального значения задержки UE проектов на XR-выходе.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.10.</td>
-        <td style="vertical-align: middle"><code>DistortionDelay</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.11.</td>
-        <td style="vertical-align: middle"><code>Show all Delays</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения в Carrot Engine настроек задержки, а именно: <b>Tracking Delay AE</b>, <b>Secondary Delay</b> и <b>Audio Delay, ms</b>.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.</td>
-        <td colspan="3" align="center"><code>Input</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.1.</td>
-        <td style="vertical-align: middle"><code>GPIO Enabled</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) интерфейса связи GPIO.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.2.</td>
-        <td style="vertical-align: middle"><code>MIDI Enabled</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) протокола передачи данных MIDI.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.3.</td>
-        <td style="vertical-align: middle"><code>Macro Enabled</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) поддержки макросов (команд) для управления устройствами с программируемыми клавишами (Stream Deck и др.).</td>
-        <td style="vertical-align: middle">Во избежание некорректного взаимодействия с устройствами при применении параметров <code>GPIO Enabled</code>, <code>MIDI Enabled</code> и <code>Macro Enabled</code>, рекомендуется использовать приложение <b>Input Devices</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">5.</td>
-        <td colspan="3" align="center"><code>Launch</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">5.1.</td>
-        <td style="vertical-align: middle"><code>Folder Path</code></td>
-        <td style="vertical-align: middle">Выбор директории (пути) для запуска Carrot Engine.</td>
-        <td style="vertical-align: middle"><p>Параметр <b>Folder Path</b> состоит из двух настроек:</p> <p>1.)<code>Registry</code> - использование файлов из директории (пути) в реестре (инициализация пути происходит через <b>Init Settings</b>);</p> <p>2.)<code>Local</code> - использует файлы из папки в которой был запущен <b>Launcher</b>. Применение данной настройки используется при работе с различными версиями <b>Carrot</b>.</p></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">6.</td>
-        <td colspan="3" align="center"><code>Licence</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">6.1.</td>
-        <td style="vertical-align: middle"><code>License Key</code></td>
-        <td style="vertical-align: middle">Ввод лицензионного ключа Carrot</td>
-        <td style="vertical-align: middle"><p>1. Лицензионный ключ необходим для получения доступа к функционалу работы <b>Carrot</b>. В случае отсутствия лицензионного ключа, функционал работы будет ограничен.</p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">7.</td>
-        <td colspan="3" align="center"><code>Network</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">7.1.</td>
-        <td style="vertical-align: middle"><code>Silent</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима подключения к серверу без отображения сообщений об ошибках.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">7.2.</td>
-        <td style="vertical-align: middle"><code>Server Host</code></td>
-        <td style="vertical-align: middle">Ввод наименования или IP-адреса рабочей станции, на котором планируется запуск схем <b>Carrot Engine</b>.</td>
-        <td style="vertical-align: middle">В случае использования локальной рабочей станции, в поле параметра <code>Server Host</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">7.3.</td>
-        <td style="vertical-align: middle"><code>Secure</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима защищённого сетевого обмена.</td>
-        <td style="vertical-align: middle">Дополнительную настройку параметра <code>Secure</code> необходимо осуществлять в параметрах приложения <b>Carrot Server</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.</td>
-        <td colspan="3" align="center"><code>Processing</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.1.</td>
-        <td style="vertical-align: middle"><code>Watermark Filepath</code></td>
-        <td style="vertical-align: middle"> Указание директории (пути) к "водяному знаку".</td>
-        <td style="vertical-align: middle">В качестве водяного знака возможно использование любого изображения, которое отображается в приложении <b>Carrot Engine</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.2.</td>
-        <td style="vertical-align: middle"><code>Dummy Filepath</code></td>
-        <td style="vertical-align: middle"> Указание директории (пути) к изображению, заменяющему основной выход генерируемого сигнала <b>Carrot Engine</b>. Применимо для проведения технической профилактики.</td>
-        <td style="vertical-align: middle">Присвоенное изображение параметру <code>Dummy Filepath</code>, используется при взаимодействии с кнопкой <code>Dummy Output</code> в приложении <b>Carrot Engine</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.3.</td>
-        <td style="vertical-align: middle"><code>Video Threads Count</code></td>
-        <td style="vertical-align: middle"> Указание количества логических процессов (параллельных потоков) для декодировки видео.</td>
-        <td style="vertical-align: middle">По умолчанию в поле Video Threads Count указывается значение <b>"6"</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.4.</td>
-        <td style="vertical-align: middle"><code>Dedicated Processing</code></td>
-        <td style="vertical-align: middle"> Включение (True) / Отключение (False) режима использования потока для декодировки видео.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.5.</td>
-        <td style="vertical-align: middle"><code>GPU decoder Dedicated Processing</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="vertical-align: middle"></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.6.</td>
-        <td style="vertical-align: middle"><code>Use Video Buffer</code></td>
-        <td style="vertical-align: middle"> Включение (True) / Отключение (False) режима, при котором используются заранее подготовленные буферы кадров, способствующие воспроизведению видео с нулевого кадра без задержки и падения производительности.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.7.</td>
-        <td style="vertical-align: middle"><code>Use Video GPU Decoder</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима декодировки видео с помощью видеокарты.</td>
-        <td style="vertical-align: middle">Использование вычислительных мощностей видеокарты возможно при обработке кодеков H.265 в шаблонах Adobe After Effects.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.8.</td>
-        <td style="vertical-align: middle"><code>Foreground</code></td>
-        <td style="vertical-align: middle"> Включение (True) / Отключение (False) режима при котором окно <b>Carrot Engine</b> открывается каждые 10 секунд. Открытие окна рендер-движка происходит поверх других окон.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.9.</td>
-        <td style="vertical-align: middle"><code>Print Debug Info</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.10.</td>
-        <td style="vertical-align: middle"><code>Use GPU Memory</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима использования видеопамяти (памяти видеокарты) для работы с PNG-секвенциями. Данный режим положительно сказывается на производительности (ускорение загрузки и уменьшение нагрузки на систему), но при этом задействует больший объём видеопамяти.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">8.11.</td>
-        <td style="vertical-align: middle"><code>Upload Contexts Count</code></td>
-        <td style="vertical-align: middle">Определение количества параллельных потоков, обрабатывающих входящие видеосигналы в случае, если в настройках input <code>BmdInput</code> используется параметр <code>Use Resource Thread</code>.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">9.</td>
-        <td colspan="3" align="center"><code>Recording</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">9.1.</td>
-        <td style="vertical-align: middle"><code>Allow Recording</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима записи видеосигнала в <b>Carrot Engine</b>.</td>
-        <td style="vertical-align: middle">Для записи видеосигнала в **Carrot Engine** реализована с помощью кнопки <b>F9</b>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">9.2.</td>
-        <td style="vertical-align: middle"><code>Recording Directory</code></td>
-        <td style="vertical-align: middle">Указание директории (пути) для сохранения записанного видеосигнала.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">9.3.</td>
-        <td style="vertical-align: middle"><code>Recording FPS</code></td>
-        <td style="vertical-align: middle">Настройка количества кадров в секунду при записи видеосигнала.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">9.4.</td>
-        <td style="vertical-align: middle"><code>Recording Bitrate</code></td>
-        <td style="vertical-align: middle">Указание среднего битрейта при записи видеосигнала. Измеряется в "кбит/с".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">9.5.</td>
-        <td style="vertical-align: middle"><code>Max Bitrate</code></td>
-        <td style="vertical-align: middle">Указание максимального битрейта при записи видеосигнала. Измеряется в "кбит/с".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">10.</td>
-        <td colspan="3" align="center"><code>Render</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">10.1.</td>
-        <td style="vertical-align: middle"><code>Initial Render Target Width</code></td>
-        <td style="vertical-align: middle">Указание ширины <b>рендер таргета</b>. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">10.2.</td>
-        <td style="vertical-align: middle"><code>Initial Render Target Height</code></td>
-        <td style="vertical-align: middle">Указание высоты <b>рендер таргета</b>. Измеряется в "пиксель".</td>
-        <td style="vertical-align: middle"><b>Рендер таргет</b> - термин, используемый в Unreal Engine, представляющий из себя текстуру, на которую производится вывод изображения. Параметры <code>Initial Render Target Width</code> и <code>Initial Render Target Height</code> задают первоначальный размер текстуры, который должен быть равен наибольшему размеру среди нод схемы и композиций запускаемых шаблонов. В случае не соблюдения изложенных условий, система создаёт текстуру необходимого размера в автоматическом режиме (снижает производительность).</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">10.3.</td>
-        <td style="vertical-align: middle"><code>Propagation of Invisibility</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима, при котором неиспользуемые слои, в том числе с выключенной видимостью не обрабатываются (применимо для улучшения производительности).</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">11.</td>
-        <td colspan="3" align="center"><code>Resource Manager</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">11.1.</td>
-        <td style="vertical-align: middle"><code>Unloading Event Type</code></td>
-        <td style="vertical-align: middle">Выбор способа выгрузки шаблона в состояние "Unloaded".</td>
-        <td style="vertical-align: middle"><p>Параметр <code>Unloading Event Type</code> содержит несколько настроек выгрузки шаблона:</p>
-            <p>- <code>Manual</code> - ручной способ (происходит по соответствующей команде в <b>Web Playlist (Carrot Dashboard)</b>);</p>
-            <p>- <code>Immediatly</code> - сразу после проигрывания в <b>Web Playlist (Carrot Dashboard)</b> шаблона;</p>
-            <p>- <code>After Timer</code> -  таймер выгрузки шаблона (установка необходимого времени производится в параметре <code>Unload Timer</code>);</p> 
-            <p>- <code>EventsPlayedAfter</code> - после воспроизведения определённого количества ивентов (установка необходимого количества воспроизводимых ивентов указывается в параметре <code>Unload After N Events</code>).</p></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">11.2.</td>
-        <td style="vertical-align: middle"><code>Unload Timer</code></td>
-        <td style="vertical-align: middle">Указывается время, необходимое для смены статуса ивента в состояние <b>"Unloaded"</b> после его установки.</td>
-        <td style="vertical-align: middle">Функционал параметра <code>Unload Timer</code> задействуется в том случае, когда выбрана настройка <code>After Timer</code> параметра <code>Unloading Event Type</code>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">11.3.</td>
-        <td style="vertical-align: middle"><code>Unload After N Events</code></td>
-        <td style="vertical-align: middle">Указывается количество воспроизводимых ивентов, необходимых для смены статуса ивента в состояние <b>"Unloaded"</b>.</td>
-        <td style="vertical-align: middle">Функционал параметра <code>Unload After N Events</code> задействуется в том случае, когда выбрана настройка <code>EventsPlayedAfter</code> параметра <code>Unloading Event Type</code>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">12.</td>
-        <td colspan="3" align="center"><code>Scheduling</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">12.1.</td>
-        <td style="vertical-align: middle"><code>Skip Graphic After</code></td>
-        <td style="vertical-align: middle">Указание временного интервала, после которого команда на показ графики будет игнорироваться. Измеряется в "мс" (миллисекундах). Применяется при взаимодействии с playout-системами.</td>
-        <td style="vertical-align: middle">Например, если указать в параметре значение `500`, тогда в случае, если пришла команда показать графику в 13:49:23:120, а текущее время 13:49:23:740, то графика показываться не будет.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">13.</td>
-        <td colspan="3" align="center"><code>Scripting</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">13.1.</td>
-        <td style="vertical-align: middle"><code>Enable Scripts Thread</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима обработки скриптов шаблона в отдельном потоко передачи скриптов. Применимо для улучшения производительности, но запуск скрипта в текущем кадре не гарантируется.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">13.2.</td>
-        <td style="vertical-align: middle"><code>Examine Scripts</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима проверки скрипта на ошибки перед загрузкой шаблона. В случае если обнаружены ошибки, то загрузка шаблона прервётся.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">14.</td>
-        <td colspan="3" align="center"><code>Statistics</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">14.1.</td>
-        <td style="vertical-align: middle"><code>Collect Statistics</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима сбора статистических данных по задействованной производительности аппаратной части. Статистические данные отображаются в приложении <b>System Monitor</b></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">15.</td>
-        <td colspan="3" align="center"><code>Tracking</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">15.1.</td>
-        <td style="vertical-align: middle"><code>Use Tracking Interpolation</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима интерполяции приходящей трекинг информации. Применимо для обеспечения плавности движений объекта.</td>
-        <td style="vertical-align: middle">Параметр функционирует в том случае, когда в настройках input'ов <b>BmdTrackedInput</b> или <b>AJATrackedInput</b> параметру <code>Use Delta MS</code> присвоено значение <code>False</code>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">15.2.</td>
-        <td style="vertical-align: middle"><code>Tracking Interpolation Type</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">15.3.</td>
-        <td style="vertical-align: middle"><code>Use Adaptive Tracking Interpolation</code></td>
-        <td style="vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle"></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">15.4.</td>
-        <td style="vertical-align: middle"><code>Restore Buffer Count</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима восстановления задержки по трекингу при неподвижной камере.</td>
-        <td style="vertical-align: middle">Параметр функционирует в том случае, когда в настройках input'ов <b>BmdTrackedInput</b> или <b>AJATrackedInput</b> параметру <code>Use Delta MS</code> присвоено значение <code>False</code>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">16.</td>
-        <td colspan="3" align="center"><code>UI</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">16.1.</td>
-        <td style="vertical-align: middle"><code>Show Connection Info</code></td>
-        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения в главном окне информации о подключенном IP-адресе.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">16.2.</td>
-        <td style="vertical-align: middle"><code>Keyer Fluent Scroll</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима непрерывной прокрутки в настройка Keyer.</td>
-        <td style="vertical-align: middle">В случае, если параметр отключён, то режим непрерывной прокрутки будет остановлен при наведении курсора мыши на один из выбираемых элементов управления.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">17.</td>
-        <td colspan="3" align="center"><code>Videowall</code></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">17.1.</td>
-        <td style="vertical-align: middle"><code>Override</code></td>
-        <td style="vertical-align: middle">Включение (True)/Отключение (False) режима отображения собственных параметров при режиме FullScreen (функциональная клавиша F2). Изменение параметров отображения происходит с помощью настроек параметров <code>X</code>, <code>Y</code>, <code>Width</code> и <code>Height</code>.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">17.2.</td>
-        <td style="vertical-align: middle"><code>X</code></td>
-        <td style="vertical-align: middle">Указание отступа от левого края. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">17.3.</td>
-        <td style="vertical-align: middle"><code>Y</code></td>
-        <td style="vertical-align: middle">Указание отсупа от верхнего края. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">17.4.</td>
-        <td style="vertical-align: middle"><code>Width</code></td>
-        <td style="vertical-align: middle">Указание ширины изображения. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">17.5.</td>
-        <td style="vertical-align: middle"><code>Height</code></td>
-        <td style="vertical-align: middle">Указание высоты изображения. Измеряется в "пиксель".</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-     <tbody>
-  </table>
+        <td style="vertical-align: middle"><code>Exit</code></td>
+        <td style="vertical-align: middle">Завершение работы <b>Launcher</b>.</td>
+        <td style="text-align: center; vertical-align: middle"><code>Alt+F4</code></td>
+      </tr>
+      </tbody>
+</table>
+
+##### Функциональный элемент `Settings`
+
+После взаимодействия с функциональным элементом `Settings` откроется окно **"Settings"**, предназначенное для настроек параметров **Carrot Engine**.
+
+Перечень настраиваемых параметров приложения **Carrot Engine** представлен в соответствующем разделе. 
+
 
 ##### Функциональный элемент `Exit`
 
@@ -1073,6 +656,7 @@
 |                                |                                                                                                                 |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------- |
 | Кнопка `Register / Update` (2) | Регистрация рабочей станции, в том числе обновление её настроек (в случае, если не было изменено наименование). |
+
 >После взаимодействия с кнопкой `Register / Update` отрывается окно **"Workstations"**. содержащее список зарегистрированных рабочих станций.
 >
 >![L Workstations Window](..\images\1.1.5\Launcher\L%20Workstations%20Window.png)
@@ -1102,7 +686,8 @@
 >|`BMD Input`|Поддержка работы (приём входного видеосигнала) с картами видеозахвата **Blackmagic Design**.|
 >|`BMD Tracked Input`|Поддержка работы (приём входного сигнала) с картами видеозахвата **Blackmagic Design** при приёме трекинговых данных по локальной сети.|
 >|`Texture Input`|Вывод видео-сигнала или видеофайла на устройстве.|
->|`Tracking Data`|Вывод трекинг данных.|
+>|`Combined Tracking Data`|Обработка данных позиционирования от двух трекинг систем.|
+>|`Tracking Data`|Приём трекинг данных.|
 >|`UE Input`|Отображение запущенной UE сцены c трекингом.|
 >|`WebSocket Stream Input`|Используется для вывода видеосигнала или аудиосигнала с устройства подключённого к данной рабочей станции.|
 
@@ -1131,7 +716,8 @@
 >
 >`AJA Tracked Input`
 >
->>Раздел **"AJA"**
+>
+>Раздел **"AJA"**
 >>
 >>|Наименование параметра|Назначение|
 >>|-------------------|----------|
@@ -1227,7 +813,7 @@
 >>
 >>|Наименование параметра|Назначение|
 >>|-------------------|----------|
->>`Width`|Указание ширины обрабатываемого видео-сигнала. Измеряется в "пиксель".|
+>>|`Width`|Указание ширины обрабатываемого видео-сигнала. Измеряется в "пиксель".|
 >>|`Height`|Указание высоты обрабатываемого видео-сигнала. Измеряется в "пиксель".|
 >>
 >>Раздел **"Input"**
@@ -1250,7 +836,7 @@
 >>|`Correct Zoom`|Включение режима сглаживания неравномерности изменения зума по трекингу.|
 >>|`Tracking Index`|Ввод ID трекинга. Применяется для точного определения используемых трекинг систем.|
 >>|`Tracking Delay`|Указание входной задержки для трекинг данных.| 
->>|`Port`|Ввод порта, в который передаются трекинг данные.|
+>>|`Port`|Ввод порта, в который передаются трекинг данные.| 
 >>
 >>>При вводе значения в параметр `Port` необходимо избегать его дублирования для приложений **Template Preview** и **Carrot Engine**.   
 >>
@@ -1279,6 +865,36 @@
 >>|-------------------|----------|
 >>|`Filename`|Указание директории (пути) к файлу используемого в качестве текстуры.|
 >
+>
+>`Combined Tracking Data`
+>
+>>Раздел **"Dimension"**
+>>
+>>|Наименование параметра|Назначение|
+>>|-------------------|----------|
+>>|`Width`|Указание ширины обрабатываемого видео-сигнала. Измеряется в "пиксель".|
+>>|`Height`|Указание высоты обрабатываемого видео-сигнала. Измеряется в "пиксель".|
+>>
+>>Раздел **"Input"**
+>>
+>>|Наименование параметра|Назначение|
+>>|-------------------|----------|
+>>|`Name`|Ввод имени модуля, отображаемого в **Carrot Flowchart**.|
+>>
+>>Раздел **"Process"**
+>>
+>>|Наименование параметра|Назначение|
+>>|-------------------|----------|
+>>|`Use Secondary Camera As`|Выбор режима обработки данных трекинг систем по их смещению. `XYZ` - используются данные смещения из параметра `First Tracked Input` в части позиционирования (координатам X, Y, Z). `PTR` - используются данные смещения из параметра `First Tracked Input` в части юстировки (Pan, Tilt, Roll). `XYZ + PTR` - данные смещения в части позиционирования (координатам X, Y, Z) и юстировки (Pan, Tilt, Roll) трекинг систем складываются друг с другом. |
+>>
+>>Раздел **"Process"**
+>>
+>>|Наименование параметра|Назначение|
+>>|-------------------|----------|
+>>|`First Tracked Input`|Выбор **input'a** `Tracking Data` соответствующего данным трекинг системы № 1.|
+>>|`Second Tracked Input`|Выбор **input'a** `Tracking Data` соответствующего данным трекинг системы № 2.|
+>>|`Tracking Index`|Ввод ID трекинга. Применяется для точного определения трекинг системы. Важно учитывать, чтобы значение параметра `Tracked Index` было меньше, чем аналогичное значение **input'ов** `Tracking Data` выбранных в параметрах `First Tracked Input` и `Second Tracked Input`.|
+>
 >`Tracking Data`
 >
 >>Раздел **"Input"**
@@ -1304,7 +920,7 @@
 >>|`Correct Zoom`|Включение режима сглаживания неравномерности изменения зума по трекингу.|
 >>|`Tracking Index`|Ввод ID трекинга. Применяется для точного определения используемых трекинг систем.|
 >>|`Tracking Delay`|Указание входной задержки для трекинг данных.|
->>|`Port`|Ввод порта, в который передаются трекинг данные.|
+>>|`Port`|Ввод порта, в который передаются трекинг данные.| 
 >>
 >>>При вводе значения в параметр `Port` необходимо избегать его дублирования для приложений **Template Preview** и **Carrot Engine**.   
 >>
@@ -1573,7 +1189,7 @@
 >Перед началом работы с **System Monitor** необходимо запустить приложения **Carrot Server** и **Launcher**.
 
 
-### Описание пользовательского интерфейса
+### Пользовательский интерфейс
 
 ![SM Main Window](..\images\1.1.5\System%20Monitor\SM%20Main%20Window.png)
 
@@ -1602,38 +1218,83 @@
 
 ###### Функциональный элемент `Settings`
 
-После взаимодействия с функциональным элементом `Settings` откроется окно **"Settings"**, предназначенное для настроек параметров **Carrot Server**.
+После взаимодействия с функциональным элементом `Settings` откроется окно **"Settings"**, предназначенное для настроек параметров **System Monitor**.
 
 ![SM Settings](..\images\1.1.5\System%20Monitor\SM%20Settings.png)
 
-Настраиваемые параметры **Carrot Server** распределены по разделы, перечень и назначение которых изложены в таблицах ниже.
+Настраиваемые параметры **System Monitor** распределены по разделам, перечень и назначение которых изложено в таблице ниже.
 
-**Раздел** `Licence`
+<table>
+    <thead>
+    <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td colspan="3" align="center"><code>Licence</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.1.</td>
+        <td style="vertical-align: middle"><code>License Key</code></td>
+        <td style="vertical-align: middle">Ввод лицензионного ключа Carrot</td>
+        <td style="vertical-align: middle"><p>1. Лицензионный ключ необходим для получения доступа к функционалу работы <b>Carrot</b>. В случае отсутствия лицензионного ключа, функционал работы будет ограничен.</p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td colspan="3" align="center"><code>Network</code></td>
+        </tr>
+     <tr>
+        <td style="text-align: center; vertical-align: middle">2.1.</td>
+        <td style="vertical-align: middle"><code>Server Host List</code></td>
+        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.2.</td>
+        <td style="vertical-align: middle"><code>Secure</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима защищённого сетевого обмена.</td>
+        <td style="vertical-align: middle">Дополнительную настройку параметра <code>Secure</code> необходимо осуществлять в параметрах приложения <b>Carrot Server</b>.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td colspan="3" align="center"><code>UI</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.1.</td>
+        <td style="vertical-align: middle"><code>Show Connection Info</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения в главном окне информации о подключенном IP-адресе.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td colspan="3" align="center"><code>User</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.1.</td>
+        <td style="vertical-align: middle"><code>Auto Logon</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима автоматической аутентификации.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.2.</td>
+        <td style="vertical-align: middle"><code>User Name</code></td>
+        <td style="vertical-align: middle">Изменение идентификатора (логина) пользователя</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.3.</td>
+        <td style="vertical-align: middle"><code>Password</code></td>
+        <td style="vertical-align: middle">Изменения пароля пользователя</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    </tbody>
+</table>
 
-| Наименование параметра | Назначение                       |
-| ---------------------- | -------------------------------- |
-| `Licence Key`          | Ввод лицензионного ключа Carrot. |
-
-**Раздел** `Network`
-
-| Наименование параметра | Назначение                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------ |
-| `Server Host List`     | Ввод IP-адреса рабочей станции для подключения к её базе данных.               |
-| `Secure`               | Включение (True)/отключение (False) режима защищённого информационного обмена. |
-
-**Раздел** `UI`
-
-| Наименование параметра | Назначение                        |
-|------------------------|-----------------------------------|
-| `Server Host List`     | Ввод IP-адреса рабочей станции (Workstation) для подключения к её базе данных.|
-
-**Раздел** `User`
-
-| Наименование параметра | Назначение                                                                |
-| ---------------------- | ------------------------------------------------------------------------- |
-| `Auto Logon`           | Включение (True)/отключение (False) режима автоматической аутентификации. |
-| `User Name`            | Изменение идентификатора (логина) пользователя.                           |
-| `Password`             | Изменения пароля пользователя.                                            |
 
 ###### Функциональный элемент `Exit`
 
@@ -1773,7 +1434,7 @@
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | Кнопка `Edit Scheme` (3) | Редактирование выбранной схемы **Carrot Engine** в системе визуальной обработки видеосигнала **Engine FlowChart**. |
 
->Описание пользовательского интерфейса системы визуальной обработки видеосигнала **Engine Flowchart** представлено в соответствующем [разделе](Carrot Basics.md).
+>Описание пользовательского интерфейса системы визуальной обработки видеосигнала **Engine Flowchart** представлено в соответствующем разделе.
 
 |                                               |                                                                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -1898,9 +1559,9 @@
 
 Назначение **"нод обработки видеосигнала"** изложено в таблице ниже.
 
-|Порядковый номер| Наименование ноды обработки видеосигнала | Назначение |
-|------------------|----------------------|-|
-|1|`Container`|Сохранение экспортируемого шаблона **After Effects** или **Unreal Engine**.|
+| Порядковый номер | Наименование ноды обработки видеосигнала | Назначение                                                                  |
+| ---------------- | ---------------------------------------- | --------------------------------------------------------------------------- |
+| 1                | `Container`                              | Сохранение экспортируемого шаблона **After Effects** или **Unreal Engine**. |
 
 >**"Нода обработки видеосигнала"** `Container` позволяет сохранять (экспортировать) только один шаблон. 
 >
@@ -1909,6 +1570,7 @@
 >В связи с чем, в случае наблюдения некорректного функционирования **схемы Carrot Engine** при работе с сохранённым шаблоном, рекомендуется перезагрузить ивент (используя последовательно кнопки `Unload` и `Load`) в **Web-Playlist (Carrot Dashboard)** или использовать в **схеме Carrot Engine** **"ноду обработки видеосигнала"** `Viewport` в соответствии с рисунком ниже
 >
 >![SM_EF_Container_Node](..\images\1.1.6\Carrot%20Basics\System%20Monitor\SM_EF_Container_Node.png)
+
 
 | | | |
 |------------------|----------------------|-|
@@ -2279,7 +1941,7 @@
 
 3. Ввести логин и пароль от учётной записи **Web Playlist (Carrot Dashboard)** и нажать кнопку `Log In`.
 
-### Описание пользовательского интерфейса
+### Пользовательский интерфейс
 
 Пользовательский интерфейс приложения **Web Playlist Server**, представляет собой консольное приложение, внешний вид которого **(при корректном запуске)** представлен на рисунке ниже.
 
@@ -2297,6 +1959,7 @@
 - **"Settings"** (5).
 
 >Область функциональных окон возможно уменьшить путём взаимодействия по ней `правой кнопкой мыши (ПКМ)` и выбора кнопки `Collapse` или последовательного ввода с клавиатуры "горячих" клавиш `Shift + M`.
+
 
 #### Функциональное окно "Сведения о пользователе"
 
@@ -2431,21 +2094,19 @@
 >|-------------------|----------|
 >|`Content`|Отображение имени "контейнера", к которому привязан ивент.|
 >|`Id`|Уникальный идентификатор ивента. По умолчанию отображение параметра отключено.|
->|`External Id`|Внешний уникальный идентификатор ивента. По умолчанию отображение параметра отключено.|
+>|`External Id`|Отображение внешнего уникального идентификатора ивента. По умолчанию отображение параметра отключено.|
 >
->>**Внешний уникальный идентификатор ивента** предназначен для поддержки программного взаимодействия между **"playout системами"**.
+>>**Внешний уникальный идентификатор** ивента используется для  взаимодействия с **"playout-системами"**. 
 >
 >| | |
 >|-------------------|----------|
 >|`Current State`|По умолчанию отображение параметра отключено.|
-
 
 |                                                            |                                        |
 | ---------------------------------------------------------- | -------------------------------------- |
 | Область **"Справочная информация о выбранном ивенте"** (2) | Отображение свойств выбранного ивента. |
 
 >Область функциональных окон возможно уменьшить путём взаимодействия по ней `правой кнопкой мыши (ПКМ)` и выбора кнопки `Collapse` или последовательного ввода с клавиатуры "горячих" клавиш `Shift + V`.
-
 
 #### Функциональное окно "Editor"
 
@@ -2669,12 +2330,12 @@
 >| Поле **"Search by variable name"** (1) | Поиск по наименованию переменной (параметра) ивента. |
 >| Область **"Свойства ивента"** (2) | Отображение и настройка свойств ивента.|
 >
->>В общем случае область **"Свойства ивента"**, содержит следующие редактируемые поля, представленные в таблице ниже.
+>>В общем случае область **"Свойства ивента"**, содержит следующие элементы, представленные в таблице ниже.
 >>
->>|Редактируемое поле|Назначение|
+>>|Наименование элемента | Назначение|
 >>|-------------------|----------|
->>|`Event Name`|Присвоение имени ивенту.|
->>|`External ID`|Присвоение внешнего уникального идентификатора ивенту.|
+>>|Поле **"Event Name"**|Присвоение имени ивенту.|
+>>|Поле **"External ID"**|Присвоение внешнего уникального идентификатора ивенту.|
 >>
 >>>**Внешний уникальный идентификатор** ивента используется для  взаимодействия с **"playout-системами"**. 
 >>>
@@ -2696,6 +2357,7 @@
 >>|Кнопка `Save as new` |Создание в плейлисте ивента с идентичными свойствами.|
 >
 >В случае, если запущено приложение **Carrot Preview Engine** и в **Web Playlist (Carrot Dashboard)**, в разделе **"Global settings"** функционального окна **"Settings"** параметру `Show preview player` присвоено значение `Enabled`, то в разделе **"Event Properties"** отобразится окно предварительного просмотра ивентов - **"State Viewer"**, в том числе способное отображать ивенты в режиме **"на весь экран"**.
+
 
 
 #### Функциональное окно "Browser"
@@ -2763,13 +2425,13 @@
 | `Content`               | Отображение сведений о наименовании "контейнера", к которому привязан шаблон. |
 | `External ID`           | Присвоение шаблону внешнего уникального идентификатора .                      |
 
->**Внешний уникальный идентификатор** шаблон используется для  взаимодействия с **"playout-системами"**. 
+>**Внешний уникальный идентификатор** шаблона используется для  взаимодействия с **"playout-системами"**. 
 >
 >При вводе **внешнего уникального идентификатора** необходимо учитывать атрибут **регистрозависимости** , так как данная характеристика применяется при осуществлении доступа к соответствующему объекту.
 
-|  |                                                             |
-| ----------------------- | ----------------------------------------------------------------------------- |
-| `Date created`          | Отображение сведений о дате создания шаблона.                                 |
+|                |                                               |
+| -------------- | --------------------------------------------- |
+| `Date created` | Отображение сведений о дате создания шаблона. |
 
 >В разделе **"Templates"** доступна сортировка шаблонов по следующим параметрам:
 >- в порядке возрастания по первой букве имени шаблона;
@@ -2786,15 +2448,15 @@
 | Отображаемая информация | Назначение                                                 |
 | ----------------------- | ---------------------------------------------------------- |
 | `Item Name`             | Отображение сведений о наименовании плейлиста.             |
-| `External ID`           | Присвоение плейлистум внешнего уникального идентификатора. |
+| `External ID`           | Присвоение плейлисту внешнего уникального идентификатора. |
 
->**Внешний уникальный идентификатор** шаблон используется для  взаимодействия с **"playout-системами"**. 
->
+>**Внешний уникальный идентификатор** плейлиста используется для  взаимодействия с **"playout-системами"**.
+> 
 >При вводе **внешнего уникального идентификатора** необходимо учитывать атрибут **регистрозависимости** , так как данная характеристика применяется при осуществлении доступа к соответствующему объекту.
 
-|  |                                                             |
-| ----------------------- | ----------------------------------------------------------------------------- |
-| `Date created`          | Отображение сведений о дате создания плейлиста.            |
+|                |                                                 |
+| -------------- | ----------------------------------------------- |
+| `Date created` | Отображение сведений о дате создания плейлиста. |
 
 >В разделе **"Playlists"** доступна сортировка шаблонов по следующим параметрам:
 >- в порядке возрастания по первой букве имени плейлиста;
@@ -2968,7 +2630,6 @@
 </table>
 
 
-
 ### Назначение комбинаций клавиш
 
 #### Общие сведения
@@ -3054,7 +2715,6 @@
 На данном этапе, процесс назначения **комбинаций клавиш** для команд взаимодействия с ивентами считается завершённым.
 
 
-
 ### Работа с самоподписанным сертификат Windows
 
 #### Создание и экспорт самоподписанного сертификата Windows
@@ -3086,7 +2746,7 @@
 ## Template Preview
 
 
-### Описание пользовательского интерфейса
+### Пользовательский интерфейс
 
 ![TP_Main_Window.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_Main_Window.png)
 
@@ -3118,7 +2778,6 @@
 | 5                | `🗁`                |
 | 6                | `🖫`                |
 | 7                | `Engine Link`       |
-
 
 ##### Кнопка "File"
 
@@ -3161,12 +2820,11 @@
 | 7   | Кнопка | `Save Template` | Сохранение сформированного референсного шаблона.                                          |
 
 
-
 ##### Кнопка "Edit"
 
 ![TP_Edit_Button.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_Edit_Button.png)
 
-При взаимодействии с кнопкой `Edit` отображаются два функциональных элемента, назначение которых представлено в таблице ниже.
+При взаимодействии с кнопкой `Edit` отображаются два функциональных элемента, перечень и назначение которых представлено в таблице ниже.
 
 | Порядковый номер | Наименование функционального элемента | Назначение                                                                       | Сочетание клавиш |
 | ---------------- | ------------------------------------- | -------------------------------------------------------------------------------- | ---------------- |
@@ -3177,6 +2835,7 @@
 #### Область "Scene"
 
 ![TP_Scene_Area.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_Scene_Area.png)
+
 
 В разделе **"Footages"** реализована возможность замены использующихся в **шаблоне After Effects** мультимедийных компонентов (футажей), путём взаимодействия с кнопкой `Replace Source`.
 
@@ -3477,7 +3136,6 @@
 >- `SoftLight` - режим наложения настроенного цвета поверх исходного цвета, создавая эффект "мягкого" окрашивания. Используется для создания "лёгких" цветовых акцентов или для изменения оттенка объекта;
 >- `Color` - режим изменения исходного цвета на настроенный цвет. Используется для случаев, когда необходимо полностью изменить цвет объекта, например, при перекрашивании или создания цветовых вариаций.
 
-
 ### Создание референсного шаблона
 
 #### Что такое "референсный шаблон"?
@@ -3766,11 +3424,11 @@
 
 Последовательность действий по запуску рабочей станции представлена на рисунке ниже.
 
-![TP_WwSL_Open_SL_Window.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Open_SL_Window.png)
+![TP_WwSL_Open_SL_Window.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Open_SL_Window.png)
 
 В результате проделанных действий откроется окно **"State Logic Flowchart"**, внешний вид которого, представлен на рисунке ниже.
 
-![TP_State_Logic_Flowchart_Window.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_State_Logic_Flowchart_Window.png)
+![TP_State_Logic_Flowchart_Window.png](..\images\1.1.6\Carrot%20Basics\TP_State_Logic_Flowchart_Window.png)
 
 >В качестве экспортируемого шаблона, используется проект **After Effects** с заготовленными состояниями (точками анимации) **"BC"**, **"СA"**, **"AB"**, **"ТEXT"** и **"OUT"**.
 
@@ -3782,7 +3440,7 @@
 
 Внешний вид окна добавления **дочернего шаблона** и **логических операторов** представлено на рисунке ниже.
 
-![TP_SL_Logic_Buttons.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_SL_Logic_Buttons.png)
+![TP_SL_Logic_Buttons.png](..\images\1.1.6\Carrot%20Basics\TP_SL_Logic_Buttons.png)
 
 Назначение элементов окна добавления **дочернего шаблона** и **логических операторов** представлено в таблице ниже
 
@@ -3801,14 +3459,14 @@
 
 Последовательность действий по добавлению дочернего шаблона в область **"Flowchart"** представлена на рисунке ниже.
 
-![TP_WwSL_Adding_Child_Templates 1.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Adding_Child_Templates%201.png)
+![TP_WwSL_Adding_Child_Templates 1.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Adding_Child_Templates%201.png)
 
 
 >В качестве **дочерних шаблонов** будут использоваться сформированные шаблоны **After Effects** с наименованием **"Child Template № 1"** и **"Child Template № 2"** включающих в себя состояния (точки анимаций) .
 
 Внешний вид добавленных дочерних шаблонов в область **"Flowchart"** окна **"State Logic Flowchart"** представлен на рисунке ниже.
 
-![TP_WwSL_Adding_Child_Templates 2.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Adding_Child_Templates%202.png)
+![TP_WwSL_Adding_Child_Templates 2.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Adding_Child_Templates%202.png)
 
 Таким образом, нода добавленного **дочернего шаблона "Child Template № 1"** содержит состояния (точки анимации) **"State 1"**, **"State 2"**, **"State 3"** и **"OUT"**, а нода  **"Child Template № 2"** -  **"State 1"**, **"State 2"** и **"OUT"**.
 
@@ -3816,7 +3474,7 @@
 
 Результат проделанных действий по добавлению состояния (точки анимации) **"BC"** мастер шаблона в область **"Flowchart"** представлен на рисунке ниже.
 
-![TP_WwSL_Adding_Child_Templates 3.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Adding_Child_Templates%203.png)
+![TP_WwSL_Adding_Child_Templates 3.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Adding_Child_Templates%203.png)
 
 #### Работа с логическими операторами
 
@@ -3824,7 +3482,7 @@
 
 В первую очередь, следует рассмотреть логику состояний **без использования логических операторов**, для этого соединим состояние **"State 1"** дочернего шаблона **"Child Template № 1"** с состоянием **"BC"** мастер шаблона в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_Child_Templates.png)
+![TP_WwSL_Connecting_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_Child_Templates.png)
 
 >**Соединение** состояний дочерних и мастер шаблонов осуществляется путём нажатия `левой кнопкой мыши (ЛКМ)` по одному из состояний шаблона и перемещения формируемой линии связи к другому.
 
@@ -3834,7 +3492,7 @@
 
 Результат тестирования сформированной логики состояний без использования логических операторов представлена на рисунке ниже.
 
-![TP_WwSL_Test_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_State_MT.png)
+![TP_WwSL_Test_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_State_MT.png)
 
 >Для тестирования созданной логики состояний, необходимо воспользоваться кнопкой `Test` располагаемой в левом нижнем углу окна **"State Logic Flowchart"**.
 >
@@ -3842,7 +3500,7 @@
 
 Далее рассмотрим пример формирования логики состояний с использованием логического оператора **"OR"**, для этого соединим состояния **"State 1"** дочерних шаблонов **"Child Template № 1"** и **"Child Template № 2"** с состоянием **"BC"** мастер шаблона через логический оператор в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_OR_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_OR_Child_Templates.png)
+![TP_WwSL_Connecting_OR_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_OR_Child_Templates.png)
 
 >Для **удаления** ноды или линии связи между ними, необходимо выделить `левой кнопкой мыши (ЛКМ)` интересующий объект и нажать кнопку `Delete` на клавиатуре.
 
@@ -3850,33 +3508,33 @@
 
 Результат тестирования сформированной логики состояний с использованием логического оператора **"OR"** представлен на рисунке ниже.
 
-![TP_WwSL_Test_OR_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_OR_State_MT.png)
+![TP_WwSL_Test_OR_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_OR_State_MT.png)
 
 Затем сформируем логику состояний с использованием логического оператора **"AND"**, для этого соединим состояния **"State 1"** дочерних шаблонов **"Child Template № 1"** и **"Child Template № 2"** с состоянием **"BC"** мастер шаблона через логический оператор в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_AND_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_AND_Child_Templates.png)
+![TP_WwSL_Connecting_AND_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_AND_Child_Templates.png)
 
 Сформированная логика состояний с использованием логического оператора **"AND"** реализована таким образом, что при инициализации состояний **"State 1"** дочерних шаблонов  **"Child Template № 1"** и **"Child Template № 2"**, происходит генерация логическим оператором сигнала, воспроизводящего состояние **"BC"** мастер шаблона. 
 
 Результат тестирования сформированной логики состояний с использованием логического оператора **"AND"** представлен на рисунке ниже.
 
-![TP_WwSL_Test_AND_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_AND_State_MT.png)
+![TP_WwSL_Test_AND_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_AND_State_MT.png)
 
 Рассмотрим пример формирования логики состояний с использованием логического оператора **"NOT"**. Для более наглядной демонстрации его работы, в схему следует добавить два логических оператора, затем соединить через них состояния **"State 1"** дочерних шаблонов **"Child Template № 1"** и **"Child Template № 2"** с состоянием **"BC"** мастер шаблона в соответствии с рисунком ниже.
 
-![TP_WwSL_Connecting_NOT_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Connecting_NOT_Child_Templates.png)
+![TP_WwSL_Connecting_NOT_Child_Templates.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Connecting_NOT_Child_Templates.png)
 
 В результате сформированного функционала логики состояний с использованием логических операторов **"NOT"** получим, что при инициализации состояний  **"State 1"** дочерних шаблонов **«Child Template № 1»** и **«Child Template № 2»** первый в очереди (слева направо) логический оператор **"NOT"** передаёт инвертированный сигнал на следующий за ним логический оператор **"NOT"**, а он в свою очередь повторно инвертирует полученный сигнал и передаёт его для воспроизведения состояния **"BC"** мастер шаблона. 
 
 Результат тестирования сформированной логики состояний с использованием логических операторов **"NOT"** представлен на рисунке.
 
-![TP_WwSL_Test_NOT_State_MT.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_Test_NOT_State_MT.png)
+![TP_WwSL_Test_NOT_State_MT.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_Test_NOT_State_MT.png)
 
 #### Пример работы логики состояний с использованием логических операторов "AND", "OR" и "NOT"
 
 Рассмотрим работу сформированной логики состояний с использованием логических операторов **"AND"**, **"OR"** и **"NOT"**, внешний вид которой представлен на рисунке ниже.
 
-![TP_WwSL_OR_AND_NOT_Example.png](..\images\1.1.6\Carrot%20Basics\Template%20Preview\TP_WwSL_OR_AND_NOT_Example.png)
+![TP_WwSL_OR_AND_NOT_Example.png](..\images\1.1.6\Carrot%20Basics\TP_WwSL_OR_AND_NOT_Example.png)
 
 Перечень реализованных взаимосвязей сформированной логики состояний с использованием логических операторов **"AND"**, **"OR"** и **"NOT"**, а также состояний дочерних и мастер шаблонов представлен в таблице ниже.
 
@@ -4048,15 +3706,7 @@
 
 
 
-
-
-
-
-
-
-
 ## Carrot Engine
-
 
 ### Назначение
 
@@ -4294,11 +3944,11 @@
         <td style="vertical-align: middle">Включение (True) / Отключение (False) режима подключения к серверу без отображения сообщений об ошибках.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
-    <tr>
+     <tr>
         <td style="text-align: center; vertical-align: middle">7.2.</td>
-        <td style="vertical-align: middle"><code>Server Host</code></td>
-        <td style="vertical-align: middle">Ввод наименования или IP-адреса рабочей станции, на котором планируется запуск схем <b>Carrot Engine</b>.</td>
-        <td style="vertical-align: middle">В случае использования локальной рабочей станции, в поле параметра <code>Server Host</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</td>
+        <td style="vertical-align: middle"><code>Server Host List</code></td>
+        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">7.3.</td>
@@ -4621,6 +4271,114 @@
 ![CE_ScaletoFit_Gif](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_ScaletoFit_Gif.gif)
 
 При взаимодействии с функциональным элементом `Scale To Fit` отображение видеосигнала масштабируется под размеры окна приложения **Carrot Engine**.
+
+
+##### Кнопка `Delays`
+
+![CE_Delays_Button](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Delays_Button.png)
+
+При взаимодействии с кнопкой `Delays` отображается функциональный элемент `Show Delays Form`, открывающий окно **"Delays"** содержащее перечень параметров для отладки задержек воспроизведения различной мультимедийной информации.
+
+>Для получения оперативного доступа к функционалу кнопки `Show Delays Form`, необходимо осуществить нажатие клавиши `F8` на клавиатуре рабочей станции.
+
+Внешний вид окна **"Delays"** представлен на рисунке ниже.
+
+![CE_Delays_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Delays_Window.png)
+
+![[CE_Delays_Window.png]]
+
+Окно **"Delays"** состоит из элементов, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>Input Delay Offset</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>Tracking Delay Keyer</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>Tracking Delay AE</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>Secondary Delay</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>Audio Delay, ms</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>XR Delay</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>UE Draw Delay</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><code>Ar Texture Delay</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">9.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟲</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">10.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Apply</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+       <tr>
+        <td style="text-align: center; vertical-align: middle">11.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>⟳</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      </tbody>
+</table>
 
 
 ##### Кнопка `Tools`
@@ -5114,6 +4872,117 @@ AR композитинг работает по схеме, когда изоб�
 
 Если галки `Invert Input` и `Invert Output` выключены, то, например, значение (**0-0-0-0-0-1-1-1**), привязанное к событию, будет передано на вывод без изменений при активации события.
 
+###### Функциональный элемент `Dummy Output`
+
+При взаимодействии с функциональным элементом `Dummy Output`, отображается **"изображение заглушка"** поверх генерируемого сигнала. Демонстрация процесса работы функционального элемента `Dummy Output` представлена на анимационном мультимедийном материале ниже.
+
+###### Функциональный элемент `LUT Utils`
+
+При взаимодействии с функциональным элементом `LUT Utils` открывается окно **"LUT Utils"**. Внешний вид окна **"LUT Utils"** представлен на рисунке ниже.
+
+![CE_LUT_Utils_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_LUT_Utils_Window.png)
+
+![[CE_LUT_Utils_Window.png]]
+
+Окно **"LUT Utils"** состоит из элементов, распределённых по трём разделам, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+    <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td colspan="4" align="center"><code>Checker</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.1.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Pick Checker Colors</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Reset Checker Colors</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td colspan="4" align="center"><code>Process</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.1.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Preview</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Correct Brightness</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.3.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Shift Channels</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.4.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Process</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td colspan="4" align="center"><code>Export</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>PNG Format</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save *.PNG</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.3.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>LUT Size</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.4.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save *.CUBE</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    </tbody>
+</table>
+
+
 ###### Функциональный элемент `GPIO`
 
 При взаимодействии с функциональным элементом `GPIO` откроется окно  **"GPIO Settings"**, предназначенное для настройки устройств ввода-вывода с внешним интерфейсом GPIO. Описание элементов окна **"GPIO Settings"**, представлено в соответствующем разделе с описанием приложения **Input Devices**.
@@ -5125,6 +4994,161 @@ AR композитинг работает по схеме, когда изоб�
 ###### Функциональный элемент `Macro`
 
 При взаимодействии с функциональным элементом `Macro` откроется окно  **"Macro Keyboard Settings"**, предназначенное для настройки устройств ввода-вывода Stream Deck. Описание элементов окна **"Macro Keyboard Settings"**, представлено в соответствующем разделе с описанием приложения **Input Devices**.
+
+###### Функциональный элемент `LED Utils`
+
+При взаимодействии с функциональным элементом `LED Utils` открывается окно **"Led Utils"**, предназначенное для позиционирования LED-экранов. Внешний вид окна **"Led Utils"** представлен на рисунке ниже.
+
+![CE_LED_Utils_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_LED_Utils_Window.png)
+
+![[CE_LED_Utils_Window.png]]
+
+Окно **"LED Utils"** состоит из элементов, перечень и назначение которых представлено в таблице ниже.
+
+<table>
+    <thead>
+    <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Тип элемента</th>
+        <th style="text-align: center; vertical-align: middle">Наименование элемента</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>Curve direction</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Calculator</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>🛈</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>"Step count"</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Add point</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>X</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>Y</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>Z</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">9.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>Pan</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">10.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>Tilt</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">11.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Capture tracking</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">12.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>D</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">13.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save Settings</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">14.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Load Settings</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">15.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Build Mesh</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">16.</td>
+        <td style="vertical-align: middle">Поле</td>
+        <td style="vertical-align: middle"><b>Current camera</b></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">17.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Use Overlay</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">18.</td>
+        <td style="vertical-align: middle">Кнопка</td>
+        <td style="vertical-align: middle"><code>Save Mesh</code></td>
+        <td style="vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+###### Функциональный элемент `Reset`
+
 
 
 ##### Кнопка `Help`
@@ -5175,108 +5199,307 @@ AR композитинг работает по схеме, когда изоб�
 При взаимодействии с функциональным элементом `About...` открывается окно **"About Carrot Engine"** содержащее сведения о наименовании приложения, его версии и правообладателе с периодом действия авторских прав.
 
 
+#### Область "Область отображения видеосигнала"
 
 
 
+#### Область "Данные производительности системы"
 
+Область **"Данные производительности системы"** отображает сведения, перечень и назначение которых представлены в таблице ниже.
 
-
+<table>
+    <thead>
+    <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><code>FPS</code></td>
+        <td style="vertical-align: middle">Отображение частоты кадров воспроизведения мультимедийной информации в единицу времени.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><code>SysMem</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><code>CPU</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">Измеряется в процентном соотношении.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td style="vertical-align: middle"><code>GPUMem</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td style="vertical-align: middle"><code>Output Delay</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td style="vertical-align: middle"><code>Input Delay</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">7.</td>
+        <td style="vertical-align: middle"><code>Tracking Delays</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">8.</td>
+        <td style="vertical-align: middle"><code>DelayAE</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">9.</td>
+        <td style="vertical-align: middle"><code>DelayKeyer</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">10.</td>
+        <td style="vertical-align: middle"><code>UEDrawDelay</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">11.</td>
+        <td style="vertical-align: middle"><code>XRDelay</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">12.</td>
+        <td style="vertical-align: middle"><code>ARTextureDelay</code></td>
+        <td style="vertical-align: middle">.</td>
+        <td style="vertical-align: middle">.</td>
+    </tr>
+      </tbody>
+</table>
 
 
 
 
 ## DataStream Server
 
-### Settings
+### Назначение
 
->DataBase
+**DataStream Server** представляет собой специализированное программное обеспечение, предназначенное для редактирования переменных ивентов плейлиста с помощью подготовленных файлов формата **".XML"** и **".XLSX"**, а также взаимодействия со внешними источниками с применением соответствующих программных модулей (плагинов).
 
-- `Directory` - расположение базы данных Carrot.
-- `DB autoreplication` -  автоматическая репликация (копирование) базы данных от Host-сервера.
-- `Directory` - расположение папки с плагинами.
+>Интеграция с внешними источниками осуществляется с помощью программного интерфейса (API) **DSInterfaces**.
 
->Licence
-- `Licence Key` - лицензионный ключ для открытия полного функционала Carrot.
-
->Network
-- `Server Host` - имя или IP-адрес Host-сервера.
-- `Secure` - используется, если предполагается шифрованное соединение.
-- `Reserve Server Host` - имя или IP-адрес резервного сервера.
-
->Plugins
-- `Stop plugin if error` - остановка плагина при возникновении ошибки.
-
->User
-- `Auto Logon` - автоматическое подключение пользователя при запуске приложения.
-- `User Name` - имя пользователя (подробнее о правах доступа в [параграфе ?.?](test.md))
-- `Password` - пароль пользователя.
+Основной задачей **DataStream Server** является предоставление унифицированного механизма для приёма, обработки и дальнейшей визуализации данных в режиме реального времени.
 
 
+### Функциональные возможности
 
-### Начало работы с DataStream
+Основными функциональными возможностями **DataStream Server** являются:
+- приём и обработка данных из различных внешних источников;
+- динамическое обновление переменных ивентов плейлиста;
+- систематизированный учёт работы приложения, в том числе произведённые им изменения в переменных ивента плейлиста.
 
-`DataStream` - инструмент предназначенный для быстрого редактирования переменных в плейлисте через **XML** или **XLSX** файлы.
+### Пользовательский интерфейс
+
+![DS_Main_Window](..\images\1.1.6\Carrot%20Basics\DataStream%20Server\DS_Main_Window.png)
+
+Пользовательский интерфейс приложения **DataStream Server** состоит из следующих областей:
+
+- **"Вспомогательные кнопки взаимодействия с DataStream Server"**;
+- **"Основное рабочее пространство"**;
+- **"Идентификационные данные"**.
+
+#### Область "Вспомогательные кнопки взаимодействия с DataStream Server"
+
+![DS_Buttons](..\images\1.1.6\Carrot%20Basics\DataStream%20Server\DS_Buttons.png)
+
+Область **"Вспомогательные кнопки взаимодействия с DataStream Server"** включает в себя следующие кнопки:
+- `Tables` (1);
+- `Plugins` (2);
+- `Settings` (3).
 
 
+##### Кнопка `Tables` 
 
-#### Описание функций DataStream
+![DS_Tables](..\images\1.1.6\Carrot%20Basics\DataStream%20Server\DS_Tables.png)
 
-Структура приложения представляет собой **три раздела**: `Tables`, `Plugins`, `Settings`.
-
-Разделы `Tables` и `Plugins` имеют схожее построение регионов.
-
->Таблицы:
-- Первый регион: Добавление / Удаление таблиц.
+При взаимодействии с кнопкой `Tables`, в области **"Основное рабочее пространство"** отображается окно взаимодействия с таблицами, которое включает в себя:
 - - `Add Table` - добавить таблицу.
 - - `Delete Table` - удалить таблицу.
-- Второй регион: Правила выбранной таблицы.
 - - `Table Name` - изменить название выбранной таблицы.
 - - `Add Cell` - создать ячейку с переменной.
 - - `Sort by` - сортировать по: дате создания, дате внесённых изменений, имени.
 - - `Link Cells` - привязать ячейку к событию в плейлисте.
 - - `Unlink Cells` - удалить все связи с плейлистом.
 - - `Delete Cells` - удалить ячейку.
-- Третий регион: Настройка выбранной ячейки таблицы.
-- - `Remove Link` - удалить выбранную связь (*например: удаление изменения параметра внесённого текста в титре*).
-- - `Update Cell` - внесение изменений в ячейку (*аналогично кнопке "Сохранить"*).
+- - `Remove Link` - удалить выбранную связь (например: удаление изменения параметра внесённого текста в титре).
+- - `Update Cell` - внесение изменений в ячейку (аналогично кнопке "Сохранить").
 - - `Cell: Value` - значение переменной: текстовые и численные.
 - - `Common: Changed` - дата изменения переменной.
 - - `Common: Created` - дата создания переменной.
 - - `Common: Name` - имя переменной.
 
->Плагины:
-- Первый регион: Добавление / Удаление плагинов.
+
+##### Кнопка `Plugins` 
+
+![DS_Plugins](..\images\1.1.6\Carrot%20Basics\DataStream%20Server\DS_Plugins.png)
+
+При взаимодействии с кнопкой `Plugins`, в области **"Основное рабочее пространство"** отображается окно взаимодействия с таблицами, которое включает в себя:
 - - `Add Plugin` - добавить плагин.
 - - `Delete Plugin` - удалить плагин.
-- Второй регион: Правила выбранного плагина.
 - - `Plugin Name` - изменить название выбранного плагина.
 - - `Add Rule` - создать правило. 
 - - `Delete Rule` - удалить правило.
-- Третий регион: Настройка выбранного правила плагина.
 - - `Edit Cells` - добавляет выбранные ячейки для взаимодействия с данным правилом.
 - - `Generate cells` - доступно только для **XLSX-таблиц**, создаёт задействованные ячейки в таблице в `DataStream` - `Tables`.
-- - `Update Rule` - внесение изменений в правило (*аналогично кнопке "Сохранить"*).
+- - `Update Rule` - внесение изменений в правило (аналогично кнопке "Сохранить").
 - - `Common: Changed` - дата изменения переменной.
 - - `Common: Created` - дата создания переменной.
 - - `Common: Name` - имя переменной.
 - - `Rule: Enabled` - включить / выключить правило.
-- Дополнительный раздел для XML-таблиц.
 - - `XML Parser: Path` - местоположения файла с форматом **XML**. 
 - - `XML Parser: Update Interval` - интервал проверки файла в секундах. 
-- Дополнительный раздел для XLSX-таблиц.
 - - `XLSX Parser: Excluder` - исключает выбранную ячейку или диапазон.
 - - `XLSX Parser: Path` - местоположения файла с форматом **XLSX**. 
 - - `XLSX Parser: Selector` - задаёт строгий диапазон или ячейку для внесения переменных.
 - - `XLSX Parser: Sheet Name` - имя листа.
 - - `XLSX Parser: Update Interval` - интервал проверки файла в секундах. 
-- - `XLSX Parser: Update Type` - при использовании `ByTime` берёт интервал из параметра `Update Interval`, при использовании `ByChange` вносит изменения после каждого сохранения (*данная функция работает не стабильно, рекомендуем использовать параметр* `ByTime`). 
+- - `XLSX Parser: Update Type` - при использовании `ByTime` берёт интервал из параметра `Update Interval`, при использовании `ByChange` вносит изменения после каждого сохранения (данная функция работает не стабильно, рекомендуем использовать параметр `ByTime`). 
+
+
+##### Кнопка `Settings` 
+
+При взаимодействии с кнопкой `Settings`, открывается окно **"Settings"**, предназначенное для настроек параметров **DataStream Server**, внешний вид которого представлен на рисунке ниже.
+
+![DS_Settings](..\images\1.1.6\Carrot%20Basics\DataStream%20Server\DS_Settings.png)
+
+Настраиваемые параметры **DataStream Server** распределены по разделам, перечень и назначение которых изложен в таблице ниже.
+
+
+<table>
+    <thead>
+    <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td colspan="3" align="center"><code>DataBase</code></td>
+    </tr>
+        <tr>
+        <td style="text-align: center; vertical-align: middle">1.1.</td>
+        <td style="vertical-align: middle"><code>DB Directory</code></td>
+        <td style="vertical-align: middle">Указание директории (пути) к базе данных приложения <b>DataStream Server</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.2.</td>
+        <td style="vertical-align: middle"><code>DB Autoreplication</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима репликации (синхронизации) данных от основного сервера.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.3.</td>
+        <td style="vertical-align: middle"><code>Plugins Directory</code></td>
+        <td style="vertical-align: middle">Указание директории (пути) расположения плагинов для приложения <b>DataStream Server</b>.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td colspan="3" align="center"><code>Licence</code></td>
+        </tr>
+        <tr>
+        <td style="text-align: center; vertical-align: middle">2.1.</td>
+        <td style="vertical-align: middle"><code>Licence Key</code></td>
+        <td style="vertical-align: middle">Ввод лицензионного ключа Carrot</td>
+        <td style="vertical-align: middle"><p>1. Лицензионный ключ необходим для получения доступа к функционалу работы <b>Carrot</b>. В случае отсутствия лицензионного ключа, функционал работы будет ограничен.</p> <p>2. Ввод лицензионного ключа <b>Carrot</b> рекомендуется проводить совместно со специалистами технической поддержки <b>Carrot Broadcast</b>.</p></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td colspan="3" align="center"><code>Network</code></td>
+    </tr>
+     <tr>
+        <td style="text-align: center; vertical-align: middle">3.1.</td>
+        <td style="vertical-align: middle"><code>Server Host List</code></td>
+        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">3.2.</td>
+        <td style="vertical-align: middle"><code>Secure</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима защищённого сетевого обмена.</td>
+        <td style="vertical-align: middle">Дополнительную настройку параметра <code>Secure</code> необходимо осуществлять в параметрах приложения <b>Carrot Server</b>.</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td colspan="3" align="center"><code>Plugins</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">4.1.</td>
+        <td style="vertical-align: middle"><code>Stop Plugin if Error</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима остановки работы плагина при возникновении ошибки.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">5.</td>
+        <td colspan="3" align="center"><code>UI</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">5.1.</td>
+        <td style="vertical-align: middle"><code>Show Connection Info</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима отображения в главном окне информации о подключенном IP-адресе.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.</td>
+        <td colspan="3" align="center"><code>User</code></td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.1.</td>
+        <td style="vertical-align: middle"><code>Auto Logon</code></td>
+        <td style="vertical-align: middle">Включение (True) / Отключение (False) режима автоматической аутентификации.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.2.</td>
+        <td style="vertical-align: middle"><code>User Name</code></td>
+        <td style="vertical-align: middle">Изменение идентификатора (логина) пользователя</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">6.3.</td>
+        <td style="vertical-align: middle"><code>Password</code></td>
+        <td style="vertical-align: middle">Изменения пароля пользователя</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+#### Работа с DataStream Server
 
 Рассмотрим **три** типа смены данных в переменных шаблона.
 
-
-
-
-#### Первый тип "Локальный"
+##### Первый тип "Локальный"
 
 1. Перейдём в раздел `Tables`.
 ![](..\images\image57.png)
@@ -5326,7 +5549,7 @@ AR композитинг работает по схеме, когда изоб�
 
 
 
-#### Второй тип "XML"
+##### Второй тип "XML"
 
 1. Аналогично первому типу, проделываем все шаги с [1 по 5](datastream.md#первый-тип-локальный). **Важно! При работе с XML плагином имена созданных ячеек не должны содержать пробелы.**
 
@@ -5364,7 +5587,7 @@ AR композитинг работает по схеме, когда изоб�
 
 
 
-#### Третий тип "XLSX"
+##### Третий тип "XLSX"
 
 1. В отличии от 1-го и 2-го типа, работу с 3-м нужно начинать с настройки плагина. Аналогично XML-плагину добавим XLSX через `Add Plugin`. Путь к файлу в папке `Carrot` - `Bin` - `XLSXParserV2.dll`.
 
@@ -5387,11 +5610,9 @@ AR композитинг работает по схеме, когда изоб�
 ![DataStream_Carrot_Result_XLSX](..\images\DataStream\image_021.gif "Result_XLSX")
 
 
+#### Справочная информация информация
 
-
-### Полезная информация
-
-#### DataStream - автоматизация проигрывания
+##### Автоматизация проигрывания
 
 `DataStream` имеет полезную функцию для автоматического проигрывания анимации с последующей заменой данных в переменной. Для его активации необходимо выполнить несколько простых действий при экспорте шаблона в `Carrot Template Preview`.
 
@@ -5404,6 +5625,7 @@ AR композитинг работает по схеме, когда изоб�
 4. Экспортируем шаблон.
 
 ![DataStream_Call Back](..\images\DataStream\image_022.gif "Call Back")
+
 
 
 ### DSInterfaces
@@ -5460,9 +5682,13 @@ AR композитинг работает по схеме, когда изоб�
 | 5.    | `Point3D`  | Последовательность из трёх чисел с плавающей точкой, разделённые между собой символами `,` и `␣`.    | X, Y, Z            | 0.345, 7.54, 4.9                    |
 | 6.    | `Color`    | Последовательность из четырёх чисел с плавающей точкой, разделённые между собой символами `,` и `␣`. | R, G, B, A         | 0.345, 0.54, 0.9, 0.3               |
 
+
+
+
+
 ## Mos Adapter Settings Bram
 
-### Описание пользовательского интерфейса
+### Пользовательский интерфейс
 
 ![MASB_Main_Window](..\images\1.1.6\Carrot%20Basics\Mos%20Adapter%20Settings%20Bram\MASB_Main_Window.png)
 
@@ -5750,6 +5976,7 @@ AR композитинг работает по схеме, когда изоб�
 
 
 
+
 ## Preview Engine
 
 ### Назначение
@@ -5892,12 +6119,12 @@ AR композитинг работает по схеме, когда изоб�
         <td style="vertical-align: middle">Включение (True) / Отключение (False) режима подключения к серверу без отображения сообщений об ошибках.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
       </tr>
-      <tr>
+     <tr>
         <td style="text-align: center; vertical-align: middle">5.2.</td>
-        <td style="vertical-align: middle"><code>Server Host</code></td>
-        <td style="vertical-align: middle">Ввод наименования или IP-адреса рабочей станции, на котором планируется запуск схем <b>Carrot Engine</b>.</td>
-        <td style="vertical-align: middle">В случае использования локальной рабочей станции, в поле параметра <code>Server Host</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</td>
-      </tr>
+        <td style="vertical-align: middle"><code>Server Host List</code></td>
+        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
+    </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">5.3.</td>
         <td style="vertical-align: middle"><code>Secure</code></td>
@@ -5924,12 +6151,12 @@ AR композитинг работает по схеме, когда изоб�
         <td style="vertical-align: middle">Включение (True) / Отключение (False) режима подключения к серверу без отображения сообщений об ошибках.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
       </tr>
-      <tr>
+     <tr>
         <td style="text-align: center; vertical-align: middle">7.2.</td>
-        <td style="vertical-align: middle"><code>Server Host</code></td>
-        <td style="vertical-align: middle">Ввод наименования или IP-адреса рабочей станции, на котором планируется запуск схем <b>Carrot Engine</b>.</td>
-        <td style="vertical-align: middle">В случае использования локальной рабочей станции, в поле параметра <code>Server Host</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</td>
-      </tr>
+        <td style="vertical-align: middle"><code>Server Host List</code></td>
+        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
+    </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">7.3.</td>
         <td style="vertical-align: middle"><code>Secure</code></td>
@@ -6177,6 +6404,10 @@ AR композитинг работает по схеме, когда изоб�
 </table>
 
 
+
+
+
+
 ## Input Devices
 
 ### Назначение
@@ -6356,7 +6587,7 @@ AR композитинг работает по схеме, когда изоб�
       <tr>
         <td style="text-align: center; vertical-align: middle">6.</td>
         <td style="vertical-align: middle">Кнопка</td>
-        <td style="vertical-align: middle"><code>Enable Input</code></td>
+        <td style="vertical-align: middle"><code>Enable Output</code></td>
         <td style="vertical-align: middle">Включение / отключение режима передачи изменений состояний ивентов, выполненных в веб-интерфейсе <b>Web Playlist (Carrot Dashboard)</b>.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
       </tr>
@@ -7201,7 +7432,7 @@ AR композитинг работает по схеме, когда изоб�
     <tr>
       <td style="text-align: center; vertical-align: middle">4.1.</td>
       <td style="vertical-align: middle"><code>Server Host List</code></td>
-      <td style="vertical-align: middle">Ввод IP-адреса рабочих станций.</td>
+      <td style="vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
       <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</p></td>
     </tr>
     <tr>
@@ -7244,31 +7475,6 @@ AR композитинг работает по схеме, когда изоб�
 
 
 После взаимодействия с функциональным элементом `Close` завершается работа приложения **"Input Devices"**.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
