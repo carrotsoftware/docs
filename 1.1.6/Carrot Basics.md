@@ -457,10 +457,10 @@
 
 В разделе `Replication` для сервера с IP-адресом `192.168.1.1` ввести:
 
-|Наименование параметра|Значение|
-|---------------------|---------|
-|`Replication Hosts`|`192.168.1.2, 192.168.1.1`|
-|`Local IP for Replication`|`192.168.1.1`|
+| Наименование параметра     | Значение                   |
+| -------------------------- | -------------------------- |
+| `Replication Hosts`        | `192.168.1.2, 192.168.1.1` |
+| `Local IP for Replication` | `192.168.1.1`              |
 
 >В случае, если необходимо указать несколько IP-адресов в параметре `Replication Hosts`, следует вводить исключительно номера сетей и узлов рабочих станций (IP-адреса) разделённых символом: `,`.
 >
@@ -1251,7 +1251,7 @@
      <tr>
         <td style="text-align: center; vertical-align: middle">2.1.</td>
         <td style="vertical-align: middle"><code>Server Host List</code></td>
-        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
         <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
     </tr>
     <tr>
@@ -3744,7 +3744,7 @@
 - `View` (2);
 - `Delays` (3);
 - `Tools` (4);
-- `Help` (5);
+- `Help` (5).
 
 
 ##### Кнопка `File`
@@ -3867,7 +3867,7 @@
         <td style="text-align: center; vertical-align: middle">3.7.</td>
         <td style="vertical-align: middle"><code>AR Texture Delay</code></td>
         <td style="vertical-align: middle">Установка задержки отображения графического окружения при работе с XR.</td>
-        <td style="text-align: center; vertical-align: middle">Задержка применяется к ноде <code>AR</code> схемы Carrot Engine.</td>
+        <td style="vertical-align: middle">Задержка применяется к ноде <code>AR</code> схемы Carrot Engine.</td>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.8.</td>
         <td style="vertical-align: middle"><code>UE Draw Delay</code></td>
@@ -3884,7 +3884,7 @@
         <td style="text-align: center; vertical-align: middle">3.10.</td>
         <td style="vertical-align: middle"><code>DistortionDelay</code></td>
         <td style="vertical-align: middle">Установка задержки на передачу коэффициента дисторсии от видеокамеры при работе с XR.</td>
-        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
     </tr>
     <tr>
         <td style="text-align: center; vertical-align: middle">3.11.</td>
@@ -3947,7 +3947,7 @@
      <tr>
         <td style="text-align: center; vertical-align: middle">7.2.</td>
         <td style="vertical-align: middle"><code>Server Host List</code></td>
-        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
         <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
     </tr>
     <tr>
@@ -4285,8 +4285,6 @@
 
 ![CE_Delays_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Delays_Window.png)
 
-![[CE_Delays_Window.png]]
-
 Окно **"Delays"** состоит из элементов, перечень и назначение которых представлено в таблице ниже.
 
 <table>
@@ -4469,8 +4467,647 @@
 
 ###### Функциональный элемент `Contents Settings`
 
+В зависимости от используемой **схемы Carrot Engine**, в функциональном элементе `Contents Settings` возможно взаимодействие со следующими кнопками:
+- `Keyer Settings`;
+- `AR`;
 
 `Keyer Settings`
+
+При взаимодействии с кнопкой `Keyer Settings`, открывается окно с аналогичным наименованием, предназначенное для настройки модуля **Carrot Keyer** внешний вид которого представлен на рисунке ниже.
+
+![[Pasted image 20250605150947.png]]
+
+Структурно, окно **"Keyer Settings"** состоит из областей, представленных в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование области</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td style="vertical-align: middle"><b>Выбор способа отображения</b></td>
+        <td style="vertical-align: middle">.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td style="vertical-align: middle"><b>Выбор объекта</b></td>
+        <td style="vertical-align: middle">.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td style="vertical-align: middle"><b>Параметры объекта</b></td>
+        <td style="vertical-align: middle">.</td>
+      </tr>
+      </tbody>
+</table>
+
+
+**Область "Параметры объекта"**
+
+При выборе объекта `Key`, доступны следующие разделы настроек:
+- DeNoise - ;
+- DeSpill - ;
+- Alpha Mask - ;
+- Alpha Mask (Advanced) - ;
+- Inner Mask - ;
+- Shadows - ;
+- Highlights - ;
+- Environment - ;
+- Misc - .
+
+При выборе объекта `BG` или `FG`, доступны следующие разделы настроек:
+- Sharpen - ;
+- LUT - ;
+- Gamma - ;
+- Curves - ;
+- Misc - .
+
+При выборе объекта `Mask`, доступны следующие разделы настроек:
+- Mask Type - ;
+- Scene - ;
+- Objects - ;
+- Objects Offsets - ;
+- Texture - .
+
+Общий перечень параметров объектов представлен в таблице ниже.
+
+
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Наименование раздела</th>
+        <th style="text-align: center; vertical-align: middle">Наименование параметра</th>
+        <th style="text-align: center; vertical-align: middle">Назначение</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">1.</td>
+        <td colspan="4" align="center"><code>Key</code></td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.1.</td>
+        <td rowspan="2" style="vertical-align: middle"><code>DeNoise</code></td>
+        <td style="vertical-align: middle">Threshold</td>
+        <td style="vertical-align: middle"><p>Указание порога чувствительности для фильтрации шумовых артефактов.</p> <p>Данный параметр управляет уровнем пикселей, а именно какие пиксели будут считаться шумом. То есть пиксели с интенсивностью шума ниже данного значения удаляются или сглаживаются (улучшается качество маски).</p></td>
+        <td style="vertical-align: middle">Пороговое значение указывается с <code>0</code> до <code>1</code>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.2.</td>
+        <td style="vertical-align: middle">Radius</td>
+        <td style="vertical-align: middle"><p>Указание радиуса области фильтрации шумовых артефактов.</p> <p>Данный параметр регулирует область фильтрации шумовых артефактов. <p></td>
+        <td style="vertical-align: middle">Значение радиуса области фильтрации шумовых артефактов указывается с <code>0</code> до <code>100</code>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.3.</td>
+        <td rowspan="10" style="vertical-align: middle"><code>DeSpill</code></td>
+        <td style="vertical-align: middle">Preset</td>
+        <td style="vertical-align: middle">Выбор профиля подавления цветового ореола (заливок) <code>Average</code>, <code>Double Blue Average</code>, <code>Double Red Average</code>, <code>Blue Limit</code>, <code>Red Limit</code> и <code>CUSTOM</code></td>
+        <td style="vertical-align: middle">Основными профилями подавления цветового ореола (заливок) являются: <p>1. <code>Average</code></p>- <p>2. <code>Double Blue Average</code>- </p><p>3. <code>Double Red Average</code>- </p><p>4. <code>Blue Limit</code>- </p><p>5. <code>Red Limit</code> -</p><p>6. <code>CUSTOM</code> -</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.4.</td>
+        <td style="vertical-align: middle">Red Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки остаточного красного цвета (канала).</td>
+        <td style="vertical-align: middle"><p>1. Регулировка значений параметра <code>Red Weight</code> возможна при выбранном профиле  <code>CUSTOM</code> в параметре <code>Preset</code>.</p> <p>2. Интенсивность обработки остаточного красного цвета (канала) указывается с <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.5.</td>
+        <td style="vertical-align: middle">Blue Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки остаточного синего цвета (канала).</td>
+        <td style="vertical-align: middle"><p>1. Регулировка значений параметра <code>Blue Weight</code> возможна при выбранном профиле  <code>CUSTOM</code> в параметре <code>Preset</code>.</p> <p>2. Интенсивность обработки остаточного синего цвета (канала) указывается с <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.6.</td>
+        <td style="vertical-align: middle">Blue Weight</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.7.</td>
+        <td style="vertical-align: middle">Saturation</td>
+        <td style="vertical-align: middle">Регулировка насыщенности цветовых каналов после подавления цветового ореола (заливок).</td>
+        <td style="vertical-align: middle"><p>Регулировка насыщенности цветовых каналов осуществляется диапазоном дробных чисел с <code>0</code> до <code>4</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.8.</td>
+        <td style="vertical-align: middle">Blur</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности размытия области ореола.</p><p>Размытие области ореола необходимо для формирования более плавного (естественного) перехода между фоном и объектом.</p></td>
+        <td style="vertical-align: middle">Регулировка интенсивности размытия области ореола осуществляется диапазоном целых чисел от <code>0</code> до <code>12</code>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.9.</td>
+        <td style="vertical-align: middle">Darken</td>
+        <td style="vertical-align: middle"><p>Уменьшение яркости области ореола.</p><p>Уменьшение яркости области ореола необходимо для устранения остаточного цвета в тёмных зонах.<p/></td>
+        <td style="vertical-align: middle">Регулировка уменьшения яркости области ореола осуществляется диапазоном дробных чисел от <code>-4</code> до <code>4</code>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.10.</td>
+        <td style="vertical-align: middle">Brighten</td>
+        <td style="vertical-align: middle"><p>Увеличение яркости области ореола.</p><p>Увеличение яркости области ореола необходимо для устранения остаточного цвета в светлых зонах.<p/></td>
+        <td style="vertical-align: middle">Регулировка увеличения яркости области ореола осуществляется диапазоном дробных чисел от <code>-4</code> до <code>4</code>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.11.</td>
+        <td style="vertical-align: middle">Apply To</td>
+        <td style="vertical-align: middle">Выбор слоя наложения эффекта фильтрации шумовых артефактов (DeNoise)</td>
+        <td style="vertical-align: middle">Основными слоями наложения эффекта фильтрации шумовых артефактов (DeNoise) являются: <p>1. <code>CHROMABG</code> -</p> <p>2. <code>ALL</code> - </p><p>3. <code>VRBG</code> - </p>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.12.</td>
+        <td style="vertical-align: middle">Unmatting</td>
+        <td style="vertical-align: middle">Включение / отключение режима устранения избыточной прозрачности. Устранение избыточной прозрачности необходимо для улучшения качества обработки ореола.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.13.</td>
+        <td rowspan="6" style="vertical-align: middle"><code>Alpha Mask</code></td>
+        <td style="vertical-align: middle">Key Color</td>
+        <td style="vertical-align: middle">Указание (выбор) цвета обработки фона.</td>
+        <td style="text-align: center; vertical-align: middle">Указание (выбора) цвета обработки фона осуществляется с помощью следующих кнопок:<p>1. <code>Pick</code> -</p> <p>2. <code>Set</code> -</p>.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.14.</td>
+        <td style="vertical-align: middle">J Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки альфа-канала.</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки альфа-канала осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.15.</td>
+        <td style="vertical-align: middle">Red Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки красного цвета (канала).</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки красного цвета (канала) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.16.</td>
+        <td style="vertical-align: middle">Blue Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки синего цвета (канала).</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки синего цвета (канала) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.17.</td>
+        <td style="vertical-align: middle">Inner Mask</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки внутренней области маски (ореола).</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки внутренней области маски (ореола) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.18.</td>
+        <td style="vertical-align: middle">Mask Levels</td>
+        <td style="text-align: center; vertical-align: middle">Установка диапазона значений яркости маски.</td>
+        <td style="text-align: center; vertical-align: middle"><p>Значения диапазона значений яркости маски осуществляется дробными числами от <code>0</code> до <code>1</code>.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.19.</td>
+        <td rowspan="9" style="vertical-align: middle"><code>Alpha Mask (Advanced)</code></td>
+        <td style="vertical-align: middle">White Point</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.20.</td>
+        <td style="vertical-align: middle">Key Type</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.21.</td>
+        <td style="vertical-align: middle">Border Light</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.22.</td>
+        <td style="vertical-align: middle">Border Dark</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.23.</td>
+        <td style="vertical-align: middle">B. Feather</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.24.</td>
+        <td style="vertical-align: middle">Edge Offset</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.25.</td>
+        <td style="vertical-align: middle">Edge Blur</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.26.</td>
+        <td style="vertical-align: middle">Floor Levels</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.27.</td>
+        <td style="vertical-align: middle">Apply To</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.28.</td>
+        <td rowspan="3" style="vertical-align: middle"><code>Inner Mask</code></td>
+        <td style="vertical-align: middle">Red Weight</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.29.</td>
+        <td style="vertical-align: middle">Blue Weight</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.30.</td>
+        <td style="vertical-align: middle">Mask Levels</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.31.</td>
+        <td rowspan="3" style="vertical-align: middle"><code>Shadows</code></td>
+        <td style="vertical-align: middle">Enabled</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.32.</td>
+        <td style="vertical-align: middle">Levels</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.33.</td>
+        <td style="vertical-align: middle">DeNoise mix</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.34.</td>
+        <td rowspan="4" style="vertical-align: middle"><code>Highlights</code></td>
+        <td style="vertical-align: middle">Enabled</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.35.</td>
+        <td style="vertical-align: middle">Blend Mode</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.36.</td>
+        <td style="vertical-align: middle">Levels</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.37.</td>
+        <td style="vertical-align: middle">DeNoise mix</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.38.</td>
+        <td rowspan="5" style="vertical-align: middle"><code>Environment</code></td>
+        <td style="vertical-align: middle">Overlay</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.39.</td>
+        <td style="vertical-align: middle">Overlay Blur</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.40.</td>
+        <td style="vertical-align: middle">Light Strength</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.41.</td>
+        <td style="vertical-align: middle">Light Blur</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.42.</td>
+        <td style="vertical-align: middle">Light Levels</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.43.</td>
+        <td rowspan="6" style="vertical-align: middle"><code>Misc</code></td>
+        <td style="vertical-align: middle">Output RGBA</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.44.</td>
+        <td style="vertical-align: middle">Output Layers</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.45.</td>
+        <td style="vertical-align: middle">Use BG Alpha</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.46.</td>
+        <td style="vertical-align: middle">Use BG Stencil</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.47.</td>
+        <td style="vertical-align: middle">Mask</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.48.</td>
+        <td style="vertical-align: middle">Invert</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: middle">2.</td>
+        <td colspan="4" align="center"><code>BG</code></td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.1.</td>
+        <td rowspan="2" style="vertical-align: middle"><code>Sharpen</code></td>
+        <td style="vertical-align: middle">Strength</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.2.</td>
+        <td style="vertical-align: middle">Mix Amount</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.3.</td>
+        <td style="vertical-align: middle"><code>LUT</code></td>
+        <td style="vertical-align: middle">Filename</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.4.</td>
+        <td rowspan="5" style="vertical-align: middle"><code>Gamma</code></td>
+        <td style="vertical-align: middle">Exposure</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.5.</td>
+        <td style="vertical-align: middle">RGB</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.6.</td>
+        <td style="vertical-align: middle">Red</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.7.</td>
+        <td style="vertical-align: middle">Green</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.8.</td>
+        <td style="vertical-align: middle">Blue</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.9.</td>
+        <td style="vertical-align: middle"><code>Curves</code></td>
+        <td style="vertical-align: middle">Channel</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.10.</td>
+        <td rowspan="3" style="vertical-align: middle"><code>Misc</code></td>
+        <td style="vertical-align: middle">Use FXAA</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.11.</td>
+        <td style="vertical-align: middle">Use sRGB to linear RGB conversion</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.12.</td>
+        <td style="vertical-align: middle">Use linear RGB to sRGB conversion</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+	<tr>
+        <td style="text-align: center; vertical-align: middle">3.</td>
+        <td colspan="4" align="center"><code>FG</code></td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.1.</td>
+        <td rowspan="2" style="vertical-align: middle"><code>Sharpen</code></td>
+        <td style="vertical-align: middle">Strength</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.2.</td>
+        <td style="vertical-align: middle">Mix Amount</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.3.</td>
+        <td style="vertical-align: middle"><code>LUT</code></td>
+        <td style="vertical-align: middle">Filename</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.4.</td>
+        <td rowspan="5" style="vertical-align: middle"><code>Gamma</code></td>
+        <td style="vertical-align: middle">Exposure</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.5.</td>
+        <td style="vertical-align: middle">RGB</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.6.</td>
+        <td style="vertical-align: middle">Red</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.7.</td>
+        <td style="vertical-align: middle">Green</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.8.</td>
+        <td style="vertical-align: middle">Blue</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.9.</td>
+        <td style="vertical-align: middle"><code>Curves</code></td>
+        <td style="vertical-align: middle">Channel</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.10.</td>
+        <td rowspan="3" style="vertical-align: middle"><code>Misc</code></td>
+        <td style="vertical-align: middle">Use FXAA</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.11.</td>
+        <td style="vertical-align: middle">Use sRGB to linear RGB conversion</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.12.</td>
+        <td style="vertical-align: middle">Use linear RGB to sRGB conversion</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+	<tr>
+        <td style="text-align: center; vertical-align: middle">4.</td>
+        <td colspan="4" align="center"><code>Mask</code></td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.1.</td>
+        <td style="vertical-align: middle"><code>Mask Type</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.2.</td>
+        <td rowspan="2" style="vertical-align: middle"><code>Objects</code></td>
+        <td style="vertical-align: middle">ObjType</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.3.</td>
+        <td style="vertical-align: middle">Texture</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.4.</td>
+        <td rowspan="4" style="vertical-align: middle"><code>Object Offsets</code></td>
+        <td style="vertical-align: middle">X</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.5.</td>
+        <td style="vertical-align: middle">Y</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.6.</td>
+        <td style="vertical-align: middle">Z</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.7.</td>
+        <td style="vertical-align: middle">Use Tracking Offsets</td>
+        <td style="text-align: center; vertical-align: middle"></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.8.</td>
+        <td style="vertical-align: middle"><code>Texture</code></td>
+        <td style="vertical-align: middle">Invert</td>
+        <td style="text-align: center; vertical-align: middle">.</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 > Carrot Keyer - программный модуль позволяющий размещать нужный объект с зелёного фона на виртуальный (или любой другой) фон при помощи технологии рир-проекции.
 
@@ -5435,7 +6072,7 @@ AR композитинг работает по схеме, когда изоб�
      <tr>
         <td style="text-align: center; vertical-align: middle">3.1.</td>
         <td style="vertical-align: middle"><code>Server Host List</code></td>
-        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
         <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
     </tr>
     <tr>
@@ -5854,7 +6491,7 @@ AR композитинг работает по схеме, когда изоб�
 - поддержка основных мультимедийных форматов и кодеков. 
 
 >К основным поддерживаемым кодекам относится:
->- видеокодеки: **H.265 (HEVC)**, **H.264 (AVC)**, **VP8**, **VP9**, **MPEG-4 Part 2**, **AV1**;
+>- видеокодеки: **H.265 (HEVC)**, **H.264 (AVC)**, **VP8**, **VP9**, **MPEG-4 Part 2**, **AV1**, **Apple ProRes 4444**;
 >- аудиокодеки: **AAC**, **MP3**, **Opus**, **Vorbis**, **PCM**.
 >
 >К основным поддерживаемым форматам относится: **".mp4"**, **".avi"**, **".mov"**, **".mkv"**, **".flv"**, **".wmv"**, **".webm"**.
@@ -5895,13 +6532,13 @@ AR композитинг работает по схеме, когда изоб�
       <td style="text-align: center; vertical-align: middle">1.</td>
       <td style="text-align: center; vertical-align: middle"><code>[Директория расположения исполнительного файла "cmcon.exe"]</code></td>
       <td style="vertical-align: middle">Указание директории расположения исполнительного файла <b>"cmcon.exe"</b></td>
-      <td style="text-align: center;" "vertical-align: middle">---</td>
+      <td style="vertical-align: middle">Указанная директория должна быть заключена символами <code>"</code>.</td>
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: middle">2.</td>
       <td style="text-align: center; vertical-align: middle"><code>[-i &lt;input file&gt;]</code></td>
       <td style="vertical-align: middle">Указание директории расположения видеофайла</td>
-      <td style="vertical-align: middle">Указанная директория должна быть заключена символами <code>"</code></td>
+      <td style="vertical-align: middle">Указанная директория должна быть заключена символами <code>"</code>.</td>
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: middle">3.</td>
@@ -5919,7 +6556,7 @@ AR композитинг работает по схеме, когда изоб�
       <td style="text-align: center; vertical-align: middle">5.</td>
       <td style="text-align: center; vertical-align: middle"><code>[-o &lt;output file&gt;]</code></td>
       <td style="vertical-align: middle">Указание директории сохранения видеофайла в формате <b>".cmc"</b></td>
-      <td style="vertical-align: middle">Указанная директория должна быть заключена символами <code>"</code></td>
+      <td style="vertical-align: middle">Указанная директория должна быть заключена символами <code>"</code>.</td>
     </tr>
    <tbody>
 </table>
@@ -5928,7 +6565,7 @@ AR композитинг работает по схеме, когда изоб�
 
 ```
 Пример заполненной исполнительной команды для средства автоматизации "Windows PowerShell":
- & "C:\Users\User\Desktop\Carrot\Carrot 1.1.6.1\Bin\cmcon.exe" -i C:\Users\User\Videos\08.04.2025 15.21.59.mp4 -b 40000000 -g 1 -o C:\Users\User\Videos\08.04.2025 15.21.59.cmc
+ & "C:\Users\User\Desktop\Carrot\Carrot 1.1.6.1\Bin\cmcon.exe" -i "C:\Users\User\Videos\08.04.2025 15.21.59.mp4" -b 40000000 -g 1 -o "C:\Users\User\Videos\08.04.2025 15.21.59.cmc"
 ```
 
 >**Битрейт:**
@@ -6150,7 +6787,7 @@ AR композитинг работает по схеме, когда изоб�
      <tr>
         <td style="text-align: center; vertical-align: middle">7.2.</td>
         <td style="vertical-align: middle"><code>Server Host List</code></td>
-        <td style="text-align: center; vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
+        <td style="vertical-align: middle">Ввод одного или нескольких наименований / IP-адресов рабочей станции для отображения данных удалённой рабочей станции.</td>
         <td style="vertical-align: middle"><p>1. В случае использования локальной рабочей станции, в поле параметра <code>Server Host List</code> необходимо ввести значение <code>localhost</code> (данное значение содержит информацию об IP-адресе локальной рабочей станции).</p> <p>2. В параметре <code>Server Host List</code> реализована возможность объединения нескольких IP-адресов рабочих станций в группу, путём ввода записи вида <code>[Имя_группы_№_1]=[IP1],[IP2], ... [IPN] &amp; ... &amp; [Имя_группы_№_N]=[IP1],[IP2], ... [IPN]</code>.</td>
     </tr>
       <tr>

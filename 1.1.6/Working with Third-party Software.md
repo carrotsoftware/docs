@@ -35,7 +35,7 @@
 
    Поддерживается `Stroke` со скругленными краями, с возможностью редактирования толщины обводки `Stroke Width` и применения сплошной заливки `Fill`
 
-   > В случае добавления других эффектов к **Shape Layers**, их отображение при экспорте шаблона проекта After Effects осуществляться не будет.
+> В случае добавления других эффектов к **Shape Layers**, их отображение при экспорте шаблона проекта After Effects осуществляться не будет.
 
    ![AE_Stroke](..\images\AE\image104.jpg "Stroke")
 
@@ -92,26 +92,26 @@
 ###### Поддерживаемые типы наложений слоев и их особенности
 
 | Поддерживаемые режимы наложения из AE в данный момент | Ограниченная поддержка (результат может отличаться от After Effects) |
-|:-----------------------------------------------------:|:--------------------------------------------------------------------:|
-|  Linear Color | Pin Light |
-| Silhouette Alpha | Hard Mix |
-| Screen | Linear Light |
-| Add | Difference |
-| Lighten | Classic Color Dodge |
-| Dissolve | Exclusion |
-| Dancing Dissolve | Subtract |
-| Darken | Divide |
-| Multiply | Hue |
-| Color Burn | Saturation |
-| Linear Burn | Color |
-| Darker Color | Luminosity |
-| Linear Dodge | Stencil Alpha |
-| Lighter Color | Stencil Luma |
-| Soft Light | Silhouette Luma |
-| Color Dodge | Classic Color Burn |
-| Vivid Light | Lighter Color Dodge |
-| | Hard Light |
-| | Overlay |
+| :---------------------------------------------------: | :------------------------------------------------------------------: |
+|                     Linear Color                      |                              Pin Light                               |
+|                   Silhouette Alpha                    |                               Hard Mix                               |
+|                        Screen                         |                             Linear Light                             |
+|                          Add                          |                              Difference                              |
+|                        Lighten                        |                         Classic Color Dodge                          |
+|                       Dissolve                        |                              Exclusion                               |
+|                   Dancing Dissolve                    |                               Subtract                               |
+|                        Darken                         |                                Divide                                |
+|                       Multiply                        |                                 Hue                                  |
+|                      Color Burn                       |                              Saturation                              |
+|                      Linear Burn                      |                                Color                                 |
+|                     Darker Color                      |                              Luminosity                              |
+|                     Linear Dodge                      |                            Stencil Alpha                             |
+|                     Lighter Color                     |                             Stencil Luma                             |
+|                      Soft Light                       |                           Silhouette Luma                            |
+|                      Color Dodge                      |                          Classic Color Burn                          |
+|                      Vivid Light                      |                         Lighter Color Dodge                          |
+|                                                       |                              Hard Light                              |
+|                                                       |                               Overlay                                |
 
 ---
 ---
@@ -172,7 +172,7 @@
 >
 >При экспорте шаблона проекта After Effects, стоит учитывать отсутствие поддержки функционала работы свойства **"Expand Output"** у эффекта **"Displacement Map"**.
 
-|                        |
+|                                                    |
 | :------------------------------------------------- |
 | Distort - Corner Pin                               |
 | Time - Posterize Time                              |
@@ -295,83 +295,283 @@
 
 В рамках работы с выражениями через `Expressions` и `Carrot Scripts` поддерживаются следующие методы:
 
-`Global:`
-```
-- comp(name)
-- footage(name)
-- thisProject
-- thisComp
-- thisLayer
-- thisProperty
-- time
-- value
-```
+<table>
+    <thead>
+      <tr>
+        <th style="text-align: center; vertical-align: middle">№ п/п</th>
+        <th style="text-align: center; vertical-align: middle">Выражение</th>
+        <th style="text-align: center; vertical-align: middle">Альтернативный вид записи</th>
+        <th style="text-align: center; vertical-align: middle">Примечание</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">1.</td>
+      <td colspan="3" align="center">Global</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.1.</td>
+        <td style="vertical-align: middle"><code>comp(name)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.2.</td>
+        <td style="vertical-align: middle"><code>footage(name)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.3.</td>
+        <td style="vertical-align: middle"><code>thisProject</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.4.</td>
+        <td style="vertical-align: middle"><code>thisComp</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.5.</td>
+        <td style="vertical-align: middle"><code>thisLayer</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.6.</td>
+        <td style="vertical-align: middle"><code>thisProperty</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.7.</td>
+        <td style="vertical-align: middle"><code>time</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.8.</td>
+        <td style="vertical-align: middle"><code>value</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">2.</td>
+      <td colspan="3" align="center">Other Math</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">2.1.</td>
+        <td style="vertical-align: middle"><code>degreesToRadians(degrees)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+        <tr>
+        <td style="text-align: center; vertical-align: middle">2.2.</td>
+        <td style="vertical-align: middle"><code>radiansToDegrees(radians)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">3.</td>
+      <td colspan="3" align="center">Comp</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.1.</td>
+        <td style="vertical-align: middle"><code>Comp.layer(index)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.2.</td>
+        <td style="vertical-align: middle"><code>Comp.layer(name)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.3.</td>
+        <td style="vertical-align: middle"><code>Comp.width</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.4.</td>
+        <td style="vertical-align: middle"><code>Comp.height</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.5.</td>
+        <td style="vertical-align: middle"><code>Comp.duration</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">3.6.</td>
+        <td style="vertical-align: middle"><code>Comp.name</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">4.</td>
+      <td colspan="3" align="center">Footage</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.1.</td>
+        <td style="vertical-align: middle"><code>Footage.width</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.2.</td>
+        <td style="vertical-align: middle"><code>Footage.height</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.3.</td>
+        <td style="vertical-align: middle"><code>Footage.duration</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.4.</td>
+        <td style="vertical-align: middle"><code>Footage.pixelAspect</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">4.5.</td>
+        <td style="vertical-align: middle"><code>Footage.name</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">5.</td>
+      <td colspan="3" align="center">Property</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">5.1.</td>
+        <td style="vertical-align: middle"><code>value</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">6.</td>
+      <td colspan="3" align="center">Layer Sub-objects</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">6.1.</td>
+        <td style="vertical-align: middle"><code>Layer.effect(name)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">6.2.</td>
+        <td style="vertical-align: middle"><code>Layer.effect(index)</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">7.</td>
+      <td colspan="3" align="center">Layer General</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.1.</td>
+        <td style="vertical-align: middle"><code>Layer.width</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.2.</td>
+        <td style="vertical-align: middle"><code>Layer.height</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.3.</td>
+        <td style="vertical-align: middle"><code>Layer.index</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.4.</td>
+        <td style="vertical-align: middle"><code>Layer.parent</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.5.</td>
+        <td style="vertical-align: middle"><code>Layer.hasParent</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.6.</td>
+        <td style="vertical-align: middle"><code>Layer.inPoint</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.7.</td>
+        <td style="vertical-align: middle"><code>Layer.outPoint</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.8.</td>
+        <td style="vertical-align: middle"><code>Layer.startTime</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">7.9.</td>
+        <td style="vertical-align: middle"><code>Layer.name</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">8.</td>
+      <td colspan="3" align="center">Layer Properties</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.1.</td>
+        <td style="vertical-align: middle"><code>Layer.anchorPoint</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.2.</td>
+        <td style="vertical-align: middle"><code>Layer.position</code></td>
+        <td style="vertical-align: middle"><code>Layer.transform.position</code></td>
+        <td style="vertical-align: middle">Во избежание случаев некорректной работы выражения, рекомендуется использовать альтернативный вид записи.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.3.</td>
+        <td style="vertical-align: middle"><code>Layer.scale</code></td>
+        <td style="vertical-align: middle"><code>Layer.transform.scale</code></td>
+        <td style="text-align: center; vertical-align: middle">При использовании данного выражения, необходимо учитывать значение по оси Z (по умолчанию - <code>100</code>), в том числе для 2D объектов.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">8.4.</td>
+        <td style="vertical-align: middle"><code>Layer.Enabled</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle">9.</td>
+      <td colspan="3" align="center">Layer 3D</td>
+    </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">9.1.</td>
+        <td style="vertical-align: middle"><code>Layer.orientation</code></td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="text-align: center; vertical-align: middle">---</td>
+      </tr>
+      </tbody>
+</table>
 
-`Other Math:`
-```
-- degreesToRadians(degrees)
-- radiansToDegrees(radians)
-```
-
-`Comp:`
-```
-- Comp.layer(index)
-- Comp.layer(name)
-- Comp.width
-- Comp.height
-- Comp.duration
-- Comp.name
-```
-
-`Footage:`
-```
-- Footage.width
-- Footage.height
-- Footage.duration
-- Footage.pixelAspect
-- Footage.name
-```
-
-`Property:`
-```
-- value
-```
-
-`Layer Sub-objects:`
-```
-- Layer.effect(name)
-- Layer.effect(index)
-```
-
-`Layer General:`
-```
-- Layer.width
-- Layer.height
-- Layer.index
-- Layer.parent
-- Layer.hasParent
-- Layer.inPoint
-- Layer.outPoint
-- Layer.startTime
-```
-
-`Layer Properties:`
-```
-- Layer.anchorPoint
-- Layer.position
-- Layer.scale
-- Layer.rotation
-- Layer.opacity
-- Layer.name
-```
-
-`Layer 3D:`
-```
-- Layer.orientation
-- Layer.rotationX
-- Layer.rotationY
-- Layer.rotationZ
-```
 
 ---
 
@@ -866,7 +1066,6 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 
 >При настройке параметров экспортируемых свойств слоя следует учитывать особенности взаимодействия **Carrot After Effects Plugin** с **After Effects**, при которых поддержка свойств рендер-движка **Cinema 4D** ограничена.
 
-
 Поддерживаемые операции со слоями:
 
 - **Track Matte** (Подложки отслеживания)
@@ -1002,7 +1201,6 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 
 
 
-
 ## Работа с Unreal Engine 5
 
 В данном разделе можно ознакомиться с установкой **Unreal Engine 5**, а также обучиться созданию и настройке его проектов для взаимодействия с **Carrot**.
@@ -1098,6 +1296,7 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 >- в открывшемся файле **"UnrealEditor.modules"** скопировать уникальный идентификационный номер **"BuildId"**;
 >- осуществить замену уникального идентификационного номера **"BuildId"** файла **"UnrealEditor.modules"** в папке **"Carrot"** специализированной версии **Carrot Unreal Engine Plugin**, располагаемой по следующему пути  `…\Carrot\Binaries\Win64\UnrealEditor.modules`;
 >- аналогичные действия произвести в папке **"CarrotEditor"** специализированной версии **Carrot Unreal Engine Plugin**, располагаемой по следующему пути  `…\CarrotEditor\Binaries\Win64\UnrealEditor.modules`.
+
 
 Для установки **Carrot Unreal Engine Plugin** необходимо:
 
@@ -1240,7 +1439,7 @@ DefaultGraphicsRHI=DefaultGraphicsRHI_DX12
 
 3. ![6.5.](..\images\UnrealEngine\Подготовка%20Проекта%20UE\6.5.jpg)
 
-Переименовать (c помощью клавиши `F2` при выделении компонента) и сгруппировать компоненты **CameraNull**, **CameraOffsets**, **CameraParent** и **CarrotCamera** путём их перемещения по следующей иерархической модели:
+Сгруппировать, а затем переименовать (c помощью клавиши `F2` при выделении компонента) компоненты **CameraNull**, **CameraOffsets**, **CameraParent** и **CarrotCamera** путём их перемещения по следующей иерархической модели:
 
 |Порядковый номер|Наименование компонента|Тип компонента|Назначение|
 |-------------------|----------|----------|----------|
@@ -1348,7 +1547,7 @@ DefaultGraphicsRHI=DefaultGraphicsRHI_DX12
 
 Нажать в пустом месте окна **Content Drawer/Content Browser** `правую кнопку мыши (ПКМ)`, перейти в раздел `Texture` и выбрать объект `Render Target` задав ему имя (в качестве примера, используется имя объекта **RTT_01**).
 
->Количество используемых **Render Target** в проекте прямопропорционально планируемому количеству отображаемых изображений (видео-материалов). 
+>Количество используемых **Render Target** в проекте должно совпадать с количеством отображаемых изображений (видео-материалов). 
 
 2. ![7.3.](..\images\UnrealEngine\Создание%20RTT\7.3.jpg)
 
