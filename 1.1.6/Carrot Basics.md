@@ -374,9 +374,9 @@
     <tr>
       <td style="text-align: center; vertical-align: middle">13.</td>
       <td style="vertical-align: middle"><code>Remove Unused Assets</code></td>
+      <td style="vertical-align: middle">Удаление неиспользуемых ассетов.</td>
       <td style="text-align: center; vertical-align: middle">---</td>
-      <td style="text-align: center; vertical-align: middle">---</td>
-      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="vertical-align: middle">Удаление неиспользуемых ассетов осуществляется из директории, указанной в параметре <code>Directory</code> раздела <b>"Digital Assets"</b>.</td>
     </tr>
    <tbody>
 </table>
@@ -4459,77 +4459,32 @@
 В зависимости от используемой **схемы Carrot Engine**, в функциональном элементе `Contents Settings` возможно взаимодействие со следующими кнопками:
 - `Keyer Settings`;
 - `AR`;
+- Luma Settings.
 
 -->
 
 `Keyer Settings`
 
-<!--
-
 При взаимодействии с кнопкой `Keyer Settings`, открывается окно с аналогичным наименованием, предназначенное для настройки модуля **Carrot Keyer** внешний вид которого представлен на рисунке ниже.
 
-![[Pasted image 20250605150947.png]]
-
-Структурно, окно **"Keyer Settings"** состоит из областей, представленных в таблице ниже.
+![CE_Tools_KS_Window](..\images\1.1.6\Carrot%20Basics\Carrot%20Engine\CE_Tools_KS_Window.png)
 
 
-<table>
-    <thead>
-      <tr>
-        <th style="text-align: center; vertical-align: middle">№ п/п</th>
-        <th style="text-align: center; vertical-align: middle">Наименование области</th>
-        <th style="text-align: center; vertical-align: middle">Назначение</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.</td>
-        <td style="vertical-align: middle"><b>Выбор способа отображения</b></td>
-        <td style="vertical-align: middle">.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.</td>
-        <td style="vertical-align: middle"><b>Выбор объекта</b></td>
-        <td style="vertical-align: middle">.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.</td>
-        <td style="vertical-align: middle"><b>Параметры объекта</b></td>
-        <td style="vertical-align: middle">.</td>
-      </tr>
-      </tbody>
-</table>
+**Область "Key"**
 
+При выборе области `Key`, доступны следующие разделы настроек:
 
-**Область "Параметры объекта"**
-
-При выборе объекта `Key`, доступны следующие разделы настроек:
-- DeNoise - ;
-- DeSpill - ;
-- Alpha Mask - ;
-- Alpha Mask (Advanced) - ;
-- Inner Mask - ;
-- Shadows - ;
-- Highlights - ;
-- Environment - ;
-- Misc - .
-
-При выборе объекта `BG` или `FG`, доступны следующие разделы настроек:
-- Sharpen - ;
-- LUT - ;
-- Gamma - ;
-- Curves - ;
-- Misc - .
-
-При выборе объекта `Mask`, доступны следующие разделы настроек:
-- Mask Type - ;
-- Scene - ;
-- Objects - ;
-- Objects Offsets - ;
-- Texture - .
+- `DeNoise` - удаление шумов из изображения;
+- `DeSpill` - подавление цветового ореола фона по краям выделяемого объекта;
+- `Alpha Mask` - базовые настройки формирования альфа-маски;
+- `Alpha Mask (Advanced)` - расширенные настройки альфа-маски для точечной работы с её краями;
+- `Inner Mask` - настройки обработки внутренней части альфа-маски;
+- `Shadows` - управление тенями объекта;
+- `Highlights` - настройка бликов и светлых участков;
+- `Environment` - параметры согласования объекта с виртуальной средой;
+- `Misc` - дополнительные параметры для работы с изображением.
 
 Общий перечень параметров объектов представлен в таблице ниже.
-
 
 <table>
     <thead>
@@ -4550,521 +4505,277 @@
         <td style="text-align: center; vertical-align: middle">1.1.</td>
         <td rowspan="2" style="vertical-align: middle"><code>DeNoise</code></td>
         <td style="vertical-align: middle">Threshold</td>
-        <td style="vertical-align: middle"><p>Указание порога чувствительности для фильтрации шумовых артефактов.</p> <p>Данный параметр управляет уровнем пикселей, а именно какие пиксели будут считаться шумом. То есть пиксели с интенсивностью шума ниже данного значения удаляются или сглаживаются (улучшается качество маски).</p></td>
+        <td style="vertical-align: middle"><p>Указание порогового значения, при котором определяется какие мелкие точки и шумы будут считаться лишними.</p> <p>Другими словами: чем выше значение - тем "чище" изображение (альфа-маска), но можно потерять мелкие детали.</p></td>
         <td style="vertical-align: middle">Пороговое значение указывается с <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.2.</td>
         <td style="vertical-align: middle">Radius</td>
-        <td style="vertical-align: middle"><p>Указание радиуса области фильтрации шумовых артефактов.</p> <p>Данный параметр регулирует область фильтрации шумовых артефактов. <p></td>
-        <td style="vertical-align: middle">Значение радиуса области фильтрации шумовых артефактов указывается с <code>0</code> до <code>100</code>.</td>
+        <td style="vertical-align: middle"><p>Регулировка радиуса размытия шумов.</p> <p>Малый радиус - точечная "очистка" изображения (альфа-маски), а большой радиус - более мягкое и широкое сглаживание. <p></td>
+        <td style="vertical-align: middle">Значение радиуса размытия шумов указывается с <code>0</code> до <code>100</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.3.</td>
-        <td rowspan="10" style="vertical-align: middle"><code>DeSpill</code></td>
+        <td rowspan="9" style="vertical-align: middle"><code>DeSpill</code></td>
         <td style="vertical-align: middle">Preset</td>
-        <td style="vertical-align: middle">Выбор профиля подавления цветового ореола (заливок) <code>Average</code>, <code>Double Blue Average</code>, <code>Double Red Average</code>, <code>Blue Limit</code>, <code>Red Limit</code> и <code>CUSTOM</code></td>
-        <td style="vertical-align: middle">Основными профилями подавления цветового ореола (заливок) являются: <p>1. <code>Average</code></p>- <p>2. <code>Double Blue Average</code>- </p><p>3. <code>Double Red Average</code>- </p><p>4. <code>Blue Limit</code>- </p><p>5. <code>Red Limit</code> -</p><p>6. <code>CUSTOM</code> -</p></td>
+        <td style="vertical-align: middle">Выбор готового профиля обработки синего и красного цветовых каналов.</td>
+        <td style="vertical-align: middle">Существует несколько готовых профилей цветовых (синего и красного) каналов: <p>1. <code>Average</code> - сбалансированная обработка, где соотношение красного к синему 1:1 (значения устанавливаются по <code>0,5</code> для каждого канала).</p> <p>2. <code>Double Blue Average</code> - усиленная обработка синего, соотношение красного к синему 1:2 (значения устанавливаются по <code>0,3334</code> для красного канала и <code>0,6666</code> для синего канала).</p><p>3. <code>Double Red Average</code> - усиленная обработка красного, где соотношение красного к синему 2:1 (значения устанавливаются по <code>0,6666</code> для красного канала и <code>0,3334</code> для синего канала).</p><p>4. <code>Blue Limit</code> - использование только синего (значения устанавливаются по <code>0</code> для красного канала и <code>1</code> для синего канала).</p><p>5. <code>Red Limit</code> - использование только красного (значения устанавливаются по <code>1</code> для красного канала и <code>0</code> для синего канала).</p><p>6. <code>CUSTOM</code> - ручная настройка, где указываются пользовательские значения для красного и синего (необходимо учитывать, что сумма значений для красного и синего канала должна быть равна единице).</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.4.</td>
         <td style="vertical-align: middle">Red Weight</td>
-        <td style="vertical-align: middle">Регулировка интенсивности обработки остаточного красного цвета (канала).</td>
-        <td style="vertical-align: middle"><p>1. Регулировка значений параметра <code>Red Weight</code> возможна при выбранном профиле  <code>CUSTOM</code> в параметре <code>Preset</code>.</p> <p>2. Интенсивность обработки остаточного красного цвета (канала) указывается с <code>0</code> до <code>1</code>.</p></td>
+        <td style="vertical-align: middle">Регулировка степени коррекции красного цветового канала.</td>
+        <td style="vertical-align: middle"><p>1. Регулировка значения параметра <code>Red Weight</code> возможна, если выбран профиль <code>CUSTOM</code> в параметре <code>Preset</code>.</p> <p>2. Усиление коррекции красного цветового канала указывается с <code>0</code> до <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.5.</td>
         <td style="vertical-align: middle">Blue Weight</td>
-        <td style="vertical-align: middle">Регулировка интенсивности обработки остаточного синего цвета (канала).</td>
-        <td style="vertical-align: middle"><p>1. Регулировка значений параметра <code>Blue Weight</code> возможна при выбранном профиле  <code>CUSTOM</code> в параметре <code>Preset</code>.</p> <p>2. Интенсивность обработки остаточного синего цвета (канала) указывается с <code>0</code> до <code>1</code>.</p></td>
+        <td style="vertical-align: middle">Регулировка степени коррекции коррекции синего цветового канала.</td>
+        <td style="vertical-align: middle"><p>1. Регулировка значения параметра <code>Blue Weight</code> возможна, если выбран профиль <code>CUSTOM</code> в параметре <code>Preset</code>.</p> <p>2. Усиление коррекции синего цветового канала указывается с <code>0</code> до <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.6.</td>
-        <td style="vertical-align: middle">Blue Weight</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Saturation</td>
+        <td style="vertical-align: middle">Cмешивание фонового изображения (background) с изображением переднего плана (foreground) по цветовому каналу.</td>
+        <td style="vertical-align: middle"><p>Cмешивание фонового изображения (background) с изображением переднего плана (foreground) по цветовому каналу осуществляется диапазоном дробных чисел с <code>0</code> до <code>4</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.7.</td>
-        <td style="vertical-align: middle">Saturation</td>
-        <td style="vertical-align: middle">Регулировка насыщенности цветовых каналов после подавления цветового ореола (заливок).</td>
-        <td style="vertical-align: middle"><p>Регулировка насыщенности цветовых каналов осуществляется диапазоном дробных чисел с <code>0</code> до <code>4</code>.</p></td>
+        <td style="vertical-align: middle">Blur</td>
+        <td style="vertical-align: middle"><p>Размытие фонового изображения (background).</p><p>Размытие фонового изображения (background) применяется для точечной коррекции цветовых каналов между фоновым изображением (background) и изображением переднего плана (foreground).</p></td>
+        <td style="vertical-align: middle">Размытие фонового изображения (background) осуществляется диапазоном целых чисел от <code>0</code> до <code>12</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.8.</td>
-        <td style="vertical-align: middle">Blur</td>
-        <td style="vertical-align: middle"><p>Регулировка интенсивности размытия области ореола.</p><p>Размытие области ореола необходимо для формирования более плавного (естественного) перехода между фоном и объектом.</p></td>
-        <td style="vertical-align: middle">Регулировка интенсивности размытия области ореола осуществляется диапазоном целых чисел от <code>0</code> до <code>12</code>.</td>
+        <td style="vertical-align: middle">Darken</td>
+        <td style="vertical-align: middle"><p>Регулировка яркости тёмных областей фонового изображения (background).</p><p>Регулировка яркости тёмных областей фонового изображения (background) используется для соблюдения идентичности формируемого ореола объекта (после обработки) с яркостью исходного фона.</p></td>
+        <td style="vertical-align: middle">Регулировка яркости тёмных областей фонового изображения (background) осуществляется диапазоном дробных чисел от <code>-4</code> до <code>4</code> (при уменьшении значения яркости фон становится светлее (образуемый вокруг выделяемого объекта ореол будет выглядеть более светлым), а при увеличении - фон темнеет (образует вокруг выделяемого объекта более тёмный оттенок)).</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.9.</td>
-        <td style="vertical-align: middle">Darken</td>
-        <td style="vertical-align: middle"><p>Уменьшение яркости области ореола.</p><p>Уменьшение яркости области ореола необходимо для устранения остаточного цвета в тёмных зонах.<p/></td>
-        <td style="vertical-align: middle">Регулировка уменьшения яркости области ореола осуществляется диапазоном дробных чисел от <code>-4</code> до <code>4</code>.</td>
+        <td style="vertical-align: middle">Brighten</td>
+        <td style="vertical-align: middle"><p>Регулировка яркости светлых областей фонового изображения (background).</p><p>Регулировка яркости светлых областей фонового изображения (background) используется для соблюдения идентичности формируемого ореола объекта (после обработки) с яркостью исходного фона.</p></td>
+        <td style="vertical-align: middle">Регулировка яркости светлых областей фонового изображения (background) осуществляется диапазоном дробных чисел от <code>0</code> до <code>10</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.10.</td>
-        <td style="vertical-align: middle">Brighten</td>
-        <td style="vertical-align: middle"><p>Увеличение яркости области ореола.</p><p>Увеличение яркости области ореола необходимо для устранения остаточного цвета в светлых зонах.<p/></td>
-        <td style="vertical-align: middle">Регулировка увеличения яркости области ореола осуществляется диапазоном дробных чисел от <code>-4</code> до <code>4</code>.</td>
+        <td style="vertical-align: middle">Apply To</td>
+        <td style="vertical-align: middle">Выбор способа наложения параметров <code>DeSpill</code>.</td>
+        <td style="vertical-align: middle">Основными способами наложения являются: <p>1. <code>CHROMABG</code> - применение параметров к маске типа <code>Chromakey BG</code>.</p> <p>2. <code>ALL</code> - режим, при котором зелёные оттенки (возникающие как правило на объекте) заменяются на серые.</p> <p>3. <code>VRBG</code> - применение параметров к маске типа <code>VR BG</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.11.</td>
-        <td style="vertical-align: middle">Apply To</td>
-        <td style="vertical-align: middle">Выбор слоя наложения эффекта фильтрации шумовых артефактов (DeNoise)</td>
-        <td style="vertical-align: middle">Основными слоями наложения эффекта фильтрации шумовых артефактов (DeNoise) являются: <p>1. <code>CHROMABG</code> -</p> <p>2. <code>ALL</code> - </p><p>3. <code>VRBG</code> - </p>.</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.12.</td>
         <td style="vertical-align: middle">Unmatting</td>
         <td style="vertical-align: middle">Включение / отключение режима устранения избыточной прозрачности. Устранение избыточной прозрачности необходимо для улучшения качества обработки ореола.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
       </tr>
       <tr>
-        <td style="text-align: center; vertical-align: middle">1.13.</td>
+        <td style="text-align: center; vertical-align: middle">1.12.</td>
         <td rowspan="6" style="vertical-align: middle"><code>Alpha Mask</code></td>
         <td style="vertical-align: middle">Key Color</td>
-        <td style="vertical-align: middle">Указание (выбор) цвета обработки фона.</td>
-        <td style="text-align: center; vertical-align: middle">Указание (выбора) цвета обработки фона осуществляется с помощью следующих кнопок:<p>1. <code>Pick</code> -</p> <p>2. <code>Set</code> -</p>.</td>
+        <td style="vertical-align: middle"><p>Выбор цвета, который должен обрабатываться (удаляться).</p> <p>Важно учитывать что Keyer Setting может обрабатывать только фон зелёного цвета и его оттенки.</p></td>
+        <td style="vertical-align: middle">Выбор цвета обработки фона осуществляется с помощью следующих кнопок:<p>1. <code>Pick</code> - использование инструмента "пипетка" для выбора цвета обработки.</p> <p>2. <code>Set</code> - открытие окна "Color Picker - Key Color" для ручного выбора цвета обработки.</p></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; vertical-align: middle">1.13.</td>
+        <td style="vertical-align: middle">J Weight</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки альфа-маски.</p> <p>Фактически, при снижении значения - альфа-маска (объект) становится более прозрачной (такое поведение становится более заметным, если одному из параметров <code>Red Weight</code> или <code>Blue Weight</code> раздела <code>Alpha Mask</code> присвоено низкое значение).</p></td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.14.</td>
-        <td style="vertical-align: middle">J Weight</td>
-        <td style="vertical-align: middle">Регулировка интенсивности обработки альфа-канала.</td>
-        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки альфа-канала осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+        <td style="vertical-align: middle">Red Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки красного цветового канала на альфа-маске.</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки красного цветового канала на альфа-маске осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.15.</td>
-        <td style="vertical-align: middle">Red Weight</td>
-        <td style="vertical-align: middle">Регулировка интенсивности обработки красного цвета (канала).</td>
-        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки красного цвета (канала) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+        <td style="vertical-align: middle">Blue Weight</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки синего цветового канала на альфа-маске.</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки синего цветового канала на альфа-маске осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.16.</td>
-        <td style="vertical-align: middle">Blue Weight</td>
-        <td style="vertical-align: middle">Регулировка интенсивности обработки синего цвета (канала).</td>
-        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки синего цвета (канала) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+        <td style="vertical-align: middle">Inner Mask</td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки внутренней области альфа-маски.</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки внутренней области альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.17.</td>
-        <td style="vertical-align: middle">Inner Mask</td>
-        <td style="vertical-align: middle">Регулировка интенсивности обработки внутренней области маски (ореола).</td>
-        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки внутренней области маски (ореола) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</p></td>
+        <td style="vertical-align: middle">Mask Levels</td>
+        <td style="vertical-align: middle"><p>Установка диапазона значений обработки альфа-маски.</p><p>При указании большего (от <code>0</code> до <code>1</code>) диапазона значений, альфа-маска начинает захватывать больше мелких частиц и деталей, включая фрагменты зелёного фона.</p></td>
+        <td style="vertical-align: middle"><p>Установка диапазона значений обработки альфа-маски осуществляется диапазоном дробных чисел между <code>0</code> и <code>1</code>.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.18.</td>
-        <td style="vertical-align: middle">Mask Levels</td>
-        <td style="text-align: center; vertical-align: middle">Установка диапазона значений яркости маски.</td>
-        <td style="text-align: center; vertical-align: middle"><p>Значения диапазона значений яркости маски осуществляется дробными числами от <code>0</code> до <code>1</code>.</p></td>
+        <td rowspan="9" style="vertical-align: middle"><code>Alpha Mask (Advanced)</code></td>
+        <td style="vertical-align: middle">White Point</td>
+        <td style="vertical-align: middle"><p>Выбор точки белого альфа-маски.</p><p>Благодоря точке белого альфа-маски, алгоритмы обработки изображения определяют, какие области считаются полностью видимыми (белыми). Если значение точки белого было задано некорректно, то альфа-маска начинает выглядеть "грязной" и полупрозрачной.</p></td>
+        <td style="vertical-align: middle">Выбор точки белого альфа-маски осуществляется с помощью следующих кнопок:<p>1. <code>Pick</code> - использование инструмента "пипетка" для выбора точки белого.</p> <p>2. <code>Set</code> - открытие окна "Color Picker - White Point" для ручного выбора цвета обработки.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.19.</td>
-        <td rowspan="9" style="vertical-align: middle"><code>Alpha Mask (Advanced)</code></td>
-        <td style="vertical-align: middle">White Point</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Key Type</td>
+        <td style="vertical-align: middle">Выбор цветового пространства для формирования (расчёта) альфа-маски.</td>
+        <td style="vertical-align: middle">Основными цветовыми пространствами для формирования (расчёта) альфа-маски являются:<p>1. <code>UCS</code> - унифицированное цветовое пространство (Uniform Color Space), в котором яркость и цвета разделены. Из-за такого разделения, обеспечивается более корректная работа с полупрозрачнысми областями (волосы, мелкие детали и т.п.) и улучшается обработка сложных световых переходов.</p> <p>2. <code>RGB</code> - цветовое пространство RGB, в котором формирование альфа-маски выполняется на основе соотношения красного, зелёного и синего каналов. Отсутсвие информации об яркости в цветовом пространстве RGB позволяет снизить вычислительную нагрузку на рабочую станцию, а также в некоторых случаях - уменьшить задержку.</p><p>Стоит учитывать, что при выборе цветового протранства RGB для формирования (расчёта) альфа-маски, параметр <code>J Weight</code> не осуществляет свою работу.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.20.</td>
-        <td style="vertical-align: middle">Key Type</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Border Light</td>
+        <td style="vertical-align: middle"><p>Осветление внешнего края альфа-маски.</p> <p>Дополнительное осветление внешнего края альфа-маски применяется в тех случаях, если при обработке изображения были утрачены мелкие детали.</p></td>
+        <td style="vertical-align: middle">Осветление внешнего края альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.21.</td>
-        <td style="vertical-align: middle">Border Light</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Border Dark</td>
+        <td style="vertical-align: middle"><p>Затемнение внешнего края альфа-маски.</p> <p>Дополнительное затемнение внешнего края альфа-маски применяется в тех случаях, если при обработке изображения, край альфа-маски (в том числе на обработанном изображении) был излищне засветлён.</p></td>
+        <td style="vertical-align: middle">Затемнение внешнего края альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.22.</td>
-        <td style="vertical-align: middle">Border Dark</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">B. Feather</td>
+        <td style="vertical-align: middle">Смягчение (растушевка) края альфа-маски.</td>
+        <td style="vertical-align: middle">Смягчение (растушевка) края альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.23.</td>
-        <td style="vertical-align: middle">B. Feather</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Edge Offset</td>
+        <td style="vertical-align: middle"><p>Свдиг границы альфа-маски внутрь.</p> <p>Сдвиг границы альфа-маски используется в тех случаях, если наблюдается "некорретное" обрезание объекта.</p></td>
+        <td style="vertical-align: middle">Регулировка границы альфа-маски внутрь осуществляется диапазоном дробных чисел от <code>0</code> до <code>5</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.24.</td>
-        <td style="vertical-align: middle">Edge Offset</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Edge Blur</td>
+        <td style="vertical-align: middle"><p>Размытие границы альфа-маски.</p> <p>Размытие границы альфа-маски используется в тех случаях, если есть необходимость сделать переход между объектом и фоновым изображением более плавным.</p></td>
+        <td style="vertical-align: middle">Размытие границы альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>5</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.25.</td>
-        <td style="vertical-align: middle">Edge Blur</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Floor Levels</td>
+        <td style="vertical-align: middle">Регулировка минимального уровня прозрачности маски.</td>
+        <td style="vertical-align: middle">Регулировка минимального уровня прозрачности маски осуществляется диапазоном дробных чисел между <code>0</code> и <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.26.</td>
-        <td style="vertical-align: middle">Floor Levels</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Apply To</td>
+        <td style="vertical-align: middle">Выбор способа наложения параметров <code>Alpha Mask (Advanced)</code>.</td>
+        <td style="vertical-align: middle">Основными способами наложения являются:<p>1. <code>FG_ON_CHROMABG</code> - режим наложения, при котором параметры не применяются к маске типа<code>Chromakey BG</code>.</p> <p>2. <code>ALPHA_ON_ALL</code> - применение параметров к маскам, используемым в кадре.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.27.</td>
-        <td style="vertical-align: middle">Apply To</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td rowspan="3" style="vertical-align: middle"><code>Inner Mask</code></td>
+        <td style="vertical-align: middle">Red Weight</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки красного цветового канала во внутренней области альфа-маски.</p> <p>При снижении значения параметра, вклад красного цветового канала уменьшается, что влечёт за собой избыточную прозрачность внутренней области альфа-маски.</p></td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки красного цветового канала во внутренней области альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.28.</td>
-        <td rowspan="3" style="vertical-align: middle"><code>Inner Mask</code></td>
-        <td style="vertical-align: middle">Red Weight</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Blue Weight</td>
+        <td style="vertical-align: middle"><p>Регулировка интенсивности обработки синего цветового канала во внутренней области альфа-маски.</p> <p>При снижении значения параметра, вклад синего цветового канала уменьшается, что влечёт за собой избыточную прозрачность внутренней области альфа-маски.</p></td>
+        <td style="vertical-align: middle">Регулировка интенсивности обработки синего цветового канала во внутренней области альфа-маски осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.29.</td>
-        <td style="vertical-align: middle">Blue Weight</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Mask Levels</td>
+        <td style="vertical-align: middle"><p>Установка диапазона значений обработки внутренней области альфа-маски.</p> <p>При указании большего (от <code>0</code> до <code>1</code>) диапазона значений, внутренняя область альфа-маски начинает захватывать больше мелких частиц и деталей, включая фрагменты зелёного фона.</p></td>
+        <td style="vertical-align: middle">Установка диапазона значений яркоски внутренней области маски (ореола) осуществляется диапазоном дробных чисел между <code>0</code> и <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.30.</td>
-        <td style="vertical-align: middle">Mask Levels</td>
-        <td style="text-align: center; vertical-align: middle"></td>
+        <td rowspan="3" style="vertical-align: middle"><code>Shadows</code></td>
+        <td style="vertical-align: middle">Enabled</td>
+        <td style="vertical-align: middle">Включение / Отключение режима обработки теней.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.31.</td>
-        <td rowspan="3" style="vertical-align: middle"><code>Shadows</code></td>
-        <td style="vertical-align: middle">Enabled</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Levels</td>
+        <td style="vertical-align: middle">Установка диапазона значений яркости теней.</td>
+        <td style="vertical-align: middle">Установка диапазона значений яркости теней осуществляется диапазоном дробных чисел между <code>0</code> и <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.32.</td>
-        <td style="vertical-align: middle">Levels</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">DeNoise mix</td>
+        <td style="vertical-align: middle">Интенсивность применения фильтра подавления шумов (DeNoise) в области теней.</td>
+        <td style="vertical-align: middle">Интенсивность применения фильтра подавления шумов (DeNoise) в области теней осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.33.</td>
-        <td style="vertical-align: middle">DeNoise mix</td>
-        <td style="text-align: center; vertical-align: middle"></td>
+        <td rowspan="4" style="vertical-align: middle"><code>Highlights</code></td>
+        <td style="vertical-align: middle">Enabled</td>
+        <td style="vertical-align: middle">Включение / Отключение режима обработки светлых зон.</td>
         <td style="text-align: center; vertical-align: middle">---</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.34.</td>
-        <td rowspan="4" style="vertical-align: middle"><code>Highlights</code></td>
-        <td style="vertical-align: middle">Enabled</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Blend Mode</td>
+        <td style="vertical-align: middle">Выбор метода обработки светлых зон.</td>
+        <td style="vertical-align: middle">К основным методам обработки светлых зон относится:<p>1. <code>Screen</code> - "мягкое" осветление. В данном методе картинка делается светлее, при этом удаляется чёрный цвет (то есть заменяется его оттенками).</p> <p>2. <code>Add</code> - "яркое" осветление. Осветляет картинку более интенсивнее, нежели метод <code>Screen</code>. Как правило - применяется для сцен, где используется множество спецэффектов.</p></td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.35.</td>
-        <td style="vertical-align: middle">Blend Mode</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Levels</td>
+        <td style="vertical-align: middle">Установка диапазона обработки светлых зон.</td>
+        <td style="vertical-align: middle">Установка диапазона значений яркости свечений осуществляется диапазоном дробных чисел между <code>0</code> и <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.36.</td>
-        <td style="vertical-align: middle">Levels</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">DeNoise mix</td>
+        <td style="vertical-align: middle">Интенсивность применения фильтра подавления шумов (DeNoise) при обработке светлых зон.</td>
+        <td style="vertical-align: middle">Интенсивность применения фильтра подавления шумов (DeNoise) при обработке светлых зон осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.37.</td>
-        <td style="vertical-align: middle">DeNoise mix</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td rowspan="5" style="vertical-align: middle"><code>Environment</code></td>
+        <td style="vertical-align: middle">Overlay</td>
+        <td style="vertical-align: middle">Интенсивность наложения фонового изображения на выделяемый объект (альфа-маску).</td>
+        <td style="vertical-align: middle">Интенсивность наложения фонового изображения на выделяемый объект (альфа-маску) осуществляется диапазоном дробных чисел от <code>0</code> до <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.38.</td>
-        <td rowspan="5" style="vertical-align: middle"><code>Environment</code></td>
-        <td style="vertical-align: middle">Overlay</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Overlay Blur</td>
+        <td style="vertical-align: middle"><p>Размытие фонового изображения, накладываемого на выделяемый объект (альфа-маску).</p> <p>Следует учитывать, что при низком значении размытия фонового изображения, прозрачность выделяемого объекта (альфа-маски) увеличивается, следовательно теряются его детали.</p></td>
+        <td style="vertical-align: middle">Размытие фонового изображения, накладываемого на выделяемый объект (альфа-маску) осуществляется диапазоном целых чисел от <code>0</code> до <code>12</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.39.</td>
-        <td style="vertical-align: middle">Overlay Blur</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Light Strength</td>
+        <td style="vertical-align: middle">Интенсивность свечения края выделяемого объекта (альфа-маски) по фоновому изображению.</td>
+        <td style="vertical-align: middle">Интенсивность свечения края выделяемого объекта (альфа-маски) по фоновому изображению осуществляется диапазоном дробных чисел от <code>0</code> до <code>12</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.40.</td>
-        <td style="vertical-align: middle">Light Strength</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Light Blur</td>
+        <td style="vertical-align: middle">Размытие свечения края выделяемого объекта (альфа-маски) по фоновому изображению.</td>
+        <td style="vertical-align: middle">Регулировка интенсивности свечения окружающей виртуальной среды осуществляется диапазоном дробных чисел от <code>0</code> до <code>100</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.41.</td>
-        <td style="vertical-align: middle">Light Blur</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Light Levels</td>
+        <td style="vertical-align: middle">Установка диапазона обработки значений свечения фонового изображения.</td>
+        <td style="vertical-align: middle">Установка диапазона обработки значений свечения фонового изображения осуществляется диапазоном дробных чисел между <code>0</code> и <code>1</code>.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.42.</td>
-        <td style="vertical-align: middle">Light Levels</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td rowspan="6" style="vertical-align: middle"><code>Misc</code></td>
+        <td style="vertical-align: middle">Output RGBA</td>
+        <td style="vertical-align: middle">Включение / Отключение режима передачи изображения переднего плана (foreground) в формате RGBA.</td>
+        <td style="vertical-align: middle">Передача изображения переднего плана (foreground) необходима для его последующей обработки в Unreal Engine.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.43.</td>
-        <td rowspan="6" style="vertical-align: middle"><code>Misc</code></td>
-        <td style="vertical-align: middle">Output RGBA</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Output Layers</td>
+        <td style="vertical-align: middle">Включение / Отключение режима разделения изображения на четыре слоя (обработанное изображение, <code>Highlights</code>, <code>Environment Overlay</code> и <code>Environment Light Strength</code>).</td>
+        <td style="vertical-align: middle">Передача изображения, разделённого на четыре слоя, необходима для его последующей обработки в Unreal Engine.</td>
       </tr>
       <tr>
         <td style="text-align: center; vertical-align: middle">1.44.</td>
-        <td style="vertical-align: middle">Output Layers</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.45.</td>
-        <td style="vertical-align: middle">Use BG Alpha</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.46.</td>
         <td style="vertical-align: middle">Use BG Stencil</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.47.</td>
-        <td style="vertical-align: middle">Mask</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">1.48.</td>
-        <td style="vertical-align: middle">Invert</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-    <tr>
-        <td style="text-align: center; vertical-align: middle">2.</td>
-        <td colspan="4" align="center"><code>BG</code></td>
-    </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.1.</td>
-        <td rowspan="2" style="vertical-align: middle"><code>Sharpen</code></td>
-        <td style="vertical-align: middle">Strength</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.2.</td>
-        <td style="vertical-align: middle">Mix Amount</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.3.</td>
-        <td style="vertical-align: middle"><code>LUT</code></td>
-        <td style="vertical-align: middle">Filename</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.4.</td>
-        <td rowspan="5" style="vertical-align: middle"><code>Gamma</code></td>
-        <td style="vertical-align: middle">Exposure</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.5.</td>
-        <td style="vertical-align: middle">RGB</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.6.</td>
-        <td style="vertical-align: middle">Red</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.7.</td>
-        <td style="vertical-align: middle">Green</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.8.</td>
-        <td style="vertical-align: middle">Blue</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.9.</td>
-        <td style="vertical-align: middle"><code>Curves</code></td>
-        <td style="vertical-align: middle">Channel</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.10.</td>
-        <td rowspan="3" style="vertical-align: middle"><code>Misc</code></td>
-        <td style="vertical-align: middle">Use FXAA</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.11.</td>
-        <td style="vertical-align: middle">Use sRGB to linear RGB conversion</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">2.12.</td>
-        <td style="vertical-align: middle">Use linear RGB to sRGB conversion</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-	<tr>
-        <td style="text-align: center; vertical-align: middle">3.</td>
-        <td colspan="4" align="center"><code>FG</code></td>
-    </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.1.</td>
-        <td rowspan="2" style="vertical-align: middle"><code>Sharpen</code></td>
-        <td style="vertical-align: middle">Strength</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.2.</td>
-        <td style="vertical-align: middle">Mix Amount</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.3.</td>
-        <td style="vertical-align: middle"><code>LUT</code></td>
-        <td style="vertical-align: middle">Filename</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.4.</td>
-        <td rowspan="5" style="vertical-align: middle"><code>Gamma</code></td>
-        <td style="vertical-align: middle">Exposure</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.5.</td>
-        <td style="vertical-align: middle">RGB</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.6.</td>
-        <td style="vertical-align: middle">Red</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.7.</td>
-        <td style="vertical-align: middle">Green</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.8.</td>
-        <td style="vertical-align: middle">Blue</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.9.</td>
-        <td style="vertical-align: middle"><code>Curves</code></td>
-        <td style="vertical-align: middle">Channel</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.10.</td>
-        <td rowspan="3" style="vertical-align: middle"><code>Misc</code></td>
-        <td style="vertical-align: middle">Use FXAA</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.11.</td>
-        <td style="vertical-align: middle">Use sRGB to linear RGB conversion</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">3.12.</td>
-        <td style="vertical-align: middle">Use linear RGB to sRGB conversion</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-	<tr>
-        <td style="text-align: center; vertical-align: middle">4.</td>
-        <td colspan="4" align="center"><code>Mask</code></td>
-    </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.1.</td>
-        <td style="vertical-align: middle"><code>Mask Type</code></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.2.</td>
-        <td rowspan="2" style="vertical-align: middle"><code>Objects</code></td>
-        <td style="vertical-align: middle">ObjType</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.3.</td>
-        <td style="vertical-align: middle">Texture</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.4.</td>
-        <td rowspan="4" style="vertical-align: middle"><code>Object Offsets</code></td>
-        <td style="vertical-align: middle">X</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.5.</td>
-        <td style="vertical-align: middle">Y</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.6.</td>
-        <td style="vertical-align: middle">Z</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.7.</td>
-        <td style="vertical-align: middle">Use Tracking Offsets</td>
-        <td style="text-align: center; vertical-align: middle"></td>
-        <td style="text-align: center; vertical-align: middle">---</td>
-      </tr>
-      <tr>
-        <td style="text-align: center; vertical-align: middle">4.8.</td>
-        <td style="vertical-align: middle"><code>Texture</code></td>
-        <td style="vertical-align: middle">Invert</td>
-        <td style="text-align: center; vertical-align: middle">.</td>
-        <td style="text-align: center; vertical-align: middle">---</td>
+        <td style="vertical-align: middle">Включение / Отключение режима использования фоновой stencil-маски для управления порядком отображения объектов в кадре.</td>
+        <td style="text-align: center; vertical-align: middle">Режим использования фоновоой stencil-маски используется при взаимодействии с Unreal Engine.</td>
       </tr>
       </tbody>
 </table>
-
--->
 
 > Carrot Keyer - программный модуль позволяющий размещать нужный объект с зелёного фона на виртуальный (или любой другой) фон при помощи технологии рир-проекции.
 
@@ -6514,6 +6225,8 @@ AR композитинг работает по схеме, когда изоб�
 >Увеличение **расстояния между ключевыми кадрами** уменьшает размер выходного файла. Так, например, при значении равном 120 (120 кадр - ключевой), объём данных, необходимых для хранения, будет меньше, чем при значении 30, что снижает общий размер файла. Однако, стоит отметить, что эффект уменьшения размера становится менее выраженным при очень больших значениях.
 >
 >**Расстояние между ключевыми кадрами** влияет на качество видео, особенно в сценах с высокой динамикой. Таким образом, чем меньше значение, тем обеспечивается более частое обновление ключевых кадров, а чем больше значение, тем увеличивается эффективность сжатия. Стоит учитывать, что указание большого значения приводит к снижению качества в динамических сценах, что проявляется в виде отображения различных графических артефактов. Для кодируемого видео в кодеке H.265 (используемом в **Carrot Media Container**), с частотой ~30 кадров/с и динамически нагруженными сценами, оптимальным значением **расстояния между ключевыми кадрами** будет от 30 до 60, что будет соответствовать ключевому кадру каждые 1-2 с.
+>
+>**Стоит учитывать**, что при расстоянии между ключевыми кадрами, отличном от 1, запуск видео будет сопровождаться с задержкой, равной времени декодирования промежуточных кадров.
 
 ### Работа с Carrot Media Container
 
