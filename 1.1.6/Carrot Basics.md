@@ -374,9 +374,9 @@
     <tr>
       <td style="text-align: center; vertical-align: middle">13.</td>
       <td style="vertical-align: middle"><code>Remove Unused Assets</code></td>
+      <td style="vertical-align: middle">Удаление неиспользуемых ассетов.</td>
       <td style="text-align: center; vertical-align: middle">---</td>
-      <td style="text-align: center; vertical-align: middle">---</td>
-      <td style="text-align: center; vertical-align: middle">---</td>
+      <td style="vertical-align: middle">Удаление неиспользуемых ассетов осуществляется из директории, указанной в параметре <code>Directory</code> раздела <b>"Digital Assets"</b>.</td>
     </tr>
    <tbody>
 </table>
