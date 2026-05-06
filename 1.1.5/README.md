@@ -1,4 +1,4 @@
-## Руководство пользователя программного обеспечения Carrot
+# Руководство пользователя программного обеспечения Carrot
 
 > Программно-аппаратный комплекс по управлению графикой реального времени.
 
@@ -10,11 +10,11 @@
 
 ## Оглавление
 
-- [Что нового?](What's%20New.md)
-- [Знакомство с Carrot](Acquaintance%20with%20Carrot.md)
-- [Первоначальная настройка Carrot](Initial%20Setup.md)
-- [Общие сведения](General%20Information.md)
-- [Основы Carrot](Carrot%20Basics.md)
-- [Работа со сторонним ПО](Working%20with%20Third-party%20Software.md)
-- [Устранение неполадок](Troubleshooting.md)
-- [Обучающие и вспомогательные материалы](Educational%20and%20Auxiliary%20Materials.md)
+- [Что нового?](what's-new.md)
+- [Знакомство с Carrot](acquaintance-with-carrot.md)
+- [Первоначальная настройка Carrot](initial-setup.md)
+- [Общие сведения](general-information.md)
+- [Основы Carrot](carrot-basics.md)
+- [Работа со сторонним ПО](working-with-third-party-software.md)
+- [Устранение неполадок](troubleshooting.md)
+- [Обучающие и вспомогательные материалы](educational-and-auxiliary-materials.md)
